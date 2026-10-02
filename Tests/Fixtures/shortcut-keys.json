@@ -1,0 +1,146 @@
+[
+ {
+  "accelerator": "Command+Shift+Space",
+  "keys": [
+   "⌘ Command",
+   "⇧ Shift",
+   "Space"
+  ]
+ },
+ {
+  "accelerator": "Alt+Shift+Space",
+  "keys": [
+   "⌥ Option",
+   "⇧ Shift",
+   "Space"
+  ]
+ },
+ {
+  "accelerator": "CommandOrControl+Shift+K",
+  "keys": [
+   "⌘ Command",
+   "⇧ Shift",
+   "K"
+  ]
+ },
+ {
+  "accelerator": "CmdOrCtrl+Shift+Space",
+  "keys": [
+   "⌘ Command",
+   "⇧ Shift",
+   "Space"
+  ]
+ },
+ {
+  "accelerator": "Cmd+Alt+k",
+  "keys": [
+   "⌘ Command",
+   "⌥ Option",
+   "K"
+  ]
+ },
+ {
+  "accelerator": "Super+Space",
+  "keys": [
+   "⌘ Command",
+   "Space"
+  ]
+ },
+ {
+  "accelerator": "Option+Space",
+  "keys": [
+   "⌥ Option",
+   "Space"
+  ]
+ },
+ {
+  "accelerator": "Alt+Space",
+  "keys": [
+   "⌥ Option",
+   "Space"
+  ]
+ },
+ {
+  "accelerator": "Control+Alt+F5",
+  "keys": [
+   "⌃ Control",
+   "⌥ Option",
+   "F5"
+  ]
+ },
+ {
+  "accelerator": "Ctrl+Shift+7",
+  "keys": [
+   "⌃ Control",
+   "⇧ Shift",
+   "7"
+  ]
+ },
+ {
+  "accelerator": "Command+Control+Alt+Shift+F12",
+  "keys": [
+   "⌘ Command",
+   "⌃ Control",
+   "⌥ Option",
+   "⇧ Shift",
+   "F12"
+  ]
+ },
+ {
+  "accelerator": "Command+a",
+  "keys": [
+   "⌘ Command",
+   "A"
+  ]
+ },
+ {
+  "accelerator": "Command+Shift+1",
+  "keys": [
+   "⌘ Command",
+   "⇧ Shift",
+   "1"
+  ]
+ },
+ {
+  "accelerator": "Shift+Tab",
+  "keys": [
+   "⇧ Shift",
+   "Tab"
+  ]
+ },
+ {
+  "accelerator": "command+shift+space",
+  "keys": [
+   "command",
+   "shift",
+   "space"
+  ]
+ },
+ {
+  "accelerator": "Meta+J",
+  "keys": [
+   "Meta",
+   "J"
+  ]
+ },
+ {
+  "accelerator": "F1",
+  "keys": [
+   "F1"
+  ]
+ },
+ {
+  "accelerator": "Command++",
+  "keys": [
+   "⌘ Command",
+   "",
+   ""
+  ]
+ },
+ {
+  "accelerator": "",
+  "keys": [
+   ""
+  ]
+ }
+]

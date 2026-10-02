@@ -1,0 +1,1518 @@
+{
+ "strings": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "a": {
+     "type": "string"
+    },
+    "b": {
+     "type": "string",
+     "minLength": 2,
+     "maxLength": 5
+    },
+    "c": {
+     "type": "string",
+     "minLength": 1,
+     "maxLength": 4
+    },
+    "d": {
+     "type": "string",
+     "description": "a thing"
+    },
+    "e": {
+     "default": "x",
+     "type": "string"
+    }
+   },
+   "required": [
+    "a",
+    "b"
+   ]
+  },
+  "results": [
+   {
+    "input": {
+     "a": "q",
+     "b": "abc"
+    },
+    "ok": true,
+    "output": {
+     "a": "q",
+     "b": "abc",
+     "e": "x"
+    }
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "a"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "abcdef"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "a": 1,
+     "b": "abc"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "b": "abc"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "abc",
+     "c": "  hi  "
+    },
+    "ok": true,
+    "output": {
+     "a": "q",
+     "b": "abc",
+     "c": "hi",
+     "e": "x"
+    }
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "abc",
+     "c": "   "
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "abc",
+     "d": null
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "abc",
+     "e": "y",
+     "extra": 1
+    },
+    "ok": true,
+    "output": {
+     "a": "q",
+     "b": "abc",
+     "e": "y"
+    }
+   },
+   {
+    "input": "nope",
+    "ok": false
+   },
+   {
+    "input": null,
+    "ok": false
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "😀😀"
+    },
+    "ok": true,
+    "output": {
+     "a": "q",
+     "b": "😀😀",
+     "e": "x"
+    }
+   },
+   {
+    "input": {
+     "a": "q",
+     "b": "😀😀😀"
+    },
+    "ok": true,
+    "output": {
+     "a": "q",
+     "b": "😀😀😀",
+     "e": "x"
+    }
+   }
+  ]
+ },
+ "numbers": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "n": {
+     "type": "number"
+    },
+    "i": {
+     "type": "integer",
+     "minimum": -9007199254740991,
+     "maximum": 9007199254740991
+    },
+    "r": {
+     "default": 2,
+     "type": "integer",
+     "minimum": 1,
+     "maximum": 5
+    },
+    "f": {
+     "type": "number",
+     "minimum": 0.5,
+     "maximum": 1440
+    }
+   },
+   "required": [
+    "n",
+    "i"
+   ]
+  },
+  "results": [
+   {
+    "input": {
+     "n": 1.5,
+     "i": 3
+    },
+    "ok": true,
+    "output": {
+     "n": 1.5,
+     "i": 3,
+     "r": 2
+    }
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": 1.5
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "n": "1",
+     "i": 1
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": 1,
+     "r": 0
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": 1,
+     "r": 6
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": 1,
+     "r": 5,
+     "f": 0.4
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": 1,
+     "f": 0.5
+    },
+    "ok": true,
+    "output": {
+     "n": 1,
+     "i": 1,
+     "r": 2,
+     "f": 0.5
+    }
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": 9007199254740992
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "n": 1,
+     "i": -3
+    },
+    "ok": true,
+    "output": {
+     "n": 1,
+     "i": -3,
+     "r": 2
+    }
+   }
+  ]
+ },
+ "collections": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "list": {
+     "minItems": 1,
+     "maxItems": 3,
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "ops": {
+     "type": "array",
+     "items": {
+      "type": "object",
+      "properties": {
+       "from": {
+        "type": "string"
+       },
+       "to": {
+        "type": "string"
+       }
+      },
+      "required": [
+       "from",
+       "to"
+      ]
+     }
+    },
+    "flags": {
+     "default": [],
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "kind": {
+     "type": "string",
+     "enum": [
+      "a",
+      "b"
+     ]
+    },
+    "mode": {
+     "default": "x",
+     "type": "string",
+     "enum": [
+      "x",
+      "y"
+     ]
+    },
+    "on": {
+     "type": "boolean"
+    },
+    "maybe": {
+     "description": "later",
+     "type": "boolean"
+    },
+    "about": {
+     "default": [],
+     "description": "words",
+     "maxItems": 2,
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "list",
+    "kind",
+    "on"
+   ]
+  },
+  "results": [
+   {
+    "input": {
+     "list": [
+      "a"
+     ],
+     "kind": "a",
+     "on": true
+    },
+    "ok": true,
+    "output": {
+     "list": [
+      "a"
+     ],
+     "flags": [],
+     "kind": "a",
+     "mode": "x",
+     "on": true,
+     "about": []
+    }
+   },
+   {
+    "input": {
+     "list": [],
+     "kind": "a",
+     "on": true
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "list": [
+      "a",
+      "b",
+      "c",
+      "d"
+     ],
+     "kind": "a",
+     "on": true
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "list": [
+      "a",
+      1
+     ],
+     "kind": "a",
+     "on": true
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "list": [
+      "a"
+     ],
+     "kind": "c",
+     "on": true
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "list": [
+      "a"
+     ],
+     "kind": "b",
+     "on": "yes"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "list": [
+      "a"
+     ],
+     "kind": "b",
+     "on": false,
+     "ops": [
+      {
+       "from": "x",
+       "to": "y",
+       "junk": 1
+      }
+     ],
+     "mode": "y",
+     "about": [
+      "p",
+      "q"
+     ]
+    },
+    "ok": true,
+    "output": {
+     "list": [
+      "a"
+     ],
+     "ops": [
+      {
+       "from": "x",
+       "to": "y"
+      }
+     ],
+     "flags": [],
+     "kind": "b",
+     "mode": "y",
+     "on": false,
+     "about": [
+      "p",
+      "q"
+     ]
+    }
+   },
+   {
+    "input": {
+     "list": [
+      "a"
+     ],
+     "kind": "b",
+     "on": false,
+     "ops": [
+      {
+       "from": "x"
+      }
+     ]
+    },
+    "ok": false
+   }
+  ]
+ },
+ "nullable": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "p": {
+     "default": null,
+     "anyOf": [
+      {
+       "type": "string",
+       "maxLength": 100
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "d": {
+     "default": null,
+     "anyOf": [
+      {
+       "type": "integer",
+       "minimum": 0,
+       "maximum": 9007199254740991
+      },
+      {
+       "type": "null"
+      }
+     ]
+    },
+    "q": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "o": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   },
+   "required": [
+    "q"
+   ]
+  },
+  "results": [
+   {
+    "input": {
+     "q": null
+    },
+    "ok": true,
+    "output": {
+     "p": null,
+     "d": null,
+     "q": null
+    }
+   },
+   {
+    "input": {
+     "q": "x",
+     "p": "y",
+     "d": 4
+    },
+    "ok": true,
+    "output": {
+     "p": "y",
+     "d": 4,
+     "q": "x"
+    }
+   },
+   {
+    "input": {
+     "q": "x",
+     "p": null,
+     "d": null,
+     "o": null
+    },
+    "ok": true,
+    "output": {
+     "p": null,
+     "d": null,
+     "q": "x",
+     "o": null
+    }
+   },
+   {
+    "input": {},
+    "ok": false
+   },
+   {
+    "input": {
+     "q": 1
+    },
+    "ok": false
+   }
+  ]
+ },
+ "strict": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "kind": {
+     "type": "string",
+     "enum": [
+      "path",
+      "url"
+     ]
+    },
+    "label": {
+     "type": "string",
+     "maxLength": 3
+    },
+    "value": {
+     "type": "string",
+     "minLength": 1
+    }
+   },
+   "required": [
+    "kind",
+    "label",
+    "value"
+   ],
+   "additionalProperties": false
+  },
+  "results": [
+   {
+    "input": {
+     "kind": "path",
+     "label": "a",
+     "value": "v"
+    },
+    "ok": true,
+    "output": {
+     "kind": "path",
+     "label": "a",
+     "value": "v"
+    }
+   },
+   {
+    "input": {
+     "kind": "path",
+     "label": "a",
+     "value": "v",
+     "more": 1
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "kind": "path",
+     "label": "a",
+     "value": "v",
+     "more": 1,
+     "another": 2
+    },
+    "ok": false
+   }
+  ]
+ },
+ "formats": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "url": {
+     "type": "string",
+     "format": "uri"
+    },
+    "to": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "format": "email",
+      "pattern": "^(?:[A-Za-z0-9_'+\\-]+\\.)*[A-Za-z0-9_'+\\-]*[A-Za-z0-9_+-]@(?:[A-Za-z0-9][A-Za-z0-9\\-]*\\.)+[A-Za-z]{2,}$"
+     }
+    },
+    "rec": {
+     "type": "object",
+     "propertyNames": {
+      "type": "string"
+     },
+     "additionalProperties": {
+      "type": "string"
+     }
+    }
+   },
+   "required": [
+    "url"
+   ]
+  },
+  "results": [
+   {
+    "input": {
+     "url": "https://example.com/a?b=1"
+    },
+    "ok": true,
+    "output": {
+     "url": "https://example.com/a?b=1"
+    }
+   },
+   {
+    "input": {
+     "url": "example.com"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "url": "mailto:a@b.co"
+    },
+    "ok": true,
+    "output": {
+     "url": "mailto:a@b.co"
+    }
+   },
+   {
+    "input": {
+     "url": "http://"
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "url": "file:///tmp/x"
+    },
+    "ok": true,
+    "output": {
+     "url": "file:///tmp/x"
+    }
+   },
+   {
+    "input": {
+     "url": "https://example.com",
+     "to": [
+      "a@b.co",
+      "x.y+z@d.example.org"
+     ]
+    },
+    "ok": true,
+    "output": {
+     "url": "https://example.com",
+     "to": [
+      "a@b.co",
+      "x.y+z@d.example.org"
+     ]
+    }
+   },
+   {
+    "input": {
+     "url": "https://example.com",
+     "to": [
+      "nope"
+     ]
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "url": "https://example.com",
+     "rec": {
+      "a": "b"
+     }
+    },
+    "ok": true,
+    "output": {
+     "url": "https://example.com",
+     "rec": {
+      "a": "b"
+     }
+    }
+   },
+   {
+    "input": {
+     "url": "https://example.com",
+     "rec": {
+      "a": 1
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "url": "ftp://host/x"
+    },
+    "ok": true,
+    "output": {
+     "url": "ftp://host/x"
+    }
+   },
+   {
+    "input": {
+     "url": "javascript:alert(1)"
+    },
+    "ok": true,
+    "output": {
+     "url": "javascript:alert(1)"
+    }
+   },
+   {
+    "input": {
+     "url": "https://exa mple.com"
+    },
+    "ok": false
+   }
+  ]
+ },
+ "brain": {
+  "schema": {
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "type": "object",
+   "properties": {
+    "request": {
+     "oneOf": [
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "list"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        },
+        "query": {
+         "type": "string",
+         "maxLength": 300
+        },
+        "kind": {
+         "type": "string",
+         "enum": [
+          "note",
+          "task",
+          "reminder",
+          "project",
+          "bookmark",
+          "session",
+          "tracker"
+         ]
+        },
+        "projectId": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "create"
+        },
+        "item": {
+         "type": "object",
+         "properties": {
+          "kind": {
+           "type": "string",
+           "enum": [
+            "note",
+            "task",
+            "reminder",
+            "project",
+            "bookmark",
+            "session",
+            "tracker"
+           ]
+          },
+          "title": {
+           "type": "string",
+           "minLength": 1,
+           "maxLength": 300
+          },
+          "body": {
+           "default": "",
+           "type": "string",
+           "maxLength": 40000
+          },
+          "projectId": {
+           "default": null,
+           "anyOf": [
+            {
+             "type": "string",
+             "maxLength": 100
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "dueAt": {
+           "default": null,
+           "anyOf": [
+            {
+             "type": "integer",
+             "minimum": 0,
+             "maximum": 8640000000000000
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "repeat": {
+           "default": "none",
+           "type": "string",
+           "enum": [
+            "none",
+            "daily",
+            "weekly"
+           ]
+          },
+          "estimateMinutes": {
+           "default": null,
+           "anyOf": [
+            {
+             "type": "integer",
+             "minimum": 1,
+             "maximum": 1440
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "sources": {
+           "default": [],
+           "maxItems": 100,
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "kind": {
+              "type": "string",
+              "enum": [
+               "path",
+               "url"
+              ]
+             },
+             "label": {
+              "type": "string",
+              "maxLength": 300
+             },
+             "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+             }
+            },
+            "required": [
+             "kind",
+             "label",
+             "value"
+            ],
+            "additionalProperties": false
+           }
+          }
+         },
+         "required": [
+          "kind",
+          "title"
+         ],
+         "additionalProperties": false
+        }
+       },
+       "required": [
+        "op",
+        "item"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "update"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        },
+        "changes": {
+         "type": "object",
+         "properties": {
+          "kind": {
+           "type": "string",
+           "enum": [
+            "note",
+            "task",
+            "reminder",
+            "project",
+            "bookmark",
+            "session",
+            "tracker"
+           ]
+          },
+          "title": {
+           "type": "string",
+           "minLength": 1,
+           "maxLength": 300
+          },
+          "body": {
+           "type": "string",
+           "maxLength": 40000
+          },
+          "projectId": {
+           "anyOf": [
+            {
+             "type": "string",
+             "maxLength": 100
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "dueAt": {
+           "anyOf": [
+            {
+             "type": "integer",
+             "minimum": 0,
+             "maximum": 8640000000000000
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "repeat": {
+           "type": "string",
+           "enum": [
+            "none",
+            "daily",
+            "weekly"
+           ]
+          },
+          "estimateMinutes": {
+           "anyOf": [
+            {
+             "type": "integer",
+             "minimum": 1,
+             "maximum": 1440
+            },
+            {
+             "type": "null"
+            }
+           ]
+          },
+          "sources": {
+           "maxItems": 100,
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "kind": {
+              "type": "string",
+              "enum": [
+               "path",
+               "url"
+              ]
+             },
+             "label": {
+              "type": "string",
+              "maxLength": 300
+             },
+             "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4000
+             }
+            },
+            "required": [
+             "kind",
+             "label",
+             "value"
+            ],
+            "additionalProperties": false
+           }
+          }
+         },
+         "additionalProperties": false
+        }
+       },
+       "required": [
+        "op",
+        "id",
+        "changes"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "complete"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op",
+        "id"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "reopen"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op",
+        "id"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "archive"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op",
+        "id"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "acknowledge"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op",
+        "id"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "snooze"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        },
+        "minutes": {
+         "type": "integer",
+         "minimum": 1,
+         "maximum": 10080
+        }
+       },
+       "required": [
+        "op",
+        "id",
+        "minutes"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "check"
+        },
+        "id": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op",
+        "id"
+       ],
+       "additionalProperties": false
+      },
+      {
+       "type": "object",
+       "properties": {
+        "op": {
+         "type": "string",
+         "const": "timer"
+        },
+        "action": {
+         "type": "string",
+         "enum": [
+          "start",
+          "pause",
+          "resume",
+          "cancel"
+         ]
+        },
+        "minutes": {
+         "type": "number",
+         "minimum": 0.016666666666666666,
+         "maximum": 1440
+        },
+        "label": {
+         "type": "string",
+         "minLength": 1,
+         "maxLength": 100
+        }
+       },
+       "required": [
+        "op",
+        "action"
+       ],
+       "additionalProperties": false
+      }
+     ]
+    }
+   },
+   "required": [
+    "request"
+   ]
+  },
+  "results": [
+   {
+    "input": {
+     "request": {
+      "op": "list"
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "list"
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "list",
+      "query": "x",
+      "kind": "note"
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "list",
+      "query": "x",
+      "kind": "note"
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "list",
+      "nope": 1
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "create",
+      "item": {
+       "kind": "task",
+       "title": "  Buy milk  "
+      }
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "create",
+      "item": {
+       "kind": "task",
+       "title": "Buy milk",
+       "body": "",
+       "projectId": null,
+       "dueAt": null,
+       "repeat": "none",
+       "estimateMinutes": null,
+       "sources": []
+      }
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "create",
+      "item": {
+       "kind": "task",
+       "title": "   "
+      }
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "create",
+      "item": {
+       "kind": "reminder",
+       "title": "x",
+       "dueAt": 1790000000000,
+       "repeat": "daily",
+       "sources": [
+        {
+         "kind": "url",
+         "label": "l",
+         "value": "https://a.b"
+        }
+       ]
+      }
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "create",
+      "item": {
+       "kind": "reminder",
+       "title": "x",
+       "body": "",
+       "projectId": null,
+       "dueAt": 1790000000000,
+       "repeat": "daily",
+       "estimateMinutes": null,
+       "sources": [
+        {
+         "kind": "url",
+         "label": "l",
+         "value": "https://a.b"
+        }
+       ]
+      }
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "update",
+      "id": "abc",
+      "changes": {
+       "title": "New",
+       "dueAt": null
+      }
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "update",
+      "id": "abc",
+      "changes": {
+       "title": "New",
+       "dueAt": null
+      }
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "update",
+      "id": "abc",
+      "changes": {}
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "update",
+      "id": "abc",
+      "changes": {}
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "update",
+      "id": "abc"
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "snooze",
+      "id": "a",
+      "minutes": 10
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "snooze",
+      "id": "a",
+      "minutes": 10
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "snooze",
+      "id": "a",
+      "minutes": 0
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "timer",
+      "action": "start",
+      "minutes": 25,
+      "label": " Focus "
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "timer",
+      "action": "start",
+      "minutes": 25,
+      "label": "Focus"
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "timer",
+      "action": "start",
+      "minutes": 0.001
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "timer",
+      "action": "cancel"
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "timer",
+      "action": "cancel"
+     }
+    }
+   },
+   {
+    "input": {
+     "request": {
+      "op": "explode"
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {}
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "complete",
+      "id": ""
+     }
+    },
+    "ok": false
+   },
+   {
+    "input": {
+     "request": {
+      "op": "check",
+      "id": "x"
+     }
+    },
+    "ok": true,
+    "output": {
+     "request": {
+      "op": "check",
+      "id": "x"
+     }
+    }
+   }
+  ]
+ }
+}

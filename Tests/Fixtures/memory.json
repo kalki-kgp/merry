@@ -1,0 +1,7575 @@
+{
+ "now": 1790000000000,
+ "texts": [
+  {
+   "text": "my manager is Priya",
+   "words": [
+    "manager",
+    "priya"
+   ],
+   "topics": []
+  },
+  {
+   "text": "Email my manager about the Q3 invoices",
+   "words": [
+    "email",
+    "manager",
+    "q3",
+    "invoice"
+   ],
+   "topics": [
+    "mail",
+    "files"
+   ]
+  },
+  {
+   "text": "tidy my Downloads",
+   "words": [
+    "tidy",
+    "download"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "standup tomorrow 10am",
+   "words": [
+    "standup",
+    "10am"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "Standups go on the Work calendar",
+   "words": [
+    "standup",
+    "go",
+    "work",
+    "calendar"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "I prefer 24-hour time",
+   "words": [
+    "prefer",
+    "24-hour",
+    "time"
+   ],
+   "topics": [
+    "time"
+   ]
+  },
+  {
+   "text": "priya@example.com is her e-mail",
+   "words": [
+    "priya@example.com",
+    "her",
+    "e-mail"
+   ],
+   "topics": [
+    "mail"
+   ]
+  },
+  {
+   "text": "use C++ and node.js, not .NET",
+   "words": [
+    "node.j",
+    "not",
+    "net"
+   ],
+   "topics": []
+  },
+  {
+   "text": "...leading dots and trailing---",
+   "words": [
+    "leading",
+    "dot",
+    "trailing"
+   ],
+   "topics": []
+  },
+  {
+   "text": "a b c",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "123 4567 x9",
+   "words": [
+    "x9"
+   ],
+   "topics": []
+  },
+  {
+   "text": "parties stories ladies",
+   "words": [
+    "party",
+    "story",
+    "lady"
+   ],
+   "topics": []
+  },
+  {
+   "text": "boss class glass pass",
+   "words": [
+    "boss",
+    "class",
+    "glass",
+    "pass"
+   ],
+   "topics": []
+  },
+  {
+   "text": "bus gas yes his",
+   "words": [
+    "bus",
+    "gas",
+    "yes",
+    "his"
+   ],
+   "topics": []
+  },
+  {
+   "text": "MERRY, please remember the things",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "to-do list for the 1:1 sync",
+   "words": [
+    "to-do",
+    "list",
+    "sync"
+   ],
+   "topics": [
+    "calendar",
+    "reminders"
+   ]
+  },
+  {
+   "text": "reply to the draft in my inbox",
+   "words": [
+    "reply",
+    "draft",
+    "inbox"
+   ],
+   "topics": [
+    "mail"
+   ]
+  },
+  {
+   "text": "open the site in Arc or Safari",
+   "words": [
+    "open",
+    "site",
+    "arc",
+    "safari"
+   ],
+   "topics": [
+    "web"
+   ]
+  },
+  {
+   "text": "what time is it in the morning",
+   "words": [
+    "time",
+    "morning"
+   ],
+   "topics": [
+    "time"
+   ]
+  },
+  {
+   "text": "the 12-hour clock",
+   "words": [
+    "12-hour",
+    "clock"
+   ],
+   "topics": [
+    "time"
+   ]
+  },
+  {
+   "text": "24hour timezones",
+   "words": [
+    "24hour",
+    "timezone"
+   ],
+   "topics": [
+    "time"
+   ]
+  },
+  {
+   "text": "Zoë’s café receipts",
+   "words": [
+    "zo",
+    "caf",
+    "receipt"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "naïve résumé.pdf",
+   "words": [
+    "na",
+    "ve",
+    "sum",
+    "pdf"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "email+tag@host.co.uk",
+   "words": [
+    "email+tag@host.co.uk"
+   ],
+   "topics": [
+    "mail"
+   ]
+  },
+  {
+   "text": "--flag --other-flag",
+   "words": [
+    "flag",
+    "other-flag"
+   ],
+   "topics": []
+  },
+  {
+   "text": "x",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "   ",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "screenshots, PDFs & documents",
+   "words": [
+    "screenshot",
+    "pdf",
+    "document"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "ʼtis the season",
+   "words": [
+    "tis",
+    "season"
+   ],
+   "topics": []
+  },
+  {
+   "text": "notes note noted",
+   "words": [
+    "note",
+    "noted"
+   ],
+   "topics": [
+    "notes"
+   ]
+  },
+  {
+   "text": "CALLS and calling",
+   "words": [
+    "call",
+    "calling"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "tasks",
+   "words": [
+    "task"
+   ],
+   "topics": [
+    "reminders"
+   ]
+  },
+  {
+   "text": "İstanbul trip",
+   "words": [
+    "stanbul",
+    "trip"
+   ],
+   "topics": []
+  },
+  {
+   "text": "straße größe",
+   "words": [
+    "stra",
+    "gr"
+   ],
+   "topics": []
+  },
+  {
+   "text": "one two three",
+   "words": [
+    "two",
+    "three"
+   ],
+   "topics": []
+  },
+  {
+   "text": "emoji 😀 party 🎉s",
+   "words": [
+    "emoji",
+    "party"
+   ],
+   "topics": []
+  },
+  {
+   "text": "under_score snake_case",
+   "words": [
+    "under",
+    "score",
+    "snake",
+    "case"
+   ],
+   "topics": []
+  },
+  {
+   "text": "tab\tseparated\nlines",
+   "words": [
+    "tab",
+    "separated",
+    "line"
+   ],
+   "topics": []
+  },
+  {
+   "text": "reminder: reminders remind",
+   "words": [
+    "reminder",
+    "remind"
+   ],
+   "topics": [
+    "reminders"
+   ]
+  },
+  {
+   "text": "a.b.c. .d. e-",
+   "words": [
+    "a.b.c"
+   ],
+   "topics": []
+  },
+  {
+   "text": "i.e. e.g.",
+   "words": [
+    "i.e",
+    "e.g"
+   ],
+   "topics": []
+  },
+  {
+   "text": "ies",
+   "words": [
+    "y"
+   ],
+   "topics": []
+  },
+  {
+   "text": "flies",
+   "words": [
+    "fly"
+   ],
+   "topics": []
+  },
+  {
+   "text": "ss",
+   "words": [
+    "ss"
+   ],
+   "topics": []
+  },
+  {
+   "text": "sss",
+   "words": [
+    "sss"
+   ],
+   "topics": []
+  },
+  {
+   "text": "bass",
+   "words": [
+    "bass"
+   ],
+   "topics": []
+  },
+  {
+   "text": "as",
+   "words": [
+    "as"
+   ],
+   "topics": []
+  },
+  {
+   "text": "gas",
+   "words": [
+    "gas"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that my manager is Priya",
+   "words": [
+    "manager",
+    "priya"
+   ],
+   "topics": []
+  },
+  {
+   "text": "Remember that I prefer window seats.",
+   "words": [
+    "prefer",
+    "window",
+    "seat"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember: the door code changes monthly!!",
+   "words": [
+    "door",
+    "code",
+    "change",
+    "monthly"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember, standups are at 10",
+   "words": [
+    "standup"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "remember my manager is Priya",
+   "words": [
+    "manager",
+    "priya"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember to call mom",
+   "words": [
+    "call",
+    "mom"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "remember toby is my cat",
+   "words": [
+    "toby",
+    "cat"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember the milk",
+   "words": [
+    "milk"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember I like oat milk",
+   "words": [
+    "oat",
+    "milk"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember i'm vegetarian",
+   "words": [
+    "vegetarian"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember I am allergic to nuts",
+   "words": [
+    "allergic",
+    "nut"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember we use Linear",
+   "words": [
+    "we",
+    "linear"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember our office is in Pune",
+   "words": [
+    "our",
+    "office",
+    "pune"
+   ],
+   "topics": []
+  },
+  {
+   "text": "hey merry, remember that I hate mornings",
+   "words": [
+    "hate",
+    "morning"
+   ],
+   "topics": []
+  },
+  {
+   "text": "please remember that it rains",
+   "words": [
+    "rain"
+   ],
+   "topics": []
+  },
+  {
+   "text": "merry remember that x",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "merry,  , remember that y",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "hey please merry, can you remember that z",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "could you keep in mind that I never fly",
+   "words": [
+    "keep",
+    "mind",
+    "fly"
+   ],
+   "topics": []
+  },
+  {
+   "text": "don't forget that Sam is on leave",
+   "words": [
+    "don",
+    "sam",
+    "leave"
+   ],
+   "topics": []
+  },
+  {
+   "text": "dont forget: budget is 5k",
+   "words": [
+    "dont",
+    "budget",
+    "5k"
+   ],
+   "topics": []
+  },
+  {
+   "text": "don't forget to water the plants",
+   "words": [
+    "don",
+    "water",
+    "plant"
+   ],
+   "topics": []
+  },
+  {
+   "text": "don't forget my passport expires in May",
+   "words": [
+    "don",
+    "passport",
+    "expire",
+    "may"
+   ],
+   "topics": []
+  },
+  {
+   "text": "keep in mind my sister lives in Goa",
+   "words": [
+    "keep",
+    "mind",
+    "sister",
+    "live",
+    "goa"
+   ],
+   "topics": []
+  },
+  {
+   "text": "keep in mind that",
+   "words": [
+    "keep",
+    "mind"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that ",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "remember that   spaced out   .  ",
+   "words": [
+    "spaced"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "remember this",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "remember them",
+   "words": [
+    "them"
+   ],
+   "topics": []
+  },
+  {
+   "text": "from now on, use the Work calendar",
+   "words": [
+    "work",
+    "calendar"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "From now on always reply in Marathi",
+   "words": [
+    "reply",
+    "marathi"
+   ],
+   "topics": [
+    "mail"
+   ]
+  },
+  {
+   "text": "going forward put invoices in Finance",
+   "words": [
+    "going",
+    "forward",
+    "invoice",
+    "finance"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "in future ask before deleting",
+   "words": [
+    "future",
+    "ask",
+    "before",
+    "deleting"
+   ],
+   "topics": []
+  },
+  {
+   "text": "in the future, be brief",
+   "words": [
+    "future",
+    "brief"
+   ],
+   "topics": []
+  },
+  {
+   "text": "in the future",
+   "words": [
+    "future"
+   ],
+   "topics": []
+  },
+  {
+   "text": "from now on,",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "from now onwards use x",
+   "words": [
+    "onward"
+   ],
+   "topics": []
+  },
+  {
+   "text": "what do you remember",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "forget that my manager is Priya",
+   "words": [
+    "manager",
+    "priya"
+   ],
+   "topics": []
+  },
+  {
+   "text": "i want you to remember that x",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "  remember that padded  ",
+   "words": [
+    "padded"
+   ],
+   "topics": []
+  },
+  {
+   "text": "REMEMBER THAT SHOUTING",
+   "words": [
+    "shouting"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that line one\nline two",
+   "words": [
+    "line",
+    "two"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember thatcher was pm",
+   "words": [
+    "thatcher"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that I would rather walk",
+   "words": [
+    "rather",
+    "walk"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that I don't like calls",
+   "words": [
+    "don",
+    "call"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "remember the theme I like",
+   "words": [
+    "theme"
+   ],
+   "topics": []
+  },
+  {
+   "text": "can you remember my wifi is slow",
+   "words": [
+    "wifi",
+    "slow"
+   ],
+   "topics": []
+  },
+  {
+   "text": "can you remember that my wifi is slow",
+   "words": [
+    "wifi",
+    "slow"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that nbsp works",
+   "words": [
+    "nbsp",
+    "work"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember that…",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "remember that it ends with dots...",
+   "words": [
+    "end",
+    "dot"
+   ],
+   "topics": []
+  },
+  {
+   "text": "hey hey remember that twice",
+   "words": [
+    "twice"
+   ],
+   "topics": []
+  },
+  {
+   "text": "remember:x",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "email my manager",
+   "words": [
+    "email",
+    "manager"
+   ],
+   "topics": [
+    "mail"
+   ]
+  },
+  {
+   "text": "email Priya about the invoices",
+   "words": [
+    "email",
+    "priya",
+    "invoice"
+   ],
+   "topics": [
+    "mail",
+    "files"
+   ]
+  },
+  {
+   "text": "tidy my Downloads",
+   "words": [
+    "tidy",
+    "download"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "standup tomorrow 10am",
+   "words": [
+    "standup",
+    "10am"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "what time is it",
+   "words": [
+    "time"
+   ],
+   "topics": [
+    "time"
+   ]
+  },
+  {
+   "text": "add dentist appointment friday",
+   "words": [
+    "dentist",
+    "appointment",
+    "friday"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "find the invoice I saved yesterday",
+   "words": [
+    "find",
+    "invoice",
+    "saved",
+    "yesterday"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "call asha",
+   "words": [
+    "call",
+    "asha"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "remind me to pay rent",
+   "words": [
+    "remind",
+    "pay",
+    "rent"
+   ],
+   "topics": [
+    "reminders"
+   ]
+  },
+  {
+   "text": "schedule the weekly sync",
+   "words": [
+    "schedule",
+    "weekly",
+    "sync"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "move the standup notes",
+   "words": [
+    "move",
+    "standup",
+    "note"
+   ],
+   "topics": [
+    "calendar",
+    "notes"
+   ]
+  },
+  {
+   "text": "put a meeting on my calendar",
+   "words": [
+    "meeting",
+    "calendar"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "draft a reply",
+   "words": [
+    "draft",
+    "reply"
+   ],
+   "topics": [
+    "mail"
+   ]
+  },
+  {
+   "text": "",
+   "words": [],
+   "topics": []
+  },
+  {
+   "text": "priya priya priya",
+   "words": [
+    "priya"
+   ],
+   "topics": []
+  },
+  {
+   "text": "where does my sister live",
+   "words": [
+    "sister",
+    "live"
+   ],
+   "topics": []
+  },
+  {
+   "text": "open the documents folder",
+   "words": [
+    "open",
+    "document",
+    "folder"
+   ],
+   "topics": [
+    "files"
+   ]
+  },
+  {
+   "text": "set an appointment",
+   "words": [
+    "appointment"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  },
+  {
+   "text": "bills",
+   "words": [
+    "bill"
+   ],
+   "topics": []
+  },
+  {
+   "text": "anything about goa or finance?",
+   "words": [
+    "anything",
+    "goa",
+    "finance"
+   ],
+   "topics": []
+  },
+  {
+   "text": "Team standup sync weekly",
+   "words": [
+    "team",
+    "standup",
+    "sync",
+    "weekly"
+   ],
+   "topics": [
+    "calendar"
+   ]
+  }
+ ],
+ "secrets": [
+  {
+   "text": "my password is hunter2",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "the wifi passcode is 1234",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "pin code 4321",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "my PIN is 9911",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "pinned tab",
+   "secret": null
+  },
+  {
+   "text": "spin class",
+   "secret": null
+  },
+  {
+   "text": "otp 445566",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "one-time code 123456",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "one time code",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "2fa backup",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "my api key",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "secret key abc",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "private key file",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "seed phrase words",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "recovery phrase",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "cvv 123",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "security code on the back",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "card 4111 1111 1111 1111",
+   "secret": "card numbers"
+  },
+  {
+   "text": "card 4111-1111-1111-1111",
+   "secret": "card numbers"
+  },
+  {
+   "text": "4111111111111112",
+   "secret": null
+  },
+  {
+   "text": "4242424242424242 exp 12/30",
+   "secret": "card numbers"
+  },
+  {
+   "text": "order number 1234567890123",
+   "secret": null
+  },
+  {
+   "text": "phone 9876543210",
+   "secret": null
+  },
+  {
+   "text": "aadhaar 1234 5678 9012",
+   "secret": "ID numbers"
+  },
+  {
+   "text": "Aadhar: 123456789012",
+   "secret": "ID numbers"
+  },
+  {
+   "text": "uid 1234 56789012",
+   "secret": "ID numbers"
+  },
+  {
+   "text": "1234 5678 9012",
+   "secret": null
+  },
+  {
+   "text": "aadhaar 12345 6789 012",
+   "secret": null
+  },
+  {
+   "text": "sk-abcdefghijklmnop1234",
+   "secret": "keys"
+  },
+  {
+   "text": "pk_live_abcdefghijklmnop",
+   "secret": "keys"
+  },
+  {
+   "text": "ghp_abcdefghijklmnopqrstu",
+   "secret": "keys"
+  },
+  {
+   "text": "xoxb-1234567890123456",
+   "secret": "keys"
+  },
+  {
+   "text": "xoxz-1234567890123456",
+   "secret": null
+  },
+  {
+   "text": "sk-short",
+   "secret": null
+  },
+  {
+   "text": "task-abcdefghijklmnopqrstuvwxyz",
+   "secret": null
+  },
+  {
+   "text": "my manager is Priya",
+   "secret": null
+  },
+  {
+   "text": "",
+   "secret": null
+  },
+  {
+   "text": "PASSWORD",
+   "secret": "passwords, codes and keys"
+  },
+  {
+   "text": "passwords",
+   "secret": null
+  },
+  {
+   "text": "I like otpimal things",
+   "secret": null
+  },
+  {
+   "text": "79927398713 x",
+   "secret": null
+  },
+  {
+   "text": "0000 0000 0000 0000",
+   "secret": "card numbers"
+  },
+  {
+   "text": "１２３４ ５６７８ ９０１２ aadhaar",
+   "secret": null
+  },
+  {
+   "text": "iban 12345678901234567890123",
+   "secret": null
+  },
+  {
+   "text": "4111 1111\n1111 1111",
+   "secret": "card numbers"
+  },
+  {
+   "text": "UID: 999988887777",
+   "secret": "ID numbers"
+  },
+  {
+   "text": "sk_test-ABCDEFGHIJKLMNOP",
+   "secret": "keys"
+  },
+  {
+   "text": "my manager is Priya",
+   "secret": null
+  },
+  {
+   "text": "Email my manager about the Q3 invoices",
+   "secret": null
+  },
+  {
+   "text": "tidy my Downloads",
+   "secret": null
+  },
+  {
+   "text": "standup tomorrow 10am",
+   "secret": null
+  },
+  {
+   "text": "Standups go on the Work calendar",
+   "secret": null
+  },
+  {
+   "text": "I prefer 24-hour time",
+   "secret": null
+  },
+  {
+   "text": "priya@example.com is her e-mail",
+   "secret": null
+  },
+  {
+   "text": "use C++ and node.js, not .NET",
+   "secret": null
+  },
+  {
+   "text": "...leading dots and trailing---",
+   "secret": null
+  },
+  {
+   "text": "a b c",
+   "secret": null
+  },
+  {
+   "text": "123 4567 x9",
+   "secret": null
+  },
+  {
+   "text": "parties stories ladies",
+   "secret": null
+  },
+  {
+   "text": "boss class glass pass",
+   "secret": null
+  },
+  {
+   "text": "bus gas yes his",
+   "secret": null
+  },
+  {
+   "text": "MERRY, please remember the things",
+   "secret": null
+  },
+  {
+   "text": "to-do list for the 1:1 sync",
+   "secret": null
+  },
+  {
+   "text": "reply to the draft in my inbox",
+   "secret": null
+  },
+  {
+   "text": "open the site in Arc or Safari",
+   "secret": null
+  },
+  {
+   "text": "what time is it in the morning",
+   "secret": null
+  },
+  {
+   "text": "the 12-hour clock",
+   "secret": null
+  },
+  {
+   "text": "24hour timezones",
+   "secret": null
+  },
+  {
+   "text": "Zoë’s café receipts",
+   "secret": null
+  },
+  {
+   "text": "naïve résumé.pdf",
+   "secret": null
+  },
+  {
+   "text": "email+tag@host.co.uk",
+   "secret": null
+  },
+  {
+   "text": "--flag --other-flag",
+   "secret": null
+  },
+  {
+   "text": "x",
+   "secret": null
+  },
+  {
+   "text": "",
+   "secret": null
+  },
+  {
+   "text": "   ",
+   "secret": null
+  },
+  {
+   "text": "screenshots, PDFs & documents",
+   "secret": null
+  },
+  {
+   "text": "ʼtis the season",
+   "secret": null
+  },
+  {
+   "text": "notes note noted",
+   "secret": null
+  },
+  {
+   "text": "CALLS and calling",
+   "secret": null
+  },
+  {
+   "text": "tasks",
+   "secret": null
+  },
+  {
+   "text": "İstanbul trip",
+   "secret": null
+  },
+  {
+   "text": "straße größe",
+   "secret": null
+  },
+  {
+   "text": "one two three",
+   "secret": null
+  },
+  {
+   "text": "emoji 😀 party 🎉s",
+   "secret": null
+  },
+  {
+   "text": "under_score snake_case",
+   "secret": null
+  },
+  {
+   "text": "tab\tseparated\nlines",
+   "secret": null
+  },
+  {
+   "text": "reminder: reminders remind",
+   "secret": null
+  },
+  {
+   "text": "a.b.c. .d. e-",
+   "secret": null
+  },
+  {
+   "text": "i.e. e.g.",
+   "secret": null
+  },
+  {
+   "text": "ies",
+   "secret": null
+  },
+  {
+   "text": "flies",
+   "secret": null
+  },
+  {
+   "text": "ss",
+   "secret": null
+  },
+  {
+   "text": "sss",
+   "secret": null
+  },
+  {
+   "text": "bass",
+   "secret": null
+  },
+  {
+   "text": "as",
+   "secret": null
+  },
+  {
+   "text": "gas",
+   "secret": null
+  }
+ ],
+ "explicit": [
+  {
+   "request": "remember that my manager is Priya",
+   "memory": {
+    "text": "my manager is Priya",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "Remember that I prefer window seats.",
+   "memory": {
+    "text": "I prefer window seats",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "remember: the door code changes monthly!!",
+   "memory": {
+    "text": "the door code changes monthly",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember, standups are at 10",
+   "memory": {
+    "text": "standups are at 10",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember my manager is Priya",
+   "memory": {
+    "text": "my manager is Priya",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember to call mom",
+   "memory": null
+  },
+  {
+   "request": "remember toby is my cat",
+   "memory": null
+  },
+  {
+   "request": "remember the milk",
+   "memory": {
+    "text": "the milk",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember I like oat milk",
+   "memory": {
+    "text": "I like oat milk",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "remember i'm vegetarian",
+   "memory": {
+    "text": "i'm vegetarian",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember I am allergic to nuts",
+   "memory": {
+    "text": "I am allergic to nuts",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember we use Linear",
+   "memory": {
+    "text": "we use Linear",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember our office is in Pune",
+   "memory": {
+    "text": "our office is in Pune",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "hey merry, remember that I hate mornings",
+   "memory": {
+    "text": "I hate mornings",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "please remember that it rains",
+   "memory": {
+    "text": "it rains",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "merry remember that x",
+   "memory": {
+    "text": "x",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "merry,  , remember that y",
+   "memory": {
+    "text": "y",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "hey please merry, can you remember that z",
+   "memory": {
+    "text": "z",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "could you keep in mind that I never fly",
+   "memory": {
+    "text": "I never fly",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "don't forget that Sam is on leave",
+   "memory": {
+    "text": "Sam is on leave",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "dont forget: budget is 5k",
+   "memory": {
+    "text": "budget is 5k",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "don't forget to water the plants",
+   "memory": null
+  },
+  {
+   "request": "don't forget my passport expires in May",
+   "memory": {
+    "text": "my passport expires in May",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "keep in mind my sister lives in Goa",
+   "memory": {
+    "text": "my sister lives in Goa",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "keep in mind that",
+   "memory": null
+  },
+  {
+   "request": "remember that ",
+   "memory": null
+  },
+  {
+   "request": "remember that   spaced out   .  ",
+   "memory": {
+    "text": "spaced out",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember",
+   "memory": null
+  },
+  {
+   "request": "remember this",
+   "memory": null
+  },
+  {
+   "request": "remember them",
+   "memory": null
+  },
+  {
+   "request": "from now on, use the Work calendar",
+   "memory": {
+    "text": "use the Work calendar",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "From now on always reply in Marathi",
+   "memory": {
+    "text": "always reply in Marathi",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "going forward put invoices in Finance",
+   "memory": {
+    "text": "put invoices in Finance",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "in future ask before deleting",
+   "memory": {
+    "text": "ask before deleting",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "in the future, be brief",
+   "memory": {
+    "text": "be brief",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "in the future",
+   "memory": null
+  },
+  {
+   "request": "from now on,",
+   "memory": null
+  },
+  {
+   "request": "from now onwards use x",
+   "memory": null
+  },
+  {
+   "request": "what do you remember",
+   "memory": null
+  },
+  {
+   "request": "forget that my manager is Priya",
+   "memory": null
+  },
+  {
+   "request": "i want you to remember that x",
+   "memory": null
+  },
+  {
+   "request": "  remember that padded  ",
+   "memory": {
+    "text": "padded",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "REMEMBER THAT SHOUTING",
+   "memory": {
+    "text": "SHOUTING",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember that line one\nline two",
+   "memory": null
+  },
+  {
+   "request": "remember thatcher was pm",
+   "memory": {
+    "text": "cher was pm",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember that I would rather walk",
+   "memory": {
+    "text": "I would rather walk",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "remember that I don't like calls",
+   "memory": {
+    "text": "I don't like calls",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "remember the theme I like",
+   "memory": {
+    "text": "the theme I like",
+    "kind": "preference"
+   }
+  },
+  {
+   "request": "can you remember my wifi is slow",
+   "memory": null
+  },
+  {
+   "request": "can you remember that my wifi is slow",
+   "memory": {
+    "text": "my wifi is slow",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember that nbsp works",
+   "memory": {
+    "text": "nbsp works",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember that…",
+   "memory": {
+    "text": "…",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember that it ends with dots...",
+   "memory": {
+    "text": "it ends with dots",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "hey hey remember that twice",
+   "memory": {
+    "text": "twice",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "remember:x",
+   "memory": {
+    "text": "x",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "my manager is Priya",
+   "memory": null
+  },
+  {
+   "request": "Email my manager about the Q3 invoices",
+   "memory": null
+  },
+  {
+   "request": "tidy my Downloads",
+   "memory": null
+  },
+  {
+   "request": "standup tomorrow 10am",
+   "memory": null
+  },
+  {
+   "request": "Standups go on the Work calendar",
+   "memory": null
+  },
+  {
+   "request": "I prefer 24-hour time",
+   "memory": null
+  },
+  {
+   "request": "priya@example.com is her e-mail",
+   "memory": null
+  },
+  {
+   "request": "use C++ and node.js, not .NET",
+   "memory": null
+  },
+  {
+   "request": "...leading dots and trailing---",
+   "memory": null
+  },
+  {
+   "request": "a b c",
+   "memory": null
+  },
+  {
+   "request": "123 4567 x9",
+   "memory": null
+  },
+  {
+   "request": "parties stories ladies",
+   "memory": null
+  },
+  {
+   "request": "boss class glass pass",
+   "memory": null
+  },
+  {
+   "request": "bus gas yes his",
+   "memory": null
+  },
+  {
+   "request": "MERRY, please remember the things",
+   "memory": {
+    "text": "the things",
+    "kind": "fact"
+   }
+  },
+  {
+   "request": "to-do list for the 1:1 sync",
+   "memory": null
+  },
+  {
+   "request": "reply to the draft in my inbox",
+   "memory": null
+  },
+  {
+   "request": "open the site in Arc or Safari",
+   "memory": null
+  },
+  {
+   "request": "what time is it in the morning",
+   "memory": null
+  },
+  {
+   "request": "the 12-hour clock",
+   "memory": null
+  },
+  {
+   "request": "24hour timezones",
+   "memory": null
+  },
+  {
+   "request": "Zoë’s café receipts",
+   "memory": null
+  },
+  {
+   "request": "naïve résumé.pdf",
+   "memory": null
+  },
+  {
+   "request": "email+tag@host.co.uk",
+   "memory": null
+  },
+  {
+   "request": "--flag --other-flag",
+   "memory": null
+  },
+  {
+   "request": "x",
+   "memory": null
+  },
+  {
+   "request": "",
+   "memory": null
+  },
+  {
+   "request": "   ",
+   "memory": null
+  },
+  {
+   "request": "screenshots, PDFs & documents",
+   "memory": null
+  },
+  {
+   "request": "ʼtis the season",
+   "memory": null
+  },
+  {
+   "request": "notes note noted",
+   "memory": null
+  },
+  {
+   "request": "CALLS and calling",
+   "memory": null
+  },
+  {
+   "request": "tasks",
+   "memory": null
+  },
+  {
+   "request": "İstanbul trip",
+   "memory": null
+  },
+  {
+   "request": "straße größe",
+   "memory": null
+  },
+  {
+   "request": "one two three",
+   "memory": null
+  },
+  {
+   "request": "emoji 😀 party 🎉s",
+   "memory": null
+  },
+  {
+   "request": "under_score snake_case",
+   "memory": null
+  },
+  {
+   "request": "tab\tseparated\nlines",
+   "memory": null
+  },
+  {
+   "request": "reminder: reminders remind",
+   "memory": null
+  },
+  {
+   "request": "a.b.c. .d. e-",
+   "memory": null
+  },
+  {
+   "request": "i.e. e.g.",
+   "memory": null
+  },
+  {
+   "request": "ies",
+   "memory": null
+  },
+  {
+   "request": "flies",
+   "memory": null
+  },
+  {
+   "request": "ss",
+   "memory": null
+  },
+  {
+   "request": "sss",
+   "memory": null
+  },
+  {
+   "request": "bass",
+   "memory": null
+  },
+  {
+   "request": "as",
+   "memory": null
+  },
+  {
+   "request": "gas",
+   "memory": null
+  }
+ ],
+ "made": [
+  {
+   "text": "my manager is Priya",
+   "kind": "fact",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "My manager is Priya",
+    "kind": "fact",
+    "keys": [
+     "manager",
+     "priya"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "  i   prefer\twindow\nseats  ",
+   "kind": "preference",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "I prefer window seats",
+    "kind": "preference",
+    "keys": [
+     "prefer",
+     "window",
+     "seat"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "éclairs are my favourite",
+   "kind": "fact",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "Éclairs are my favourite",
+    "kind": "fact",
+    "keys": [
+     "clair",
+     "favourite"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "😀 is my mood",
+   "kind": "fact",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "😀 is my mood",
+    "kind": "fact",
+    "keys": [
+     "mood"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "ßtraße",
+   "kind": "fact",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "SStraße",
+    "kind": "fact",
+    "keys": [
+     "tra"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "Standup goes on the Work calendar",
+   "kind": "choice",
+   "source": "learned",
+   "extra": {
+    "keys": [
+     "standup",
+     "daily"
+    ],
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   },
+   "memory": {
+    "id": "id",
+    "text": "Standup goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "standup",
+     "daily",
+     "goe",
+     "work",
+     "calendar"
+    ],
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    },
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "",
+   "kind": "fact",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "",
+    "kind": "fact",
+    "keys": [],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "x",
+   "kind": "fact",
+   "source": "told",
+   "extra": {
+    "keys": [
+     "x",
+     "x",
+     "y"
+    ]
+   },
+   "memory": {
+    "id": "id",
+    "text": "X",
+    "kind": "fact",
+    "keys": [
+     "x",
+     "y"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty",
+   "kind": "fact",
+   "source": "told",
+   "extra": {
+    "keys": [
+     "extra",
+     "two"
+    ]
+   },
+   "memory": {
+    "id": "id",
+    "text": "One two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty",
+    "kind": "fact",
+    "keys": [
+     "extra",
+     "two",
+     "three",
+     "four",
+     "five",
+     "six",
+     "seven",
+     "eight",
+     "nine",
+     "ten",
+     "eleven",
+     "twelve",
+     "thirteen",
+     "fourteen",
+     "fifteen",
+     "sixteen"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "123 starts with digits",
+   "kind": "fact",
+   "source": "learned",
+   "extra": {},
+   "memory": {
+    "id": "id",
+    "text": "123 starts with digits",
+    "kind": "fact",
+    "keys": [
+     "start",
+     "digit"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "text": "ǆungla",
+   "kind": "fact",
+   "source": "told",
+   "extra": null,
+   "memory": {
+    "id": "id",
+    "text": "Ǆungla",
+    "kind": "fact",
+    "keys": [
+     "ungla"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  }
+ ],
+ "known": [
+  {
+   "id": "m1",
+   "text": "My manager is Priya",
+   "kind": "fact",
+   "keys": [
+    "manager",
+    "priya"
+   ],
+   "source": "told",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 0
+  },
+  {
+   "id": "m2",
+   "text": "I prefer 24-hour time",
+   "kind": "preference",
+   "keys": [
+    "prefer",
+    "24-hour",
+    "time"
+   ],
+   "source": "told",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 3
+  },
+  {
+   "id": "m3",
+   "text": "Standup goes on the Work calendar",
+   "kind": "choice",
+   "keys": [
+    "standup"
+   ],
+   "source": "learned",
+   "evidence": 2,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 0,
+   "choice": {
+    "decision": "calendar",
+    "value": "Work"
+   }
+  },
+  {
+   "id": "m4",
+   "text": "Dentist goes on the Personal calendar",
+   "kind": "choice",
+   "keys": [
+    "dentist",
+    "appointment"
+   ],
+   "source": "learned",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999999900,
+   "lastUsedAt": null,
+   "uses": 0,
+   "choice": {
+    "decision": "calendar",
+    "value": "Personal"
+   }
+  },
+  {
+   "id": "m5",
+   "text": "Invoices live in Documents/Finance",
+   "kind": "fact",
+   "keys": [
+    "invoice",
+    "live",
+    "document",
+    "finance"
+   ],
+   "source": "told",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 1
+  },
+  {
+   "id": "m6",
+   "text": "Priya prefers email over calls",
+   "kind": "fact",
+   "keys": [
+    "priya",
+    "prefer",
+    "email",
+    "over",
+    "call"
+   ],
+   "source": "told",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 5
+  },
+  {
+   "id": "m7",
+   "text": "Reminders about bills go on the Home list",
+   "kind": "choice",
+   "keys": [
+    "bill",
+    "rent"
+   ],
+   "source": "learned",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 0,
+   "choice": {
+    "decision": "reminder-list",
+    "value": "Home"
+   }
+  },
+  {
+   "id": "m8",
+   "text": "Standup notes go in the Team folder",
+   "kind": "choice",
+   "keys": [
+    "standup",
+    "team"
+   ],
+   "source": "learned",
+   "evidence": 4,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 0,
+   "choice": {
+    "decision": "folder",
+    "value": "Team"
+   }
+  },
+  {
+   "id": "m9",
+   "text": "Weekly sync goes on the Work calendar",
+   "kind": "choice",
+   "keys": [
+    "weekly",
+    "sync",
+    "standup"
+   ],
+   "source": "learned",
+   "evidence": 2,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999999950,
+   "lastUsedAt": null,
+   "uses": 0,
+   "choice": {
+    "decision": "calendar",
+    "value": "Work"
+   }
+  },
+  {
+   "id": "m10",
+   "text": "My sister Asha lives in Goa",
+   "kind": "fact",
+   "keys": [
+    "sister",
+    "asha",
+    "goa",
+    "asha"
+   ],
+   "source": "told",
+   "evidence": 1,
+   "createdAt": 1789999995000,
+   "updatedAt": 1789999995000,
+   "lastUsedAt": null,
+   "uses": 0
+  }
+ ],
+ "scores": [
+  {
+   "request": "email my manager",
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "email Priya about the invoices",
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    3,
+    5,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "tidy my Downloads",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "standup tomorrow 10am",
+   "scores": [
+    0,
+    0,
+    3,
+    1,
+    0,
+    1,
+    0,
+    3,
+    3,
+    0
+   ]
+  },
+  {
+   "request": "what time is it",
+   "scores": [
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "add dentist appointment friday",
+   "scores": [
+    0,
+    0,
+    1,
+    5,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "request": "find the invoice I saved yesterday",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "call asha",
+   "scores": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    3,
+    0,
+    1,
+    1,
+    4
+   ]
+  },
+  {
+   "request": "remind me to pay rent",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "schedule the weekly sync",
+   "scores": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    5,
+    0
+   ]
+  },
+  {
+   "request": "move the standup notes",
+   "scores": [
+    0,
+    0,
+    3,
+    1,
+    0,
+    1,
+    0,
+    4,
+    3,
+    0
+   ]
+  },
+  {
+   "request": "put a meeting on my calendar",
+   "scores": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "request": "draft a reply",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "priya priya priya",
+   "scores": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "where does my sister live",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  {
+   "request": "open the documents folder",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "set an appointment",
+   "scores": [
+    0,
+    0,
+    1,
+    3,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0
+   ]
+  },
+  {
+   "request": "bills",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "request": "anything about goa or finance?",
+   "scores": [
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  {
+   "request": "Team standup sync weekly",
+   "scores": [
+    0,
+    0,
+    3,
+    1,
+    0,
+    1,
+    0,
+    5,
+    7,
+    0
+   ]
+  }
+ ],
+ "recalls": [
+  {
+   "request": "email my manager",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"email\""
+    },
+    {
+     "memory": {
+      "id": "m1",
+      "text": "My manager is Priya",
+      "kind": "fact",
+      "keys": [
+       "manager",
+       "priya"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"manager\""
+    }
+   ]
+  },
+  {
+   "request": "email my manager",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"email\""
+    }
+   ]
+  },
+  {
+   "request": "email my manager",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "email Priya about the invoices",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"priya\", \"email\""
+    },
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"invoice\""
+    },
+    {
+     "memory": {
+      "id": "m1",
+      "text": "My manager is Priya",
+      "kind": "fact",
+      "keys": [
+       "manager",
+       "priya"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"priya\""
+    }
+   ]
+  },
+  {
+   "request": "email Priya about the invoices",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"priya\", \"email\""
+    }
+   ]
+  },
+  {
+   "request": "email Priya about the invoices",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "tidy my Downloads",
+   "limit": 6,
+   "recalled": []
+  },
+  {
+   "request": "tidy my Downloads",
+   "limit": 1,
+   "recalled": []
+  },
+  {
+   "request": "tidy my Downloads",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "standup tomorrow 10am",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m3",
+      "text": "Standup goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"standup\""
+    },
+    {
+     "memory": {
+      "id": "m8",
+      "text": "Standup notes go in the Team folder",
+      "kind": "choice",
+      "keys": [
+       "standup",
+       "team"
+      ],
+      "source": "learned",
+      "evidence": 4,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "folder",
+       "value": "Team"
+      }
+     },
+     "why": "shares \"standup\""
+    },
+    {
+     "memory": {
+      "id": "m9",
+      "text": "Weekly sync goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "weekly",
+       "sync",
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999950,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"standup\""
+    }
+   ]
+  },
+  {
+   "request": "standup tomorrow 10am",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m3",
+      "text": "Standup goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"standup\""
+    }
+   ]
+  },
+  {
+   "request": "standup tomorrow 10am",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "what time is it",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m2",
+      "text": "I prefer 24-hour time",
+      "kind": "preference",
+      "keys": [
+       "prefer",
+       "24-hour",
+       "time"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 3
+     },
+     "why": "shares \"time\""
+    }
+   ]
+  },
+  {
+   "request": "what time is it",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m2",
+      "text": "I prefer 24-hour time",
+      "kind": "preference",
+      "keys": [
+       "prefer",
+       "24-hour",
+       "time"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 3
+     },
+     "why": "shares \"time\""
+    }
+   ]
+  },
+  {
+   "request": "what time is it",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "add dentist appointment friday",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m4",
+      "text": "Dentist goes on the Personal calendar",
+      "kind": "choice",
+      "keys": [
+       "dentist",
+       "appointment"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999900,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Personal"
+      }
+     },
+     "why": "shares \"dentist\", \"appointment\""
+    }
+   ]
+  },
+  {
+   "request": "add dentist appointment friday",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m4",
+      "text": "Dentist goes on the Personal calendar",
+      "kind": "choice",
+      "keys": [
+       "dentist",
+       "appointment"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999900,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Personal"
+      }
+     },
+     "why": "shares \"dentist\", \"appointment\""
+    }
+   ]
+  },
+  {
+   "request": "add dentist appointment friday",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "find the invoice I saved yesterday",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"invoice\""
+    }
+   ]
+  },
+  {
+   "request": "find the invoice I saved yesterday",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"invoice\""
+    }
+   ]
+  },
+  {
+   "request": "find the invoice I saved yesterday",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "call asha",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m10",
+      "text": "My sister Asha lives in Goa",
+      "kind": "fact",
+      "keys": [
+       "sister",
+       "asha",
+       "goa",
+       "asha"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"asha\", \"asha\""
+    },
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"call\""
+    }
+   ]
+  },
+  {
+   "request": "call asha",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m10",
+      "text": "My sister Asha lives in Goa",
+      "kind": "fact",
+      "keys": [
+       "sister",
+       "asha",
+       "goa",
+       "asha"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"asha\", \"asha\""
+    }
+   ]
+  },
+  {
+   "request": "call asha",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "remind me to pay rent",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m7",
+      "text": "Reminders about bills go on the Home list",
+      "kind": "choice",
+      "keys": [
+       "bill",
+       "rent"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "reminder-list",
+       "value": "Home"
+      }
+     },
+     "why": "shares \"rent\""
+    }
+   ]
+  },
+  {
+   "request": "remind me to pay rent",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m7",
+      "text": "Reminders about bills go on the Home list",
+      "kind": "choice",
+      "keys": [
+       "bill",
+       "rent"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "reminder-list",
+       "value": "Home"
+      }
+     },
+     "why": "shares \"rent\""
+    }
+   ]
+  },
+  {
+   "request": "remind me to pay rent",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "schedule the weekly sync",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m9",
+      "text": "Weekly sync goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "weekly",
+       "sync",
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999950,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"weekly\", \"sync\""
+    }
+   ]
+  },
+  {
+   "request": "schedule the weekly sync",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m9",
+      "text": "Weekly sync goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "weekly",
+       "sync",
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999950,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"weekly\", \"sync\""
+    }
+   ]
+  },
+  {
+   "request": "schedule the weekly sync",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "move the standup notes",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m8",
+      "text": "Standup notes go in the Team folder",
+      "kind": "choice",
+      "keys": [
+       "standup",
+       "team"
+      ],
+      "source": "learned",
+      "evidence": 4,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "folder",
+       "value": "Team"
+      }
+     },
+     "why": "shares \"standup\""
+    },
+    {
+     "memory": {
+      "id": "m3",
+      "text": "Standup goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"standup\""
+    },
+    {
+     "memory": {
+      "id": "m9",
+      "text": "Weekly sync goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "weekly",
+       "sync",
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999950,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"standup\""
+    }
+   ]
+  },
+  {
+   "request": "move the standup notes",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m8",
+      "text": "Standup notes go in the Team folder",
+      "kind": "choice",
+      "keys": [
+       "standup",
+       "team"
+      ],
+      "source": "learned",
+      "evidence": 4,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "folder",
+       "value": "Team"
+      }
+     },
+     "why": "shares \"standup\""
+    }
+   ]
+  },
+  {
+   "request": "move the standup notes",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "put a meeting on my calendar",
+   "limit": 6,
+   "recalled": []
+  },
+  {
+   "request": "put a meeting on my calendar",
+   "limit": 1,
+   "recalled": []
+  },
+  {
+   "request": "put a meeting on my calendar",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "draft a reply",
+   "limit": 6,
+   "recalled": []
+  },
+  {
+   "request": "draft a reply",
+   "limit": 1,
+   "recalled": []
+  },
+  {
+   "request": "draft a reply",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "",
+   "limit": 6,
+   "recalled": []
+  },
+  {
+   "request": "",
+   "limit": 1,
+   "recalled": []
+  },
+  {
+   "request": "",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "priya priya priya",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"priya\""
+    },
+    {
+     "memory": {
+      "id": "m1",
+      "text": "My manager is Priya",
+      "kind": "fact",
+      "keys": [
+       "manager",
+       "priya"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"priya\""
+    }
+   ]
+  },
+  {
+   "request": "priya priya priya",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"priya\""
+    }
+   ]
+  },
+  {
+   "request": "priya priya priya",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "where does my sister live",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"live\""
+    },
+    {
+     "memory": {
+      "id": "m10",
+      "text": "My sister Asha lives in Goa",
+      "kind": "fact",
+      "keys": [
+       "sister",
+       "asha",
+       "goa",
+       "asha"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"sister\""
+    }
+   ]
+  },
+  {
+   "request": "where does my sister live",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"live\""
+    }
+   ]
+  },
+  {
+   "request": "where does my sister live",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "open the documents folder",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"document\""
+    }
+   ]
+  },
+  {
+   "request": "open the documents folder",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"document\""
+    }
+   ]
+  },
+  {
+   "request": "open the documents folder",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "set an appointment",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m4",
+      "text": "Dentist goes on the Personal calendar",
+      "kind": "choice",
+      "keys": [
+       "dentist",
+       "appointment"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999900,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Personal"
+      }
+     },
+     "why": "shares \"appointment\""
+    }
+   ]
+  },
+  {
+   "request": "set an appointment",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m4",
+      "text": "Dentist goes on the Personal calendar",
+      "kind": "choice",
+      "keys": [
+       "dentist",
+       "appointment"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999900,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Personal"
+      }
+     },
+     "why": "shares \"appointment\""
+    }
+   ]
+  },
+  {
+   "request": "set an appointment",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "bills",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m7",
+      "text": "Reminders about bills go on the Home list",
+      "kind": "choice",
+      "keys": [
+       "bill",
+       "rent"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "reminder-list",
+       "value": "Home"
+      }
+     },
+     "why": "shares \"bill\""
+    }
+   ]
+  },
+  {
+   "request": "bills",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m7",
+      "text": "Reminders about bills go on the Home list",
+      "kind": "choice",
+      "keys": [
+       "bill",
+       "rent"
+      ],
+      "source": "learned",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "reminder-list",
+       "value": "Home"
+      }
+     },
+     "why": "shares \"bill\""
+    }
+   ]
+  },
+  {
+   "request": "bills",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "anything about goa or finance?",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"finance\""
+    },
+    {
+     "memory": {
+      "id": "m10",
+      "text": "My sister Asha lives in Goa",
+      "kind": "fact",
+      "keys": [
+       "sister",
+       "asha",
+       "goa",
+       "asha"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"goa\""
+    }
+   ]
+  },
+  {
+   "request": "anything about goa or finance?",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"finance\""
+    }
+   ]
+  },
+  {
+   "request": "anything about goa or finance?",
+   "limit": 0,
+   "recalled": []
+  },
+  {
+   "request": "Team standup sync weekly",
+   "limit": 6,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m9",
+      "text": "Weekly sync goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "weekly",
+       "sync",
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999950,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"weekly\", \"sync\", \"standup\""
+    },
+    {
+     "memory": {
+      "id": "m8",
+      "text": "Standup notes go in the Team folder",
+      "kind": "choice",
+      "keys": [
+       "standup",
+       "team"
+      ],
+      "source": "learned",
+      "evidence": 4,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "folder",
+       "value": "Team"
+      }
+     },
+     "why": "shares \"standup\", \"team\""
+    },
+    {
+     "memory": {
+      "id": "m3",
+      "text": "Standup goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"standup\""
+    }
+   ]
+  },
+  {
+   "request": "Team standup sync weekly",
+   "limit": 1,
+   "recalled": [
+    {
+     "memory": {
+      "id": "m9",
+      "text": "Weekly sync goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "weekly",
+       "sync",
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999999950,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "shares \"weekly\", \"sync\", \"standup\""
+    }
+   ]
+  },
+  {
+   "request": "Team standup sync weekly",
+   "limit": 0,
+   "recalled": []
+  }
+ ],
+ "recallEmpty": [],
+ "suggestions": [
+  {
+   "decision": "calendar",
+   "text": "email my manager",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "email my manager",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "email my manager",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "email my manager",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "email Priya about the invoices",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "email Priya about the invoices",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "email Priya about the invoices",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "email Priya about the invoices",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "tidy my Downloads",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "tidy my Downloads",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "tidy my Downloads",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "tidy my Downloads",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "standup tomorrow 10am",
+   "allowed": null,
+   "memory": {
+    "id": "m9",
+    "text": "Weekly sync goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "weekly",
+     "sync",
+     "standup"
+    ],
+    "source": "learned",
+    "evidence": 2,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999950,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "standup tomorrow 10am",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "standup tomorrow 10am",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "standup tomorrow 10am",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "what time is it",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "what time is it",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "what time is it",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "what time is it",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "add dentist appointment friday",
+   "allowed": null,
+   "memory": {
+    "id": "m4",
+    "text": "Dentist goes on the Personal calendar",
+    "kind": "choice",
+    "keys": [
+     "dentist",
+     "appointment"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999900,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Personal"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "add dentist appointment friday",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": {
+    "id": "m4",
+    "text": "Dentist goes on the Personal calendar",
+    "kind": "choice",
+    "keys": [
+     "dentist",
+     "appointment"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999900,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Personal"
+    }
+   }
+  },
+  {
+   "decision": "folder",
+   "text": "add dentist appointment friday",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "add dentist appointment friday",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "find the invoice I saved yesterday",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "find the invoice I saved yesterday",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "find the invoice I saved yesterday",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "find the invoice I saved yesterday",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "call asha",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "call asha",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "call asha",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "call asha",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "remind me to pay rent",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "remind me to pay rent",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "remind me to pay rent",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "remind me to pay rent",
+   "allowed": null,
+   "memory": {
+    "id": "m7",
+    "text": "Reminders about bills go on the Home list",
+    "kind": "choice",
+    "keys": [
+     "bill",
+     "rent"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "reminder-list",
+     "value": "Home"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "schedule the weekly sync",
+   "allowed": null,
+   "memory": {
+    "id": "m9",
+    "text": "Weekly sync goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "weekly",
+     "sync",
+     "standup"
+    ],
+    "source": "learned",
+    "evidence": 2,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999950,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "schedule the weekly sync",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "schedule the weekly sync",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "schedule the weekly sync",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "move the standup notes",
+   "allowed": null,
+   "memory": {
+    "id": "m9",
+    "text": "Weekly sync goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "weekly",
+     "sync",
+     "standup"
+    ],
+    "source": "learned",
+    "evidence": 2,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999950,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "move the standup notes",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "move the standup notes",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "move the standup notes",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "put a meeting on my calendar",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "put a meeting on my calendar",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "put a meeting on my calendar",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "put a meeting on my calendar",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "draft a reply",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "draft a reply",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "draft a reply",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "draft a reply",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "priya priya priya",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "priya priya priya",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "priya priya priya",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "priya priya priya",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "where does my sister live",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "where does my sister live",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "where does my sister live",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "where does my sister live",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "open the documents folder",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "open the documents folder",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "open the documents folder",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "open the documents folder",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "set an appointment",
+   "allowed": null,
+   "memory": {
+    "id": "m4",
+    "text": "Dentist goes on the Personal calendar",
+    "kind": "choice",
+    "keys": [
+     "dentist",
+     "appointment"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999900,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Personal"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "set an appointment",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": {
+    "id": "m4",
+    "text": "Dentist goes on the Personal calendar",
+    "kind": "choice",
+    "keys": [
+     "dentist",
+     "appointment"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999900,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Personal"
+    }
+   }
+  },
+  {
+   "decision": "folder",
+   "text": "set an appointment",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "set an appointment",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "bills",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "bills",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "bills",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "bills",
+   "allowed": null,
+   "memory": {
+    "id": "m7",
+    "text": "Reminders about bills go on the Home list",
+    "kind": "choice",
+    "keys": [
+     "bill",
+     "rent"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "reminder-list",
+     "value": "Home"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "anything about goa or finance?",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "anything about goa or finance?",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "anything about goa or finance?",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "anything about goa or finance?",
+   "allowed": null,
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "text": "Team standup sync weekly",
+   "allowed": null,
+   "memory": {
+    "id": "m9",
+    "text": "Weekly sync goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "weekly",
+     "sync",
+     "standup"
+    ],
+    "source": "learned",
+    "evidence": 2,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999999950,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   }
+  },
+  {
+   "decision": "calendar",
+   "text": "Team standup sync weekly",
+   "allowed": [
+    "Personal",
+    "Home"
+   ],
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "text": "Team standup sync weekly",
+   "allowed": [],
+   "memory": null
+  },
+  {
+   "decision": "reminder-list",
+   "text": "Team standup sync weekly",
+   "allowed": null,
+   "memory": null
+  }
+ ],
+ "merges": [
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n1",
+    "text": "Standup goes on the Personal calendar",
+    "kind": "choice",
+    "keys": [
+     "standup"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Personal"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "m3",
+     "text": "Standup goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    "replaces": "m3"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n2",
+    "text": "Standup goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "standup",
+     "daily"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    "replaces": "m3"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n3",
+    "text": "Dentist goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "dentist"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "m4",
+     "text": "Dentist goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    "replaces": "m4"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n4",
+    "text": "Lunch goes on the Work calendar",
+    "kind": "choice",
+    "keys": [
+     "lunch"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "n4",
+     "text": "Lunch goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "lunch"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    "replaces": null
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n5",
+    "text": "Standup notes go in the Archive folder",
+    "kind": "choice",
+    "keys": [
+     "standup",
+     "notes",
+     "team"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "folder",
+     "value": "Archive"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "m8",
+     "text": "Standup notes go in the Archive folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Archive"
+     }
+    },
+    "replaces": "m8"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n6",
+    "text": "Empty keys choice",
+    "kind": "choice",
+    "keys": [],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "m3",
+     "text": "Empty keys choice",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    "replaces": "m3"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n7",
+    "text": "my MANAGER is priya!",
+    "kind": "fact",
+    "keys": [
+     "manager",
+     "priya"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0
+   },
+   "merged": {
+    "memory": {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": "m1"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n8",
+    "text": "Priya is my manager",
+    "kind": "fact",
+    "keys": [
+     "priya",
+     "manager"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0
+   },
+   "merged": {
+    "memory": {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": "m1"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n9",
+    "text": "My manager is Sam",
+    "kind": "fact",
+    "keys": [
+     "manager",
+     "sam"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0
+   },
+   "merged": {
+    "memory": {
+     "id": "n9",
+     "text": "My manager is Sam",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "sam"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": null
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n10",
+    "text": "I prefer 24-hour times",
+    "kind": "fact",
+    "keys": [
+     "prefer",
+     "24-hour",
+     "time"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0
+   },
+   "merged": {
+    "memory": {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    "replaces": "m2"
+   }
+  },
+  {
+   "existing": [],
+   "incoming": {
+    "id": "n11",
+    "text": "Brand new",
+    "kind": "fact",
+    "keys": [
+     "brand"
+    ],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0
+   },
+   "merged": {
+    "memory": {
+     "id": "n11",
+     "text": "Brand new",
+     "kind": "fact",
+     "keys": [
+      "brand"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": null
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "e1",
+     "text": "the a an",
+     "kind": "fact",
+     "keys": [],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "e2",
+     "text": "Something real",
+     "kind": "fact",
+     "keys": [
+      "something",
+      "real"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n12",
+    "text": "of to in",
+    "kind": "fact",
+    "keys": [],
+    "source": "told",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0
+   },
+   "merged": {
+    "memory": {
+     "id": "e1",
+     "text": "the a an",
+     "kind": "fact",
+     "keys": [],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": "e1"
+   }
+  },
+  {
+   "existing": [
+    {
+     "id": "m1",
+     "text": "My manager is Priya",
+     "kind": "fact",
+     "keys": [
+      "manager",
+      "priya"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m2",
+     "text": "I prefer 24-hour time",
+     "kind": "preference",
+     "keys": [
+      "prefer",
+      "24-hour",
+      "time"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 3
+    },
+    {
+     "id": "m3",
+     "text": "Standup goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m4",
+     "text": "Dentist goes on the Personal calendar",
+     "kind": "choice",
+     "keys": [
+      "dentist",
+      "appointment"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999900,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Personal"
+     }
+    },
+    {
+     "id": "m5",
+     "text": "Invoices live in Documents/Finance",
+     "kind": "fact",
+     "keys": [
+      "invoice",
+      "live",
+      "document",
+      "finance"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 1
+    },
+    {
+     "id": "m6",
+     "text": "Priya prefers email over calls",
+     "kind": "fact",
+     "keys": [
+      "priya",
+      "prefer",
+      "email",
+      "over",
+      "call"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 5
+    },
+    {
+     "id": "m7",
+     "text": "Reminders about bills go on the Home list",
+     "kind": "choice",
+     "keys": [
+      "bill",
+      "rent"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "reminder-list",
+      "value": "Home"
+     }
+    },
+    {
+     "id": "m8",
+     "text": "Standup notes go in the Team folder",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "team"
+     ],
+     "source": "learned",
+     "evidence": 4,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "folder",
+      "value": "Team"
+     }
+    },
+    {
+     "id": "m9",
+     "text": "Weekly sync goes on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 2,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999999950,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m10",
+     "text": "My sister Asha lives in Goa",
+     "kind": "fact",
+     "keys": [
+      "sister",
+      "asha",
+      "goa",
+      "asha"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1789999995000,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ],
+   "incoming": {
+    "id": "n13",
+    "text": "Sync weekly",
+    "kind": "choice",
+    "keys": [
+     "sync",
+     "weekly",
+     "sync"
+    ],
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1789999995000,
+    "updatedAt": 1789999995000,
+    "lastUsedAt": null,
+    "uses": 0,
+    "choice": {
+     "decision": "calendar",
+     "value": "Home"
+    }
+   },
+   "merged": {
+    "memory": {
+     "id": "m9",
+     "text": "Sync weekly",
+     "kind": "choice",
+     "keys": [
+      "weekly",
+      "sync",
+      "standup"
+     ],
+     "source": "learned",
+     "evidence": 1,
+     "createdAt": 1789999995000,
+     "updatedAt": 1790000000000,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar",
+      "value": "Home"
+     }
+    },
+    "replaces": "m9"
+   }
+  }
+ ],
+ "learned": [
+  {
+   "decision": "calendar",
+   "value": "Work",
+   "about": "standup tomorrow 10am",
+   "sentence": "Standup goes on the Work calendar.",
+   "memory": {
+    "id": "id",
+    "text": "Standup goes on the Work calendar.",
+    "kind": "choice",
+    "keys": [
+     "standup",
+     "10am",
+     "goe",
+     "work",
+     "calendar"
+    ],
+    "choice": {
+     "decision": "calendar",
+     "value": "Work"
+    },
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  },
+  {
+   "decision": "calendar",
+   "value": "Work",
+   "about": "the a an",
+   "sentence": "Nothing distinctive",
+   "memory": null
+  },
+  {
+   "decision": "calendar",
+   "value": "Work",
+   "about": "",
+   "sentence": "Empty",
+   "memory": null
+  },
+  {
+   "decision": "list",
+   "value": "Home",
+   "about": "pay the card 4111 1111 1111 1111",
+   "sentence": "Card",
+   "memory": null
+  },
+  {
+   "decision": "list",
+   "value": "Home",
+   "about": "my password reset",
+   "sentence": "Secret",
+   "memory": null
+  },
+  {
+   "decision": "folder",
+   "value": "Finance",
+   "about": "Q3 invoices from Acme",
+   "sentence": "acme invoices go in Finance",
+   "memory": {
+    "id": "id",
+    "text": "Acme invoices go in Finance",
+    "kind": "choice",
+    "keys": [
+     "q3",
+     "invoice",
+     "acme",
+     "go",
+     "finance"
+    ],
+    "choice": {
+     "decision": "folder",
+     "value": "Finance"
+    },
+    "source": "learned",
+    "evidence": 1,
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "lastUsedAt": null,
+    "uses": 0
+   }
+  }
+ ],
+ "notes": [
+  {
+   "recalled": [],
+   "note": null
+  },
+  {
+   "recalled": [
+    {
+     "memory": {
+      "id": "m6",
+      "text": "Priya prefers email over calls",
+      "kind": "fact",
+      "keys": [
+       "priya",
+       "prefer",
+       "email",
+       "over",
+       "call"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 5
+     },
+     "why": "shares \"priya\", \"email\""
+    },
+    {
+     "memory": {
+      "id": "m5",
+      "text": "Invoices live in Documents/Finance",
+      "kind": "fact",
+      "keys": [
+       "invoice",
+       "live",
+       "document",
+       "finance"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 1
+     },
+     "why": "shares \"invoice\""
+    },
+    {
+     "memory": {
+      "id": "m1",
+      "text": "My manager is Priya",
+      "kind": "fact",
+      "keys": [
+       "manager",
+       "priya"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "shares \"priya\""
+    }
+   ],
+   "note": "Things you know about the user, chosen because they look relevant to this request:\n<memory>\n- [m6] Priya prefers email over calls\n- [m5] Invoices live in Documents/Finance\n- [m1] My manager is Priya\n</memory>\nUse them where they genuinely help, as defaults the user can overrule. If one does not matter to this request, ignore it and do not mention it. When you rely on one, list its id in finish's usedMemories."
+  },
+  {
+   "recalled": [
+    {
+     "memory": {
+      "id": "m1",
+      "text": "My manager is Priya",
+      "kind": "fact",
+      "keys": [
+       "manager",
+       "priya"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0
+     },
+     "why": "x"
+    },
+    {
+     "memory": {
+      "id": "m2",
+      "text": "I prefer 24-hour time",
+      "kind": "preference",
+      "keys": [
+       "prefer",
+       "24-hour",
+       "time"
+      ],
+      "source": "told",
+      "evidence": 1,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 3
+     },
+     "why": "x"
+    },
+    {
+     "memory": {
+      "id": "m3",
+      "text": "Standup goes on the Work calendar",
+      "kind": "choice",
+      "keys": [
+       "standup"
+      ],
+      "source": "learned",
+      "evidence": 2,
+      "createdAt": 1789999995000,
+      "updatedAt": 1789999995000,
+      "lastUsedAt": null,
+      "uses": 0,
+      "choice": {
+       "decision": "calendar",
+       "value": "Work"
+      }
+     },
+     "why": "x"
+    }
+   ],
+   "note": "Things you know about the user, chosen because they look relevant to this request:\n<memory>\n- [m1] My manager is Priya\n- [m2] I prefer 24-hour time\n- [m3] Standup goes on the Work calendar\n</memory>\nUse them where they genuinely help, as defaults the user can overrule. If one does not matter to this request, ignore it and do not mention it. When you rely on one, list its id in finish's usedMemories."
+  }
+ ]
+}

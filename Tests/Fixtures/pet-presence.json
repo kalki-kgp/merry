@@ -1,0 +1,3014 @@
+{
+ "start": 1750000000000,
+ "scenarios": [
+  {
+   "name": "desktop never hides by itself",
+   "mode": "desktop",
+   "visible": false,
+   "steps": [
+    [
+     "update"
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     10000
+    ],
+    [
+     "state",
+     "idle"
+    ],
+    [
+     "wait",
+     60000
+    ],
+    [
+     "sample",
+     10,
+     10
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "state",
+     "idle"
+    ],
+    [
+     "reveal"
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     100
+    ],
+    [
+     "reveal"
+    ],
+    [
+     "wait",
+     400
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    }
+   ]
+  },
+  {
+   "name": "menu bar only never shows",
+   "mode": "menubar",
+   "visible": false,
+   "steps": [
+    [
+     "update"
+    ],
+    [
+     "state",
+     "thinking"
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "state",
+     "waiting"
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "attention",
+     true
+    ],
+    [
+     "showFor",
+     5000
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "held",
+     true
+    ],
+    [
+     "dwell",
+     1439,
+     800,
+     600
+    ],
+    [
+     "wait",
+     7000
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "menu bar hides a pet left showing",
+   "mode": "menubar",
+   "visible": true,
+   "steps": [
+    [
+     "update"
+    ],
+    [
+     "wait",
+     259
+    ],
+    [
+     "wait",
+     1
+    ],
+    [
+     "wait",
+     100
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: hidden when idle, out while working, lingers six seconds",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "update"
+    ],
+    [
+     "state",
+     "idle"
+    ],
+    [
+     "state",
+     "thinking"
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "wait",
+     30000
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     5900
+    ],
+    [
+     "wait",
+     99
+    ],
+    [
+     "wait",
+     1
+    ],
+    [
+     "wait",
+     20
+    ],
+    [
+     "wait",
+     259
+    ],
+    [
+     "wait",
+     1
+    ],
+    [
+     "wait",
+     5000
+    ],
+    [
+     "state",
+     "idle"
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: waiting keeps it, failing lingers, cancelling lingers",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "state",
+     "waiting"
+    ],
+    [
+     "wait",
+     60000
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "state",
+     "failed"
+    ],
+    [
+     "wait",
+     6020
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "state",
+     "idle"
+    ],
+    [
+     "wait",
+     3000
+    ],
+    [
+     "state",
+     "listening"
+    ],
+    [
+     "wait",
+     3020
+    ],
+    [
+     "wait",
+     260
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: a new task during the exit keeps it",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "state",
+     "working"
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     6020
+    ],
+    [
+     "wait",
+     100
+    ],
+    [
+     "state",
+     "thinking"
+    ],
+    [
+     "wait",
+     400
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     6020
+    ],
+    [
+     "wait",
+     260
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: a timer and a due reminder",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "brain",
+     {
+      "items": [],
+      "timer": null
+     }
+    ],
+    [
+     "brain",
+     {
+      "items": [
+       {
+        "kind": "reminder",
+        "title": "Reminder a",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000005000,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "a",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       }
+      ],
+      "timer": null
+     }
+    ],
+    [
+     "wait",
+     6000
+    ],
+    [
+     "brain",
+     {
+      "items": [
+       {
+        "kind": "reminder",
+        "title": "Reminder a",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000005000,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "a",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       }
+      ],
+      "timer": null
+     }
+    ],
+    [
+     "brain",
+     {
+      "items": [
+       {
+        "kind": "reminder",
+        "title": "Reminder a",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000005000,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "a",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       }
+      ],
+      "timer": null
+     }
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "brain",
+     {
+      "items": [
+       {
+        "kind": "reminder",
+        "title": "Reminder a",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000005000,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "a",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       }
+      ],
+      "timer": null
+     }
+    ],
+    [
+     "brain",
+     {
+      "items": [
+       {
+        "kind": "reminder",
+        "title": "Reminder a",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000005000,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "a",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       },
+       {
+        "kind": "reminder",
+        "title": "Reminder b",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000000100,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "b",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       }
+      ],
+      "timer": null
+     }
+    ],
+    [
+     "brain",
+     {
+      "items": [
+       {
+        "kind": "reminder",
+        "title": "Reminder a",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000005000,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "a",
+        "status": "open",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": 1750000007000,
+        "checks": []
+       },
+       {
+        "kind": "reminder",
+        "title": "Reminder b",
+        "body": "",
+        "projectId": null,
+        "dueAt": 1750000000100,
+        "repeat": "none",
+        "estimateMinutes": null,
+        "sources": [],
+        "id": "b",
+        "status": "done",
+        "createdAt": 1749999940000,
+        "updatedAt": 1749999940000,
+        "notifiedAt": null,
+        "acknowledgedAt": null,
+        "checks": []
+       }
+      ],
+      "timer": null
+     }
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "brain",
+     {
+      "items": [],
+      "timer": {
+       "id": "t1",
+       "label": "Focus",
+       "durationMs": 1500000,
+       "remainingMs": 1500000,
+       "endsAt": 1750001500000,
+       "status": "running",
+       "notifiedAt": null
+      }
+     }
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "brain",
+     {
+      "items": [],
+      "timer": {
+       "id": "t1",
+       "label": "Focus",
+       "durationMs": 1500000,
+       "remainingMs": 1500000,
+       "endsAt": null,
+       "status": "paused",
+       "notifiedAt": null
+      }
+     }
+    ],
+    [
+     "brain",
+     {
+      "items": [],
+      "timer": {
+       "id": "t1",
+       "label": "Focus",
+       "durationMs": 1500000,
+       "remainingMs": 1500000,
+       "endsAt": null,
+       "status": "ringing",
+       "notifiedAt": null
+      }
+     }
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "brain",
+     {
+      "items": [],
+      "timer": {
+       "id": "t2",
+       "label": "Focus",
+       "durationMs": 1500000,
+       "remainingMs": 1500000,
+       "endsAt": 1750001500000,
+       "status": "running",
+       "notifiedAt": null
+      }
+     }
+    ],
+    [
+     "brain",
+     {
+      "items": [],
+      "timer": null
+     }
+    ],
+    [
+     "wait",
+     300
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: attention",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "attention",
+     true
+    ],
+    [
+     "attention",
+     true
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "attention",
+     true
+    ],
+    [
+     "attention",
+     true,
+     true
+    ],
+    [
+     "attention",
+     false
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "attention",
+     false
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: resting at the lower right edge calls it",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "wait",
+     240
+    ],
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "wait",
+     10
+    ],
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "wait",
+     30
+    ],
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "sample",
+     1300,
+     760
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "sample",
+     1300,
+     760
+    ],
+    [
+     "wait",
+     5000
+    ],
+    [
+     "sample",
+     1300,
+     760
+    ],
+    [
+     "sample",
+     600,
+     300
+    ],
+    [
+     "wait",
+     600
+    ],
+    [
+     "sample",
+     600,
+     300
+    ],
+    [
+     "wait",
+     599
+    ],
+    [
+     "sample",
+     600,
+     300
+    ],
+    [
+     "wait",
+     1
+    ],
+    [
+     "sample",
+     600,
+     300
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "sample",
+     600,
+     300
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false",
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: a pointer passing by does not call it",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "wait",
+     120
+    ],
+    [
+     "sample",
+     1300,
+     800
+    ],
+    [
+     "wait",
+     30
+    ],
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "wait",
+     240
+    ],
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "wait",
+     30
+    ],
+    [
+     "sample",
+     900,
+     500
+    ],
+    [
+     "wait",
+     2000
+    ],
+    [
+     "sample",
+     900,
+     500
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: the top of the edge and the corner do not call it",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "dwell",
+     1439,
+     100,
+     900
+    ],
+    [
+     "dwell",
+     1439,
+     639,
+     900
+    ],
+    [
+     "dwell",
+     1439,
+     893,
+     900
+    ],
+    [
+     "dwell",
+     1439,
+     899,
+     900
+    ],
+    [
+     "dwell",
+     1436,
+     800,
+     900
+    ],
+    [
+     "dwell",
+     1439,
+     640,
+     300
+    ],
+    [
+     "wait",
+     1500
+    ],
+    [
+     "sample",
+     10,
+     10
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "dwell",
+     1437,
+     892,
+     300
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false",
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    }
+   ]
+  },
+  {
+   "name": "peek: called, it goes without the timer too",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "dwell",
+     1439,
+     700,
+     300
+    ],
+    [
+     "wait",
+     1219
+    ],
+    [
+     "wait",
+     1
+    ],
+    [
+     "wait",
+     259
+    ],
+    [
+     "wait",
+     1
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: held keeps it",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "dwell",
+     1439,
+     700,
+     300
+    ],
+    [
+     "held",
+     true
+    ],
+    [
+     "sample",
+     200,
+     200
+    ],
+    [
+     "wait",
+     3000
+    ],
+    [
+     "sample",
+     300,
+     200
+    ],
+    [
+     "wait",
+     5000
+    ],
+    [
+     "held",
+     false
+    ],
+    [
+     "update"
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "dwell",
+     1439,
+     700,
+     300
+    ],
+    [
+     "sample",
+     200,
+     200
+    ],
+    [
+     "held",
+     true
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "sample",
+     200,
+     200
+    ],
+    [
+     "held",
+     false
+    ],
+    [
+     "wait",
+     1199
+    ],
+    [
+     "sample",
+     200,
+     200
+    ],
+    [
+     "wait",
+     1
+    ],
+    [
+     "sample",
+     200,
+     200
+    ],
+    [
+     "wait",
+     300
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: near the pet counts as on it",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "dwell",
+     1439,
+     700,
+     300
+    ],
+    [
+     "sample",
+     1100,
+     630
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "sample",
+     1099,
+     630
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "sample",
+     1440,
+     900
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "sample",
+     1400,
+     901
+    ],
+    [
+     "wait",
+     220
+    ],
+    [
+     "sample",
+     1400,
+     901
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "win",
+     200,
+     200
+    ],
+    [
+     "dwell",
+     1439,
+     700,
+     300
+    ],
+    [
+     "sample",
+     300,
+     300
+    ],
+    [
+     "wait",
+     1100
+    ],
+    [
+     "sample",
+     300,
+     300
+    ],
+    [
+     "wait",
+     1100
+    ],
+    [
+     "sample",
+     900,
+     300
+    ],
+    [
+     "wait",
+     1220
+    ],
+    [
+     "wait",
+     260
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false",
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false",
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "peek: dismissed ignores the edge until needed",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "dwell",
+     1439,
+     700,
+     300
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "dwell",
+     1439,
+     700,
+     900
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "state",
+     "thinking"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     300
+    ],
+    [
+     "showFor",
+     5000
+    ],
+    [
+     "wait",
+     4999
+    ],
+    [
+     "wait",
+     21
+    ],
+    [
+     "wait",
+     260
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    }
+   ]
+  },
+  {
+   "name": "peek: the second display has an edge too",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "dwell",
+     3359,
+     1000,
+     300
+    ],
+    [
+     "wait",
+     1220
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "dwell",
+     3359,
+     700,
+     300
+    ],
+    [
+     "dwell",
+     1500,
+     1000,
+     300
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "ondemand: with the open prompt",
+   "mode": "ondemand",
+   "visible": false,
+   "steps": [
+    [
+     "update"
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "wait",
+     60000
+    ],
+    [
+     "panel",
+     false
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "dwell",
+     1439,
+     800,
+     600
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "hide"
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "panel",
+     false
+    ],
+    [
+     "wait",
+     100
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "wait",
+     300
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    }
+   ]
+  },
+  {
+   "name": "ondemand: closing the prompt dismisses a result or a call",
+   "mode": "ondemand",
+   "visible": false,
+   "steps": [
+    [
+     "state",
+     "working"
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     2000
+    ],
+    [
+     "panel",
+     false
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "showFor",
+     5000
+    ],
+    [
+     "wait",
+     1000
+    ],
+    [
+     "panel",
+     false
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "showFor",
+     5000
+    ],
+    [
+     "wait",
+     5020
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "panel",
+     false
+    ],
+    [
+     "state",
+     "finished"
+    ],
+    [
+     "wait",
+     6020
+    ],
+    [
+     "wait",
+     260
+    ]
+   ],
+   "trace": [
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    }
+   ]
+  },
+  {
+   "name": "changing where it lives",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "update"
+    ],
+    [
+     "mode",
+     "desktop"
+    ],
+    [
+     "update"
+    ],
+    [
+     "mode",
+     "menubar"
+    ],
+    [
+     "update"
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "mode",
+     "ondemand"
+    ],
+    [
+     "panel",
+     true
+    ],
+    [
+     "mode",
+     "peek"
+    ],
+    [
+     "update"
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "mode",
+     "menubar"
+    ],
+    [
+     "update"
+    ],
+    [
+     "wait",
+     260
+    ],
+    [
+     "mode",
+     "peek"
+    ],
+    [
+     "update"
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": true
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "presence:false"
+     ],
+     "visible": true,
+     "wanted": false
+    },
+    {
+     "events": [
+      "hide"
+     ],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": true
+    },
+    {
+     "events": [
+      "show",
+      "presence:true"
+     ],
+     "visible": true,
+     "wanted": true
+    }
+   ]
+  },
+  {
+   "name": "no window",
+   "mode": "peek",
+   "visible": false,
+   "steps": [
+    [
+     "nowin"
+    ],
+    [
+     "state",
+     "working"
+    ],
+    [
+     "sample",
+     1439,
+     800
+    ],
+    [
+     "showFor",
+     1000
+    ],
+    [
+     "wait",
+     2000
+    ]
+   ],
+   "trace": [
+    {
+     "events": [],
+     "visible": false,
+     "wanted": false
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": true
+    },
+    {
+     "events": [],
+     "visible": false,
+     "wanted": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,580 @@
+{
+ "scripts": [
+  {
+   "name": "calendars",
+   "body": "\n    const Cal = Application('Calendar')\n    const cals = Cal.calendars\n    const names = cals.name(), writable = cals.writable()\n    return names.map((name, i) => ({ name, writable: writable[i] }))"
+  },
+  {
+   "name": "events",
+   "body": "\n    const Cal = Application('Calendar')\n    const from = new Date(input.from), to = new Date(input.to), out = []\n    for (const c of Cal.calendars()) {\n      const name = c.name()\n      if (input.calendars && input.calendars.length && !input.calendars.includes(name)) continue\n      // One Apple event per property for the whole set, not one per event.\n      const q = c.events.whose({ _and: [{ startDate: { _lessThan: to } }, { endDate: { _greaterThan: from } }] })\n      const ids = q.uid()\n      if (!ids.length) continue\n      const titles = q.summary(), starts = q.startDate(), ends = q.endDate(), allDay = q.alldayEvent(), where = q.location()\n      ids.forEach((id, i) => out.push({ id, title: titles[i], start: starts[i].toISOString(), end: ends[i].toISOString(),\n        allDay: allDay[i], location: where[i] || '', calendar: name }))\n    }\n    out.sort((a, b) => a.start.localeCompare(b.start))\n    return out.slice(0, input.limit || 60)"
+  },
+  {
+   "name": "createEvent",
+   "body": "\n    const Cal = Application('Calendar')\n    let cal = null\n    if (input.calendar) {\n      cal = Cal.calendars().find((c) => c.name() === input.calendar)\n      if (!cal) throw new Error('There is no calendar called ' + input.calendar)\n    } else {\n      cal = Cal.calendars().find((c) => c.writable())\n      if (!cal) throw new Error('There is no calendar Merry can add to')\n    }\n    const ev = Cal.Event({ summary: input.title, startDate: new Date(input.start), endDate: new Date(input.end),\n      alldayEvent: !!input.allDay, location: input.location || '', description: input.notes || '' })\n    cal.events.push(ev)\n    return { id: ev.uid(), calendar: cal.name() }"
+  },
+  {
+   "name": "eventExists",
+   "body": "\n    const Cal = Application('Calendar')\n    for (const c of Cal.calendars()) {\n      const hit = c.events.whose({ uid: input.id })()\n      if (hit.length) return { found: true, title: hit[0].summary(), start: hit[0].startDate().toISOString(), calendar: c.name() }\n    }\n    return { found: false }"
+  },
+  {
+   "name": "deleteEvent",
+   "body": "\n    const Cal = Application('Calendar')\n    for (const c of Cal.calendars()) {\n      const hit = c.events.whose({ uid: input.id })()\n      if (hit.length) { Cal.delete(hit[0]); return { deleted: true } }\n    }\n    return { deleted: false }"
+  },
+  {
+   "name": "reminderLists",
+   "body": "return Application('Reminders').lists.name()"
+  },
+  {
+   "name": "reminders",
+   "body": "\n    const R = Application('Reminders')\n    const lists = input.list ? R.lists().filter((l) => l.name() === input.list) : R.lists()\n    const out = []\n    for (const l of lists) {\n      const q = l.reminders.whose({ completed: false })\n      const ids = q.id()\n      if (!ids.length) continue\n      const names = q.name(), dues = q.dueDate(), listName = l.name()\n      ids.forEach((id, i) => out.push({ id, title: names[i], due: dues[i] ? dues[i].toISOString() : null, list: listName }))\n    }\n    return out.slice(0, input.limit || 100)"
+  },
+  {
+   "name": "createReminder",
+   "body": "\n    const R = Application('Reminders')\n    let list = R.defaultList()\n    if (input.list) {\n      list = R.lists().find((l) => l.name() === input.list)\n      if (!list) throw new Error('There is no Reminders list called ' + input.list)\n    }\n    const props = { name: input.title }\n    if (input.due) props.dueDate = new Date(input.due)\n    if (input.notes) props.body = input.notes\n    const r = R.Reminder(props)\n    list.reminders.push(r)\n    return { id: r.id(), list: list.name() }"
+  },
+  {
+   "name": "reminderExists",
+   "body": "\n    const R = Application('Reminders')\n    try { const r = R.reminders.byId(input.id); return { found: true, title: r.name(), completed: r.completed() } }\n    catch (e) { return { found: false } }"
+  },
+  {
+   "name": "deleteReminder",
+   "body": "\n    const R = Application('Reminders')\n    try { R.delete(R.reminders.byId(input.id)); return { deleted: true } } catch (e) { return { deleted: false } }"
+  },
+  {
+   "name": "completeReminder",
+   "body": "\n    const R = Application('Reminders')\n    const r = R.reminders.byId(input.id)\n    r.completed = input.completed !== false\n    return { completed: r.completed() }"
+  },
+  {
+   "name": "createNote",
+   "body": "\n    const N = Application('Notes')\n    let folder = N.defaultAccount().defaultFolder()\n    if (input.folder) {\n      folder = N.folders().find((f) => f.name() === input.folder)\n      if (!folder) throw new Error('There is no Notes folder called ' + input.folder)\n    }\n    const n = N.Note({ body: input.html })\n    folder.notes.push(n)\n    return { id: n.id(), name: n.name(), folder: folder.name() }"
+  },
+  {
+   "name": "searchNotes",
+   "body": "\n    const N = Application('Notes')\n    const q = N.notes.whose({ _or: [{ name: { _contains: input.query } }, { plaintext: { _contains: input.query } }] })\n    const ids = q.id()\n    const names = q.name(), mods = q.modificationDate()\n    return ids.map((id, i) => ({ id, title: names[i], modified: mods[i].toISOString() }))\n      .sort((a, b) => b.modified.localeCompare(a.modified)).slice(0, input.limit || 10)"
+  },
+  {
+   "name": "readNote",
+   "body": "\n    const n = Application('Notes').notes.byId(input.id)\n    return { title: n.name(), text: n.plaintext().slice(0, input.maxChars || 20000) }"
+  },
+  {
+   "name": "noteExists",
+   "body": "\n    try { const n = Application('Notes').notes.byId(input.id); return { found: true, title: n.name() } } catch (e) { return { found: false } }"
+  },
+  {
+   "name": "deleteNote",
+   "body": "\n    const N = Application('Notes')\n    try { N.delete(N.notes.byId(input.id)); return { deleted: true } } catch (e) { return { deleted: false } }"
+  },
+  {
+   "name": "mailDraft",
+   "body": "\n    const M = Application('Mail')\n    const msg = M.OutgoingMessage({ subject: input.subject, content: input.body, visible: true })\n    M.outgoingMessages.push(msg)\n    for (const address of input.to || []) msg.toRecipients.push(M.Recipient({ address }))\n    for (const address of input.cc || []) msg.ccRecipients.push(M.CcRecipient({ address }))\n    M.activate()\n    return { opened: true }"
+  },
+  {
+   "name": "runningApps",
+   "body": "\n    const se = Application('System Events')\n    const q = se.processes.whose({ backgroundOnly: false })\n    return q.name()"
+  },
+  {
+   "name": "browserTabs",
+   "body": "\n    const se = Application('System Events')\n    const running = se.processes.whose({ backgroundOnly: false }).name()\n    const out = []\n    for (const name of ['Google Chrome', 'Arc', 'Brave Browser', 'Microsoft Edge', 'Chromium']) {\n      if (!running.includes(name)) continue\n      try {\n        Application(name).windows().forEach((w, wi) => {\n          const active = w.activeTab().id()\n          w.tabs().forEach((t) => {\n            const isActive = t.id() === active\n            if (!input.activeOnly || (isActive && wi === 0)) out.push({ browser: name, title: t.title(), url: t.url(), active: isActive && wi === 0 })\n          })\n        })\n      } catch (e) {}\n    }\n    if (running.includes('Safari')) {\n      try {\n        Application('Safari').windows().forEach((w, wi) => {\n          const current = w.currentTab().index()\n          w.tabs().forEach((t) => {\n            const isActive = t.index() === current\n            if (!input.activeOnly || (isActive && wi === 0)) out.push({ browser: 'Safari', title: t.name(), url: t.url(), active: isActive && wi === 0 })\n          })\n        })\n      } catch (e) {}\n    }\n    return out.slice(0, 200)"
+  },
+  {
+   "name": "readTab",
+   "body": "\n    const se = Application('System Events')\n    const running = se.processes.whose({ backgroundOnly: false }).name()\n    const js = \"(function(){var m=document.querySelector('article')||document.querySelector('main,[role=main]')||document.body;\" +\n      \"return JSON.stringify({title:document.title,url:location.href,selection:String(window.getSelection()||'').slice(0,8000),\" +\n      \"text:((m&&m.innerText)||'').replace(/\\n{3,}/g,'\\n\\n').slice(0,40000)})})()\"\n    const browsers = ['Google Chrome', 'Arc', 'Brave Browser', 'Microsoft Edge', 'Chromium', 'Safari']\n    const order = input.prefer && browsers.includes(input.prefer) ? [input.prefer, ...browsers.filter((b) => b !== input.prefer)] : browsers\n    for (const name of order) {\n      if (!running.includes(name)) continue\n      let raw\n      if (name === 'Safari') {\n        const s = Application('Safari')\n        if (!s.documents.length) continue\n        raw = s.doJavaScript(js, { in: s.documents[0] })\n      } else {\n        const app = Application(name)\n        if (!app.windows.length) continue\n        raw = app.windows[0].activeTab().execute({ javascript: js })\n      }\n      const page = JSON.parse(raw)\n      return { browser: name, title: page.title, url: page.url, selection: page.selection, text: page.text }\n    }\n    return null"
+  },
+  {
+   "name": "pageRun",
+   "body": "\n    const se = Application('System Events')\n    const running = se.processes.whose({ backgroundOnly: false }).name()\n    const browsers = ['Google Chrome', 'Brave Browser', 'Microsoft Edge', 'Chromium', 'Arc', 'Safari']\n    const name = input.browser && running.includes(input.browser) ? input.browser : browsers.find((b) => running.includes(b))\n    if (!name) throw new Error('No supported browser is running.')\n    const code = '(' + input.program + ')(' + input.arg + ')'\n    let raw\n    if (name === 'Safari') {\n      const s = Application('Safari')\n      raw = s.doJavaScript(code, { in: s.windows[0].currentTab() })\n    } else {\n      raw = Application(name).windows[0].activeTab().execute({ javascript: code })\n    }\n    return { browser: name, result: raw === undefined || raw === null || raw === '' ? null : JSON.parse(raw) }"
+  },
+  {
+   "name": "newTab",
+   "body": "\n    const name = input.browser\n    const app = Application(name)\n    app.activate()\n    if (name === 'Safari') {\n      if (!app.windows.length) app.Document().make()\n      const w = app.windows[0]\n      const t = app.Tab({ url: input.url })\n      w.tabs.push(t)\n      w.currentTab = t\n      return { browser: name }\n    }\n    if (!app.windows.length) {\n      app.Window().make()\n      app.windows[0].activeTab().url = input.url\n      return { browser: name }\n    }\n    const w = app.windows[0]\n    w.tabs.push(app.Tab({ url: input.url }))\n    w.activeTabIndex = w.tabs.length\n    return { browser: name }"
+  },
+  {
+   "name": "selection",
+   "body": "\n    const se = Application('System Events')\n    try {\n      const p = se.processes.byName(input.app)\n      const el = p.attributes.byName('AXFocusedUIElement').value()\n      const text = el.attributes.byName('AXSelectedText').value()\n      return typeof text === 'string' ? text.slice(0, 20000) : null\n    } catch (e) { return null }"
+  },
+  {
+   "name": "finderSelection",
+   "body": "\n    const se = Application('System Events')\n    if (!se.processes.name().includes('Finder')) return []\n    return Application('Finder').selection().map((i) => decodeURI(i.url()).replace(/^file:\\/\\//, '').replace(/\\/$/, ''))"
+  },
+  {
+   "name": "appearance",
+   "body": "\n    const se = Application('System Events')\n    const previous = se.appearancePreferences.darkMode()\n    if (typeof input.dark === 'boolean') se.appearancePreferences.darkMode = input.dark\n    return { previous, now: se.appearancePreferences.darkMode() }"
+  },
+  {
+   "name": "volume",
+   "body": "\n    const app = Application.currentApplication()\n    app.includeStandardAdditions = true\n    const before = app.getVolumeSettings()\n    if (typeof input.volume === 'number') app.setVolume(null, { outputVolume: Math.max(0, Math.min(100, Math.round(input.volume))) })\n    if (typeof input.muted === 'boolean') app.setVolume(null, { outputMuted: input.muted })\n    const after = app.getVolumeSettings()\n    return { previousVolume: before.outputVolume, previousMuted: before.outputMuted, volume: after.outputVolume, muted: after.outputMuted }"
+  },
+  {
+   "name": "quitApp",
+   "body": "\n    const a = Application(input.app)\n    if (!a.running()) return { quit: false, reason: 'not running' }\n    a.quit()\n    return { quit: true }"
+  }
+ ],
+ "pagePrograms": {
+  "LOOK": "function (arg) {\n  document.querySelectorAll('[data-merry-ref]').forEach(function (e) { e.removeAttribute('data-merry-ref') })\n  var sel = 'a[href],button,input:not([type=hidden]),textarea,select,[role=button],[role=link],[role=tab],[role=menuitem],[contenteditable=true]'\n  var vh = innerHeight, out = [], seen = {}, n = 0\n  var all = document.querySelectorAll(sel)\n  for (var i = 0; i < all.length; i++) {\n    var el = all[i], r = el.getBoundingClientRect()\n    if (r.width < 4 || r.height < 4 || r.bottom < -vh * 0.2 || r.top > vh * 2) continue\n    var st = getComputedStyle(el)\n    if (st.visibility === 'hidden' || st.display === 'none' || Number(st.opacity) === 0) continue\n    var label = (el.getAttribute('aria-label') || el.getAttribute('title') || el.innerText || el.getAttribute('alt') || el.getAttribute('placeholder') || el.value || '').replace(/\\s+/g, ' ').trim().slice(0, 160)\n    var href = el.href ? String(el.href).slice(0, 300) : ''\n    if (!label && !href) continue\n    if (href && seen[href]) { if (label.length > seen[href].label.length) seen[href].label = label; continue }\n    var ref = 'k' + (++n)\n    el.setAttribute('data-merry-ref', ref)\n    var item = { ref: ref, tag: el.tagName.toLowerCase(), label: label, inView: r.top >= 0 && r.bottom <= vh }\n    if (href) { item.href = href; seen[href] = item }\n    if (el.type) item.type = el.type\n    out.push(item)\n    if (out.length >= 90) break\n  }\n  var main = document.querySelector('article') || document.querySelector('main,[role=main]') || document.body\n  return JSON.stringify({ title: document.title, url: location.href, scrolled: Math.round(scrollY), pageHeight: document.documentElement.scrollHeight, viewport: vh,\n    excerpt: ((main && main.innerText) || '').replace(/\\s+/g, ' ').slice(0, 1500), items: out })\n}",
+  "STATUS": "function () { return JSON.stringify({ ready: document.readyState, url: location.href, title: document.title }) }",
+  "TOUCH": "function (arg) {\n  var el = document.querySelector('[data-merry-ref=\"' + arg.ref + '\"]')\n  if (!el) return JSON.stringify({ ok: false, reason: 'stale' })\n  var form = el.closest('form')\n  var info = { ok: true, tag: el.tagName.toLowerCase(), type: el.type || null, href: el.href || null,\n    label: (el.getAttribute('aria-label') || el.innerText || el.value || el.title || '').replace(/\\s+/g, ' ').trim().slice(0, 160),\n    isPassword: el.type === 'password', signInForm: !!(form && form.querySelector('input[type=password]')), host: location.host }\n  if (arg.dry) return JSON.stringify(info)\n  el.scrollIntoView({ block: 'center' })\n  if (el.focus) el.focus()\n  el.click()\n  return JSON.stringify(info)\n}",
+  "TYPE": "function (arg) {\n  var el = document.querySelector('[data-merry-ref=\"' + arg.ref + '\"]')\n  if (!el) return JSON.stringify({ ok: false, reason: 'stale' })\n  var form = el.closest('form')\n  if (el.type === 'password' || (form && form.querySelector('input[type=password]'))) return JSON.stringify({ ok: false, reason: 'sign-in' })\n  el.scrollIntoView({ block: 'center' })\n  el.focus()\n  if (el.isContentEditable) { document.execCommand('selectAll', false); document.execCommand('insertText', false, arg.text) }\n  else {\n    var proto = el.tagName === 'TEXTAREA' ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype\n    Object.getOwnPropertyDescriptor(proto, 'value').set.call(el, arg.text)\n    el.dispatchEvent(new Event('input', { bubbles: true }))\n    el.dispatchEvent(new Event('change', { bubbles: true }))\n  }\n  if (arg.submit) {\n    if (form && form.requestSubmit) form.requestSubmit()\n    else ['keydown', 'keypress', 'keyup'].forEach(function (t) { el.dispatchEvent(new KeyboardEvent(t, { key: 'Enter', code: 'Enter', keyCode: 13, which: 13, bubbles: true })) })\n  }\n  return JSON.stringify({ ok: true })\n}",
+  "SCROLL": "function (arg) {\n  window.scrollBy({ top: arg.dir * innerHeight * 0.85, behavior: 'instant' })\n  return JSON.stringify({ scrolled: Math.round(scrollY), pageHeight: document.documentElement.scrollHeight, viewport: innerHeight })\n}",
+  "MEDIA": "function (arg) {\n  var vs = Array.prototype.filter.call(document.querySelectorAll('video'), function (v) { return v.getBoundingClientRect().width > 100 })\n  var v = vs[0]\n  if (!v) return JSON.stringify({ found: false })\n  if (arg.action === 'play' && v.paused) {\n    var p = v.play(); if (p && p.catch) p.catch(function () {})\n    if (arg.pressButton) {\n      var b = document.querySelector('button[aria-label^=\"Play\" i],[title^=\"Play\" i],.ytp-play-button')\n      if (b && v.paused) b.click()\n    }\n  }\n  if (arg.action === 'pause' && !v.paused) v.pause()\n  return JSON.stringify({ found: true, paused: v.paused, time: Math.round(v.currentTime), duration: Math.round(v.duration || 0), muted: v.muted, title: document.title })\n}"
+ },
+ "notes": [
+  {
+   "title": "Shopping",
+   "body": "milk\neggs\n\nbread",
+   "html": "<div><h1>Shopping</h1></div><div>milk<br>eggs</div><div><br></div><div>bread</div>"
+  },
+  {
+   "title": "A & B <tag>",
+   "body": "x < y && y > z",
+   "html": "<div><h1>A &amp; B &lt;tag&gt;</h1></div><div>x &lt; y &amp;&amp; y &gt; z</div>"
+  },
+  {
+   "title": "",
+   "body": "",
+   "html": "<div><h1></h1></div><div></div>"
+  },
+  {
+   "title": "Title",
+   "body": "one\n\n\n\ntwo\n\nthree\nfour",
+   "html": "<div><h1>Title</h1></div><div>one</div><div><br></div><div>two</div><div><br></div><div>three<br>four</div>"
+  },
+  {
+   "title": "T",
+   "body": "\n\nleading",
+   "html": "<div><h1>T</h1></div><div></div><div><br></div><div>leading</div>"
+  },
+  {
+   "title": "T",
+   "body": "trailing\n\n",
+   "html": "<div><h1>T</h1></div><div>trailing</div><div><br></div><div></div>"
+  },
+  {
+   "title": "T",
+   "body": "single line",
+   "html": "<div><h1>T</h1></div><div>single line</div>"
+  },
+  {
+   "title": "Emoji 😀",
+   "body": "café & \"quotes\" 'single'\n&amp; already",
+   "html": "<div><h1>Emoji 😀</h1></div><div>café &amp; \"quotes\" 'single'<br>&amp;amp; already</div>"
+  },
+  {
+   "title": "T",
+   "body": "a\r\n\r\nb",
+   "html": "<div><h1>T</h1></div><div>a\r<br>\r<br>b</div>"
+  },
+  {
+   "title": "<h1>x</h1>",
+   "body": "<div>\n</div>",
+   "html": "<div><h1>&lt;h1&gt;x&lt;/h1&gt;</h1></div><div>&lt;div&gt;<br>&lt;/div&gt;</div>"
+  }
+ ],
+ "labels": [
+  {
+   "label": "Send",
+   "consequential": true
+  },
+  {
+   "label": "send message",
+   "consequential": true
+  },
+  {
+   "label": "Resend",
+   "consequential": false
+  },
+  {
+   "label": "Sending",
+   "consequential": false
+  },
+  {
+   "label": "Post",
+   "consequential": true
+  },
+  {
+   "label": "Postpone",
+   "consequential": false
+  },
+  {
+   "label": "Reply all",
+   "consequential": true
+  },
+  {
+   "label": "Buy now",
+   "consequential": true
+  },
+  {
+   "label": "Buyer guide",
+   "consequential": false
+  },
+  {
+   "label": "Pay",
+   "consequential": true
+  },
+  {
+   "label": "Payment",
+   "consequential": false
+  },
+  {
+   "label": "Checkout",
+   "consequential": true
+  },
+  {
+   "label": "Check out",
+   "consequential": true
+  },
+  {
+   "label": "check  out",
+   "consequential": false
+  },
+  {
+   "label": "Place order",
+   "consequential": true
+  },
+  {
+   "label": "Subscribe",
+   "consequential": true
+  },
+  {
+   "label": "Unsubscribe",
+   "consequential": true
+  },
+  {
+   "label": "Subscribed",
+   "consequential": false
+  },
+  {
+   "label": "Follow",
+   "consequential": true
+  },
+  {
+   "label": "Following",
+   "consequential": false
+  },
+  {
+   "label": "Unfollow",
+   "consequential": true
+  },
+  {
+   "label": "Delete",
+   "consequential": true
+  },
+  {
+   "label": "Deleted items",
+   "consequential": false
+  },
+  {
+   "label": "Remove",
+   "consequential": true
+  },
+  {
+   "label": "Confirm",
+   "consequential": true
+  },
+  {
+   "label": "Transfer",
+   "consequential": true
+  },
+  {
+   "label": "Book now",
+   "consequential": true
+  },
+  {
+   "label": "Book",
+   "consequential": false
+  },
+  {
+   "label": "Reserve",
+   "consequential": true
+  },
+  {
+   "label": "Sign out",
+   "consequential": true
+  },
+  {
+   "label": "Sign in",
+   "consequential": false
+  },
+  {
+   "label": "Log out",
+   "consequential": true
+  },
+  {
+   "label": "Logout",
+   "consequential": true
+  },
+  {
+   "label": "log  out",
+   "consequential": false
+  },
+  {
+   "label": "Share",
+   "consequential": true
+  },
+  {
+   "label": "Shared with me",
+   "consequential": false
+  },
+  {
+   "label": "Donate",
+   "consequential": true
+  },
+  {
+   "label": "Report",
+   "consequential": true
+  },
+  {
+   "label": "Reporting",
+   "consequential": false
+  },
+  {
+   "label": "Block",
+   "consequential": true
+  },
+  {
+   "label": "Blockchain",
+   "consequential": false
+  },
+  {
+   "label": "Search",
+   "consequential": false
+  },
+  {
+   "label": "Next",
+   "consequential": false
+  },
+  {
+   "label": "Open article",
+   "consequential": false
+  },
+  {
+   "label": "Read more",
+   "consequential": false
+  },
+  {
+   "label": "",
+   "consequential": false
+  },
+  {
+   "label": "COMMENT",
+   "consequential": true
+  },
+  {
+   "label": "comments",
+   "consequential": false
+  },
+  {
+   "label": "Tweet",
+   "consequential": true
+  },
+  {
+   "label": "Publish",
+   "consequential": true
+  },
+  {
+   "label": "Purchase",
+   "consequential": true
+  },
+  {
+   "label": "Order",
+   "consequential": true
+  },
+  {
+   "label": "Reorder",
+   "consequential": false
+  },
+  {
+   "label": "order-history",
+   "consequential": true
+  },
+  {
+   "label": "pre_order",
+   "consequential": false
+  },
+  {
+   "label": "éSend",
+   "consequential": true
+  },
+  {
+   "label": "Sendé",
+   "consequential": true
+  },
+  {
+   "label": "send.",
+   "consequential": true
+  },
+  {
+   "label": "(share)",
+   "consequential": true
+  },
+  {
+   "label": "Home\nShare",
+   "consequential": true
+  },
+  {
+   "label": "unfollow42",
+   "consequential": false
+  },
+  {
+   "label": "Buy🙂",
+   "consequential": true
+  }
+ ],
+ "dates": [
+  {
+   "text": "2026-09-30T17:00:00",
+   "iso": "2026-09-30T11:30:00.000Z"
+  },
+  {
+   "text": "2026-09-30T17:00",
+   "iso": "2026-09-30T11:30:00.000Z"
+  },
+  {
+   "text": "2026-09-30T17:00:00Z",
+   "iso": "2026-09-30T17:00:00.000Z"
+  },
+  {
+   "text": "2026-09-30T17:00:00.250Z",
+   "iso": "2026-09-30T17:00:00.250Z"
+  },
+  {
+   "text": "2026-09-30T17:00:00+05:30",
+   "iso": "2026-09-30T11:30:00.000Z"
+  },
+  {
+   "text": "2026-09-30T17:00:00-08:00",
+   "iso": "2026-10-01T01:00:00.000Z"
+  },
+  {
+   "text": "2026-09-30",
+   "iso": "2026-09-30T00:00:00.000Z"
+  },
+  {
+   "text": "2026-09-30T17:00:00.5",
+   "iso": "2026-09-30T11:30:00.500Z"
+  },
+  {
+   "text": "2026-09-30T17:00Z",
+   "iso": "2026-09-30T17:00:00.000Z"
+  },
+  {
+   "text": "2026-09-30 17:00",
+   "iso": "2026-09-30T11:30:00.000Z"
+  },
+  {
+   "text": "2026-09-30 17:00:30",
+   "iso": "2026-09-30T11:30:30.000Z"
+  },
+  {
+   "text": "2026-12-31T23:59:59.999Z",
+   "iso": "2026-12-31T23:59:59.999Z"
+  },
+  {
+   "text": "2024-02-29T00:00:00",
+   "iso": "2024-02-28T18:30:00.000Z"
+  },
+  {
+   "text": "2026-01-01T00:00:00+0530",
+   "iso": "2025-12-31T18:30:00.000Z"
+  },
+  {
+   "text": "tomorrow",
+   "error": "from is not a valid date: \"tomorrow\""
+  },
+  {
+   "text": "",
+   "error": "from is not a valid date: \"\""
+  },
+  {
+   "text": "not a date",
+   "error": "from is not a valid date: \"not a date\""
+  },
+  {
+   "text": "2026-13-01T00:00:00",
+   "error": "from is not a valid date: \"2026-13-01T00:00:00\""
+  },
+  {
+   "text": "2026-09-30T25:00:00",
+   "error": "from is not a valid date: \"2026-09-30T25:00:00\""
+  },
+  {
+   "text": "17:00",
+   "error": "from is not a valid date: \"17:00\""
+  },
+  {
+   "text": "2026-09-31T10:00:00Z",
+   "iso": "2026-10-01T10:00:00.000Z"
+  },
+  {
+   "text": "2026-09-30T17:60:00",
+   "error": "from is not a valid date: \"2026-09-30T17:60:00\""
+  }
+ ],
+ "families": {
+  "calendar": [
+   "calendar_list_calendars",
+   "calendar_events",
+   "calendar_create_event"
+  ],
+  "reminders": [
+   "reminders_lists",
+   "reminders_list",
+   "reminders_create",
+   "reminders_complete"
+  ],
+  "notes": [
+   "notes_create",
+   "notes_search",
+   "notes_read"
+  ],
+  "mail": [
+   "mail_draft"
+  ],
+  "context": [
+   "context_now",
+   "browser_tabs",
+   "browser_read_page"
+  ],
+  "shortcuts": [
+   "shortcuts_list",
+   "shortcuts_run"
+  ],
+  "system": [
+   "system_appearance",
+   "system_volume",
+   "app_launch",
+   "app_quit",
+   "open_in_browser"
+  ]
+ },
+ "macTools": [
+  "calendar_list_calendars",
+  "calendar_events",
+  "calendar_create_event",
+  "reminders_lists",
+  "reminders_list",
+  "reminders_create",
+  "reminders_complete",
+  "notes_create",
+  "notes_search",
+  "notes_read",
+  "mail_draft",
+  "context_now",
+  "browser_tabs",
+  "browser_read_page",
+  "open_in_browser",
+  "shortcuts_list",
+  "shortcuts_run",
+  "system_appearance",
+  "system_volume",
+  "app_launch",
+  "app_quit"
+ ],
+ "yourBrowserTools": [
+  "your_browser_open",
+  "your_browser_look",
+  "your_browser_click",
+  "your_browser_type",
+  "your_browser_scroll",
+  "your_browser_media"
+ ]
+}

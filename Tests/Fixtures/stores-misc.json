@@ -1,0 +1,1418 @@
+{
+ "settings": [
+  {
+   "raw": null,
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "not json",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"onboarded\":true",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "null",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "5",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "\"text\"",
+   "settings": {
+    "0": "t",
+    "1": "e",
+    "2": "x",
+    "3": "t",
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "[]",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "[1,2]",
+   "settings": {
+    "0": 1,
+    "1": 2,
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "true",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"onboarded\":true}",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"CommandOrControl+Shift+K\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"Alt+Space\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"Alt+Space\",\"shortcutChosen\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Alt+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "shortcutChosen": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"Alt+Space\",\"shortcutChosen\":false}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "shortcutChosen": false
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"CommandOrControl+Shift+K\",\"shortcutChosen\":true,\"onboarded\":true}",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": false,
+    "shortcut": "CommandOrControl+Shift+K",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "shortcutChosen": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"Command+Shift+Space\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"Control+Option+K\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Control+Option+K",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"Control+Option+K\",\"shortcutChosen\":false}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Control+Option+K",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "shortcutChosen": false
+   }
+  },
+  {
+   "raw": "{\"shortcut\":\"\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"shortcutChosen\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "shortcutChosen": true
+   }
+  },
+  {
+   "raw": "{\"shortcutChosen\":false}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "shortcutChosen": false
+   }
+  },
+  {
+   "raw": "{\"petMode\":\"desktop\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"petMode\":\"desktop\",\"petModeChosen\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "desktop",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": true
+   }
+  },
+  {
+   "raw": "{\"petMode\":\"desktop\",\"petModeChosen\":false}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": false
+   }
+  },
+  {
+   "raw": "{\"petMode\":\"peek\",\"petModeChosen\":true,\"shortcut\":\"Alt+Space\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "peek",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": true
+   }
+  },
+  {
+   "raw": "{\"petMode\":\"menubar\",\"petModeChosen\":true,\"shortcut\":\"Alt+Space\",\"shortcutChosen\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Alt+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "menubar",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": true,
+    "shortcutChosen": true
+   }
+  },
+  {
+   "raw": "{\"petMode\":\"ondemand\",\"petModeChosen\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": true
+   }
+  },
+  {
+   "raw": "{\"petModeChosen\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": true
+   }
+  },
+  {
+   "raw": "{\"onboarded\":true,\"launchAtLogin\":true,\"maxUsdPerTask\":3.25,\"jevEnabled\":false,\"workflowsFirst\":false,\"confirmEveryAction\":true,\"chatty\":false}",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": true,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 3.25,
+    "jevEnabled": false,
+    "workflowsFirst": false,
+    "confirmEveryAction": true,
+    "chatty": false,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"useClaudeCode\":true,\"codingApp\":\"codex\",\"claudeCodeModel\":\"opus\",\"codexModel\":\"gpt-5-codex\",\"opencodeModel\":\"anthropic/claude-sonnet\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": true,
+    "codingApp": "codex",
+    "claudeCodeModel": "opus",
+    "codexModel": "gpt-5-codex",
+    "opencodeModel": "anthropic/claude-sonnet",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"codingApp\":\"opencode\"}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "opencode",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"petX\":120.5,\"petY\":-40,\"panelX\":0,\"panelY\":900,\"panelPinned\":true}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": 120.5,
+    "petY": -40,
+    "panelX": 0,
+    "panelY": 900,
+    "panelPinned": true,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"memoryEnabled\":false,\"memoryLearn\":false}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": false,
+    "memoryLearn": false
+   }
+  },
+  {
+   "raw": "{\"memoryEnabled\":false}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": false,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"maxUsdPerTask\":0}",
+   "settings": {
+    "onboarded": false,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 0,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"somethingRetired\":true,\"another\":{\"a\":1},\"onboarded\":true}",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "somethingRetired": true,
+    "another": {
+     "a": 1
+    }
+   }
+  },
+  {
+   "raw": " {\n \"onboarded\" : true ,\n \"petMode\" : \"peek\" ,\n \"petModeChosen\" : true\n} ",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "peek",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true,
+    "petModeChosen": true
+   }
+  },
+  {
+   "raw": "{\"onboarded\":true,\"launchAtLogin\":false,\"shortcut\":\"Alt+Space\",\"maxUsdPerTask\":1.5,\"jevEnabled\":true,\"workflowsFirst\":true,\"confirmEveryAction\":false,\"chatty\":true,\"petMode\":\"desktop\",\"useClaudeCode\":false,\"codingApp\":\"claude-code\",\"claudeCodeModel\":\"sonnet\",\"codexModel\":\"\",\"opencodeModel\":\"\",\"petX\":-1,\"petY\":-1,\"panelX\":-1,\"panelY\":-1,\"panelPinned\":false,\"memoryEnabled\":true,\"memoryLearn\":true}",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": false,
+    "shortcut": "Command+Shift+Space",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": true,
+    "petMode": "ondemand",
+    "useClaudeCode": false,
+    "codingApp": "claude-code",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "",
+    "petX": -1,
+    "petY": -1,
+    "panelX": -1,
+    "panelY": -1,
+    "panelPinned": false,
+    "memoryEnabled": true,
+    "memoryLearn": true
+   }
+  },
+  {
+   "raw": "{\"onboarded\":true,\"shortcut\":\"Command+J\",\"shortcutChosen\":true,\"petMode\":\"menubar\",\"petModeChosen\":true,\"petX\":10,\"petY\":20,\"panelX\":30,\"panelY\":40,\"panelPinned\":true,\"chatty\":false,\"useClaudeCode\":true,\"codingApp\":\"opencode\",\"opencodeModel\":\"x/y\",\"memoryLearn\":false}",
+   "settings": {
+    "onboarded": true,
+    "launchAtLogin": false,
+    "shortcut": "Command+J",
+    "maxUsdPerTask": 1.5,
+    "jevEnabled": true,
+    "workflowsFirst": true,
+    "confirmEveryAction": false,
+    "chatty": false,
+    "petMode": "menubar",
+    "useClaudeCode": true,
+    "codingApp": "opencode",
+    "claudeCodeModel": "sonnet",
+    "codexModel": "",
+    "opencodeModel": "x/y",
+    "petX": 10,
+    "petY": 20,
+    "panelX": 30,
+    "panelY": 40,
+    "panelPinned": true,
+    "memoryEnabled": true,
+    "memoryLearn": false,
+    "shortcutChosen": true,
+    "petModeChosen": true
+   }
+  }
+ ],
+ "bundles": [
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/Applications/Merry.app"
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/Merry Helper",
+   "packaged": true,
+   "bundle": "/Applications/Merry.app"
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/Merry Helper",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Users/someone/Applications/Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/Users/someone/Applications/Merry.app"
+  },
+  {
+   "executable": "/Users/someone/Applications/Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/Frameworks/Merry Helper.app/Contents/MacOS/Merry Helper",
+   "packaged": true,
+   "bundle": "/Applications/Merry.app/Contents/Frameworks/Merry Helper.app"
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/Frameworks/Merry Helper.app/Contents/MacOS/Merry Helper",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/Resources/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/Resources/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Other/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Other/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/macos/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/macos/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/x.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/x.app"
+  },
+  {
+   "executable": "/x.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "./Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "./Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "~/Applications/Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "~/Applications/Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/sub/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/sub/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app//Contents//MacOS//Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app//Contents//MacOS//Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/../MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/../MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.APP/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.APP/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app.bak/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app.bak/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/My Apps/Merry 2.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/Applications/My Apps/Merry 2.app"
+  },
+  {
+   "executable": "/Applications/My Apps/Merry 2.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Volumes/Merry/Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/Volumes/Merry/Merry.app"
+  },
+  {
+   "executable": "/Volumes/Merry/Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/private/var/folders/ab/T/AppTranslocation/1234/d/Merry.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/private/var/folders/ab/T/AppTranslocation/1234/d/Merry.app"
+  },
+  {
+   "executable": "/private/var/folders/ab/T/AppTranslocation/1234/d/Merry.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Users/someone/Developer/merry/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
+   "packaged": true,
+   "bundle": "/Users/someone/Developer/merry/node_modules/electron/dist/Electron.app"
+  },
+  {
+   "executable": "/Users/someone/Developer/merry/node_modules/electron/dist/Electron.app/Contents/MacOS/Electron",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/Merry/",
+   "packaged": true,
+   "bundle": "/Applications/Merry.app"
+  },
+  {
+   "executable": "/Applications/Merry.app/Contents/MacOS/Merry/",
+   "packaged": false,
+   "bundle": null
+  },
+  {
+   "executable": "/Applications/Ki.app/bu.app/Contents/MacOS/Merry",
+   "packaged": true,
+   "bundle": "/Applications/Ki.app/bu.app"
+  },
+  {
+   "executable": "/Applications/Ki.app/bu.app/Contents/MacOS/Merry",
+   "packaged": false,
+   "bundle": null
+  }
+ ]
+}

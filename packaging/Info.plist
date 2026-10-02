@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key><string>Merry</string>
+    <key>CFBundleDisplayName</key><string>Merry</string>
+    <key>CFBundleIdentifier</key><string>app.merry.pet</string>
+    <key>CFBundleExecutable</key><string>Merry</string>
+    <key>CFBundleIconFile</key><string>icon</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>0.1.0</string>
+    <key>CFBundleVersion</key><string>1</string>
+    <key>LSMinimumSystemVersion</key><string>26.0</string>
+    <key>LSUIElement</key><true/>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSPrincipalClass</key><string>NSApplication</string>
+    <key>LSApplicationCategoryType</key><string>public.app-category.productivity</string>
+    <key>NSHumanReadableCopyright</key><string>Copyright © 2026 Krishna Paikine. MIT License.</string>
+    <key>NSAppleEventsUsageDescription</key><string>Merry uses Calendar, Reminders, Notes, Mail, Finder and your browser on your behalf, only when you ask it to.</string>
+    <key>NSDesktopFolderUsageDescription</key><string>Merry reads and tidies files on your Desktop when you ask it to.</string>
+    <key>NSDocumentsFolderUsageDescription</key><string>Merry finds, organizes and renames files in Documents when you ask it to.</string>
+    <key>NSDownloadsFolderUsageDescription</key><string>Merry finds, organizes and renames files in Downloads when you ask it to.</string>
+</dict>
+</plist>

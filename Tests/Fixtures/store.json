@@ -1,0 +1,6123 @@
+{
+ "steps": [
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "nobody"
+   },
+   "result": null
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "nobody"
+   },
+   "result": []
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "nobody"
+   },
+   "result": []
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "nobody"
+   },
+   "result": []
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "getSetting",
+   "args": {
+    "key": "settings"
+   },
+   "result": null
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "nobody"
+   },
+   "result": false
+  },
+  {
+   "op": "clearHistory",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "recoverInterruptedTasks",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "",
+     "status": "pending",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "a"
+   },
+   "result": {
+    "id": "a",
+    "request": "Tidy my Downloads folder",
+    "outcome": "",
+    "status": "pending",
+    "petState": "thinking",
+    "authorization": {
+     "readRoots": [],
+     "writeRoots": [],
+     "apps": [],
+     "origins": [],
+     "capabilities": []
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [],
+    "plan": [],
+    "actions": [],
+    "cost": {
+     "inputTokens": 0,
+     "outputTokens": 0,
+     "usd": 0,
+     "calls": 0
+    },
+    "completionCriteria": [],
+    "statusLine": "Getting started",
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000000000,
+    "droppedPaths": [
+     "/Users/someone/Downloads"
+    ],
+    "route": "files"
+   }
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "pending",
+     "headline": "",
+     "createdAt": 1790000000000,
+     "undoable": false,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "Downloads is tidy",
+     "status": "executing",
+     "petState": "working",
+     "authorization": {
+      "readRoots": [
+       "/Users/someone/Downloads"
+      ],
+      "writeRoots": [
+       "/Users/someone/Downloads",
+       "/Users/someone/Documents"
+      ],
+      "apps": [
+       "Finder"
+      ],
+      "origins": [
+       "https://example.com"
+      ],
+      "capabilities": [
+       "files.read",
+       "files.write"
+      ]
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [
+      {
+       "id": "o1",
+       "kind": "files",
+       "summary": "Listed Downloads",
+       "data": {
+        "count": 2,
+        "names": [
+         "a.pdf",
+         "b.png"
+        ],
+        "nested": {
+         "deep": [
+          1,
+          2.5,
+          null,
+          true,
+          "x"
+         ]
+        }
+       },
+       "observedAt": 1790000000100,
+       "staleAfterMs": 30000
+      }
+     ],
+     "plan": [
+      {
+       "id": "p1",
+       "description": "Look at Downloads",
+       "status": "done"
+      },
+      {
+       "id": "p2",
+       "description": "Move the files",
+       "status": "active"
+      }
+     ],
+     "actions": [
+      {
+       "id": "a1",
+       "step": 1,
+       "tool": "files_list",
+       "input": {
+        "path": "/Users/someone/Downloads",
+        "maxDepth": 2
+       },
+       "startedAt": 1790000001000,
+       "outcome": "success",
+       "result": {
+        "entries": [
+         {
+          "name": "a.pdf",
+          "size": 1024
+         },
+         {
+          "name": "b.png",
+          "size": 2.5
+         }
+        ],
+        "truncated": false
+       },
+       "finishedAt": 1790000001500,
+       "verification": {
+        "verified": true,
+        "method": "listing",
+        "detail": "Listed 2 entries."
+       }
+      },
+      {
+       "id": "a2",
+       "step": 2,
+       "tool": "files_create_folder",
+       "input": {
+        "path": "/Users/someone/Documents/Sorted"
+       },
+       "startedAt": 1790000002000,
+       "outcome": "success",
+       "undo": {
+        "kind": "folder.create",
+        "payload": {
+         "from": "",
+         "to": "/Users/someone/Documents/Sorted"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 1234,
+      "outputTokens": 567,
+      "usd": 0.012345,
+      "calls": 2
+     },
+     "completionCriteria": [
+      "Every file is in a folder",
+      "Nothing was deleted"
+     ],
+     "statusLine": "Sorting files",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000002000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "a"
+   },
+   "result": {
+    "id": "a",
+    "request": "Tidy my Downloads folder",
+    "outcome": "Downloads is tidy",
+    "status": "executing",
+    "petState": "working",
+    "authorization": {
+     "readRoots": [
+      "/Users/someone/Downloads"
+     ],
+     "writeRoots": [
+      "/Users/someone/Downloads",
+      "/Users/someone/Documents"
+     ],
+     "apps": [
+      "Finder"
+     ],
+     "origins": [
+      "https://example.com"
+     ],
+     "capabilities": [
+      "files.read",
+      "files.write"
+     ]
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [
+     {
+      "id": "o1",
+      "kind": "files",
+      "summary": "Listed Downloads",
+      "data": {
+       "count": 2,
+       "names": [
+        "a.pdf",
+        "b.png"
+       ],
+       "nested": {
+        "deep": [
+         1,
+         2.5,
+         null,
+         true,
+         "x"
+        ]
+       }
+      },
+      "observedAt": 1790000000100,
+      "staleAfterMs": 30000
+     }
+    ],
+    "plan": [
+     {
+      "id": "p1",
+      "description": "Look at Downloads",
+      "status": "done"
+     },
+     {
+      "id": "p2",
+      "description": "Move the files",
+      "status": "active"
+     }
+    ],
+    "actions": [
+     {
+      "id": "a1",
+      "step": 1,
+      "tool": "files_list",
+      "input": {
+       "path": "/Users/someone/Downloads",
+       "maxDepth": 2
+      },
+      "startedAt": 1790000001000,
+      "outcome": "success",
+      "result": {
+       "entries": [
+        {
+         "name": "a.pdf",
+         "size": 1024
+        },
+        {
+         "name": "b.png",
+         "size": 2.5
+        }
+       ],
+       "truncated": false
+      },
+      "finishedAt": 1790000001500,
+      "verification": {
+       "verified": true,
+       "method": "listing",
+       "detail": "Listed 2 entries."
+      }
+     },
+     {
+      "id": "a2",
+      "step": 2,
+      "tool": "files_create_folder",
+      "input": {
+       "path": "/Users/someone/Documents/Sorted"
+      },
+      "startedAt": 1790000002000,
+      "outcome": "success",
+      "undo": {
+       "kind": "folder.create",
+       "payload": {
+        "from": "",
+        "to": "/Users/someone/Documents/Sorted"
+       }
+      }
+     }
+    ],
+    "cost": {
+     "inputTokens": 1234,
+     "outputTokens": 567,
+     "usd": 0.012345,
+     "calls": 2
+    },
+    "completionCriteria": [
+     "Every file is in a folder",
+     "Nothing was deleted"
+    ],
+    "statusLine": "Sorting files",
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000002000,
+    "droppedPaths": [
+     "/Users/someone/Downloads"
+    ],
+    "route": "files"
+   }
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "id": "a2",
+     "undo": {
+      "kind": "folder.create",
+      "payload": {
+       "from": "",
+       "to": "/Users/someone/Documents/Sorted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "executing",
+     "headline": "",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "Downloads is tidy",
+     "status": "executing",
+     "petState": "working",
+     "authorization": {
+      "readRoots": [
+       "/Users/someone/Downloads"
+      ],
+      "writeRoots": [
+       "/Users/someone/Downloads",
+       "/Users/someone/Documents"
+      ],
+      "apps": [
+       "Finder"
+      ],
+      "origins": [
+       "https://example.com"
+      ],
+      "capabilities": [
+       "files.read",
+       "files.write"
+      ]
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [
+      {
+       "id": "o1",
+       "kind": "files",
+       "summary": "Listed Downloads",
+       "data": {
+        "count": 2,
+        "names": [
+         "a.pdf",
+         "b.png"
+        ],
+        "nested": {
+         "deep": [
+          1,
+          2.5,
+          null,
+          true,
+          "x"
+         ]
+        }
+       },
+       "observedAt": 1790000000100,
+       "staleAfterMs": 30000
+      }
+     ],
+     "plan": [
+      {
+       "id": "p1",
+       "description": "Look at Downloads",
+       "status": "done"
+      },
+      {
+       "id": "p2",
+       "description": "Move the files",
+       "status": "active"
+      }
+     ],
+     "actions": [
+      {
+       "id": "a1",
+       "step": 1,
+       "tool": "files_list",
+       "input": {
+        "path": "/Users/someone/Downloads",
+        "maxDepth": 2
+       },
+       "startedAt": 1790000001000,
+       "outcome": "success",
+       "result": {
+        "entries": [
+         {
+          "name": "a.pdf",
+          "size": 1024
+         },
+         {
+          "name": "b.png",
+          "size": 2.5
+         }
+        ],
+        "truncated": false
+       },
+       "finishedAt": 1790000001500,
+       "verification": {
+        "verified": true,
+        "method": "listing",
+        "detail": "Listed 2 entries."
+       }
+      },
+      {
+       "id": "a2",
+       "step": 2,
+       "tool": "files_create_folder",
+       "input": {
+        "path": "/Users/someone/Documents/Sorted"
+       },
+       "startedAt": 1790000002000,
+       "outcome": "success",
+       "undo": {
+        "kind": "folder.create",
+        "payload": {
+         "from": "",
+         "to": "/Users/someone/Documents/Sorted"
+        }
+       },
+       "finishedAt": 1790000002500,
+       "verification": {
+        "verified": true,
+        "method": "stat",
+        "detail": "Folder exists."
+       }
+      },
+      {
+       "id": "a3",
+       "step": 3,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/a3.txt",
+        "to": "/tmp/out/a3.txt"
+       },
+       "startedAt": 1790000003000,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/a.pdf",
+         "to": "/Users/someone/Documents/Sorted/a.pdf"
+        }
+       },
+       "finishedAt": 1790000003500,
+       "result": {
+        "moved": 1
+       }
+      },
+      {
+       "id": "a4",
+       "step": 4,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/a4.txt",
+        "to": "/tmp/out/a4.txt"
+       },
+       "startedAt": 1790000004000,
+       "outcome": "failure",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/b.png",
+         "to": "/Users/someone/Documents/Sorted/b.png"
+        }
+       },
+       "error": "EACCES: permission denied",
+       "finishedAt": 1790000004500
+      },
+      {
+       "id": "a5",
+       "step": 5,
+       "tool": "files_rename",
+       "input": {
+        "from": "/tmp/in/a5.txt",
+        "to": "/tmp/out/a5.txt"
+       },
+       "startedAt": 1790000005000,
+       "outcome": "uncertain",
+       "undo": {
+        "kind": "file.rename",
+        "payload": {
+         "from": "/Users/someone/Documents/Sorted/c.txt",
+         "to": "/Users/someone/Documents/Sorted/notes.txt"
+        }
+       }
+      },
+      {
+       "id": "a6",
+       "step": 6,
+       "tool": "mac_reminder_add",
+       "input": {
+        "title": "Empty the bin"
+       },
+       "startedAt": 1790000006000,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.reminder",
+        "payload": {
+         "from": "Reminders",
+         "to": "x-apple-reminder://ABC-123"
+        }
+       },
+       "finishedAt": 1790000006500
+      }
+     ],
+     "cost": {
+      "inputTokens": 1234,
+      "outputTokens": 567,
+      "usd": 0.012345,
+      "calls": 2
+     },
+     "completionCriteria": [
+      "Every file is in a folder",
+      "Nothing was deleted"
+     ],
+     "statusLine": "Sorting files",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000007000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "a"
+   },
+   "result": {
+    "id": "a",
+    "request": "Tidy my Downloads folder",
+    "outcome": "Downloads is tidy",
+    "status": "executing",
+    "petState": "working",
+    "authorization": {
+     "readRoots": [
+      "/Users/someone/Downloads"
+     ],
+     "writeRoots": [
+      "/Users/someone/Downloads",
+      "/Users/someone/Documents"
+     ],
+     "apps": [
+      "Finder"
+     ],
+     "origins": [
+      "https://example.com"
+     ],
+     "capabilities": [
+      "files.read",
+      "files.write"
+     ]
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [
+     {
+      "id": "o1",
+      "kind": "files",
+      "summary": "Listed Downloads",
+      "data": {
+       "count": 2,
+       "names": [
+        "a.pdf",
+        "b.png"
+       ],
+       "nested": {
+        "deep": [
+         1,
+         2.5,
+         null,
+         true,
+         "x"
+        ]
+       }
+      },
+      "observedAt": 1790000000100,
+      "staleAfterMs": 30000
+     }
+    ],
+    "plan": [
+     {
+      "id": "p1",
+      "description": "Look at Downloads",
+      "status": "done"
+     },
+     {
+      "id": "p2",
+      "description": "Move the files",
+      "status": "active"
+     }
+    ],
+    "actions": [
+     {
+      "id": "a1",
+      "step": 1,
+      "tool": "files_list",
+      "input": {
+       "path": "/Users/someone/Downloads",
+       "maxDepth": 2
+      },
+      "startedAt": 1790000001000,
+      "outcome": "success",
+      "result": {
+       "entries": [
+        {
+         "name": "a.pdf",
+         "size": 1024
+        },
+        {
+         "name": "b.png",
+         "size": 2.5
+        }
+       ],
+       "truncated": false
+      },
+      "finishedAt": 1790000001500,
+      "verification": {
+       "verified": true,
+       "method": "listing",
+       "detail": "Listed 2 entries."
+      }
+     },
+     {
+      "id": "a2",
+      "step": 2,
+      "tool": "files_create_folder",
+      "input": {
+       "path": "/Users/someone/Documents/Sorted"
+      },
+      "startedAt": 1790000002000,
+      "outcome": "success",
+      "undo": {
+       "kind": "folder.create",
+       "payload": {
+        "from": "",
+        "to": "/Users/someone/Documents/Sorted"
+       }
+      },
+      "finishedAt": 1790000002500,
+      "verification": {
+       "verified": true,
+       "method": "stat",
+       "detail": "Folder exists."
+      }
+     },
+     {
+      "id": "a3",
+      "step": 3,
+      "tool": "files_move",
+      "input": {
+       "from": "/tmp/in/a3.txt",
+       "to": "/tmp/out/a3.txt"
+      },
+      "startedAt": 1790000003000,
+      "outcome": "success",
+      "undo": {
+       "kind": "file.move",
+       "payload": {
+        "from": "/Users/someone/Downloads/a.pdf",
+        "to": "/Users/someone/Documents/Sorted/a.pdf"
+       }
+      },
+      "finishedAt": 1790000003500,
+      "result": {
+       "moved": 1
+      }
+     },
+     {
+      "id": "a4",
+      "step": 4,
+      "tool": "files_move",
+      "input": {
+       "from": "/tmp/in/a4.txt",
+       "to": "/tmp/out/a4.txt"
+      },
+      "startedAt": 1790000004000,
+      "outcome": "failure",
+      "undo": {
+       "kind": "file.move",
+       "payload": {
+        "from": "/Users/someone/Downloads/b.png",
+        "to": "/Users/someone/Documents/Sorted/b.png"
+       }
+      },
+      "error": "EACCES: permission denied",
+      "finishedAt": 1790000004500
+     },
+     {
+      "id": "a5",
+      "step": 5,
+      "tool": "files_rename",
+      "input": {
+       "from": "/tmp/in/a5.txt",
+       "to": "/tmp/out/a5.txt"
+      },
+      "startedAt": 1790000005000,
+      "outcome": "uncertain",
+      "undo": {
+       "kind": "file.rename",
+       "payload": {
+        "from": "/Users/someone/Documents/Sorted/c.txt",
+        "to": "/Users/someone/Documents/Sorted/notes.txt"
+       }
+      }
+     },
+     {
+      "id": "a6",
+      "step": 6,
+      "tool": "mac_reminder_add",
+      "input": {
+       "title": "Empty the bin"
+      },
+      "startedAt": 1790000006000,
+      "outcome": "success",
+      "undo": {
+       "kind": "mac.reminder",
+       "payload": {
+        "from": "Reminders",
+        "to": "x-apple-reminder://ABC-123"
+       }
+      },
+      "finishedAt": 1790000006500
+     }
+    ],
+    "cost": {
+     "inputTokens": 1234,
+     "outputTokens": 567,
+     "usd": 0.012345,
+     "calls": 2
+    },
+    "completionCriteria": [
+     "Every file is in a folder",
+     "Nothing was deleted"
+    ],
+    "statusLine": "Sorting files",
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000007000,
+    "droppedPaths": [
+     "/Users/someone/Downloads"
+    ],
+    "route": "files"
+   }
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "id": "a6",
+     "undo": {
+      "kind": "mac.reminder",
+      "payload": {
+       "from": "Reminders",
+       "to": "x-apple-reminder://ABC-123"
+      }
+     }
+    },
+    {
+     "id": "a5",
+     "undo": {
+      "kind": "file.rename",
+      "payload": {
+       "from": "/Users/someone/Documents/Sorted/c.txt",
+       "to": "/Users/someone/Documents/Sorted/notes.txt"
+      }
+     }
+    },
+    {
+     "id": "a3",
+     "undo": {
+      "kind": "file.move",
+      "payload": {
+       "from": "/Users/someone/Downloads/a.pdf",
+       "to": "/Users/someone/Documents/Sorted/a.pdf"
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "undo": {
+      "kind": "folder.create",
+      "payload": {
+       "from": "",
+       "to": "/Users/someone/Documents/Sorted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "executing",
+     "headline": "",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "markReversed",
+   "args": {
+    "actionId": "a3"
+   },
+   "result": null
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "id": "a6",
+     "undo": {
+      "kind": "mac.reminder",
+      "payload": {
+       "from": "Reminders",
+       "to": "x-apple-reminder://ABC-123"
+      }
+     }
+    },
+    {
+     "id": "a5",
+     "undo": {
+      "kind": "file.rename",
+      "payload": {
+       "from": "/Users/someone/Documents/Sorted/c.txt",
+       "to": "/Users/someone/Documents/Sorted/notes.txt"
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "undo": {
+      "kind": "folder.create",
+      "payload": {
+       "from": "",
+       "to": "/Users/someone/Documents/Sorted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "executing",
+     "headline": "",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "markReversed",
+   "args": {
+    "actionId": "nobody"
+   },
+   "result": null
+  },
+  {
+   "op": "markReversed",
+   "args": {
+    "actionId": "a3"
+   },
+   "result": null
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "id": "a6",
+     "undo": {
+      "kind": "mac.reminder",
+      "payload": {
+       "from": "Reminders",
+       "to": "x-apple-reminder://ABC-123"
+      }
+     }
+    },
+    {
+     "id": "a5",
+     "undo": {
+      "kind": "file.rename",
+      "payload": {
+       "from": "/Users/someone/Documents/Sorted/c.txt",
+       "to": "/Users/someone/Documents/Sorted/notes.txt"
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "undo": {
+      "kind": "folder.create",
+      "payload": {
+       "from": "",
+       "to": "/Users/someone/Documents/Sorted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "Downloads is tidy",
+     "status": "executing",
+     "petState": "working",
+     "authorization": {
+      "readRoots": [
+       "/Users/someone/Downloads"
+      ],
+      "writeRoots": [
+       "/Users/someone/Downloads",
+       "/Users/someone/Documents"
+      ],
+      "apps": [
+       "Finder"
+      ],
+      "origins": [
+       "https://example.com"
+      ],
+      "capabilities": [
+       "files.read",
+       "files.write"
+      ]
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [
+      {
+       "id": "o1",
+       "kind": "files",
+       "summary": "Listed Downloads",
+       "data": {
+        "count": 2,
+        "names": [
+         "a.pdf",
+         "b.png"
+        ],
+        "nested": {
+         "deep": [
+          1,
+          2.5,
+          null,
+          true,
+          "x"
+         ]
+        }
+       },
+       "observedAt": 1790000000100,
+       "staleAfterMs": 30000
+      }
+     ],
+     "plan": [
+      {
+       "id": "p1",
+       "description": "Look at Downloads",
+       "status": "done"
+      },
+      {
+       "id": "p2",
+       "description": "Move the files",
+       "status": "active"
+      }
+     ],
+     "actions": [
+      {
+       "id": "a1",
+       "step": 1,
+       "tool": "files_list",
+       "input": {
+        "path": "/Users/someone/Downloads",
+        "maxDepth": 2
+       },
+       "startedAt": 1790000001000,
+       "outcome": "success",
+       "result": {
+        "entries": [
+         {
+          "name": "a.pdf",
+          "size": 1024
+         },
+         {
+          "name": "b.png",
+          "size": 2.5
+         }
+        ],
+        "truncated": false
+       },
+       "finishedAt": 1790000001500,
+       "verification": {
+        "verified": true,
+        "method": "listing",
+        "detail": "Listed 2 entries."
+       }
+      },
+      {
+       "id": "a2",
+       "step": 2,
+       "tool": "files_create_folder",
+       "input": {
+        "path": "/Users/someone/Documents/Sorted"
+       },
+       "startedAt": 1790000002000,
+       "outcome": "success",
+       "undo": {
+        "kind": "folder.create",
+        "payload": {
+         "from": "",
+         "to": "/Users/someone/Documents/Sorted"
+        }
+       },
+       "finishedAt": 1790000002500,
+       "verification": {
+        "verified": true,
+        "method": "stat",
+        "detail": "Folder exists."
+       }
+      },
+      {
+       "id": "a3",
+       "step": 3,
+       "tool": "files_copy",
+       "input": {
+        "other": true
+       },
+       "startedAt": 1790000003000,
+       "outcome": "failure",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/a.pdf",
+         "to": "/Users/someone/Documents/Sorted/a.pdf"
+        }
+       },
+       "finishedAt": 1790000003500,
+       "result": {
+        "moved": 1
+       },
+       "error": "changed"
+      },
+      {
+       "id": "a4",
+       "step": 4,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/a4.txt",
+        "to": "/tmp/out/a4.txt"
+       },
+       "startedAt": 1790000004000,
+       "outcome": "failure",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/b.png",
+         "to": "/Users/someone/Documents/Sorted/b.png"
+        }
+       },
+       "error": "EACCES: permission denied",
+       "finishedAt": 1790000004500
+      },
+      {
+       "id": "a5",
+       "step": 5,
+       "tool": "files_rename",
+       "input": {
+        "from": "/tmp/in/a5.txt",
+        "to": "/tmp/out/a5.txt"
+       },
+       "startedAt": 1790000005000,
+       "outcome": "uncertain",
+       "undo": {
+        "kind": "file.rename",
+        "payload": {
+         "from": "/Users/someone/Documents/Sorted/c.txt",
+         "to": "/Users/someone/Documents/Sorted/notes.txt"
+        }
+       }
+      },
+      {
+       "id": "a6",
+       "step": 6,
+       "tool": "mac_reminder_add",
+       "input": {
+        "title": "Empty the bin"
+       },
+       "startedAt": 1790000006000,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.reminder",
+        "payload": {
+         "from": "Reminders",
+         "to": "x-apple-reminder://ABC-123"
+        }
+       },
+       "finishedAt": 1790000006500
+      }
+     ],
+     "cost": {
+      "inputTokens": 1234,
+      "outputTokens": 567,
+      "usd": 0.012345,
+      "calls": 2
+     },
+     "completionCriteria": [
+      "Every file is in a folder",
+      "Nothing was deleted"
+     ],
+     "statusLine": "Sorting files",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000007000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "id": "a6",
+     "undo": {
+      "kind": "mac.reminder",
+      "payload": {
+       "from": "Reminders",
+       "to": "x-apple-reminder://ABC-123"
+      }
+     }
+    },
+    {
+     "id": "a5",
+     "undo": {
+      "kind": "file.rename",
+      "payload": {
+       "from": "/Users/someone/Documents/Sorted/c.txt",
+       "to": "/Users/someone/Documents/Sorted/notes.txt"
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "undo": {
+      "kind": "folder.create",
+      "payload": {
+       "from": "",
+       "to": "/Users/someone/Documents/Sorted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "Downloads is tidy",
+     "status": "executing",
+     "petState": "working",
+     "authorization": {
+      "readRoots": [
+       "/Users/someone/Downloads"
+      ],
+      "writeRoots": [
+       "/Users/someone/Downloads",
+       "/Users/someone/Documents"
+      ],
+      "apps": [
+       "Finder"
+      ],
+      "origins": [
+       "https://example.com"
+      ],
+      "capabilities": [
+       "files.read",
+       "files.write"
+      ]
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [
+      {
+       "id": "o1",
+       "kind": "files",
+       "summary": "Listed Downloads",
+       "data": {
+        "count": 2,
+        "names": [
+         "a.pdf",
+         "b.png"
+        ],
+        "nested": {
+         "deep": [
+          1,
+          2.5,
+          null,
+          true,
+          "x"
+         ]
+        }
+       },
+       "observedAt": 1790000000100,
+       "staleAfterMs": 30000
+      }
+     ],
+     "plan": [
+      {
+       "id": "p1",
+       "description": "Look at Downloads",
+       "status": "done"
+      },
+      {
+       "id": "p2",
+       "description": "Move the files",
+       "status": "active"
+      }
+     ],
+     "actions": [
+      {
+       "id": "a1",
+       "step": 1,
+       "tool": "files_list",
+       "input": {
+        "path": "/Users/someone/Downloads",
+        "maxDepth": 2
+       },
+       "startedAt": 1790000001000,
+       "outcome": "success",
+       "result": {
+        "entries": [
+         {
+          "name": "a.pdf",
+          "size": 1024
+         },
+         {
+          "name": "b.png",
+          "size": 2.5
+         }
+        ],
+        "truncated": false
+       },
+       "finishedAt": 1790000001500,
+       "verification": {
+        "verified": true,
+        "method": "listing",
+        "detail": "Listed 2 entries."
+       }
+      },
+      {
+       "id": "a2",
+       "step": 2,
+       "tool": "files_create_folder",
+       "input": {
+        "path": "/Users/someone/Documents/Sorted"
+       },
+       "startedAt": 1790000002000,
+       "outcome": "success",
+       "undo": {
+        "kind": "folder.create",
+        "payload": {
+         "from": "",
+         "to": "/Users/someone/Documents/Sorted"
+        }
+       },
+       "finishedAt": 1790000002500,
+       "verification": {
+        "verified": true,
+        "method": "stat",
+        "detail": "Folder exists."
+       }
+      },
+      {
+       "id": "a3",
+       "step": 3,
+       "tool": "files_copy",
+       "input": {
+        "other": true
+       },
+       "startedAt": 1790000003000,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/a.pdf",
+         "to": "/Users/someone/Documents/Sorted/a.pdf"
+        }
+       },
+       "finishedAt": 1790000003500,
+       "result": {
+        "moved": 1
+       }
+      },
+      {
+       "id": "a4",
+       "step": 4,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/a4.txt",
+        "to": "/tmp/out/a4.txt"
+       },
+       "startedAt": 1790000004000,
+       "outcome": "failure",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/b.png",
+         "to": "/Users/someone/Documents/Sorted/b.png"
+        }
+       },
+       "error": "EACCES: permission denied",
+       "finishedAt": 1790000004500
+      },
+      {
+       "id": "a5",
+       "step": 5,
+       "tool": "files_rename",
+       "input": {
+        "from": "/tmp/in/a5.txt",
+        "to": "/tmp/out/a5.txt"
+       },
+       "startedAt": 1790000005000,
+       "outcome": "uncertain",
+       "undo": {
+        "kind": "file.rename",
+        "payload": {
+         "from": "/Users/someone/Documents/Sorted/c.txt",
+         "to": "/Users/someone/Documents/Sorted/notes.txt"
+        }
+       }
+      },
+      {
+       "id": "a6",
+       "step": 6,
+       "tool": "mac_reminder_add",
+       "input": {
+        "title": "Empty the bin"
+       },
+       "startedAt": 1790000006000,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.reminder",
+        "payload": {
+         "from": "Reminders",
+         "to": "x-apple-reminder://ABC-123"
+        }
+       },
+       "finishedAt": 1790000006500
+      }
+     ],
+     "cost": {
+      "inputTokens": 1234,
+      "outputTokens": 567,
+      "usd": 0.012345,
+      "calls": 2
+     },
+     "completionCriteria": [
+      "Every file is in a folder",
+      "Nothing was deleted"
+     ],
+     "statusLine": "Sorting files",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000007000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "id": "a6",
+     "undo": {
+      "kind": "mac.reminder",
+      "payload": {
+       "from": "Reminders",
+       "to": "x-apple-reminder://ABC-123"
+      }
+     }
+    },
+    {
+     "id": "a5",
+     "undo": {
+      "kind": "file.rename",
+      "payload": {
+       "from": "/Users/someone/Documents/Sorted/c.txt",
+       "to": "/Users/someone/Documents/Sorted/notes.txt"
+      }
+     }
+    },
+    {
+     "id": "a2",
+     "undo": {
+      "kind": "folder.create",
+      "payload": {
+       "from": "",
+       "to": "/Users/someone/Documents/Sorted"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "Downloads is tidy",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [
+       "/Users/someone/Downloads"
+      ],
+      "writeRoots": [
+       "/Users/someone/Downloads",
+       "/Users/someone/Documents"
+      ],
+      "apps": [
+       "Finder"
+      ],
+      "origins": [
+       "https://example.com"
+      ],
+      "capabilities": [
+       "files.read",
+       "files.write"
+      ]
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [
+      {
+       "id": "o1",
+       "kind": "files",
+       "summary": "Listed Downloads",
+       "data": {
+        "count": 2,
+        "names": [
+         "a.pdf",
+         "b.png"
+        ],
+        "nested": {
+         "deep": [
+          1,
+          2.5,
+          null,
+          true,
+          "x"
+         ]
+        }
+       },
+       "observedAt": 1790000000100,
+       "staleAfterMs": 30000
+      }
+     ],
+     "plan": [
+      {
+       "id": "p1",
+       "description": "Look at Downloads",
+       "status": "done"
+      },
+      {
+       "id": "p2",
+       "description": "Move the files",
+       "status": "active"
+      }
+     ],
+     "actions": [
+      {
+       "id": "a1",
+       "step": 1,
+       "tool": "files_list",
+       "input": {
+        "path": "/Users/someone/Downloads",
+        "maxDepth": 2
+       },
+       "startedAt": 1790000001000,
+       "outcome": "success",
+       "result": {
+        "entries": [
+         {
+          "name": "a.pdf",
+          "size": 1024
+         },
+         {
+          "name": "b.png",
+          "size": 2.5
+         }
+        ],
+        "truncated": false
+       },
+       "finishedAt": 1790000001500,
+       "verification": {
+        "verified": true,
+        "method": "listing",
+        "detail": "Listed 2 entries."
+       }
+      },
+      {
+       "id": "a2",
+       "step": 2,
+       "tool": "files_create_folder",
+       "input": {
+        "path": "/Users/someone/Documents/Sorted"
+       },
+       "startedAt": 1790000002000,
+       "outcome": "success",
+       "undo": {
+        "kind": "folder.create",
+        "payload": {
+         "from": "",
+         "to": "/Users/someone/Documents/Sorted"
+        }
+       },
+       "finishedAt": 1790000002500,
+       "verification": {
+        "verified": true,
+        "method": "stat",
+        "detail": "Folder exists."
+       }
+      },
+      {
+       "id": "a3",
+       "step": 3,
+       "tool": "files_copy",
+       "input": {
+        "other": true
+       },
+       "startedAt": 1790000003000,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/a.pdf",
+         "to": "/Users/someone/Documents/Sorted/a.pdf"
+        }
+       },
+       "finishedAt": 1790000003500,
+       "result": {
+        "moved": 1
+       }
+      },
+      {
+       "id": "a4",
+       "step": 4,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/a4.txt",
+        "to": "/tmp/out/a4.txt"
+       },
+       "startedAt": 1790000004000,
+       "outcome": "failure",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/b.png",
+         "to": "/Users/someone/Documents/Sorted/b.png"
+        }
+       },
+       "error": "EACCES: permission denied",
+       "finishedAt": 1790000004500
+      },
+      {
+       "id": "a5",
+       "step": 5,
+       "tool": "files_rename",
+       "input": {
+        "from": "/tmp/in/a5.txt",
+        "to": "/tmp/out/a5.txt"
+       },
+       "startedAt": 1790000005000,
+       "outcome": "uncertain",
+       "undo": {
+        "kind": "file.rename",
+        "payload": {
+         "from": "/Users/someone/Documents/Sorted/c.txt",
+         "to": "/Users/someone/Documents/Sorted/notes.txt"
+        }
+       }
+      },
+      {
+       "id": "a6",
+       "step": 6,
+       "tool": "mac_reminder_add",
+       "input": {
+        "title": "Empty the bin"
+       },
+       "startedAt": 1790000006000,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.reminder",
+        "payload": {
+         "from": "Reminders",
+         "to": "x-apple-reminder://ABC-123"
+        }
+       },
+       "finishedAt": 1790000006500
+      }
+     ],
+     "cost": {
+      "inputTokens": 1234,
+      "outputTokens": 567,
+      "usd": 0.012345,
+      "calls": 2
+     },
+     "completionCriteria": [
+      "Every file is in a folder",
+      "Nothing was deleted"
+     ],
+     "statusLine": "Done",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000008000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files",
+     "summary": {
+      "headline": "Sorted 2 files into Documents",
+      "evidence": [
+       {
+        "kind": "path",
+        "label": "Sorted",
+        "value": "/Users/someone/Documents/Sorted"
+       },
+       {
+        "kind": "url",
+        "label": "Guide",
+        "value": "https://example.com/guide"
+       },
+       {
+        "kind": "text",
+        "label": "Note",
+        "value": "One file was skipped."
+       }
+      ],
+      "undoable": true
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "a"
+   },
+   "result": {
+    "id": "a",
+    "request": "Tidy my Downloads folder",
+    "outcome": "Downloads is tidy",
+    "status": "succeeded",
+    "petState": "finished",
+    "authorization": {
+     "readRoots": [
+      "/Users/someone/Downloads"
+     ],
+     "writeRoots": [
+      "/Users/someone/Downloads",
+      "/Users/someone/Documents"
+     ],
+     "apps": [
+      "Finder"
+     ],
+     "origins": [
+      "https://example.com"
+     ],
+     "capabilities": [
+      "files.read",
+      "files.write"
+     ]
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [
+     {
+      "id": "o1",
+      "kind": "files",
+      "summary": "Listed Downloads",
+      "data": {
+       "count": 2,
+       "names": [
+        "a.pdf",
+        "b.png"
+       ],
+       "nested": {
+        "deep": [
+         1,
+         2.5,
+         null,
+         true,
+         "x"
+        ]
+       }
+      },
+      "observedAt": 1790000000100,
+      "staleAfterMs": 30000
+     }
+    ],
+    "plan": [
+     {
+      "id": "p1",
+      "description": "Look at Downloads",
+      "status": "done"
+     },
+     {
+      "id": "p2",
+      "description": "Move the files",
+      "status": "active"
+     }
+    ],
+    "actions": [
+     {
+      "id": "a1",
+      "step": 1,
+      "tool": "files_list",
+      "input": {
+       "path": "/Users/someone/Downloads",
+       "maxDepth": 2
+      },
+      "startedAt": 1790000001000,
+      "outcome": "success",
+      "result": {
+       "entries": [
+        {
+         "name": "a.pdf",
+         "size": 1024
+        },
+        {
+         "name": "b.png",
+         "size": 2.5
+        }
+       ],
+       "truncated": false
+      },
+      "finishedAt": 1790000001500,
+      "verification": {
+       "verified": true,
+       "method": "listing",
+       "detail": "Listed 2 entries."
+      }
+     },
+     {
+      "id": "a2",
+      "step": 2,
+      "tool": "files_create_folder",
+      "input": {
+       "path": "/Users/someone/Documents/Sorted"
+      },
+      "startedAt": 1790000002000,
+      "outcome": "success",
+      "undo": {
+       "kind": "folder.create",
+       "payload": {
+        "from": "",
+        "to": "/Users/someone/Documents/Sorted"
+       }
+      },
+      "finishedAt": 1790000002500,
+      "verification": {
+       "verified": true,
+       "method": "stat",
+       "detail": "Folder exists."
+      }
+     },
+     {
+      "id": "a3",
+      "step": 3,
+      "tool": "files_copy",
+      "input": {
+       "other": true
+      },
+      "startedAt": 1790000003000,
+      "outcome": "success",
+      "undo": {
+       "kind": "file.move",
+       "payload": {
+        "from": "/Users/someone/Downloads/a.pdf",
+        "to": "/Users/someone/Documents/Sorted/a.pdf"
+       }
+      },
+      "finishedAt": 1790000003500,
+      "result": {
+       "moved": 1
+      }
+     },
+     {
+      "id": "a4",
+      "step": 4,
+      "tool": "files_move",
+      "input": {
+       "from": "/tmp/in/a4.txt",
+       "to": "/tmp/out/a4.txt"
+      },
+      "startedAt": 1790000004000,
+      "outcome": "failure",
+      "undo": {
+       "kind": "file.move",
+       "payload": {
+        "from": "/Users/someone/Downloads/b.png",
+        "to": "/Users/someone/Documents/Sorted/b.png"
+       }
+      },
+      "error": "EACCES: permission denied",
+      "finishedAt": 1790000004500
+     },
+     {
+      "id": "a5",
+      "step": 5,
+      "tool": "files_rename",
+      "input": {
+       "from": "/tmp/in/a5.txt",
+       "to": "/tmp/out/a5.txt"
+      },
+      "startedAt": 1790000005000,
+      "outcome": "uncertain",
+      "undo": {
+       "kind": "file.rename",
+       "payload": {
+        "from": "/Users/someone/Documents/Sorted/c.txt",
+        "to": "/Users/someone/Documents/Sorted/notes.txt"
+       }
+      }
+     },
+     {
+      "id": "a6",
+      "step": 6,
+      "tool": "mac_reminder_add",
+      "input": {
+       "title": "Empty the bin"
+      },
+      "startedAt": 1790000006000,
+      "outcome": "success",
+      "undo": {
+       "kind": "mac.reminder",
+       "payload": {
+        "from": "Reminders",
+        "to": "x-apple-reminder://ABC-123"
+       }
+      },
+      "finishedAt": 1790000006500
+     }
+    ],
+    "cost": {
+     "inputTokens": 1234,
+     "outputTokens": 567,
+     "usd": 0.012345,
+     "calls": 2
+    },
+    "completionCriteria": [
+     "Every file is in a folder",
+     "Nothing was deleted"
+    ],
+    "statusLine": "Done",
+    "createdAt": 1790000000000,
+    "updatedAt": 1790000008000,
+    "droppedPaths": [
+     "/Users/someone/Downloads"
+    ],
+    "route": "files",
+    "summary": {
+     "headline": "Sorted 2 files into Documents",
+     "evidence": [
+      {
+       "kind": "path",
+       "label": "Sorted",
+       "value": "/Users/someone/Documents/Sorted"
+      },
+      {
+       "kind": "url",
+       "label": "Guide",
+       "value": "https://example.com/guide"
+      },
+      {
+       "kind": "text",
+       "label": "Note",
+       "value": "One file was skipped."
+      }
+     ],
+     "undoable": true
+    }
+   }
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "b2",
+     "request": "Move the standup to 10",
+     "outcome": "",
+     "status": "awaiting_user",
+     "petState": "waiting",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000021000,
+     "replyTo": "b1",
+     "conversationId": "b1",
+     "question": {
+      "id": "q1",
+      "reason": "ambiguous",
+      "prompt": "Which standup?",
+      "options": [
+       {
+        "id": "o1",
+        "label": "Team standup",
+        "detail": "09:30"
+       },
+       {
+        "id": "o2",
+        "label": "Design standup"
+       }
+      ],
+      "preview": {
+       "title": "Move event",
+       "fileOps": [
+        {
+         "from": "/a",
+         "to": "/b",
+         "kind": "move"
+        }
+       ],
+       "note": "Nothing changes until you choose."
+      },
+      "allowFreeText": true
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "b2",
+     "request": "What is on my calendar today?",
+     "status": "awaiting_user",
+     "headline": "",
+     "createdAt": 1790000020000,
+     "undoable": false,
+     "turns": 2
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "b1"
+   },
+   "result": [
+    {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    },
+    {
+     "id": "b2",
+     "request": "Move the standup to 10",
+     "outcome": "",
+     "status": "awaiting_user",
+     "petState": "waiting",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000021000,
+     "replyTo": "b1",
+     "conversationId": "b1",
+     "question": {
+      "id": "q1",
+      "reason": "ambiguous",
+      "prompt": "Which standup?",
+      "options": [
+       {
+        "id": "o1",
+        "label": "Team standup",
+        "detail": "09:30"
+       },
+       {
+        "id": "o2",
+        "label": "Design standup"
+       }
+      ],
+      "preview": {
+       "title": "Move event",
+       "fileOps": [
+        {
+         "from": "/a",
+         "to": "/b",
+         "kind": "move"
+        }
+       ],
+       "note": "Nothing changes until you choose."
+      },
+      "allowFreeText": true
+     }
+    }
+   ]
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "b2"
+   },
+   "result": [
+    {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    },
+    {
+     "id": "b2",
+     "request": "Move the standup to 10",
+     "outcome": "",
+     "status": "awaiting_user",
+     "petState": "waiting",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000021000,
+     "replyTo": "b1",
+     "conversationId": "b1",
+     "question": {
+      "id": "q1",
+      "reason": "ambiguous",
+      "prompt": "Which standup?",
+      "options": [
+       {
+        "id": "o1",
+        "label": "Team standup",
+        "detail": "09:30"
+       },
+       {
+        "id": "o2",
+        "label": "Design standup"
+       }
+      ],
+      "preview": {
+       "title": "Move event",
+       "fileOps": [
+        {
+         "from": "/a",
+         "to": "/b",
+         "kind": "move"
+        }
+       ],
+       "note": "Nothing changes until you choose."
+      },
+      "allowFreeText": true
+     }
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "b3",
+     "request": "And add lunch at 1",
+     "outcome": "",
+     "status": "failed",
+     "petState": "failed",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "b3-1",
+       "step": 1,
+       "tool": "mac_event_add",
+       "input": {
+        "title": "Lunch"
+       },
+       "startedAt": 1790000030100,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.event",
+        "payload": {
+         "from": "Calendar",
+         "to": "EVENT-1"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000030000,
+     "updatedAt": 1790000030500,
+     "replyTo": "b2",
+     "conversationId": "b1",
+     "error": "Calendar did not answer.",
+     "summary": {
+      "headline": "Could not reach Calendar",
+      "evidence": [],
+      "undoable": false
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 3
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "b3"
+   },
+   "result": [
+    {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    },
+    {
+     "id": "b2",
+     "request": "Move the standup to 10",
+     "outcome": "",
+     "status": "awaiting_user",
+     "petState": "waiting",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000021000,
+     "replyTo": "b1",
+     "conversationId": "b1",
+     "question": {
+      "id": "q1",
+      "reason": "ambiguous",
+      "prompt": "Which standup?",
+      "options": [
+       {
+        "id": "o1",
+        "label": "Team standup",
+        "detail": "09:30"
+       },
+       {
+        "id": "o2",
+        "label": "Design standup"
+       }
+      ],
+      "preview": {
+       "title": "Move event",
+       "fileOps": [
+        {
+         "from": "/a",
+         "to": "/b",
+         "kind": "move"
+        }
+       ],
+       "note": "Nothing changes until you choose."
+      },
+      "allowFreeText": true
+     }
+    },
+    {
+     "id": "b3",
+     "request": "And add lunch at 1",
+     "outcome": "",
+     "status": "failed",
+     "petState": "failed",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "b3-1",
+       "step": 1,
+       "tool": "mac_event_add",
+       "input": {
+        "title": "Lunch"
+       },
+       "startedAt": 1790000030100,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.event",
+        "payload": {
+         "from": "Calendar",
+         "to": "EVENT-1"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000030000,
+     "updatedAt": 1790000030500,
+     "replyTo": "b2",
+     "conversationId": "b1",
+     "error": "Calendar did not answer.",
+     "summary": {
+      "headline": "Could not reach Calendar",
+      "evidence": [],
+      "undoable": false
+     }
+    }
+   ]
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "b1"
+   },
+   "result": [
+    {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    },
+    {
+     "id": "b2",
+     "request": "Move the standup to 10",
+     "outcome": "",
+     "status": "awaiting_user",
+     "petState": "waiting",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000021000,
+     "replyTo": "b1",
+     "conversationId": "b1",
+     "question": {
+      "id": "q1",
+      "reason": "ambiguous",
+      "prompt": "Which standup?",
+      "options": [
+       {
+        "id": "o1",
+        "label": "Team standup",
+        "detail": "09:30"
+       },
+       {
+        "id": "o2",
+        "label": "Design standup"
+       }
+      ],
+      "preview": {
+       "title": "Move event",
+       "fileOps": [
+        {
+         "from": "/a",
+         "to": "/b",
+         "kind": "move"
+        }
+       ],
+       "note": "Nothing changes until you choose."
+      },
+      "allowFreeText": true
+     }
+    },
+    {
+     "id": "b3",
+     "request": "And add lunch at 1",
+     "outcome": "",
+     "status": "failed",
+     "petState": "failed",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "b3-1",
+       "step": 1,
+       "tool": "mac_event_add",
+       "input": {
+        "title": "Lunch"
+       },
+       "startedAt": 1790000030100,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.event",
+        "payload": {
+         "from": "Calendar",
+         "to": "EVENT-1"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000030000,
+     "updatedAt": 1790000030500,
+     "replyTo": "b2",
+     "conversationId": "b1",
+     "error": "Calendar did not answer.",
+     "summary": {
+      "headline": "Could not reach Calendar",
+      "evidence": [],
+      "undoable": false
+     }
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "b2",
+     "request": "A different request",
+     "outcome": "",
+     "status": "cancelled",
+     "petState": "idle",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000022000,
+     "replyTo": "b1",
+     "conversationId": "a"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "b2"
+   },
+   "result": {
+    "id": "b2",
+    "request": "A different request",
+    "outcome": "",
+    "status": "cancelled",
+    "petState": "idle",
+    "authorization": {
+     "readRoots": [],
+     "writeRoots": [],
+     "apps": [],
+     "origins": [],
+     "capabilities": []
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [],
+    "plan": [],
+    "actions": [],
+    "cost": {
+     "inputTokens": 0,
+     "outputTokens": 0,
+     "usd": 0,
+     "calls": 0
+    },
+    "completionCriteria": [],
+    "statusLine": "Waiting for you",
+    "createdAt": 1790000020000,
+    "updatedAt": 1790000022000,
+    "replyTo": "b1",
+    "conversationId": "a"
+   }
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "a"
+   },
+   "result": [
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "outcome": "Downloads is tidy",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [
+       "/Users/someone/Downloads"
+      ],
+      "writeRoots": [
+       "/Users/someone/Downloads",
+       "/Users/someone/Documents"
+      ],
+      "apps": [
+       "Finder"
+      ],
+      "origins": [
+       "https://example.com"
+      ],
+      "capabilities": [
+       "files.read",
+       "files.write"
+      ]
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [
+      {
+       "id": "o1",
+       "kind": "files",
+       "summary": "Listed Downloads",
+       "data": {
+        "count": 2,
+        "names": [
+         "a.pdf",
+         "b.png"
+        ],
+        "nested": {
+         "deep": [
+          1,
+          2.5,
+          null,
+          true,
+          "x"
+         ]
+        }
+       },
+       "observedAt": 1790000000100,
+       "staleAfterMs": 30000
+      }
+     ],
+     "plan": [
+      {
+       "id": "p1",
+       "description": "Look at Downloads",
+       "status": "done"
+      },
+      {
+       "id": "p2",
+       "description": "Move the files",
+       "status": "active"
+      }
+     ],
+     "actions": [
+      {
+       "id": "a1",
+       "step": 1,
+       "tool": "files_list",
+       "input": {
+        "path": "/Users/someone/Downloads",
+        "maxDepth": 2
+       },
+       "startedAt": 1790000001000,
+       "outcome": "success",
+       "result": {
+        "entries": [
+         {
+          "name": "a.pdf",
+          "size": 1024
+         },
+         {
+          "name": "b.png",
+          "size": 2.5
+         }
+        ],
+        "truncated": false
+       },
+       "finishedAt": 1790000001500,
+       "verification": {
+        "verified": true,
+        "method": "listing",
+        "detail": "Listed 2 entries."
+       }
+      },
+      {
+       "id": "a2",
+       "step": 2,
+       "tool": "files_create_folder",
+       "input": {
+        "path": "/Users/someone/Documents/Sorted"
+       },
+       "startedAt": 1790000002000,
+       "outcome": "success",
+       "undo": {
+        "kind": "folder.create",
+        "payload": {
+         "from": "",
+         "to": "/Users/someone/Documents/Sorted"
+        }
+       },
+       "finishedAt": 1790000002500,
+       "verification": {
+        "verified": true,
+        "method": "stat",
+        "detail": "Folder exists."
+       }
+      },
+      {
+       "id": "a3",
+       "step": 3,
+       "tool": "files_copy",
+       "input": {
+        "other": true
+       },
+       "startedAt": 1790000003000,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/a.pdf",
+         "to": "/Users/someone/Documents/Sorted/a.pdf"
+        }
+       },
+       "finishedAt": 1790000003500,
+       "result": {
+        "moved": 1
+       }
+      },
+      {
+       "id": "a4",
+       "step": 4,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/a4.txt",
+        "to": "/tmp/out/a4.txt"
+       },
+       "startedAt": 1790000004000,
+       "outcome": "failure",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/b.png",
+         "to": "/Users/someone/Documents/Sorted/b.png"
+        }
+       },
+       "error": "EACCES: permission denied",
+       "finishedAt": 1790000004500
+      },
+      {
+       "id": "a5",
+       "step": 5,
+       "tool": "files_rename",
+       "input": {
+        "from": "/tmp/in/a5.txt",
+        "to": "/tmp/out/a5.txt"
+       },
+       "startedAt": 1790000005000,
+       "outcome": "uncertain",
+       "undo": {
+        "kind": "file.rename",
+        "payload": {
+         "from": "/Users/someone/Documents/Sorted/c.txt",
+         "to": "/Users/someone/Documents/Sorted/notes.txt"
+        }
+       }
+      },
+      {
+       "id": "a6",
+       "step": 6,
+       "tool": "mac_reminder_add",
+       "input": {
+        "title": "Empty the bin"
+       },
+       "startedAt": 1790000006000,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.reminder",
+        "payload": {
+         "from": "Reminders",
+         "to": "x-apple-reminder://ABC-123"
+        }
+       },
+       "finishedAt": 1790000006500
+      }
+     ],
+     "cost": {
+      "inputTokens": 1234,
+      "outputTokens": 567,
+      "usd": 0.012345,
+      "calls": 2
+     },
+     "completionCriteria": [
+      "Every file is in a folder",
+      "Nothing was deleted"
+     ],
+     "statusLine": "Done",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000008000,
+     "droppedPaths": [
+      "/Users/someone/Downloads"
+     ],
+     "route": "files",
+     "summary": {
+      "headline": "Sorted 2 files into Documents",
+      "evidence": [
+       {
+        "kind": "path",
+        "label": "Sorted",
+        "value": "/Users/someone/Documents/Sorted"
+       },
+       {
+        "kind": "url",
+        "label": "Guide",
+        "value": "https://example.com/guide"
+       },
+       {
+        "kind": "text",
+        "label": "Note",
+        "value": "One file was skipped."
+       }
+      ],
+      "undoable": true
+     }
+    }
+   ]
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "b2"
+   },
+   "result": [
+    {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    },
+    {
+     "id": "b2",
+     "request": "A different request",
+     "outcome": "",
+     "status": "cancelled",
+     "petState": "idle",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000022000,
+     "replyTo": "b1",
+     "conversationId": "a"
+    },
+    {
+     "id": "b3",
+     "request": "And add lunch at 1",
+     "outcome": "",
+     "status": "failed",
+     "petState": "failed",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "b3-1",
+       "step": 1,
+       "tool": "mac_event_add",
+       "input": {
+        "title": "Lunch"
+       },
+       "startedAt": 1790000030100,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.event",
+        "payload": {
+         "from": "Calendar",
+         "to": "EVENT-1"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000030000,
+     "updatedAt": 1790000030500,
+     "replyTo": "b2",
+     "conversationId": "b1",
+     "error": "Calendar did not answer.",
+     "summary": {
+      "headline": "Could not reach Calendar",
+      "evidence": [],
+      "undoable": false
+     }
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 3
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "outcome": "",
+     "status": "planning",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000040000,
+     "updatedAt": 1790000040000
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "d1",
+     "request": "Find my passport scan",
+     "outcome": "",
+     "status": "cancelled",
+     "petState": "idle",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000005000,
+     "updatedAt": 1790000005000
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "d2",
+     "request": "Search again",
+     "outcome": "",
+     "status": "observing",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "d2-1",
+       "step": 1,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/d2-1.txt",
+        "to": "/tmp/out/d2-1.txt"
+       },
+       "startedAt": 1790000050100,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/p.pdf",
+         "to": "/Users/someone/Documents/Sorted/p.pdf"
+        }
+       }
+      },
+      {
+       "id": "d2-2",
+       "step": 2,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/d2-2.txt",
+        "to": "/tmp/out/d2-2.txt"
+       },
+       "startedAt": 1790000050200,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/q.pdf",
+         "to": "/Users/someone/Documents/Sorted/q.pdf"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000050000,
+     "updatedAt": 1790000050000,
+     "conversationId": "d1",
+     "replyTo": "d1"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "e",
+     "request": "Request of e",
+     "outcome": "",
+     "status": "paused",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000045000,
+     "updatedAt": 1790000046000
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "f",
+     "request": "Request of f",
+     "outcome": "",
+     "status": "verifying",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000047000,
+     "updatedAt": 1790000047000
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "g",
+     "request": "Request of g",
+     "outcome": "",
+     "status": "executing",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000048000,
+     "updatedAt": 1790000048000,
+     "summary": {
+      "headline": "Half way",
+      "evidence": [
+       {
+        "kind": "text",
+        "label": "So far",
+        "value": "3 of 6"
+       }
+      ],
+      "undoable": false
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "d2",
+     "request": "Find my passport scan",
+     "status": "observing",
+     "headline": "",
+     "createdAt": 1790000050000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "executing",
+     "headline": "Half way",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "f",
+     "request": "Request of f",
+     "status": "verifying",
+     "headline": "",
+     "createdAt": 1790000047000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "e",
+     "request": "Request of e",
+     "status": "paused",
+     "headline": "",
+     "createdAt": 1790000045000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "status": "planning",
+     "headline": "",
+     "createdAt": 1790000040000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 3
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {
+    "limit": 2
+   },
+   "result": [
+    {
+     "id": "d2",
+     "request": "Find my passport scan",
+     "status": "observing",
+     "headline": "",
+     "createdAt": 1790000050000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "executing",
+     "headline": "Half way",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {
+    "limit": 1
+   },
+   "result": [
+    {
+     "id": "d2",
+     "request": "Find my passport scan",
+     "status": "observing",
+     "headline": "",
+     "createdAt": 1790000050000,
+     "undoable": true,
+     "turns": 2
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {
+    "limit": 100
+   },
+   "result": [
+    {
+     "id": "d2",
+     "request": "Find my passport scan",
+     "status": "observing",
+     "headline": "",
+     "createdAt": 1790000050000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "executing",
+     "headline": "Half way",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "f",
+     "request": "Request of f",
+     "status": "verifying",
+     "headline": "",
+     "createdAt": 1790000047000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "e",
+     "request": "Request of e",
+     "status": "paused",
+     "headline": "",
+     "createdAt": 1790000045000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "status": "planning",
+     "headline": "",
+     "createdAt": 1790000040000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 3
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "d2"
+   },
+   "result": [
+    {
+     "id": "d1",
+     "request": "Find my passport scan",
+     "outcome": "",
+     "status": "cancelled",
+     "petState": "idle",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000005000,
+     "updatedAt": 1790000005000
+    },
+    {
+     "id": "d2",
+     "request": "Search again",
+     "outcome": "",
+     "status": "observing",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "d2-1",
+       "step": 1,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/d2-1.txt",
+        "to": "/tmp/out/d2-1.txt"
+       },
+       "startedAt": 1790000050100,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/p.pdf",
+         "to": "/Users/someone/Documents/Sorted/p.pdf"
+        }
+       }
+      },
+      {
+       "id": "d2-2",
+       "step": 2,
+       "tool": "files_move",
+       "input": {
+        "from": "/tmp/in/d2-2.txt",
+        "to": "/tmp/out/d2-2.txt"
+       },
+       "startedAt": 1790000050200,
+       "outcome": "success",
+       "undo": {
+        "kind": "file.move",
+        "payload": {
+         "from": "/Users/someone/Downloads/q.pdf",
+         "to": "/Users/someone/Documents/Sorted/q.pdf"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000050000,
+     "updatedAt": 1790000050000,
+     "conversationId": "d1",
+     "replyTo": "d1"
+    }
+   ]
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "d2"
+   },
+   "result": [
+    {
+     "id": "d2-2",
+     "undo": {
+      "kind": "file.move",
+      "payload": {
+       "from": "/Users/someone/Downloads/q.pdf",
+       "to": "/Users/someone/Documents/Sorted/q.pdf"
+      }
+     }
+    },
+    {
+     "id": "d2-1",
+     "undo": {
+      "kind": "file.move",
+      "payload": {
+       "from": "/Users/someone/Downloads/p.pdf",
+       "to": "/Users/someone/Documents/Sorted/p.pdf"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "b3"
+   },
+   "result": [
+    {
+     "id": "b3-1",
+     "undo": {
+      "kind": "mac.event",
+      "payload": {
+       "from": "Calendar",
+       "to": "EVENT-1"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "a",
+     "at": 1790000000100,
+     "level": "info",
+     "source": "loop",
+     "message": "Started"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "a",
+     "at": 1790000000300,
+     "level": "warn",
+     "source": "tool:files_move",
+     "message": "Skipped one",
+     "data": {
+      "path": "/tmp/x",
+      "codes": [
+       1,
+       2
+      ],
+      "nested": {
+       "ok": false
+      }
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "a",
+     "at": 1790000000200,
+     "level": "debug",
+     "source": "model",
+     "message": "Planned",
+     "data": "plain text"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "a",
+     "at": 1790000000400,
+     "level": "error",
+     "source": "loop",
+     "message": "Null data",
+     "data": null
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "a",
+     "at": 1790000000500,
+     "level": "info",
+     "source": "loop",
+     "message": "Zero",
+     "data": 0
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "a",
+     "at": 1790000000600,
+     "level": "info",
+     "source": "loop",
+     "message": "List",
+     "data": []
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "b1",
+     "at": 1790000000150,
+     "level": "info",
+     "source": "loop",
+     "message": "Other task"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "never-saved",
+     "at": 1790000000001,
+     "level": "info",
+     "source": "loop",
+     "message": "Logs need no task row"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "a"
+   },
+   "result": [
+    {
+     "taskId": "a",
+     "at": 1790000000100,
+     "level": "info",
+     "source": "loop",
+     "message": "Started"
+    },
+    {
+     "taskId": "a",
+     "at": 1790000000200,
+     "level": "debug",
+     "source": "model",
+     "message": "Planned",
+     "data": "plain text"
+    },
+    {
+     "taskId": "a",
+     "at": 1790000000300,
+     "level": "warn",
+     "source": "tool:files_move",
+     "message": "Skipped one",
+     "data": {
+      "path": "/tmp/x",
+      "codes": [
+       1,
+       2
+      ],
+      "nested": {
+       "ok": false
+      }
+     }
+    },
+    {
+     "taskId": "a",
+     "at": 1790000000400,
+     "level": "error",
+     "source": "loop",
+     "message": "Null data",
+     "data": null
+    },
+    {
+     "taskId": "a",
+     "at": 1790000000500,
+     "level": "info",
+     "source": "loop",
+     "message": "Zero",
+     "data": 0
+    },
+    {
+     "taskId": "a",
+     "at": 1790000000600,
+     "level": "info",
+     "source": "loop",
+     "message": "List",
+     "data": []
+    }
+   ]
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "a",
+    "limit": 2
+   },
+   "result": [
+    {
+     "taskId": "a",
+     "at": 1790000000100,
+     "level": "info",
+     "source": "loop",
+     "message": "Started"
+    },
+    {
+     "taskId": "a",
+     "at": 1790000000200,
+     "level": "debug",
+     "source": "model",
+     "message": "Planned",
+     "data": "plain text"
+    }
+   ]
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "b1"
+   },
+   "result": [
+    {
+     "taskId": "b1",
+     "at": 1790000000150,
+     "level": "info",
+     "source": "loop",
+     "message": "Other task"
+    }
+   ]
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "never-saved"
+   },
+   "result": [
+    {
+     "taskId": "never-saved",
+     "at": 1790000000001,
+     "level": "info",
+     "source": "loop",
+     "message": "Logs need no task row"
+    }
+   ]
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "nobody"
+   },
+   "result": []
+  },
+  {
+   "op": "deleteTask",
+   "args": {
+    "id": "c"
+   },
+   "error": "Stop this task before deleting it."
+  },
+  {
+   "op": "deleteTask",
+   "args": {
+    "id": "b2"
+   },
+   "result": null
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "b2"
+   },
+   "result": true
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "c"
+   },
+   "result": false
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "b2"
+   },
+   "result": null
+  },
+  {
+   "op": "conversationOf",
+   "args": {
+    "id": "b1"
+   },
+   "result": [
+    {
+     "id": "b1",
+     "request": "What is on my calendar today?",
+     "outcome": "",
+     "status": "succeeded",
+     "petState": "finished",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000010000,
+     "updatedAt": 1790000011000,
+     "route": "apps",
+     "summary": {
+      "headline": "Three events today",
+      "evidence": [],
+      "undoable": false
+     }
+    },
+    {
+     "id": "b3",
+     "request": "And add lunch at 1",
+     "outcome": "",
+     "status": "failed",
+     "petState": "failed",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [
+      {
+       "id": "b3-1",
+       "step": 1,
+       "tool": "mac_event_add",
+       "input": {
+        "title": "Lunch"
+       },
+       "startedAt": 1790000030100,
+       "outcome": "success",
+       "undo": {
+        "kind": "mac.event",
+        "payload": {
+         "from": "Calendar",
+         "to": "EVENT-1"
+        }
+       }
+      }
+     ],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000030000,
+     "updatedAt": 1790000030500,
+     "replyTo": "b2",
+     "conversationId": "b1",
+     "error": "Calendar did not answer.",
+     "summary": {
+      "headline": "Could not reach Calendar",
+      "evidence": [],
+      "undoable": false
+     }
+    }
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "d2",
+     "request": "Find my passport scan",
+     "status": "observing",
+     "headline": "",
+     "createdAt": 1790000050000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "executing",
+     "headline": "Half way",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "f",
+     "request": "Request of f",
+     "status": "verifying",
+     "headline": "",
+     "createdAt": 1790000047000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "e",
+     "request": "Request of e",
+     "status": "paused",
+     "headline": "",
+     "createdAt": 1790000045000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "status": "planning",
+     "headline": "",
+     "createdAt": 1790000040000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "b2",
+     "request": "A different request",
+     "outcome": "",
+     "status": "cancelled",
+     "petState": "idle",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Waiting for you",
+     "createdAt": 1790000020000,
+     "updatedAt": 1790000022000,
+     "replyTo": "b1",
+     "conversationId": "a"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "b2"
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "b2",
+     "at": 1790000000001,
+     "level": "info",
+     "source": "loop",
+     "message": "late"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "b2"
+   },
+   "result": []
+  },
+  {
+   "op": "deleteTask",
+   "args": {
+    "id": "nobody"
+   },
+   "result": null
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "nobody"
+   },
+   "result": true
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "nobody",
+     "request": "Request of nobody",
+     "outcome": "",
+     "status": "pending",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000000
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "nobody"
+   },
+   "result": null
+  },
+  {
+   "op": "deleteConversation",
+   "args": {
+    "id": "d2"
+   },
+   "error": "Stop this task before deleting it."
+  },
+  {
+   "op": "deleteConversation",
+   "args": {
+    "id": "d1"
+   },
+   "error": "Stop this task before deleting it."
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "d2",
+     "request": "Find my passport scan",
+     "status": "observing",
+     "headline": "",
+     "createdAt": 1790000050000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "executing",
+     "headline": "Half way",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "f",
+     "request": "Request of f",
+     "status": "verifying",
+     "headline": "",
+     "createdAt": 1790000047000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "e",
+     "request": "Request of e",
+     "status": "paused",
+     "headline": "",
+     "createdAt": 1790000045000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "status": "planning",
+     "headline": "",
+     "createdAt": 1790000040000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "d2",
+     "request": "Search again",
+     "outcome": "",
+     "status": "cancelled",
+     "petState": "idle",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000050000,
+     "updatedAt": 1790000051000,
+     "conversationId": "d1",
+     "replyTo": "d1"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "appendLog",
+   "args": {
+    "entry": {
+     "taskId": "d2",
+     "at": 1790000000002,
+     "level": "info",
+     "source": "loop",
+     "message": "about to go"
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "deleteConversation",
+   "args": {
+    "id": "d1"
+   },
+   "result": [
+    "d1",
+    "d2"
+   ]
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "d1"
+   },
+   "result": true
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "d2"
+   },
+   "result": true
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "d1"
+   },
+   "result": null
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "d2"
+   },
+   "result": []
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "d2"
+   },
+   "result": []
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "executing",
+     "headline": "Half way",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "f",
+     "request": "Request of f",
+     "status": "verifying",
+     "headline": "",
+     "createdAt": 1790000047000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "e",
+     "request": "Request of e",
+     "status": "paused",
+     "headline": "",
+     "createdAt": 1790000045000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "status": "planning",
+     "headline": "",
+     "createdAt": 1790000040000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "deleteConversation",
+   "args": {
+    "id": "nobody"
+   },
+   "result": []
+  },
+  {
+   "op": "deleteConversation",
+   "args": {
+    "id": "d1"
+   },
+   "result": []
+  },
+  {
+   "op": "recoverInterruptedTasks",
+   "args": {},
+   "result": [
+    "c",
+    "e",
+    "f",
+    "g"
+   ]
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "c"
+   },
+   "result": {
+    "id": "c",
+    "request": "Open my résumé “final” — 最終版 😀\nplease",
+    "outcome": "",
+    "status": "failed",
+    "petState": "thinking",
+    "authorization": {
+     "readRoots": [],
+     "writeRoots": [],
+     "apps": [],
+     "origins": [],
+     "capabilities": []
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [],
+    "plan": [],
+    "actions": [],
+    "cost": {
+     "inputTokens": 0,
+     "outputTokens": 0,
+     "usd": 0,
+     "calls": 0
+    },
+    "completionCriteria": [],
+    "statusLine": "Interrupted",
+    "createdAt": 1790000040000,
+    "updatedAt": 1790000040000,
+    "error": "Merry quit while this task was running. Nothing was resumed automatically.",
+    "summary": {
+     "headline": "Interrupted when Merry quit",
+     "evidence": [],
+     "undoable": false
+    }
+   }
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "e"
+   },
+   "result": {
+    "id": "e",
+    "request": "Request of e",
+    "outcome": "",
+    "status": "failed",
+    "petState": "thinking",
+    "authorization": {
+     "readRoots": [],
+     "writeRoots": [],
+     "apps": [],
+     "origins": [],
+     "capabilities": []
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [],
+    "plan": [],
+    "actions": [],
+    "cost": {
+     "inputTokens": 0,
+     "outputTokens": 0,
+     "usd": 0,
+     "calls": 0
+    },
+    "completionCriteria": [],
+    "statusLine": "Interrupted",
+    "createdAt": 1790000045000,
+    "updatedAt": 1790000046000,
+    "error": "Merry quit while this task was running. Nothing was resumed automatically.",
+    "summary": {
+     "headline": "Interrupted when Merry quit",
+     "evidence": [],
+     "undoable": false
+    }
+   }
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "f"
+   },
+   "result": {
+    "id": "f",
+    "request": "Request of f",
+    "outcome": "",
+    "status": "failed",
+    "petState": "thinking",
+    "authorization": {
+     "readRoots": [],
+     "writeRoots": [],
+     "apps": [],
+     "origins": [],
+     "capabilities": []
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [],
+    "plan": [],
+    "actions": [],
+    "cost": {
+     "inputTokens": 0,
+     "outputTokens": 0,
+     "usd": 0,
+     "calls": 0
+    },
+    "completionCriteria": [],
+    "statusLine": "Interrupted",
+    "createdAt": 1790000047000,
+    "updatedAt": 1790000047000,
+    "error": "Merry quit while this task was running. Nothing was resumed automatically.",
+    "summary": {
+     "headline": "Interrupted when Merry quit",
+     "evidence": [],
+     "undoable": false
+    }
+   }
+  },
+  {
+   "op": "getTask",
+   "args": {
+    "id": "g"
+   },
+   "result": {
+    "id": "g",
+    "request": "Request of g",
+    "outcome": "",
+    "status": "failed",
+    "petState": "thinking",
+    "authorization": {
+     "readRoots": [],
+     "writeRoots": [],
+     "apps": [],
+     "origins": [],
+     "capabilities": []
+    },
+    "limits": {
+     "maxSteps": 40,
+     "maxWallClockMs": 600000,
+     "maxUsd": 1.5,
+     "maxConsecutiveFailures": 3
+    },
+    "observations": [],
+    "plan": [],
+    "actions": [],
+    "cost": {
+     "inputTokens": 0,
+     "outputTokens": 0,
+     "usd": 0,
+     "calls": 0
+    },
+    "completionCriteria": [],
+    "statusLine": "Interrupted",
+    "createdAt": 1790000048000,
+    "updatedAt": 1790000048000,
+    "summary": {
+     "headline": "Interrupted when Merry quit",
+     "evidence": [
+      {
+       "kind": "text",
+       "label": "So far",
+       "value": "3 of 6"
+      }
+     ],
+     "undoable": false
+    },
+    "error": "Merry quit while this task was running. Nothing was resumed automatically."
+   }
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "g",
+     "request": "Request of g",
+     "status": "failed",
+     "headline": "Interrupted when Merry quit",
+     "createdAt": 1790000048000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "f",
+     "request": "Request of f",
+     "status": "failed",
+     "headline": "Interrupted when Merry quit",
+     "createdAt": 1790000047000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "e",
+     "request": "Request of e",
+     "status": "failed",
+     "headline": "Interrupted when Merry quit",
+     "createdAt": 1790000045000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "c",
+     "request": "Open my résumé “final” — 最終版 😀\nplease",
+     "status": "failed",
+     "headline": "Interrupted when Merry quit",
+     "createdAt": 1790000040000,
+     "undoable": false,
+     "turns": 1
+    },
+    {
+     "id": "b3",
+     "request": "What is on my calendar today?",
+     "status": "failed",
+     "headline": "Could not reach Calendar",
+     "createdAt": 1790000030000,
+     "undoable": true,
+     "turns": 2
+    },
+    {
+     "id": "a",
+     "request": "Tidy my Downloads folder",
+     "status": "succeeded",
+     "headline": "Sorted 2 files into Documents",
+     "createdAt": 1790000000000,
+     "undoable": true,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "recoverInterruptedTasks",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "saveTask",
+   "args": {
+    "task": {
+     "id": "h",
+     "request": "Request of h",
+     "outcome": "",
+     "status": "planning",
+     "petState": "thinking",
+     "authorization": {
+      "readRoots": [],
+      "writeRoots": [],
+      "apps": [],
+      "origins": [],
+      "capabilities": []
+     },
+     "limits": {
+      "maxSteps": 40,
+      "maxWallClockMs": 600000,
+      "maxUsd": 1.5,
+      "maxConsecutiveFailures": 3
+     },
+     "observations": [],
+     "plan": [],
+     "actions": [],
+     "cost": {
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "usd": 0,
+      "calls": 0
+     },
+     "completionCriteria": [],
+     "statusLine": "Getting started",
+     "createdAt": 1790000060000,
+     "updatedAt": 1790000060000
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "clearHistory",
+   "args": {},
+   "result": [
+    "a",
+    "b1",
+    "b3",
+    "c",
+    "e",
+    "f",
+    "g"
+   ]
+  },
+  {
+   "op": "listTasks",
+   "args": {},
+   "result": [
+    {
+     "id": "h",
+     "request": "Request of h",
+     "status": "planning",
+     "headline": "",
+     "createdAt": 1790000060000,
+     "undoable": false,
+     "turns": 1
+    }
+   ]
+  },
+  {
+   "op": "getLogs",
+   "args": {
+    "taskId": "a"
+   },
+   "result": []
+  },
+  {
+   "op": "undoableActions",
+   "args": {
+    "taskId": "a"
+   },
+   "result": []
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "a"
+   },
+   "result": true
+  },
+  {
+   "op": "isDeleted",
+   "args": {
+    "id": "h"
+   },
+   "result": false
+  },
+  {
+   "op": "clearHistory",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m2",
+     "text": "Lives in Hyderabad",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000300,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m3",
+     "text": "Prefers PDFs over Word files — “always”",
+     "kind": "preference",
+     "keys": [],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000200,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": null
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000300,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m3",
+     "text": "Prefers PDFs over Word files — “always”",
+     "kind": "preference",
+     "keys": [],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000200,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    }
+   ]
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m3",
+     "text": "Prefers PDFs over Word files — “always”",
+     "kind": "preference",
+     "keys": [],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000200,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m4",
+     "text": "Prefers PDF",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000400,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": "m3"
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m4",
+     "text": "Prefers PDF",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000400,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": "m4"
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m5",
+     "text": "Memory m5",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000600,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": "nobody"
+   },
+   "result": null
+  },
+  {
+   "op": "saveMemory",
+   "args": {
+    "memory": {
+     "id": "m6",
+     "text": "Memory m6",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000700,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    "replaces": ""
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m6",
+     "text": "Memory m6",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000700,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m5",
+     "text": "Memory m5",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000600,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": null,
+     "uses": 0,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "markMemoriesUsed",
+   "args": {
+    "ids": [
+     "m1",
+     "m5",
+     "nobody"
+    ],
+    "now": 1790000009000
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m6",
+     "text": "Memory m6",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000700,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m5",
+     "text": "Memory m5",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000600,
+     "lastUsedAt": 1790000009000,
+     "uses": 1
+    },
+    {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": 1790000009000,
+     "uses": 1,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "markMemoriesUsed",
+   "args": {
+    "ids": [
+     "m1"
+    ],
+    "now": 1790000009500
+   },
+   "result": null
+  },
+  {
+   "op": "markMemoriesUsed",
+   "args": {
+    "ids": [],
+    "now": 1790000009600
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m6",
+     "text": "Memory m6",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000700,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m5",
+     "text": "Memory m5",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000600,
+     "lastUsedAt": 1790000009000,
+     "uses": 1
+    },
+    {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": 1790000009500,
+     "uses": 2,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "deleteMemories",
+   "args": {
+    "ids": [
+     "m5",
+     "nobody",
+     "m6"
+    ]
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": 1790000009500,
+     "uses": 2,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "deleteMemories",
+   "args": {
+    "ids": []
+   },
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": [
+    {
+     "id": "m4",
+     "text": "Prefers PDF, strongly",
+     "kind": "preference",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 1,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000500,
+     "lastUsedAt": null,
+     "uses": 0
+    },
+    {
+     "id": "m1",
+     "text": "Standups go on the Work calendar",
+     "kind": "choice",
+     "keys": [
+      "standup",
+      "calendar"
+     ],
+     "source": "learned",
+     "evidence": 3,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000100,
+     "lastUsedAt": 1790000009500,
+     "uses": 2,
+     "choice": {
+      "decision": "calendar-for:standup",
+      "value": "Work"
+     }
+    },
+    {
+     "id": "m2",
+     "text": "Lives in Hyderabad, India",
+     "kind": "fact",
+     "keys": [
+      "one",
+      "two"
+     ],
+     "source": "told",
+     "evidence": 2,
+     "createdAt": 1790000000000,
+     "updatedAt": 1790000000050,
+     "lastUsedAt": null,
+     "uses": 0
+    }
+   ]
+  },
+  {
+   "op": "clearMemories",
+   "args": {},
+   "result": null
+  },
+  {
+   "op": "listMemories",
+   "args": {},
+   "result": []
+  },
+  {
+   "op": "clearMemories",
+   "args": {},
+   "result": null
+  },
+  {
+   "op": "setSetting",
+   "args": {
+    "key": "settings",
+    "value": "{\"onboarded\":true}"
+   },
+   "result": null
+  },
+  {
+   "op": "getSetting",
+   "args": {
+    "key": "settings"
+   },
+   "result": "{\"onboarded\":true}"
+  },
+  {
+   "op": "setSetting",
+   "args": {
+    "key": "settings",
+    "value": "{\"onboarded\":false,\"shortcut\":\"Alt+K\"}"
+   },
+   "result": null
+  },
+  {
+   "op": "getSetting",
+   "args": {
+    "key": "settings"
+   },
+   "result": "{\"onboarded\":false,\"shortcut\":\"Alt+K\"}"
+  },
+  {
+   "op": "setSetting",
+   "args": {
+    "key": "empty",
+    "value": ""
+   },
+   "result": null
+  },
+  {
+   "op": "getSetting",
+   "args": {
+    "key": "empty"
+   },
+   "result": ""
+  },
+  {
+   "op": "setSetting",
+   "args": {
+    "key": "unicode — “x” 😀",
+    "value": "multi\nline\tvalue"
+   },
+   "result": null
+  },
+  {
+   "op": "getSetting",
+   "args": {
+    "key": "unicode — “x” 😀"
+   },
+   "result": "multi\nline\tvalue"
+  },
+  {
+   "op": "getSetting",
+   "args": {
+    "key": "missing"
+   },
+   "result": null
+  }
+ ]
+}

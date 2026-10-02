@@ -1,0 +1,5204 @@
+{
+ "cases": [
+  {
+   "program": "mkdir",
+   "args": [
+    "-p",
+    "$HOME/proj/new"
+   ],
+   "vetted": {
+    "program": "mkdir",
+    "args": [
+     "-p",
+     "$HOME/proj/new"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj/new"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/proj/new"
+    }
+   ]
+  },
+  {
+   "program": "mkdir",
+   "args": [
+    "new-folder"
+   ],
+   "vetted": {
+    "program": "mkdir",
+    "args": [
+     "new-folder"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "mkdir",
+   "args": [
+    "new-folder"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "mkdir",
+    "args": [
+     "new-folder"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "touch",
+   "args": [
+    "$HOME/proj/a.txt"
+   ],
+   "vetted": {
+    "program": "touch",
+    "args": [
+     "$HOME/proj/a.txt"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj/a.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/proj/a.txt"
+    }
+   ]
+  },
+  {
+   "program": "touch",
+   "args": [
+    "a.txt"
+   ],
+   "vetted": {
+    "program": "touch",
+    "args": [
+     "a.txt"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "cp",
+   "args": [
+    "$HOME/notes.txt",
+    "$HOME/proj/notes.txt"
+   ],
+   "vetted": {
+    "program": "cp",
+    "args": [
+     "$HOME/notes.txt",
+     "$HOME/proj/notes.txt"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt",
+     "$HOME/proj/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/proj/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "cp",
+   "args": [
+    "-R",
+    "$HOME/proj",
+    "$HOME/copy"
+   ],
+   "vetted": {
+    "program": "cp",
+    "args": [
+     "-R",
+     "$HOME/proj",
+     "$HOME/copy"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj",
+     "$HOME/copy"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/copy"
+    }
+   ]
+  },
+  {
+   "program": "cp",
+   "args": [
+    "a",
+    "b"
+   ],
+   "vetted": {
+    "program": "cp",
+    "args": [
+     "a",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "cp",
+   "args": [
+    "$HOME/a",
+    "$HOME/b",
+    "$HOME/c"
+   ],
+   "vetted": {
+    "program": "cp",
+    "args": [
+     "$HOME/a",
+     "$HOME/b",
+     "$HOME/c"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/a",
+     "$HOME/b",
+     "$HOME/c"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/a"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/b"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/c"
+    }
+   ]
+  },
+  {
+   "program": "cp",
+   "args": [
+    "-f",
+    "$HOME/a",
+    "$HOME/b"
+   ],
+   "refused": "I will not run cp with \"-f\"."
+  },
+  {
+   "program": "cp",
+   "args": [
+    "-Rf",
+    "$HOME/a",
+    "$HOME/b"
+   ],
+   "refused": "I will not run cp with \"-Rf\"."
+  },
+  {
+   "program": "cp",
+   "args": [
+    "-n",
+    "$HOME/a",
+    "$HOME/b"
+   ],
+   "vetted": {
+    "program": "cp",
+    "args": [
+     "-n",
+     "$HOME/a",
+     "$HOME/b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/a",
+     "$HOME/b"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/a"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/b"
+    }
+   ]
+  },
+  {
+   "program": "cp",
+   "args": [
+    "$HOME/a"
+   ],
+   "vetted": {
+    "program": "cp",
+    "args": [
+     "$HOME/a"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/a"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/a"
+    }
+   ]
+  },
+  {
+   "program": "mv",
+   "args": [
+    "$HOME/a",
+    "$HOME/b"
+   ],
+   "vetted": {
+    "program": "mv",
+    "args": [
+     "$HOME/a",
+     "$HOME/b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/a",
+     "$HOME/b"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/a"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/b"
+    }
+   ]
+  },
+  {
+   "program": "mv",
+   "args": [
+    "-f",
+    "$HOME/a",
+    "$HOME/b"
+   ],
+   "refused": "I will not run mv with \"-f\"."
+  },
+  {
+   "program": "mv",
+   "args": [
+    "-nf",
+    "$HOME/a",
+    "$HOME/b"
+   ],
+   "refused": "I will not run mv with \"-nf\"."
+  },
+  {
+   "program": "mv",
+   "args": [
+    "-n",
+    "a",
+    "b"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "mv",
+    "args": [
+     "-n",
+     "a",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "mv",
+   "args": [
+    "--force",
+    "a",
+    "b"
+   ],
+   "refused": "I will not run mv with \"--force\"."
+  },
+  {
+   "program": "mv",
+   "args": [
+    "-v\u000bf",
+    "a",
+    "b"
+   ],
+   "refused": "I will not run mv with \"-v\u000bf\"."
+  },
+  {
+   "program": "mv",
+   "args": [
+    "-v\nf",
+    "a",
+    "b"
+   ],
+   "vetted": {
+    "program": "mv",
+    "args": [
+     "-v\nf",
+     "a",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "mv",
+   "args": [
+    "f-",
+    "b"
+   ],
+   "vetted": {
+    "program": "mv",
+    "args": [
+     "f-",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "vetted": {
+    "program": "ls",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "-la"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "-la"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "-la",
+    "$HOME/proj"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "-la",
+     "$HOME/proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "~"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "~"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "~/proj"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "~/proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "proj"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "proj/"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "proj/"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "./proj"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "./proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "pwd",
+   "args": [],
+   "vetted": {
+    "program": "pwd",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "pwd",
+   "args": [],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "pwd",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "$HOME/notes.txt"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "$HOME/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "notes.txt"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "head",
+   "args": [
+    "-n",
+    "5",
+    "$HOME/notes.txt"
+   ],
+   "vetted": {
+    "program": "head",
+    "args": [
+     "-n",
+     "5",
+     "$HOME/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "tail",
+   "args": [
+    "-n",
+    "5",
+    "~/notes.txt"
+   ],
+   "vetted": {
+    "program": "tail",
+    "args": [
+     "-n",
+     "5",
+     "~/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "wc",
+   "args": [
+    "-l",
+    "$HOME/notes.txt"
+   ],
+   "vetted": {
+    "program": "wc",
+    "args": [
+     "-l",
+     "$HOME/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "du",
+   "args": [
+    "-sh",
+    "$HOME/proj"
+   ],
+   "vetted": {
+    "program": "du",
+    "args": [
+     "-sh",
+     "$HOME/proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "file",
+   "args": [
+    "$HOME/notes.txt"
+   ],
+   "vetted": {
+    "program": "file",
+    "args": [
+     "$HOME/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "which",
+   "args": [
+    "git"
+   ],
+   "vetted": {
+    "program": "which",
+    "args": [
+     "git"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "echo",
+   "args": [
+    "hello",
+    "$(rm -rf ~)",
+    "; rm -rf /",
+    "`id`",
+    "| sh"
+   ],
+   "vetted": {
+    "program": "echo",
+    "args": [
+     "hello",
+     "$(rm -rf ~)",
+     "; rm -rf /",
+     "`id`",
+     "| sh"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/; rm -rf "
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/; rm -rf "
+    }
+   ]
+  },
+  {
+   "program": "echo",
+   "args": [
+    "a/b"
+   ],
+   "vetted": {
+    "program": "echo",
+    "args": [
+     "a/b"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/a/b"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/a/b"
+    }
+   ]
+  },
+  {
+   "program": "date",
+   "args": [],
+   "vetted": {
+    "program": "date",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "date",
+   "args": [
+    "+%Y-%m-%d"
+   ],
+   "vetted": {
+    "program": "date",
+    "args": [
+     "+%Y-%m-%d"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "whoami",
+   "args": [],
+   "vetted": {
+    "program": "whoami",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "/bin/ls",
+   "args": [
+    "-la"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "-la"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "/usr/bin/git",
+   "args": [
+    "status"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "status"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "../../bin/cat",
+   "args": [
+    "notes.txt"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "",
+   "args": [],
+   "refused": "I can only run a short list of safe programs, and \"\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "ls/",
+   "args": [],
+   "vetted": {
+    "program": "ls",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "rm",
+   "args": [
+    "-rf",
+    "$HOME/proj"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"rm\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "sudo",
+   "args": [
+    "ls"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"sudo\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "curl",
+   "args": [
+    "https://example.com"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"curl\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "wget",
+   "args": [
+    "https://example.com"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"wget\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "sh",
+   "args": [
+    "-c",
+    "ls"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"sh\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "bash",
+   "args": [
+    "-c",
+    "ls"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"bash\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "zsh",
+   "args": [],
+   "refused": "I can only run a short list of safe programs, and \"zsh\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "osascript",
+   "args": [
+    "-e",
+    "beep"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"osascript\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "chmod",
+   "args": [
+    "+x",
+    "a"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"chmod\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "chown",
+   "args": [
+    "root",
+    "a"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"chown\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "kill",
+   "args": [
+    "1"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"kill\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "python",
+   "args": [
+    "-c",
+    "print(1)"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"python\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "pip",
+   "args": [
+    "install",
+    "x"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"pip\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "npx",
+   "args": [
+    "cowsay"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"npx\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "brew",
+   "args": [
+    "install",
+    "x"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"brew\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "env",
+   "args": [
+    "ls"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"env\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "xargs",
+   "args": [
+    "ls"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"xargs\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "find",
+   "args": [
+    ".",
+    "-delete"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"find\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "dd",
+   "args": [
+    "if=/dev/zero"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"dd\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "ln",
+   "args": [
+    "-s",
+    "a",
+    "b"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"ln\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "tar",
+   "args": [
+    "xf",
+    "a.tar"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"tar\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "ssh",
+   "args": [
+    "host"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"ssh\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "scp",
+   "args": [
+    "a",
+    "host:b"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"scp\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "launchctl",
+   "args": [
+    "list"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"launchctl\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "defaults",
+   "args": [
+    "read"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"defaults\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "LS",
+   "args": [],
+   "refused": "I can only run a short list of safe programs, and \"LS\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "Git",
+   "args": [
+    "status"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"Git\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "git ",
+   "args": [
+    "status"
+   ],
+   "refused": "I can only run a short list of safe programs, and \"git \" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "rm -rf",
+   "args": [],
+   "refused": "I can only run a short list of safe programs, and \"rm -rf\" is not one of them. Run it yourself if you meant it."
+  },
+  {
+   "program": "git",
+   "args": [],
+   "vetted": {
+    "program": "git",
+    "args": [],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "status"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "status"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "status"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "git",
+    "args": [
+     "status"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "init"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "init"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "log",
+    "--oneline",
+    "-n",
+    "5"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "log",
+     "--oneline",
+     "-n",
+     "5"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "diff"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "diff"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "show",
+    "HEAD"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "show",
+     "HEAD"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "add",
+    "-A"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "add",
+     "-A"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "add",
+    "src/a.ts"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "git",
+    "args": [
+     "add",
+     "src/a.ts"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": [
+     "$HOME/proj/src/a.ts"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/proj/src/a.ts"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "commit",
+    "-m",
+    "message"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "commit",
+     "-m",
+     "message"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "commit",
+    "-m",
+    "two\nlines"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "commit",
+     "-m",
+     "two\nlines"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "branch",
+    "-a"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "branch",
+     "-a"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "switch",
+    "main"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "switch",
+     "main"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "stash"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "stash"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "tag",
+    "v1"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "tag",
+     "v1"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "mv",
+    "a",
+    "b"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "mv",
+     "a",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "blame",
+    "a.txt"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "blame",
+     "a.txt"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "shortlog"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "shortlog"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "rev-parse",
+    "HEAD"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "rev-parse",
+     "HEAD"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "remote",
+    "-v"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "remote",
+     "-v"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "https://github.com/a/b.git"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "https://github.com/a/b.git"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/https:/github.com/a/b.git"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/https:/github.com/a/b.git"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "https://github.com/a/b.git",
+    "$HOME/proj/b"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "https://github.com/a/b.git",
+     "$HOME/proj/b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/https:/github.com/a/b.git",
+     "$HOME/proj/b"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/https:/github.com/a/b.git"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/proj/b"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "fetch"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "fetch"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "pull"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "pull"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "ls-files"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "ls-files"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "grep",
+    "needle"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "grep",
+     "needle"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "--version"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "--version"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "config",
+    "core.pager",
+    "sh"
+   ],
+   "refused": "I will not run git config."
+  },
+  {
+   "program": "git",
+   "args": [
+    "config",
+    "--global",
+    "alias.x",
+    "!sh"
+   ],
+   "refused": "I will not run git config."
+  },
+  {
+   "program": "git",
+   "args": [
+    "submodule",
+    "foreach",
+    "sh -c id"
+   ],
+   "refused": "I will not run git submodule."
+  },
+  {
+   "program": "git",
+   "args": [
+    "bisect",
+    "run",
+    "sh",
+    "-c",
+    "id"
+   ],
+   "refused": "I will not run git bisect."
+  },
+  {
+   "program": "git",
+   "args": [
+    "difftool",
+    "-x",
+    "sh"
+   ],
+   "refused": "I will not run git difftool."
+  },
+  {
+   "program": "git",
+   "args": [
+    "difftool",
+    "--extcmd=sh"
+   ],
+   "refused": "I will not run git difftool."
+  },
+  {
+   "program": "git",
+   "args": [
+    "push"
+   ],
+   "refused": "I will not run git push."
+  },
+  {
+   "program": "git",
+   "args": [
+    "push",
+    "--force"
+   ],
+   "refused": "I will not run git push."
+  },
+  {
+   "program": "git",
+   "args": [
+    "reset",
+    "--hard"
+   ],
+   "refused": "I will not run git reset."
+  },
+  {
+   "program": "git",
+   "args": [
+    "rebase",
+    "-i",
+    "HEAD~3"
+   ],
+   "refused": "I will not run git rebase."
+  },
+  {
+   "program": "git",
+   "args": [
+    "rebase",
+    "--exec",
+    "sh"
+   ],
+   "refused": "I will not run git rebase."
+  },
+  {
+   "program": "git",
+   "args": [
+    "checkout",
+    "."
+   ],
+   "refused": "I will not run git checkout."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clean",
+    "-fdx"
+   ],
+   "refused": "I will not run git clean."
+  },
+  {
+   "program": "git",
+   "args": [
+    "filter-branch"
+   ],
+   "refused": "I will not run git filter-branch."
+  },
+  {
+   "program": "git",
+   "args": [
+    "gc"
+   ],
+   "refused": "I will not run git gc."
+  },
+  {
+   "program": "git",
+   "args": [
+    "hook",
+    "run",
+    "x"
+   ],
+   "refused": "I will not run git hook."
+  },
+  {
+   "program": "git",
+   "args": [
+    "worktree",
+    "add",
+    "x"
+   ],
+   "refused": "I will not run git worktree."
+  },
+  {
+   "program": "git",
+   "args": [
+    "archive",
+    "HEAD"
+   ],
+   "refused": "I will not run git archive."
+  },
+  {
+   "program": "git",
+   "args": [
+    "daemon"
+   ],
+   "refused": "I will not run git daemon."
+  },
+  {
+   "program": "git",
+   "args": [
+    "mergetool"
+   ],
+   "refused": "I will not run git mergetool."
+  },
+  {
+   "program": "git",
+   "args": [
+    "rm",
+    "a"
+   ],
+   "refused": "I will not run git rm."
+  },
+  {
+   "program": "git",
+   "args": [
+    "restore",
+    "."
+   ],
+   "refused": "I will not run git restore."
+  },
+  {
+   "program": "git",
+   "args": [
+    "merge",
+    "x"
+   ],
+   "refused": "I will not run git merge."
+  },
+  {
+   "program": "git",
+   "args": [
+    "cherry-pick",
+    "x"
+   ],
+   "refused": "I will not run git cherry-pick."
+  },
+  {
+   "program": "git",
+   "args": [
+    "am"
+   ],
+   "refused": "I will not run git am."
+  },
+  {
+   "program": "git",
+   "args": [
+    "apply",
+    "p.patch"
+   ],
+   "refused": "I will not run git apply."
+  },
+  {
+   "program": "git",
+   "args": [
+    "update-index"
+   ],
+   "refused": "I will not run git update-index."
+  },
+  {
+   "program": "git",
+   "args": [
+    "STATUS"
+   ],
+   "refused": "I will not run git STATUS."
+  },
+  {
+   "program": "git",
+   "args": [
+    "",
+    "config",
+    "a",
+    "b"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "",
+     "config",
+     "a",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "-c",
+    "core.pager=sh",
+    "log"
+   ],
+   "refused": "I will not run git core.pager=sh."
+  },
+  {
+   "program": "git",
+   "args": [
+    "-c",
+    "alias.x=!sh",
+    "x"
+   ],
+   "refused": "I will not run git alias.x=!sh."
+  },
+  {
+   "program": "git",
+   "args": [
+    "log",
+    "-c"
+   ],
+   "refused": "I will not run git with \"-c\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "-ccore.pager=sh",
+    "log"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "-ccore.pager=sh",
+     "log"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "--config-env",
+    "core.pager=X",
+    "log"
+   ],
+   "refused": "I will not run git core.pager=X."
+  },
+  {
+   "program": "git",
+   "args": [
+    "--config-env=core.pager=X",
+    "log"
+   ],
+   "refused": "I will not run git with \"--config-env=core.pager=X\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "--exec-path=/tmp/x",
+    "status"
+   ],
+   "refused": "I will not run git with \"--exec-path=/tmp/x\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "--exec-path",
+    "status"
+   ],
+   "refused": "I will not run git with \"--exec-path\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "--upload-pack=sh",
+    "x"
+   ],
+   "refused": "I will not run git with \"--upload-pack=sh\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "--upload-pack",
+    "sh",
+    "x"
+   ],
+   "refused": "I will not run git with \"--upload-pack\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "-u",
+    "sh",
+    "x"
+   ],
+   "refused": "I will not run git with \"-u\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "fetch",
+    "--upload-pack=sh"
+   ],
+   "refused": "I will not run git with \"--upload-pack=sh\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "pull",
+    "--upload-pack=sh"
+   ],
+   "refused": "I will not run git with \"--upload-pack=sh\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "fetch",
+    "--receive-pack=sh"
+   ],
+   "refused": "I will not run git with \"--receive-pack=sh\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "--exec=sh",
+    "x"
+   ],
+   "refused": "I will not run git with \"--exec=sh\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "init",
+    "--template=x"
+   ],
+   "refused": "I will not run git with \"--template=x\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "--template",
+    "x",
+    "y"
+   ],
+   "refused": "I will not run git with \"--template\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "ext::sh -c id",
+    "x"
+   ],
+   "refused": "I will not run git with \"ext::sh -c id\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "ext::sh",
+    "x"
+   ],
+   "refused": "I will not run git with \"ext::sh\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "fetch",
+    "fd::17"
+   ],
+   "refused": "I will not run git with \"fd::17\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "EXT::sh",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "EXT::sh",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "remote",
+    "add",
+    "o",
+    "ext::sh -c id"
+   ],
+   "refused": "I will not run git with \"ext::sh -c id\"."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "-usth",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "-usth",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "--upload-pack=sh\n",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "--upload-pack=sh\n",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "-u\n",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "-u\n",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "-u\u0000",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "-u\u0000",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "-c\n",
+    "log"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "-c\n",
+     "log"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "ext::sh\n",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "ext::sh\n",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "grep",
+    "-Osh",
+    "needle"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "grep",
+     "-Osh",
+     "needle"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "grep",
+    "--open-files-in-pager=sh",
+    "needle"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "grep",
+     "--open-files-in-pager=sh",
+     "needle"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "--git-dir",
+    "status",
+    "config",
+    "core.fsmonitor",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "--git-dir",
+     "status",
+     "config",
+     "core.fsmonitor",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "-C",
+    "status",
+    "config",
+    "a",
+    "b"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "-C",
+     "status",
+     "config",
+     "a",
+     "b"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "-C",
+    "$HOME/proj",
+    "status"
+   ],
+   "refused": "I will not run git $HOME/proj."
+  },
+  {
+   "program": "git",
+   "args": [
+    "log",
+    "--output=/etc/x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "log",
+     "--output=/etc/x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/--output=/etc/x"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/--output=/etc/x"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "--git-dir=/etc/x",
+    "status"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "--git-dir=/etc/x",
+     "status"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/--git-dir=/etc/x"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/--git-dir=/etc/x"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "-C/etc",
+    "status"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "-C/etc",
+     "status"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/-C/etc"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/-C/etc"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "/etc/repo"
+   ],
+   "refused": "/etc/repo is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "https://a/b.git",
+    "/tmp/out"
+   ],
+   "refused": "/tmp/out is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "git",
+   "args": [
+    "add",
+    "../../../etc/passwd"
+   ],
+   "refused": "../../../etc/passwd is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "file:///etc/repo",
+    "x"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "file:///etc/repo",
+     "x"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/file:/etc/repo"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/file:/etc/repo"
+    }
+   ]
+  },
+  {
+   "program": "git",
+   "args": [
+    "clone",
+    "git@github.com:a/b.git"
+   ],
+   "vetted": {
+    "program": "git",
+    "args": [
+     "clone",
+     "git@github.com:a/b.git"
+    ],
+    "mutates": true,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/git@github.com:a/b.git"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "write",
+     "path": "$HOME/git@github.com:a/b.git"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "/etc/passwd"
+   ],
+   "refused": "/etc/passwd is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "../../etc/passwd"
+   ],
+   "refused": "../../etc/passwd is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "../.."
+   ],
+   "refused": "../.. is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [
+    ".."
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     ".."
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "../"
+   ],
+   "refused": "../ is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "../x"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "../x"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": [
+     "$HOME/x"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/x"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "../../x"
+   ],
+   "cwd": "$HOME/proj",
+   "refused": "../../x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "../../.."
+   ],
+   "cwd": "$HOME/proj/a/b",
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "../../.."
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME/proj/a/b",
+    "paths": [
+     "$HOME"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME/proj/a/b"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "../../../.."
+   ],
+   "cwd": "$HOME/proj/a/b",
+   "refused": "../../../.. is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "$HOME/proj/../../x"
+   ],
+   "refused": "$HOME/proj/../../x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "$HOME/../x"
+   ],
+   "refused": "$HOME/../x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "$HOME/./proj/../notes.txt"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "$HOME/./proj/../notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "$HOME-evil/secret"
+   ],
+   "refused": "$HOME-evil/secret is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "$HOMEx"
+   ],
+   "refused": "$HOMEx is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "$HOME/"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "$HOME/"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "$HOME"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "$HOME"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "$HOME-evil",
+   "refused": "$HOME-evil is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "/",
+   "refused": "/ is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "/tmp",
+   "refused": "/tmp is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "/etc",
+   "refused": "/etc is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "~",
+   "vetted": {
+    "program": "ls",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "~/proj",
+   "vetted": {
+    "program": "ls",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "",
+   "vetted": {
+    "program": "ls",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "$HOME/proj/",
+   "vetted": {
+    "program": "ls",
+    "args": [],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~/.ssh/id_rsa"
+   ],
+   "refused": "~/.ssh/id_rsa is in a protected location."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "$HOME/.ssh/id_rsa"
+   ],
+   "refused": "$HOME/.ssh/id_rsa is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "~/.ssh"
+   ],
+   "refused": "~/.ssh is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    ".ssh/"
+   ],
+   "refused": ".ssh/ is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    ".ssh"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     ".ssh"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [
+    "~/.sshx"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "~/.sshx"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/.sshx"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/.sshx"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~/.aws/credentials"
+   ],
+   "refused": "~/.aws/credentials is in a protected location."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~/.gnupg/x"
+   ],
+   "refused": "~/.gnupg/x is in a protected location."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~/Library/Keychains/login.keychain-db"
+   ],
+   "refused": "~/Library/Keychains/login.keychain-db is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "~/Library/LaunchAgents"
+   ],
+   "vetted": {
+    "program": "ls",
+    "args": [
+     "~/Library/LaunchAgents"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/Library/LaunchAgents"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/Library/LaunchAgents"
+    }
+   ]
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "~/.ssh",
+   "refused": "$HOME/.ssh is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [],
+   "cwd": "$HOME/Library/Keychains",
+   "refused": "$HOME/Library/Keychains is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/System/Library"
+   ],
+   "refused": "/System/Library is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/usr/bin"
+   ],
+   "refused": "/usr/bin is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/bin"
+   ],
+   "refused": "/bin is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/private/var/db"
+   ],
+   "refused": "/private/var/db is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/Library/LaunchDaemons"
+   ],
+   "refused": "/Library/LaunchDaemons is in a protected location."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/Applications"
+   ],
+   "refused": "/Applications is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "ls",
+   "args": [
+    "/usr/local"
+   ],
+   "refused": "/usr/local is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cp",
+   "args": [
+    "$HOME/a",
+    "/tmp/b"
+   ],
+   "refused": "/tmp/b is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cp",
+   "args": [
+    "/etc/hosts",
+    "$HOME/b"
+   ],
+   "refused": "/etc/hosts is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "mv",
+   "args": [
+    "$HOME/a",
+    "~/.ssh/authorized_keys"
+   ],
+   "refused": "~/.ssh/authorized_keys is in a protected location."
+  },
+  {
+   "program": "touch",
+   "args": [
+    "~/.ssh/x"
+   ],
+   "refused": "~/.ssh/x is in a protected location."
+  },
+  {
+   "program": "mkdir",
+   "args": [
+    "/opt/x"
+   ],
+   "refused": "/opt/x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~root/x"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "~root/x"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/root/x"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/root/x"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~other"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "~other"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/other"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/other"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "~/../x"
+   ],
+   "refused": "~/../x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "a/../../x"
+   ],
+   "refused": "a/../../x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "cat",
+   "args": [
+    "a/../x"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "a/../x"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/x"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/x"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "--file=/etc/passwd"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "--file=/etc/passwd"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/--file=/etc/passwd"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/--file=/etc/passwd"
+    }
+   ]
+  },
+  {
+   "program": "cat",
+   "args": [
+    "-f/etc/passwd"
+   ],
+   "vetted": {
+    "program": "cat",
+    "args": [
+     "-f/etc/passwd"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/-f/etc/passwd"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/-f/etc/passwd"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/notes.txt"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "notes.txt"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/proj"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "."
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "."
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "https://example.com"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "https://example.com"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "http://example.com/a?b=c"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "http://example.com/a?b=c"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "HTTPS://EXAMPLE.com"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "HTTPS://EXAMPLE.com"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "https://example.com/tool.app"
+   ],
+   "refused": "Opening tool.app would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "https://example.com/x.sh"
+   ],
+   "refused": "Opening x.sh would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "-a",
+    "Safari",
+    "https://example.com"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "-a",
+     "Safari",
+     "https://example.com"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "-a",
+    "Terminal",
+    "$HOME/proj"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "-a",
+     "Terminal",
+     "$HOME/proj"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "-a",
+    "Safari.app"
+   ],
+   "refused": "Opening Safari.app would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "-R",
+    "$HOME/notes.txt"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "-R",
+     "$HOME/notes.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/notes.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/notes.txt"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "--args",
+    "-x"
+   ],
+   "refused": "I will not run open with \"--args\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/notes.txt",
+    "--args",
+    "x"
+   ],
+   "refused": "I will not run open with \"--args\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "--args\n"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "--args\n"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "/Applications/Safari.app"
+   ],
+   "refused": "/Applications/Safari.app is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/Apps/Thing.app"
+   ],
+   "refused": "Opening Thing.app would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/Apps/Thing.app/"
+   ],
+   "refused": "Opening Thing.app would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/Apps/Thing.APP"
+   ],
+   "refused": "Opening Thing.APP would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "Thing.app"
+   ],
+   "refused": "Opening Thing.app would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/run.sh"
+   ],
+   "refused": "Opening run.sh would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "run.sh"
+   ],
+   "refused": "Opening run.sh would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/run.command"
+   ],
+   "refused": "Opening run.command would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.tool"
+   ],
+   "refused": "Opening x.tool would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.zsh"
+   ],
+   "refused": "Opening x.zsh would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.bash"
+   ],
+   "refused": "Opening x.bash would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.csh"
+   ],
+   "refused": "Opening x.csh would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/Installer.pkg"
+   ],
+   "refused": "Opening Installer.pkg would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/Installer.mpkg"
+   ],
+   "refused": "Opening Installer.mpkg would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.terminal"
+   ],
+   "refused": "Opening x.terminal would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.workflow"
+   ],
+   "refused": "Opening x.workflow would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.scpt"
+   ],
+   "refused": "Opening x.scpt would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.scptd"
+   ],
+   "refused": "Opening x.scptd would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.applescript"
+   ],
+   "refused": "Opening x.applescript would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.jar"
+   ],
+   "refused": "Opening x.jar would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.webloc"
+   ],
+   "refused": "Opening x.webloc would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.inetloc"
+   ],
+   "refused": "Opening x.inetloc would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.fileloc"
+   ],
+   "refused": "Opening x.fileloc would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/Installer.pKg"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/Installer.pKg"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/Installer.pKg"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/Installer.pKg"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.ſh"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/x.ſh"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/x.ſh"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/x.ſh"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.sh.txt"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/x.sh.txt"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/x.sh.txt"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/x.sh.txt"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.dmg"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/x.dmg"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/x.dmg"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/x.dmg"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/x.html"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/x.html"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/x.html"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/x.html"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/bin/tool-x"
+   ],
+   "refused": "Opening tool-x would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "bin/tool-x"
+   ],
+   "refused": "Opening tool-x would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "tool-x"
+   ],
+   "cwd": "$HOME/bin",
+   "refused": "Opening tool-x would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "-a",
+    "tool-x"
+   ],
+   "cwd": "$HOME/bin",
+   "refused": "Opening tool-x would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/bin/plain"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/bin/plain"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/bin/plain"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/bin/plain"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/bin"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "$HOME/bin"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/bin"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/bin"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "$HOME/bin/link-x"
+   ],
+   "refused": "Opening link-x would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "file:///etc/passwd"
+   ],
+   "refused": "I only open files, folders and web pages, not \"file:///etc/passwd\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "file://$HOME/notes.txt"
+   ],
+   "refused": "I only open files, folders and web pages, not \"file://$HOME/notes.txt\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "x-apple.systempreferences:com.apple.preference.security"
+   ],
+   "refused": "I only open files, folders and web pages, not \"x-apple.systempreferences:com.apple.preference.security\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "mailto:a@b.co"
+   ],
+   "refused": "I only open files, folders and web pages, not \"mailto:a@b.co\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "tel:123"
+   ],
+   "refused": "I only open files, folders and web pages, not \"tel:123\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "ssh://host"
+   ],
+   "refused": "I only open files, folders and web pages, not \"ssh://host\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "vnc://host"
+   ],
+   "refused": "I only open files, folders and web pages, not \"vnc://host\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "smb://host/share"
+   ],
+   "refused": "I only open files, folders and web pages, not \"smb://host/share\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "javascript:alert(1)"
+   ],
+   "refused": "I only open files, folders and web pages, not \"javascript:alert(1)\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "itms-apps://x"
+   ],
+   "refused": "I only open files, folders and web pages, not \"itms-apps://x\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "FILE:///etc/passwd"
+   ],
+   "refused": "I only open files, folders and web pages, not \"FILE:///etc/passwd\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "ftp://host/x"
+   ],
+   "refused": "I only open files, folders and web pages, not \"ftp://host/x\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "httpſ://example.com"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "httpſ://example.com"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/httpſ:/example.com"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/httpſ:/example.com"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "Kibu://x"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "Kibu://x"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/Kibu:/x"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    },
+    {
+     "kind": "read",
+     "path": "$HOME/Kibu:/x"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "c:"
+   ],
+   "refused": "I only open files, folders and web pages, not \"c:\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "a:b/c"
+   ],
+   "refused": "I only open files, folders and web pages, not \"a:b/c\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "1a:b"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "1a:b"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    ":x"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     ":x"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "https:/example.com"
+   ],
+   "refused": "I only open files, folders and web pages, not \"https:/example.com\"."
+  },
+  {
+   "program": "open",
+   "args": [
+    "http://"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "http://"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "-b",
+    "com.apple.Terminal"
+   ],
+   "refused": "Opening com.apple.Terminal would run it, so I will not. Open it yourself if you trust it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "-n",
+    "-a",
+    "Calculator"
+   ],
+   "vetted": {
+    "program": "open",
+    "args": [
+     "-n",
+     "-a",
+     "Calculator"
+    ],
+    "mutates": false,
+    "runsCode": false,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "read",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "open",
+   "args": [
+    "/etc/hosts"
+   ],
+   "refused": "/etc/hosts is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "open",
+   "args": [
+    "~/.ssh/config"
+   ],
+   "refused": "~/.ssh/config is in a protected location."
+  },
+  {
+   "program": "node",
+   "args": [
+    "-e",
+    "process.exit(0)"
+   ],
+   "vetted": {
+    "program": "node",
+    "args": [
+     "-e",
+     "process.exit(0)"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "node",
+   "args": [
+    "script.js"
+   ],
+   "vetted": {
+    "program": "node",
+    "args": [
+     "script.js"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "node",
+   "args": [
+    "script.js"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "node",
+    "args": [
+     "script.js"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "node",
+   "args": [
+    "$HOME/proj/script.js"
+   ],
+   "vetted": {
+    "program": "node",
+    "args": [
+     "$HOME/proj/script.js"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": [
+     "$HOME/proj/script.js"
+    ]
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "node",
+   "args": [
+    "/tmp/script.js"
+   ],
+   "refused": "/tmp/script.js is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "node",
+   "args": [
+    "--version"
+   ],
+   "vetted": {
+    "program": "node",
+    "args": [
+     "--version"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "python3",
+   "args": [
+    "-c",
+    "print(1)"
+   ],
+   "vetted": {
+    "program": "python3",
+    "args": [
+     "-c",
+     "print(1)"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "python3",
+   "args": [
+    "script.py"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "python3",
+    "args": [
+     "script.py"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "python3",
+   "args": [
+    "-m",
+    "http.server"
+   ],
+   "vetted": {
+    "program": "python3",
+    "args": [
+     "-m",
+     "http.server"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "python3",
+   "args": [
+    "/etc/x.py"
+   ],
+   "refused": "/etc/x.py is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "install"
+   ],
+   "vetted": {
+    "program": "npm",
+    "args": [
+     "install"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "npm",
+   "args": [
+    "install",
+    "left-pad"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "npm",
+    "args": [
+     "install",
+     "left-pad"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "npm",
+   "args": [
+    "exec",
+    "cowsay"
+   ],
+   "vetted": {
+    "program": "npm",
+    "args": [
+     "exec",
+     "cowsay"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "npm",
+   "args": [
+    "run",
+    "build"
+   ],
+   "cwd": "$HOME/proj",
+   "vetted": {
+    "program": "npm",
+    "args": [
+     "run",
+     "build"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME/proj",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME/proj"
+    }
+   ]
+  },
+  {
+   "program": "npm",
+   "args": [
+    "test"
+   ],
+   "vetted": {
+    "program": "npm",
+    "args": [
+     "test"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "npm",
+   "args": [
+    "publish"
+   ],
+   "refused": "I will not run npm with \"publish\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "unpublish",
+    "x"
+   ],
+   "refused": "I will not run npm with \"unpublish\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "login"
+   ],
+   "refused": "I will not run npm with \"login\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "logout"
+   ],
+   "refused": "I will not run npm with \"logout\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "adduser"
+   ],
+   "refused": "I will not run npm with \"adduser\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "token",
+    "list"
+   ],
+   "refused": "I will not run npm with \"token\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "owner",
+    "add",
+    "x"
+   ],
+   "refused": "I will not run npm with \"owner\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "access",
+    "public"
+   ],
+   "refused": "I will not run npm with \"access\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "deprecate",
+    "x",
+    "y"
+   ],
+   "refused": "I will not run npm with \"deprecate\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "dist-tag",
+    "add",
+    "x"
+   ],
+   "refused": "I will not run npm with \"dist-tag\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "run",
+    "publish"
+   ],
+   "refused": "I will not run npm with \"publish\"."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "publish-it"
+   ],
+   "vetted": {
+    "program": "npm",
+    "args": [
+     "publish-it"
+    ],
+    "mutates": true,
+    "runsCode": true,
+    "cwd": "$HOME",
+    "paths": []
+   },
+   "scopes": [
+    {
+     "kind": "write",
+     "path": "$HOME"
+    }
+   ]
+  },
+  {
+   "program": "npm",
+   "args": [
+    "install",
+    "--prefix",
+    "/tmp/x"
+   ],
+   "refused": "/tmp/x is outside your home folder, so I will not touch it."
+  },
+  {
+   "program": "npm",
+   "args": [
+    "install"
+   ],
+   "cwd": "/tmp",
+   "refused": "/tmp is outside your home folder, so I will not touch it."
+  }
+ ],
+ "launches": [
+  {
+   "path": "/Applications/Safari.app",
+   "launches": true
+  },
+  {
+   "path": "/a/b.app/",
+   "launches": true
+  },
+  {
+   "path": "/a/b.APP",
+   "launches": true
+  },
+  {
+   "path": "/a/b.app/Contents",
+   "launches": false
+  },
+  {
+   "path": "/a/b.sh",
+   "launches": true
+  },
+  {
+   "path": "/a/b.Sh",
+   "launches": true
+  },
+  {
+   "path": "/a/b.pkg",
+   "launches": true
+  },
+  {
+   "path": "/a/b.pKg",
+   "launches": false
+  },
+  {
+   "path": "/a/b.ſh",
+   "launches": false
+  },
+  {
+   "path": "/a/b.txt",
+   "launches": false
+  },
+  {
+   "path": "/a/app",
+   "launches": false
+  },
+  {
+   "path": "/a/b.jar\n",
+   "launches": false
+  },
+  {
+   "path": "/a/b.command",
+   "launches": true
+  },
+  {
+   "path": "$HOME/bin/tool-x",
+   "launches": true
+  },
+  {
+   "path": "$HOME/bin/plain",
+   "launches": false
+  },
+  {
+   "path": "$HOME/bin",
+   "launches": false
+  },
+  {
+   "path": "$HOME/bin/link-x",
+   "launches": true
+  },
+  {
+   "path": "$HOME/missing",
+   "launches": false
+  },
+  {
+   "path": "$HOME/bin/tool-x\u0000",
+   "launches": false
+  },
+  {
+   "path": "",
+   "launches": false
+  }
+ ]
+}

@@ -1,0 +1,511 @@
+{
+ "home": "/Users/onepiece",
+ "numbers": [
+  {
+   "source": "0",
+   "text": "0"
+  },
+  {
+   "source": "-0",
+   "text": "0"
+  },
+  {
+   "source": "1",
+   "text": "1"
+  },
+  {
+   "source": "-1",
+   "text": "-1"
+  },
+  {
+   "source": "1.5",
+   "text": "1.5"
+  },
+  {
+   "source": "0.1",
+   "text": "0.1"
+  },
+  {
+   "source": "1e21",
+   "text": "1e+21"
+  },
+  {
+   "source": "1e-7",
+   "text": "1e-7"
+  },
+  {
+   "source": "123456789012345680000",
+   "text": "123456789012345680000"
+  },
+  {
+   "source": "1.5e300",
+   "text": "1.5e+300"
+  },
+  {
+   "source": "0.000001",
+   "text": "0.000001"
+  },
+  {
+   "source": "9007199254740993",
+   "text": "9007199254740992"
+  },
+  {
+   "source": "3.0",
+   "text": "3"
+  },
+  {
+   "source": "2.5e-10",
+   "text": "2.5e-10"
+  },
+  {
+   "source": "1e20",
+   "text": "100000000000000000000"
+  },
+  {
+   "source": "100",
+   "text": "100"
+  },
+  {
+   "source": "0.30000000000000004",
+   "text": "0.30000000000000004"
+  }
+ ],
+ "values": [
+  {
+   "source": "{\"a\":1,\"b\":[1,2,{\"c\":null}],\"d\":\"x\\ny\\t\\\"q\\\"\\u0001é😀\",\"e\":{},\"f\":[],\"g\":true}",
+   "compact": "{\"a\":1,\"b\":[1,2,{\"c\":null}],\"d\":\"x\\ny\\t\\\"q\\\"\\u0001é😀\",\"e\":{},\"f\":[],\"g\":true}",
+   "pretty": "{\n \"a\": 1,\n \"b\": [\n  1,\n  2,\n  {\n   \"c\": null\n  }\n ],\n \"d\": \"x\\ny\\t\\\"q\\\"\\u0001é😀\",\n \"e\": {},\n \"f\": [],\n \"g\": true\n}"
+  },
+  {
+   "source": "\"plain\"",
+   "compact": "\"plain\"",
+   "pretty": "\"plain\""
+  },
+  {
+   "source": "[1.0,2.50,\"3\"]",
+   "compact": "[1,2.5,\"3\"]",
+   "pretty": "[\n 1,\n 2.5,\n \"3\"\n]"
+  },
+  {
+   "source": "{\"z\":1,\"a\":2}",
+   "compact": "{\"z\":1,\"a\":2}",
+   "pretty": "{\n \"z\": 1,\n \"a\": 2\n}"
+  }
+ ],
+ "paths": [
+  {
+   "p": "/a/b/c.txt",
+   "normalize": "/a/b/c.txt",
+   "dirname": "/a/b",
+   "basename": "c.txt",
+   "extname": ".txt",
+   "stem": "c",
+   "absolute": true
+  },
+  {
+   "p": "/a/b/",
+   "normalize": "/a/b/",
+   "dirname": "/a",
+   "basename": "b",
+   "extname": "",
+   "stem": "b",
+   "absolute": true
+  },
+  {
+   "p": "/a//b/../c",
+   "normalize": "/a/c",
+   "dirname": "/a//b/..",
+   "basename": "c",
+   "extname": "",
+   "stem": "c",
+   "absolute": true
+  },
+  {
+   "p": "/",
+   "normalize": "/",
+   "dirname": "/",
+   "basename": "",
+   "extname": "",
+   "stem": "",
+   "absolute": true
+  },
+  {
+   "p": "",
+   "normalize": ".",
+   "dirname": ".",
+   "basename": "",
+   "extname": "",
+   "stem": "",
+   "absolute": false
+  },
+  {
+   "p": "a",
+   "normalize": "a",
+   "dirname": ".",
+   "basename": "a",
+   "extname": "",
+   "stem": "a",
+   "absolute": false
+  },
+  {
+   "p": "a/b",
+   "normalize": "a/b",
+   "dirname": "a",
+   "basename": "b",
+   "extname": "",
+   "stem": "b",
+   "absolute": false
+  },
+  {
+   "p": "./a",
+   "normalize": "a",
+   "dirname": ".",
+   "basename": "a",
+   "extname": "",
+   "stem": "a",
+   "absolute": false
+  },
+  {
+   "p": "../a",
+   "normalize": "../a",
+   "dirname": "..",
+   "basename": "a",
+   "extname": "",
+   "stem": "a",
+   "absolute": false
+  },
+  {
+   "p": "/a/b/.hidden",
+   "normalize": "/a/b/.hidden",
+   "dirname": "/a/b",
+   "basename": ".hidden",
+   "extname": "",
+   "stem": ".hidden",
+   "absolute": true
+  },
+  {
+   "p": "/a/b/archive.tar.gz",
+   "normalize": "/a/b/archive.tar.gz",
+   "dirname": "/a/b",
+   "basename": "archive.tar.gz",
+   "extname": ".gz",
+   "stem": "archive.tar",
+   "absolute": true
+  },
+  {
+   "p": "/a/b/name.",
+   "normalize": "/a/b/name.",
+   "dirname": "/a/b",
+   "basename": "name.",
+   "extname": ".",
+   "stem": "name",
+   "absolute": true
+  },
+  {
+   "p": "/a/b/..",
+   "normalize": "/a",
+   "dirname": "/a/b",
+   "basename": "..",
+   "extname": "",
+   "stem": "..",
+   "absolute": true
+  },
+  {
+   "p": "file.TXT",
+   "normalize": "file.TXT",
+   "dirname": ".",
+   "basename": "file.TXT",
+   "extname": ".TXT",
+   "stem": "file",
+   "absolute": false
+  },
+  {
+   "p": "/a/b/c/",
+   "normalize": "/a/b/c/",
+   "dirname": "/a/b",
+   "basename": "c",
+   "extname": "",
+   "stem": "c",
+   "absolute": true
+  },
+  {
+   "p": "///a",
+   "normalize": "/a",
+   "dirname": "//",
+   "basename": "a",
+   "extname": "",
+   "stem": "a",
+   "absolute": true
+  },
+  {
+   "p": "/a/./b/./c",
+   "normalize": "/a/b/c",
+   "dirname": "/a/./b/.",
+   "basename": "c",
+   "extname": "",
+   "stem": "c",
+   "absolute": true
+  },
+  {
+   "p": "/..",
+   "normalize": "/",
+   "dirname": "/",
+   "basename": "..",
+   "extname": "",
+   "stem": "..",
+   "absolute": true
+  },
+  {
+   "p": "a/../..",
+   "normalize": "..",
+   "dirname": "a/..",
+   "basename": "..",
+   "extname": "",
+   "stem": "..",
+   "absolute": false
+  },
+  {
+   "p": ".bashrc",
+   "normalize": ".bashrc",
+   "dirname": ".",
+   "basename": ".bashrc",
+   "extname": "",
+   "stem": ".bashrc",
+   "absolute": false
+  },
+  {
+   "p": "/x/.git/config",
+   "normalize": "/x/.git/config",
+   "dirname": "/x/.git",
+   "basename": "config",
+   "extname": "",
+   "stem": "config",
+   "absolute": true
+  }
+ ],
+ "joins": [
+  {
+   "parts": [
+    "/a",
+    "b",
+    "../c"
+   ],
+   "joined": "/a/c"
+  },
+  {
+   "parts": [
+    "a",
+    "",
+    "b"
+   ],
+   "joined": "a/b"
+  },
+  {
+   "parts": [
+    "/a/",
+    "/b/"
+   ],
+   "joined": "/a/b/"
+  },
+  {
+   "parts": [
+    ""
+   ],
+   "joined": "."
+  },
+  {
+   "parts": [
+    "a",
+    "..",
+    "..",
+    "b"
+   ],
+   "joined": "../b"
+  }
+ ],
+ "resolves": [
+  {
+   "parts": [
+    "/a",
+    "b"
+   ],
+   "resolved": "/a/b"
+  },
+  {
+   "parts": [
+    "/a",
+    "/b",
+    "c"
+   ],
+   "resolved": "/b/c"
+  },
+  {
+   "parts": [
+    "/a/b",
+    "../../..",
+    "x"
+   ],
+   "resolved": "/x"
+  },
+  {
+   "parts": [
+    "/a",
+    "./b/"
+   ],
+   "resolved": "/a/b"
+  },
+  {
+   "parts": [
+    "/"
+   ],
+   "resolved": "/"
+  }
+ ],
+ "relatives": [
+  {
+   "from": "/a/b",
+   "to": "/a/b/c/d",
+   "relative": "c/d"
+  },
+  {
+   "from": "/a/b/c",
+   "to": "/a/x",
+   "relative": "../../x"
+  },
+  {
+   "from": "/a",
+   "to": "/a",
+   "relative": ""
+  }
+ ],
+ "tilde": [
+  {
+   "p": "~",
+   "normalized": "/Users/onepiece"
+  },
+  {
+   "p": "~/Documents",
+   "normalized": "/Users/onepiece/Documents"
+  },
+  {
+   "p": "~/Documents/../Desktop/",
+   "normalized": "/Users/onepiece/Desktop"
+  },
+  {
+   "p": "/tmp/x/../y",
+   "normalized": "/tmp/y"
+  },
+  {
+   "p": "~user/x",
+   "normalized": "/Users/onepiece/user/x"
+  },
+  {
+   "p": "/Users/someone/./a//b",
+   "normalized": "/Users/someone/a/b"
+  },
+  {
+   "p": "~//x",
+   "normalized": "/x"
+  }
+ ],
+ "within": [
+  {
+   "parent": "/a/b",
+   "child": "/a/b",
+   "within": true
+  },
+  {
+   "parent": "/a/b",
+   "child": "/a/b/c",
+   "within": true
+  },
+  {
+   "parent": "/a/b",
+   "child": "/a/bc",
+   "within": false
+  },
+  {
+   "parent": "/a/b/",
+   "child": "/a/b/c",
+   "within": true
+  },
+  {
+   "parent": "~/Downloads",
+   "child": "~/Down",
+   "within": false
+  },
+  {
+   "parent": "~/Down",
+   "child": "~/Downloads",
+   "within": false
+  },
+  {
+   "parent": "/",
+   "child": "/a",
+   "within": true
+  },
+  {
+   "parent": "/a",
+   "child": "/",
+   "within": false
+  }
+ ],
+ "forbidden": [
+  {
+   "p": "/System/Library",
+   "forbidden": true
+  },
+  {
+   "p": "~/.ssh/id_rsa",
+   "forbidden": true
+  },
+  {
+   "p": "~/.sshx",
+   "forbidden": false
+  },
+  {
+   "p": "~/Library/Keychains/login.keychain-db",
+   "forbidden": true
+  },
+  {
+   "p": "/usr/bin/env",
+   "forbidden": true
+  },
+  {
+   "p": "/usr/local/bin/x",
+   "forbidden": false
+  },
+  {
+   "p": "~/Documents",
+   "forbidden": false
+  },
+  {
+   "p": "/bin",
+   "forbidden": true
+  },
+  {
+   "p": "/binx",
+   "forbidden": false
+  },
+  {
+   "p": "/private/var/db/x",
+   "forbidden": true
+  },
+  {
+   "p": "~/.aws",
+   "forbidden": true
+  },
+  {
+   "p": "~/.gnupg/a",
+   "forbidden": true
+  },
+  {
+   "p": "/Library/LaunchAgents/x.plist",
+   "forbidden": true
+  },
+  {
+   "p": "~/Library/LaunchAgents/x.plist",
+   "forbidden": false
+  }
+ ]
+}

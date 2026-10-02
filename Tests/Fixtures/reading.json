@@ -1,0 +1,4690 @@
+{
+ "sums": [
+  {
+   "input": "54/30",
+   "value": 1.8
+  },
+  {
+   "input": "1+1",
+   "value": 2
+  },
+  {
+   "input": "2 + 3 * 4",
+   "value": 14
+  },
+  {
+   "input": "(2+3)*4",
+   "value": 20
+  },
+  {
+   "input": "10/4",
+   "value": 2.5
+  },
+  {
+   "input": "10/0",
+   "value": null
+  },
+  {
+   "input": "10/(5-5)",
+   "value": null
+  },
+  {
+   "input": "-5",
+   "value": -5
+  },
+  {
+   "input": "--5",
+   "value": 5
+  },
+  {
+   "input": "-(3+2)",
+   "value": -5
+  },
+  {
+   "input": "2*-3",
+   "value": -6
+  },
+  {
+   "input": "2--3",
+   "value": 5
+  },
+  {
+   "input": "2-+3",
+   "value": null
+  },
+  {
+   "input": "1.5*2",
+   "value": 3
+  },
+  {
+   "input": ".5",
+   "value": 5
+  },
+  {
+   "input": "5.",
+   "value": 5
+  },
+  {
+   "input": "1..2",
+   "value": null
+  },
+  {
+   "input": "1.5.2",
+   "value": null
+  },
+  {
+   "input": "1.2.3.4",
+   "value": null
+  },
+  {
+   "input": "0.1+0.2",
+   "value": 0.3
+  },
+  {
+   "input": "1/3",
+   "value": 0.3333333333
+  },
+  {
+   "input": "2/3",
+   "value": 0.6666666667
+  },
+  {
+   "input": "18% of 4250 + 12*3",
+   "value": 801
+  },
+  {
+   "input": "18 % of 4250",
+   "value": 765
+  },
+  {
+   "input": "18%of4250",
+   "value": 765
+  },
+  {
+   "input": "50% of 50% of 200",
+   "value": 50
+  },
+  {
+   "input": "12.5% OF 80",
+   "value": 10
+  },
+  {
+   "input": "% of 5",
+   "value": null
+  },
+  {
+   "input": "18%",
+   "value": null
+  },
+  {
+   "input": "18% off 20",
+   "value": null
+  },
+  {
+   "input": "1,000 + 1",
+   "value": 1001
+  },
+  {
+   "input": "1,2,3",
+   "value": 123
+  },
+  {
+   "input": ",",
+   "value": null
+  },
+  {
+   "input": "",
+   "value": null
+  },
+  {
+   "input": " ",
+   "value": null
+  },
+  {
+   "input": "()",
+   "value": null
+  },
+  {
+   "input": "(",
+   "value": null
+  },
+  {
+   "input": ")",
+   "value": null
+  },
+  {
+   "input": "(1",
+   "value": null
+  },
+  {
+   "input": "1)",
+   "value": null
+  },
+  {
+   "input": "((1))",
+   "value": 1
+  },
+  {
+   "input": "(1)(2)",
+   "value": null
+  },
+  {
+   "input": "1 2",
+   "value": 12
+  },
+  {
+   "input": "1+",
+   "value": null
+  },
+  {
+   "input": "+1",
+   "value": null
+  },
+  {
+   "input": "*2",
+   "value": null
+  },
+  {
+   "input": "2*",
+   "value": null
+  },
+  {
+   "input": "2**3",
+   "value": null
+  },
+  {
+   "input": "2^3",
+   "value": null
+  },
+  {
+   "input": "abc",
+   "value": null
+  },
+  {
+   "input": "2x3",
+   "value": null
+  },
+  {
+   "input": "1e3",
+   "value": null
+  },
+  {
+   "input": "0x10",
+   "value": null
+  },
+  {
+   "input": "१+१",
+   "value": null
+  },
+  {
+   "input": "1+1",
+   "value": 2
+  },
+  {
+   "input": "1 + 1",
+   "value": 2
+  },
+  {
+   "input": "1\n+\t1",
+   "value": 2
+  },
+  {
+   "input": "9999999999*9999999999",
+   "value": 99999999980000000000
+  },
+  {
+   "input": "99999999999999999999999999",
+   "value": 1e+26
+  },
+  {
+   "input": "1/7*7",
+   "value": 1
+  },
+  {
+   "input": "0.5+0.5",
+   "value": 1
+  },
+  {
+   "input": "123456789.123456789",
+   "value": 123456789.12345679
+  },
+  {
+   "input": "0.00000000005",
+   "value": 1e-10
+  },
+  {
+   "input": "0.00000000004",
+   "value": 0
+  },
+  {
+   "input": "-0.00000000005",
+   "value": 0
+  },
+  {
+   "input": "1.00000000005",
+   "value": 1.0000000001
+  },
+  {
+   "input": "2.5",
+   "value": 2.5
+  },
+  {
+   "input": "7-10",
+   "value": -3
+  },
+  {
+   "input": "100-99.9",
+   "value": 0.1
+  },
+  {
+   "input": "3*(4+(5-2))/3",
+   "value": 7
+  },
+  {
+   "input": "((((((1+1))))))",
+   "value": 2
+  },
+  {
+   "input": "1+(2",
+   "value": null
+  },
+  {
+   "input": "1+2)",
+   "value": null
+  },
+  {
+   "input": "3/-0",
+   "value": null
+  },
+  {
+   "input": "0/5",
+   "value": 0
+  },
+  {
+   "input": "-0",
+   "value": 0
+  },
+  {
+   "input": "5-5",
+   "value": 0
+  },
+  {
+   "input": "1.",
+   "value": 1
+  },
+  {
+   "input": ".",
+   "value": null
+  },
+  {
+   "input": "..",
+   "value": null
+  },
+  {
+   "input": "1+.5",
+   "value": 6
+  },
+  {
+   "input": "4/2/2",
+   "value": 1
+  },
+  {
+   "input": "2-3-4",
+   "value": -5
+  },
+  {
+   "input": "8/4*2",
+   "value": 4
+  },
+  {
+   "input": "10 000",
+   "value": 10000
+  },
+  {
+   "input": "1+1=2",
+   "value": null
+  },
+  {
+   "input": "1.5e",
+   "value": null
+  },
+  {
+   "input": "what is 2+2",
+   "value": null
+  },
+  {
+   "input": "2+2?",
+   "value": null
+  },
+  {
+   "input": "  7  ",
+   "value": 7
+  },
+  {
+   "input": "007",
+   "value": 7
+  },
+  {
+   "input": "1/3*3",
+   "value": 1
+  },
+  {
+   "input": "0.1*3",
+   "value": 0.3
+  },
+  {
+   "input": "100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+   "value": null
+  }
+ ],
+ "about": [
+  {
+   "text": "what can you do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "What can you do?",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can u do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "wat can u do bro?",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "who are you",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "who r u",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what are you",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what do you do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what are you merry",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can merry do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "help",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "Help!",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "HELP???",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "capabilities",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hi",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "hey what can you do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hey, hello! what can you do for me lol",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "yo sup help",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hi help me",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "help me rename these screenshots",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what can you do about the mess in my Downloads",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what can you do for me",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do for me please",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do, bro, man",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do exactly again?",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do do",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what do you do do",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "who do you do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what are u do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "  help  ",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "help.",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "help?!.",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "helps",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "helpful",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "hey",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "heya help",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hellohelp",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "hi,help",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hi.help",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hi!!! what are you",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what\tcan\nyou do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do ",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do\n",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do lol haha",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do merry",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "capabilities please",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "capabilities pls bruh",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what is your name",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "who made you",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what can you",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do ?",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what can you do for me?!",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "whát can you do",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "yo",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "sup help mate",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "what are you buddy dude",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "help again",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "help exactly",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "Hello. Hello. Help.",
+   "merry": true,
+   "model": false
+  },
+  {
+   "text": "hey hey hey capabilities",
+   "merry": true,
+   "model": false
+  }
+ ],
+ "model": [
+  {
+   "text": "which model are you",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "Which model are you?",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what ai r u",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you chatgpt",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you chat gpt",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "r u gpt",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you claude",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are u gemini",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you an ai",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you a ai",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you ai",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you aid",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model should I use for coding",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model do you use",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what llm powers merry",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "which ai models are behind you",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what brain do you have",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what ai model are you",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "which ai ai model are you",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what model is best for you",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "recommend what model you like",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model are you using for my tasks",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model are you using right now for all of this stuff today",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model do you run on today please ok",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "which models",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "model you",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "you are what model",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "tell me which model you are",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "so are you claude or gpt",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you sure",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "are you gptx",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what\nmodel\nare\nyou",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "  which   model   are   you  ",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "which model r u",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what ai is merry",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what ais are you",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what brains u got",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "which llms can you use",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "are you Claude?",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "ARE YOU CHATGPT",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what model? you",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what kind of model are you",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what model are your thoughts",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "which model is merry",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "are you a robot",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "r you an ai",
+   "merry": false,
+   "model": true
+  },
+  {
+   "text": "what model should i ask you about",
+   "merry": false,
+   "model": false
+  },
+  {
+   "text": "what is the best model for you",
+   "merry": false,
+   "model": false
+  }
+ ],
+ "models": [
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude Sonnet 5.5, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude Sonnet 5.5, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Sonnet for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Sonnet for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-sonnet-5-5",
+    "jev": "jev-latest",
+    "claudeCode": "sonnet",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude Opus 5, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude Opus 5, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Opus for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Opus for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with gpt-5-codex.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with gpt-5-codex.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with anthropic/claude-sonnet-5.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with anthropic/claude-sonnet-5.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": true,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-opus-5",
+    "jev": "jev-latest",
+    "claudeCode": "opus",
+    "codex": "gpt-5-codex",
+    "opencode": "anthropic/claude-sonnet-5",
+    "maxTokens": 16000
+   },
+   "jev": false,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude Haiku 4.5.20260101, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude Haiku 4.5.20260101, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Claude Opus 4.8 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Claude Opus 4.8 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with o3.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with o3.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with x.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with x.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-haiku-4-5-20260101",
+    "jev": "jev-latest",
+    "claudeCode": "claude-opus-4-8",
+    "codex": "o3",
+    "opencode": "x",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Gpt Mini 4.1, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Gpt Mini 4.1, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Haiku 4.5 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Haiku 4.5 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "gpt-4-1-mini",
+    "jev": "jev-latest",
+    "claudeCode": "haiku-4-5",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude  3, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude  3, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Éclair 2 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using Éclair 2 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-3",
+    "jev": "jev-latest",
+    "claudeCode": "éclair-2",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude Fable 5.1, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "api",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude Fable 5.1, through the Anthropic API, thinking briefly for quick answers, and harder for anything I do on your Mac.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using  7 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "claude-code",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think with Claude, through the Claude Code on this Mac, using  7 for answers and tasks.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "codex",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the Codex on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": "opencode",
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "I think through the OpenCode on this Mac, with the model it is set up to use.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": true,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Jev, a small fast model from TypeSafe AI, sorts each request in about half a second: what kind of job it is, and which tools it needs."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  },
+  {
+   "route": null,
+   "config": {
+    "planner": "claude-fable-5-1",
+    "jev": "jev-latest",
+    "claudeCode": "7",
+    "codex": "",
+    "opencode": "",
+    "maxTokens": 1
+   },
+   "jev": false,
+   "said": {
+    "headline": "No thinking model is connected yet. Add an Anthropic key under /keys, or let me use Claude Code under /tune.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Reading your request",
+      "value": "Local rules sort each request; Jev is switched off."
+     },
+     {
+      "kind": "text",
+      "label": "No model at all",
+      "value": "Timers, notes, reminders, sums and questions like this one run on local code, instantly."
+     }
+    ]
+   }
+  }
+ ],
+ "self": [
+  {
+   "caps": [],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect"
+   ],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": true,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": true,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": true,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Your workspace",
+      "value": "Keep notes, tasks, reminders, project links, daily trackers and saved work sessions with me. I can turn into a timer, snooze reminders, and catch up when your Mac wakes or Merry reopens. Say “note: …”, “remind me …”, “start a 25 minute timer”, or open /workspace. Notes and timers work without a model."
+     },
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  },
+  {
+   "caps": [
+    "window.inspect",
+    "window.capture"
+   ],
+   "canPlan": false,
+   "workflows": false,
+   "workspace": false,
+   "said": {
+    "headline": "I'm Merry. I work on your Mac: your files, your apps, and the web, and I show you what I actually did.",
+    "evidence": [
+     {
+      "kind": "text",
+      "label": "Files and folders",
+      "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+     },
+     {
+      "kind": "text",
+      "label": "Your day",
+      "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+     },
+     {
+      "kind": "text",
+      "label": "Memory",
+      "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+     },
+     {
+      "kind": "text",
+      "label": "Your Mac",
+      "value": "Read what is in a window and press its buttons or fill its fields through accessibility, rather than clicking at coordinates and hoping. I never move your mouse or type for you."
+     },
+     {
+      "kind": "text",
+      "label": "The web",
+      "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+     },
+     {
+      "kind": "text",
+      "label": "How I work",
+      "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. "
+     },
+     {
+      "kind": "text",
+      "label": "Try me with",
+      "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\"."
+     },
+     {
+      "kind": "text",
+      "label": "Not set up yet",
+      "value": "I have no way to think about anything open-ended. Give me a key under /keys, or let me use the Claude Code on this Mac under /tune."
+     }
+    ]
+   }
+  }
+ ],
+ "selfDefault": {
+  "headline": "I'm Merry. I work on your files and the web today, and on your apps as soon as you let me see them.",
+  "evidence": [
+   {
+    "kind": "text",
+    "label": "Files and folders",
+    "value": "Look through folders, find things by name, kind or date, sort them into groups, and rename in bulk. You see a preview before anything moves, and you can undo moves afterwards."
+   },
+   {
+    "kind": "text",
+    "label": "Your day",
+    "value": "Add reminders and calendar events, tell you what is on or when you are free, write notes, draft emails for you to send, run your Shortcuts, and switch dark mode or the volume. New events, reminders and notes can be undone."
+   },
+   {
+    "kind": "text",
+    "label": "Memory",
+    "value": "Tell me \"remember that …\" and I will, and I pick up choices you repeat, like which calendar standups go on. I only bring something up when it helps with what you asked. Ask what I remember, or say \"forget …\", any time."
+   },
+   {
+    "kind": "text",
+    "label": "Your Mac",
+    "value": "Blocked right now. macOS has not granted me Accessibility, so I cannot see any window or press anything. Open /tune and let me in, and this turns on."
+   },
+   {
+    "kind": "text",
+    "label": "The web",
+    "value": "Open pages, fill forms and download things in my own separate browser, so nothing touches the one you are signed into."
+   },
+   {
+    "kind": "text",
+    "label": "How I work",
+    "value": "I look before I act, do the work through real operations rather than by driving your mouse, check that what I claimed actually happened, and stop to ask when a choice is really yours. I cannot take pictures of windows: Screen Recording is not granted. "
+   },
+   {
+    "kind": "text",
+    "label": "Try me with",
+    "value": "\"remind me to call mom tomorrow at 7\", \"when am I free tomorrow\", \"tidy up my Downloads\", \"find the invoice I saved yesterday\". Those run on local code and Jev in about a second, with no planning model at all."
+   }
+  ]
+ },
+ "costs": [
+  {
+   "model": "claude-sonnet-5-5",
+   "input": 1000,
+   "output": 500,
+   "read": 0,
+   "write": 0,
+   "usd": 0.007,
+   "rate": {
+    "inputPerMTok": 2,
+    "outputPerMTok": 10
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "input": 123456,
+   "output": 7890,
+   "read": 0,
+   "write": 0,
+   "usd": 0.651624,
+   "rate": {
+    "inputPerMTok": 4,
+    "outputPerMTok": 20
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "input": 1,
+   "output": 1,
+   "read": 0,
+   "write": 0,
+   "usd": 0.00003,
+   "rate": {
+    "inputPerMTok": 5,
+    "outputPerMTok": 25
+   }
+  },
+  {
+   "model": "claude-opus-4-8",
+   "input": 0,
+   "output": 0,
+   "read": 0,
+   "write": 0,
+   "usd": 0,
+   "rate": {
+    "inputPerMTok": 5,
+    "outputPerMTok": 25
+   }
+  },
+  {
+   "model": "claude-sonnet-5",
+   "input": 999999,
+   "output": 1,
+   "read": 0,
+   "write": 0,
+   "usd": 2.000008,
+   "rate": {
+    "inputPerMTok": 2,
+    "outputPerMTok": 10
+   }
+  },
+  {
+   "model": "claude-haiku-4-5",
+   "input": 31337,
+   "output": 4242,
+   "read": 0,
+   "write": 0,
+   "usd": 0.052547,
+   "rate": {
+    "inputPerMTok": 1,
+    "outputPerMTok": 5
+   }
+  },
+  {
+   "model": "claude-fable-5-1",
+   "input": 200000,
+   "output": 64000,
+   "read": 0,
+   "write": 0,
+   "usd": 5.2,
+   "rate": {
+    "inputPerMTok": 10,
+    "outputPerMTok": 50
+   }
+  },
+  {
+   "model": "some-other-model",
+   "input": 1000,
+   "output": 1000,
+   "read": 0,
+   "write": 0,
+   "usd": 0.09,
+   "rate": {
+    "inputPerMTok": 15,
+    "outputPerMTok": 75
+   }
+  },
+  {
+   "model": "",
+   "input": 5,
+   "output": 5,
+   "read": 0,
+   "write": 0,
+   "usd": 0.00045,
+   "rate": {
+    "inputPerMTok": 15,
+    "outputPerMTok": 75
+   }
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input": 1000,
+   "output": 500,
+   "read": 90000,
+   "write": 0,
+   "usd": 0.025,
+   "rate": {
+    "inputPerMTok": 2,
+    "outputPerMTok": 10
+   }
+  },
+  {
+   "model": "claude-sonnet-5-5",
+   "input": 1000,
+   "output": 500,
+   "read": 0,
+   "write": 7777,
+   "usd": 0.0264425,
+   "rate": {
+    "inputPerMTok": 2,
+    "outputPerMTok": 10
+   }
+  },
+  {
+   "model": "claude-opus-5-5",
+   "input": 3,
+   "output": 7,
+   "read": 11,
+   "write": 13,
+   "usd": 0.00022140000000000001,
+   "rate": {
+    "inputPerMTok": 4,
+    "outputPerMTok": 20
+   }
+  },
+  {
+   "model": "claude-haiku-4-5",
+   "input": 0,
+   "output": 0,
+   "read": 1,
+   "write": 0,
+   "usd": 1.0000000000000001e-7,
+   "rate": {
+    "inputPerMTok": 1,
+    "outputPerMTok": 5
+   }
+  },
+  {
+   "model": "unknown",
+   "input": 0,
+   "output": 0,
+   "read": 0,
+   "write": 3,
+   "usd": 0.00005625,
+   "rate": {
+    "inputPerMTok": 15,
+    "outputPerMTok": 75
+   }
+  },
+  {
+   "model": "claude-opus-5",
+   "input": 1234567,
+   "output": 7654321,
+   "read": 333333,
+   "write": 77777,
+   "usd": 198.18363275,
+   "rate": {
+    "inputPerMTok": 5,
+    "outputPerMTok": 25
+   }
+  }
+ ],
+ "fixed": [
+  {
+   "n": 0.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "1"
+  },
+  {
+   "n": 1.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "2"
+  },
+  {
+   "n": 2.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "3"
+  },
+  {
+   "n": -2.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "-3"
+  },
+  {
+   "n": 0.125,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "0.13"
+  },
+  {
+   "n": 0.375,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "0.38"
+  },
+  {
+   "n": -0.125,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "-0.13"
+  },
+  {
+   "n": 1.005,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "1.00"
+  },
+  {
+   "n": 0.015625,
+   "negativeZero": false,
+   "digits": 5,
+   "text": "0.01563"
+  },
+  {
+   "n": 0.000005,
+   "negativeZero": false,
+   "digits": 5,
+   "text": "0.00001"
+  },
+  {
+   "n": 12.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "13"
+  },
+  {
+   "n": 87.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "88"
+  },
+  {
+   "n": 99.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "100"
+  },
+  {
+   "n": 0.4999,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "0"
+  },
+  {
+   "n": 0,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "0"
+  },
+  {
+   "n": 0,
+   "negativeZero": true,
+   "digits": 0,
+   "text": "0"
+  },
+  {
+   "n": 0,
+   "negativeZero": false,
+   "digits": 5,
+   "text": "0.00000"
+  },
+  {
+   "n": -0.4,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "-0"
+  },
+  {
+   "n": 1e-7,
+   "negativeZero": false,
+   "digits": 5,
+   "text": "0.00000"
+  },
+  {
+   "n": 0.0000042,
+   "negativeZero": false,
+   "digits": 5,
+   "text": "0.00000"
+  },
+  {
+   "n": 123.456,
+   "negativeZero": false,
+   "digits": 1,
+   "text": "123.5"
+  },
+  {
+   "n": 1234.5678,
+   "negativeZero": false,
+   "digits": 3,
+   "text": "1234.568"
+  },
+  {
+   "n": 0.045,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "0.04"
+  },
+  {
+   "n": 8.345,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "8.35"
+  },
+  {
+   "n": 10.235,
+   "negativeZero": false,
+   "digits": 2,
+   "text": "10.23"
+  },
+  {
+   "n": 1.45,
+   "negativeZero": false,
+   "digits": 1,
+   "text": "1.4"
+  },
+  {
+   "n": null,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "NaN"
+  },
+  {
+   "n": 92,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "92"
+  },
+  {
+   "n": 61.50000000000001,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "62"
+  },
+  {
+   "n": 0.00021,
+   "negativeZero": false,
+   "digits": 5,
+   "text": "0.00021"
+  },
+  {
+   "n": 3.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "4"
+  },
+  {
+   "n": 4.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "5"
+  },
+  {
+   "n": -0.5,
+   "negativeZero": false,
+   "digits": 0,
+   "text": "-1"
+  },
+  {
+   "n": 0.25,
+   "negativeZero": false,
+   "digits": 1,
+   "text": "0.3"
+  },
+  {
+   "n": 0.75,
+   "negativeZero": false,
+   "digits": 1,
+   "text": "0.8"
+  }
+ ]
+}

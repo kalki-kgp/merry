@@ -1,0 +1,316 @@
+{
+ "texts": [
+  {
+   "text": "find my aadhar card",
+   "terms": [
+    "aadhaar",
+    "aadhar",
+    "adhar",
+    "adhaar",
+    "uidai",
+    "आधार"
+   ],
+   "intent": true,
+   "removed": "find my   card"
+  },
+  {
+   "text": "where is my e-Aadhaar",
+   "terms": [
+    "aadhaar",
+    "aadhar",
+    "adhar",
+    "adhaar",
+    "uidai",
+    "आधार"
+   ],
+   "intent": true,
+   "removed": "where is my  "
+  },
+  {
+   "text": "open आधार pdf",
+   "terms": [
+    "aadhaar",
+    "aadhar",
+    "adhar",
+    "adhaar",
+    "uidai",
+    "आधार"
+   ],
+   "intent": true,
+   "removed": "open   pdf"
+  },
+  {
+   "text": "show my PAN card",
+   "terms": [
+    "pan",
+    "permanent account number"
+   ],
+   "intent": true,
+   "removed": "show my  "
+  },
+  {
+   "text": "pan document please",
+   "terms": [
+    "pan",
+    "permanent account number"
+   ],
+   "intent": false,
+   "removed": "  please"
+  },
+  {
+   "text": "find my passport on this mac",
+   "terms": [
+    "passport"
+   ],
+   "intent": true,
+   "removed": "find my   on this mac"
+  },
+  {
+   "text": "locate my driving license",
+   "terms": [
+    "driving licence",
+    "driving license",
+    "drivers license"
+   ],
+   "intent": true,
+   "removed": "locate my  "
+  },
+  {
+   "text": "driver's licence scan",
+   "terms": [
+    "driving licence",
+    "driving license",
+    "drivers license"
+   ],
+   "intent": false,
+   "removed": "  scan"
+  },
+  {
+   "text": "search for my CV",
+   "terms": [
+    "resume",
+    "résumé",
+    "cv"
+   ],
+   "intent": true,
+   "removed": "search for my  "
+  },
+  {
+   "text": "my résumé",
+   "terms": [],
+   "intent": false,
+   "removed": "my résumé"
+  },
+  {
+   "text": "resume the download",
+   "terms": [
+    "resume",
+    "résumé",
+    "cv"
+   ],
+   "intent": false,
+   "removed": "  the download"
+  },
+  {
+   "text": "find insurence papers",
+   "terms": [
+    "insurance",
+    "insurence"
+   ],
+   "intent": true,
+   "removed": "find   papers"
+  },
+  {
+   "text": "organise downloads",
+   "terms": [],
+   "intent": false,
+   "removed": "organise downloads"
+  },
+  {
+   "text": "look for photos on my computer",
+   "terms": [],
+   "intent": true,
+   "removed": "look for photos on my computer"
+  },
+  {
+   "text": "what is on this laptop",
+   "terms": [],
+   "intent": false,
+   "removed": "what is on this laptop"
+  },
+  {
+   "text": "show uidai letter and passport",
+   "terms": [
+    "aadhaar",
+    "aadhar",
+    "adhar",
+    "adhaar",
+    "uidai",
+    "आधार",
+    "passport"
+   ],
+   "intent": true,
+   "removed": "show   letter and  "
+  },
+  {
+   "text": "Find My Resume And Aadhar",
+   "terms": [
+    "aadhaar",
+    "aadhar",
+    "adhar",
+    "adhaar",
+    "uidai",
+    "आधार",
+    "resume",
+    "résumé",
+    "cv"
+   ],
+   "intent": true,
+   "removed": "Find My   And  "
+  },
+  {
+   "text": "",
+   "terms": [],
+   "intent": false,
+   "removed": ""
+  }
+ ],
+ "errors": [
+  {
+   "stderr": "execution error: Error: Not authorized to send Apple events to Calendar. (-1743)",
+   "app": null,
+   "said": "Merry isn't allowed to control that app yet. Allow it in System Settings → Privacy & Security → Automation."
+  },
+  {
+   "stderr": "execution error: Error: Not authorized to send Apple events to Calendar. (-1743)",
+   "app": "Mail",
+   "said": "Merry isn't allowed to control Mail yet. Allow it in System Settings → Privacy & Security → Automation."
+  },
+  {
+   "stderr": "osascript: Application(\"Notes\") execution error: Error: Application isn't running. (-600)",
+   "app": null,
+   "said": "Notes isn't running."
+  },
+  {
+   "stderr": "osascript: Application(\"Notes\") execution error: Error: Application isn't running. (-600)",
+   "app": "Mail",
+   "said": "Mail isn't running."
+  },
+  {
+   "stderr": "0:5: execution error: Error: Can't get object. (-1728)",
+   "app": null,
+   "said": "that app couldn't find what was asked for."
+  },
+  {
+   "stderr": "0:5: execution error: Error: Can't get object. (-1728)",
+   "app": "Mail",
+   "said": "Mail couldn't find what was asked for."
+  },
+  {
+   "stderr": "execution error: Safari got an error: You must enable 'Allow JavaScript from Apple Events' (8)",
+   "app": null,
+   "said": "Safari needs one setting first: Safari → Settings → Advanced → \"Show features for web developers\", then Develop → \"Allow JavaScript from Apple Events\"."
+  },
+  {
+   "stderr": "execution error: Safari got an error: You must enable 'Allow JavaScript from Apple Events' (8)",
+   "app": "Mail",
+   "said": "Safari needs one setting first: Safari → Settings → Advanced → \"Show features for web developers\", then Develop → \"Allow JavaScript from Apple Events\"."
+  },
+  {
+   "stderr": "execution error: Google Chrome got an error: Executing JavaScript through AppleScript is turned off. (12)",
+   "app": null,
+   "said": "Your browser needs one setting first: in its menu bar, View → Developer → \"Allow JavaScript from Apple Events\". Merry only reads the page; it never clicks or types in it."
+  },
+  {
+   "stderr": "execution error: Google Chrome got an error: Executing JavaScript through AppleScript is turned off. (12)",
+   "app": "Mail",
+   "said": "Your browser needs one setting first: in its menu bar, View → Developer → \"Allow JavaScript from Apple Events\". Merry only reads the page; it never clicks or types in it."
+  },
+  {
+   "stderr": "execution error: System Events got an error: osascript is not allowed assistive access. (-1719)",
+   "app": null,
+   "said": "Merry needs Accessibility permission for that. Allow it in System Settings → Privacy & Security → Accessibility."
+  },
+  {
+   "stderr": "execution error: System Events got an error: osascript is not allowed assistive access. (-1719)",
+   "app": "Mail",
+   "said": "Merry needs Accessibility permission for that. Allow it in System Settings → Privacy & Security → Accessibility."
+  },
+  {
+   "stderr": "line1\nexecution error: Error: Something odd happened (-2700)",
+   "app": null,
+   "said": "Error: Something odd happened"
+  },
+  {
+   "stderr": "line1\nexecution error: Error: Something odd happened (-2700)",
+   "app": "Mail",
+   "said": "Error: Something odd happened"
+  },
+  {
+   "stderr": "",
+   "app": null,
+   "said": "the script failed without saying why"
+  },
+  {
+   "stderr": "",
+   "app": "Mail",
+   "said": "the script failed without saying why"
+  },
+  {
+   "stderr": "plain failure text",
+   "app": null,
+   "said": "plain failure text"
+  },
+  {
+   "stderr": "plain failure text",
+   "app": "Mail",
+   "said": "plain failure text"
+  }
+ ],
+ "urls": [
+  {
+   "url": "https://example.com",
+   "href": "https://example.com/"
+  },
+  {
+   "url": "http://example.com:80/a b",
+   "href": "http://example.com/a%20b"
+  },
+  {
+   "url": "HTTPS://Example.COM/Path?q=1#x",
+   "href": "https://example.com/Path?q=1#x"
+  },
+  {
+   "url": "ftp://example.com",
+   "error": "Only HTTP and HTTPS links can be opened."
+  },
+  {
+   "url": "javascript:alert(1)",
+   "error": "Only HTTP and HTTPS links can be opened."
+  },
+  {
+   "url": "file:///etc/passwd",
+   "error": "Only HTTP and HTTPS links can be opened."
+  },
+  {
+   "url": "example.com",
+   "error": "Invalid URL"
+  },
+  {
+   "url": "https://example.com:443/x",
+   "href": "https://example.com/x"
+  },
+  {
+   "url": "https://example.com:8443/x",
+   "href": "https://example.com:8443/x"
+  },
+  {
+   "url": "x-apple.systempreferences:com.apple.preference",
+   "error": "Only HTTP and HTTPS links can be opened."
+  },
+  {
+   "url": "http://localhost:3000",
+   "href": "http://localhost:3000/"
+  }
+ ]
+}

@@ -1,0 +1,548 @@
+[
+ {
+  "source": "Plain sentence.",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "Plain sentence."
+   }
+  ],
+  "plain": "Plain sentence.",
+  "stripped": [
+   "Plain sentence."
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">Plain sentence.</p></div>"
+ },
+ {
+  "source": "Two lines\nof one paragraph.\n\nAnd a second one.",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "Two lines of one paragraph."
+   },
+   {
+    "kind": "p",
+    "text": "And a second one."
+   }
+  ],
+  "plain": "Two lines of one paragraph. And a second one.",
+  "stripped": [
+   "Two lines",
+   "of one paragraph.",
+   "",
+   "And a second one."
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">Two lines of one paragraph.</p><p style=\"--i:1\">And a second one.</p></div>"
+ },
+ {
+  "source": "# Heading\nText under it\n## Another",
+  "blocks": [
+   {
+    "kind": "h",
+    "text": "Heading"
+   },
+   {
+    "kind": "p",
+    "text": "Text under it"
+   },
+   {
+    "kind": "h",
+    "text": "Another"
+   }
+  ],
+  "plain": "Heading Text under it Another",
+  "stripped": [
+   "# Heading",
+   "Text under it",
+   "## Another"
+  ],
+  "html": "<div class=\"md \"><h3 style=\"--i:0\">Heading</h3><p style=\"--i:1\">Text under it</p><h3 style=\"--i:2\">Another</h3></div>"
+ },
+ {
+  "source": "- one\n- two\n  continued here\n- three",
+  "blocks": [
+   {
+    "kind": "ul",
+    "items": [
+     "one",
+     "two"
+    ],
+    "start": 1
+   },
+   {
+    "kind": "p",
+    "text": "continued here"
+   },
+   {
+    "kind": "ul",
+    "items": [
+     "three"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "one two continued here three",
+  "stripped": [
+   "- one",
+   "- two",
+   " continued here",
+   "- three"
+  ],
+  "html": "<div class=\"md \"><ul style=\"--i:0\" class=\"\"><li>one</li><li>two</li></ul><p style=\"--i:1\">continued here</p><ul style=\"--i:2\" class=\"\"><li>three</li></ul></div>"
+ },
+ {
+  "source": "1. first\n2. second\n3) third",
+  "blocks": [
+   {
+    "kind": "ol",
+    "items": [
+     "first",
+     "second",
+     "third"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "first second third",
+  "stripped": [
+   "1. first",
+   "2. second",
+   "3) third"
+  ],
+  "html": "<div class=\"md \"><ol start=\"1\" style=\"--i:0\"><li>first</li><li>second</li><li>third</li></ol></div>"
+ },
+ {
+  "source": "5. starts at five\n6. six",
+  "blocks": [
+   {
+    "kind": "ol",
+    "items": [
+     "starts at five",
+     "six"
+    ],
+    "start": 5
+   }
+  ],
+  "plain": "starts at five six",
+  "stripped": [
+   "5. starts at five",
+   "6. six"
+  ],
+  "html": "<div class=\"md \"><ol start=\"5\" style=\"--i:0\"><li>starts at five</li><li>six</li></ol></div>"
+ },
+ {
+  "source": "* star bullet\n• dot bullet",
+  "blocks": [
+   {
+    "kind": "ul",
+    "items": [
+     "star bullet",
+     "dot bullet"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "star bullet dot bullet",
+  "stripped": [
+   "* star bullet",
+   "• dot bullet"
+  ],
+  "html": "<div class=\"md \"><ul style=\"--i:0\" class=\"\"><li>star bullet</li><li>dot bullet</li></ul></div>"
+ },
+ {
+  "source": "> a quote\n> more quote\nafter",
+  "blocks": [
+   {
+    "kind": "quote",
+    "text": "a quote"
+   },
+   {
+    "kind": "quote",
+    "text": "more quote"
+   },
+   {
+    "kind": "p",
+    "text": "after"
+   }
+  ],
+  "plain": "a quote more quote after",
+  "stripped": [
+   "> a quote",
+   "> more quote",
+   "after"
+  ],
+  "html": "<div class=\"md \"><blockquote style=\"--i:0\">a quote</blockquote><blockquote style=\"--i:1\">more quote</blockquote><p style=\"--i:2\">after</p></div>"
+ },
+ {
+  "source": "```\ncode line 1\n  indented\n```\nafter code",
+  "blocks": [
+   {
+    "kind": "code",
+    "text": "code line 1\n indented"
+   },
+   {
+    "kind": "p",
+    "text": "after code"
+   }
+  ],
+  "plain": "after code",
+  "stripped": [
+   "```",
+   "code line 1",
+   " indented",
+   "```",
+   "after code"
+  ],
+  "html": "<div class=\"md \"><pre style=\"--i:0\"><code>code line 1\n indented</code></pre><p style=\"--i:1\">after code</p></div>"
+ },
+ {
+  "source": "```js\nconst a = 1\n",
+  "blocks": [
+   {
+    "kind": "code",
+    "text": "const a = 1\n"
+   }
+  ],
+  "plain": "js const a = 1",
+  "stripped": [
+   "```js",
+   "const a = 1",
+   ""
+  ],
+  "html": "<div class=\"md \"><pre style=\"--i:0\"><code>const a = 1\n</code></pre></div>"
+ },
+ {
+  "source": "Inline `code`, **bold**, __also bold__, *italic*, _italic_ and a [link](https://example.com/a?b=1).",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "Inline `code`, **bold**, __also bold__, *italic*, _italic_ and a [link](https://example.com/a?b=1)."
+   }
+  ],
+  "plain": "Inline code, bold, also bold, italic, italic and a link.",
+  "stripped": [
+   "Inline `code`, **bold**, __also bold__, *italic*, _italic_ and a [link](https://example.com/a?b=1)."
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">Inline <code>code</code>, <strong>bold</strong>, <strong>also bold</strong>, <em>italic</em>, <em>italic</em> and a <button class=\"md-link\" title=\"https://example.com/a?b=1\">link</button>.</p></div>"
+ },
+ {
+  "source": "A bare link https://example.com/path, and another http://a.b/c.",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "A bare link https://example.com/path, and another http://a.b/c."
+   }
+  ],
+  "plain": "A bare link https://example.com/path, and another http://a.b/c.",
+  "stripped": [
+   "A bare link https://example.com/path, and another http://a.b/c."
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">A bare link <button class=\"md-link\" title=\"https://example.com/path\">example.com/path</button>, and another <button class=\"md-link\" title=\"http://a.b/c\">a.b/c</button>.</p></div>"
+ },
+ {
+  "source": "**nested *italic* inside** and *nested `code` inside*",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "**nested *italic* inside** and *nested `code` inside*"
+   }
+  ],
+  "plain": "nested italic inside and nested code inside",
+  "stripped": [
+   "**nested *italic* inside** and *nested `code` inside*"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">*<em>nested </em>italic* inside** and <em>nested <code>code</code> inside</em></p></div>"
+ },
+ {
+  "source": "- **Files**: find, sort and rename\n- **Mac apps**: Calendar and Notes\n- **Web** — pages and forms",
+  "blocks": [
+   {
+    "kind": "ul",
+    "items": [
+     "**Files**: find, sort and rename",
+     "**Mac apps**: Calendar and Notes",
+     "**Web** — pages and forms"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "Files: find, sort and rename Mac apps: Calendar and Notes Web — pages and forms",
+  "stripped": [
+   "- **Files**: find, sort and rename",
+   "- **Mac apps**: Calendar and Notes",
+   "- **Web** — pages and forms"
+  ],
+  "html": "<div class=\"md \"><ul style=\"--i:0\" class=\"md-terms\"><li class=\"md-term-item\"><span class=\"md-term\">Files</span><span class=\"md-def\">find, sort and rename</span></li><li class=\"md-term-item\"><span class=\"md-term\">Mac apps</span><span class=\"md-def\">Calendar and Notes</span></li><li class=\"md-term-item\"><span class=\"md-term\">Web</span><span class=\"md-def\">pages and forms</span></li></ul></div>"
+ },
+ {
+  "source": "- **Files**: with label\n- no label here",
+  "blocks": [
+   {
+    "kind": "ul",
+    "items": [
+     "**Files**: with label",
+     "no label here"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "Files: with label no label here",
+  "stripped": [
+   "- **Files**: with label",
+   "- no label here"
+  ],
+  "html": "<div class=\"md \"><ul style=\"--i:0\" class=\"\"><li class=\"md-term-item\"><span class=\"md-term\">Files</span><span class=\"md-def\">with label</span></li><li>no label here</li></ul></div>"
+ },
+ {
+  "source": "✅ Done with it\n🎉 Party time\nNo emoji here 😀 inline one",
+  "blocks": [
+   {
+    "kind": "ul",
+    "items": [
+     "Done with it",
+     "Party time"
+    ],
+    "start": 1
+   },
+   {
+    "kind": "p",
+    "text": "No emoji here inline one"
+   }
+  ],
+  "plain": "Done with it Party time No emoji here inline one",
+  "stripped": [
+   "- Done with it",
+   "- Party time",
+   "No emoji here inline one"
+  ],
+  "html": "<div class=\"md \"><ul style=\"--i:0\" class=\"\"><li>Done with it</li><li>Party time</li></ul><p style=\"--i:1\">No emoji here inline one</p></div>"
+ },
+ {
+  "source": "🇮🇳 flag lead\ntext 👨‍👩‍👧 family ✈️ plane",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "flag lead text family plane"
+   }
+  ],
+  "plain": "flag lead text family plane",
+  "stripped": [
+   " flag lead",
+   "text family plane"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">flag lead text family plane</p></div>"
+ },
+ {
+  "source": "a  *  b not italic * x",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "a * b not italic * x"
+   }
+  ],
+  "plain": "a * b not italic * x",
+  "stripped": [
+   "a * b not italic * x"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">a * b not italic * x</p></div>"
+ },
+ {
+  "source": "snake_case_name and __init__ and 2*3*4",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "snake_case_name and __init__ and 2*3*4"
+   }
+  ],
+  "plain": "snake_case_name and init and 2*3*4",
+  "stripped": [
+   "snake_case_name and __init__ and 2*3*4"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">snake<em>case</em>name and <strong>init</strong> and 2<em>3</em>4</p></div>"
+ },
+ {
+  "source": "[not a link](ftp://x) and [ok](http://ok.example)",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "[not a link](ftp://x) and [ok](http://ok.example)"
+   }
+  ],
+  "plain": "not a link and ok",
+  "stripped": [
+   "[not a link](ftp://x) and [ok](http://ok.example)"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">[not a link](ftp://x) and <button class=\"md-link\" title=\"http://ok.example\">ok</button></p></div>"
+ },
+ {
+  "source": "Windows\r\nline\r\nendings\rold mac",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "Windows line endings old mac"
+   }
+  ],
+  "plain": "Windows line endings\rold mac",
+  "stripped": [
+   "Windows\r",
+   "line\r",
+   "endings\rold mac"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">Windows line endings old mac</p></div>"
+ },
+ {
+  "source": "",
+  "blocks": [],
+  "plain": "",
+  "stripped": [
+   ""
+  ],
+  "html": "<div class=\"md \"></div>"
+ },
+ {
+  "source": "   ",
+  "blocks": [],
+  "plain": "",
+  "stripped": [
+   " "
+  ],
+  "html": "<div class=\"md \"></div>"
+ },
+ {
+  "source": "Yes, it is on **Friday at 10am**.\n\n- **Where**: Room 4\n- **Who**: Priya",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "Yes, it is on **Friday at 10am**."
+   },
+   {
+    "kind": "ul",
+    "items": [
+     "**Where**: Room 4",
+     "**Who**: Priya"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "Yes, it is on Friday at 10am. Where: Room 4 Who: Priya",
+  "stripped": [
+   "Yes, it is on **Friday at 10am**.",
+   "",
+   "- **Where**: Room 4",
+   "- **Who**: Priya"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">Yes, it is on <strong>Friday at 10am</strong>.</p><ul style=\"--i:1\" class=\"md-terms\"><li class=\"md-term-item\"><span class=\"md-term\">Where</span><span class=\"md-def\">Room 4</span></li><li class=\"md-term-item\"><span class=\"md-term\">Who</span><span class=\"md-def\">Priya</span></li></ul></div>"
+ },
+ {
+  "source": "#NoSpaceHeading\n#  Spaced heading",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "#NoSpaceHeading"
+   },
+   {
+    "kind": "h",
+    "text": "Spaced heading"
+   }
+  ],
+  "plain": "#NoSpaceHeading Spaced heading",
+  "stripped": [
+   "#NoSpaceHeading",
+   "# Spaced heading"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">#NoSpaceHeading</p><h3 style=\"--i:1\">Spaced heading</h3></div>"
+ },
+ {
+  "source": "-not a bullet\n- bullet",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "-not a bullet"
+   },
+   {
+    "kind": "ul",
+    "items": [
+     "bullet"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "-not a bullet bullet",
+  "stripped": [
+   "-not a bullet",
+   "- bullet"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">-not a bullet</p><ul style=\"--i:1\" class=\"\"><li>bullet</li></ul></div>"
+ },
+ {
+  "source": "1.not numbered\n1. numbered",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "1.not numbered"
+   },
+   {
+    "kind": "ol",
+    "items": [
+     "numbered"
+    ],
+    "start": 1
+   }
+  ],
+  "plain": "1.not numbered numbered",
+  "stripped": [
+   "1.not numbered",
+   "1. numbered"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">1.not numbered</p><ol start=\"1\" style=\"--i:1\"><li>numbered</li></ol></div>"
+ },
+ {
+  "source": "Text\n- list right after text\nmore text",
+  "blocks": [
+   {
+    "kind": "p",
+    "text": "Text"
+   },
+   {
+    "kind": "ul",
+    "items": [
+     "list right after text"
+    ],
+    "start": 1
+   },
+   {
+    "kind": "p",
+    "text": "more text"
+   }
+  ],
+  "plain": "Text list right after text more text",
+  "stripped": [
+   "Text",
+   "- list right after text",
+   "more text"
+  ],
+  "html": "<div class=\"md \"><p style=\"--i:0\">Text</p><ul style=\"--i:1\" class=\"\"><li>list right after text</li></ul><p style=\"--i:2\">more text</p></div>"
+ },
+ {
+  "source": "  - indented bullet\n    continuation of it",
+  "blocks": [
+   {
+    "kind": "ul",
+    "items": [
+     "indented bullet"
+    ],
+    "start": 1
+   },
+   {
+    "kind": "p",
+    "text": "continuation of it"
+   }
+  ],
+  "plain": "indented bullet continuation of it",
+  "stripped": [
+   " - indented bullet",
+   " continuation of it"
+  ],
+  "html": "<div class=\"md \"><ul style=\"--i:0\" class=\"\"><li>indented bullet</li></ul><p style=\"--i:1\">continuation of it</p></div>"
+ }
+]

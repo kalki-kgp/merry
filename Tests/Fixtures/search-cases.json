@@ -1,0 +1,1609 @@
+{
+ "now": 1790000000000,
+ "queries": [
+  {
+   "text": "find the pdf I downloaded yesterday",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": 1789827200000,
+    "folder": "Downloads",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "my latest downloaded file",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1789308800000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "where is my aadhar card",
+   "parsed": {
+    "words": [
+     "aadhaar",
+     "aadhar",
+     "adhar",
+     "adhaar",
+     "uidai",
+     "आधार"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "show my PAN card pdf from last week",
+   "parsed": {
+    "words": [
+     "pan",
+     "permanent account number",
+     "week"
+    ],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": 1789308800000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "the cybersecurity notes I downloaded",
+   "parsed": {
+    "words": [
+     "cybersecurity",
+     "notes"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": "Downloads",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "ethernet frames slides",
+   "parsed": {
+    "words": [
+     "ethernet",
+     "frames"
+    ],
+    "extensions": [
+     ".pptx",
+     ".ppt",
+     ".key"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "screenshot from today",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg"
+    ],
+    "modifiedAfter": 1789913600000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "find photos on my desktop",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": "Desktop",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "biggest files in downloads",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "what is eating space",
+   "parsed": {
+    "words": [
+     "what",
+     "eating"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "the invoice from acme this month",
+   "parsed": {
+    "words": [
+     "invoice",
+     "acme",
+     "month"
+    ],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "open my resume",
+   "parsed": {
+    "words": [
+     "resume",
+     "résumé",
+     "cv"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "résumé pdf",
+   "parsed": {
+    "words": [
+     "résumé"
+    ],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "budget spreadsheet in documents",
+   "parsed": {
+    "words": [
+     "budget"
+    ],
+    "extensions": [
+     ".xlsx",
+     ".xls",
+     ".csv",
+     ".numbers"
+    ],
+    "modifiedAfter": null,
+    "folder": "Documents",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "song I saved recently",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".mp3",
+     ".m4a",
+     ".wav",
+     ".aac",
+     ".flac"
+    ],
+    "modifiedAfter": 1789308800000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "video clip from last month",
+   "parsed": {
+    "words": [
+     "month"
+    ],
+    "extensions": [
+     ".mp4",
+     ".mov",
+     ".m4v",
+     ".avi",
+     ".mkv"
+    ],
+    "modifiedAfter": 1787321600000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "zip archive just now",
+   "parsed": {
+    "words": [
+     "now"
+    ],
+    "extensions": [
+     ".zip",
+     ".tar",
+     ".gz",
+     ".dmg"
+    ],
+    "modifiedAfter": 1789913600000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "the word doc about taxes",
+   "parsed": {
+    "words": [
+     "taxes"
+    ],
+    "extensions": [
+     ".docx",
+     ".doc",
+     ".pages"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "pictures of goa",
+   "parsed": {
+    "words": [
+     "goa"
+    ],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": "Pictures",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "photos library export",
+   "parsed": {
+    "words": [
+     "library",
+     "export"
+    ],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": "Pictures",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "find it",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "   ",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "PDF",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "pdfs",
+   "parsed": {
+    "words": [
+     "pdfs"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "a pdf.",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "my-report_final.v2.pdf",
+   "parsed": {
+    "words": [
+     "my-report",
+     "final.v2.pdf"
+    ],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "the deck for Q3 review",
+   "parsed": {
+    "words": [
+     "q3",
+     "review"
+    ],
+    "extensions": [
+     ".pptx",
+     ".ppt",
+     ".key"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "latest",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1789308800000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "last one",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1789308800000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "few days ago notes",
+   "parsed": {
+    "words": [
+     "few",
+     "days",
+     "ago",
+     "notes"
+    ],
+    "extensions": [],
+    "modifiedAfter": 1789308800000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "this morning",
+   "parsed": {
+    "words": [
+     "morning"
+    ],
+    "extensions": [],
+    "modifiedAfter": 1789913600000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "downloaded",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "desktop",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Desktop",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "find  the   file  named  cls1",
+   "parsed": {
+    "words": [
+     "named",
+     "cls1"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "merry please locate insurance papers",
+   "parsed": {
+    "words": [
+     "insurance",
+     "insurence",
+     "papers"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "passport scan image",
+   "parsed": {
+    "words": [
+     "passport",
+     "scan"
+    ],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "driving licence",
+   "parsed": {
+    "words": [
+     "driving licence",
+     "driving license",
+     "drivers license"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "one two three four five six seven eight nine",
+   "parsed": {
+    "words": [
+     "two",
+     "three",
+     "four",
+     "five",
+     "six",
+     "seven"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "what's in my documents folder",
+   "parsed": {
+    "words": [
+     "what"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": "Documents",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "find “quoted” words & symbols #1",
+   "parsed": {
+    "words": [
+     "quoted",
+     "words",
+     "symbols"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "ΟΔΟΣ ΣΟΦΟΣ notes",
+   "parsed": {
+    "words": [
+     "οδος",
+     "σοφος",
+     "notes"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "İstanbul trip plan",
+   "parsed": {
+    "words": [
+     "i̇stanbul",
+     "trip",
+     "plan"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "straße photos",
+   "parsed": {
+    "words": [
+     "straße"
+    ],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "ﬁnance report ①",
+   "parsed": {
+    "words": [
+     "finance",
+     "report"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "naïve café menu",
+   "parsed": {
+    "words": [
+     "naïve",
+     "café",
+     "menu"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "report-2024 -draft- .hidden..",
+   "parsed": {
+    "words": [
+     "report-2024",
+     "draft",
+     "hidden"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "x y z",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1787321600000,
+    "folder": "Downloads",
+    "recencyOnly": true
+   }
+  },
+  {
+   "text": "हिंदी दस्तावेज़ file",
+   "parsed": {
+    "words": [
+     "हिंदी",
+     "दस्तावेज़"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "日本語 のファイル pdf",
+   "parsed": {
+    "words": [
+     "日本語",
+     "のファイル"
+    ],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "file with odd﻿spaces\u000bhere",
+   "parsed": {
+    "words": [
+     "odd",
+     "spaces",
+     "here"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "recently changed excel sheet",
+   "parsed": {
+    "words": [
+     "changed"
+    ],
+    "extensions": [
+     ".xlsx",
+     ".xls",
+     ".csv",
+     ".numbers"
+    ],
+    "modifiedAfter": 1789308800000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "csv export",
+   "parsed": {
+    "words": [
+     "export"
+    ],
+    "extensions": [
+     ".xlsx",
+     ".xls",
+     ".csv",
+     ".numbers"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "powerpoint presentation yesterday",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".pptx",
+     ".ppt",
+     ".key"
+    ],
+    "modifiedAfter": 1789827200000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "music track",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".mp3",
+     ".m4a",
+     ".wav",
+     ".aac",
+     ".flac"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "find my e-aadhaar pdf downloaded today",
+   "parsed": {
+    "words": [
+     "aadhaar",
+     "aadhar",
+     "adhar",
+     "adhaar",
+     "uidai",
+     "आधार"
+    ],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": 1789913600000,
+    "folder": "Downloads",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "pic",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "the docs",
+   "parsed": {
+    "words": [],
+    "extensions": [
+     ".docx",
+     ".doc",
+     ".pages"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "just the tax file",
+   "parsed": {
+    "words": [
+     "tax"
+    ],
+    "extensions": [],
+    "modifiedAfter": 1789913600000,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "this week desktop screenshot",
+   "parsed": {
+    "words": [
+     "week"
+    ],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg"
+    ],
+    "modifiedAfter": 1789308800000,
+    "folder": "Desktop",
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "photo.jpg",
+   "parsed": {
+    "words": [
+     "photo.jpg"
+    ],
+    "extensions": [
+     ".png",
+     ".jpg",
+     ".jpeg",
+     ".heic",
+     ".gif",
+     ".webp"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "UPPER CASE Words Here",
+   "parsed": {
+    "words": [
+     "upper",
+     "case",
+     "words",
+     "here"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "tab\tseparated\nlines",
+   "parsed": {
+    "words": [
+     "tab",
+     "separated",
+     "lines"
+    ],
+    "extensions": [],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "pdfé notes",
+   "parsed": {
+    "words": [
+     "pdfé",
+     "notes"
+    ],
+    "extensions": [
+     ".pdf"
+    ],
+    "modifiedAfter": null,
+    "folder": null,
+    "recencyOnly": false
+   }
+  },
+  {
+   "text": "todayé desktopé",
+   "parsed": {
+    "words": [],
+    "extensions": [],
+    "modifiedAfter": 1789913600000,
+    "folder": "Desktop",
+    "recencyOnly": true
+   }
+  }
+ ],
+ "words": [
+  {
+   "text": "find the pdf I downloaded yesterday",
+   "words": [
+    "pdf",
+    "yesterday"
+   ]
+  },
+  {
+   "text": "my latest downloaded file",
+   "words": [
+    "latest"
+   ]
+  },
+  {
+   "text": "where is my aadhar card",
+   "words": [
+    "aadhar"
+   ]
+  },
+  {
+   "text": "show my PAN card pdf from last week",
+   "words": [
+    "pan",
+    "pdf",
+    "week"
+   ]
+  },
+  {
+   "text": "the cybersecurity notes I downloaded",
+   "words": [
+    "cybersecurity",
+    "notes"
+   ]
+  },
+  {
+   "text": "ethernet frames slides",
+   "words": [
+    "ethernet",
+    "frames",
+    "slides"
+   ]
+  },
+  {
+   "text": "screenshot from today",
+   "words": [
+    "screenshot",
+    "today"
+   ]
+  },
+  {
+   "text": "find photos on my desktop",
+   "words": [
+    "photos",
+    "desktop"
+   ]
+  },
+  {
+   "text": "biggest files in downloads",
+   "words": [
+    "downloads"
+   ]
+  },
+  {
+   "text": "what is eating space",
+   "words": [
+    "what",
+    "eating"
+   ]
+  },
+  {
+   "text": "the invoice from acme this month",
+   "words": [
+    "invoice",
+    "acme",
+    "month"
+   ]
+  },
+  {
+   "text": "open my resume",
+   "words": [
+    "resume"
+   ]
+  },
+  {
+   "text": "résumé pdf",
+   "words": [
+    "résumé",
+    "pdf"
+   ]
+  },
+  {
+   "text": "budget spreadsheet in documents",
+   "words": [
+    "budget",
+    "spreadsheet",
+    "documents"
+   ]
+  },
+  {
+   "text": "song I saved recently",
+   "words": [
+    "song",
+    "recently"
+   ]
+  },
+  {
+   "text": "video clip from last month",
+   "words": [
+    "video",
+    "clip",
+    "month"
+   ]
+  },
+  {
+   "text": "zip archive just now",
+   "words": [
+    "zip",
+    "archive",
+    "just",
+    "now"
+   ]
+  },
+  {
+   "text": "the word doc about taxes",
+   "words": [
+    "word",
+    "doc",
+    "taxes"
+   ]
+  },
+  {
+   "text": "pictures of goa",
+   "words": [
+    "pictures",
+    "goa"
+   ]
+  },
+  {
+   "text": "photos library export",
+   "words": [
+    "photos",
+    "library",
+    "export"
+   ]
+  },
+  {
+   "text": "find it",
+   "words": []
+  },
+  {
+   "text": "",
+   "words": []
+  },
+  {
+   "text": "   ",
+   "words": []
+  },
+  {
+   "text": "PDF",
+   "words": [
+    "pdf"
+   ]
+  },
+  {
+   "text": "pdfs",
+   "words": [
+    "pdfs"
+   ]
+  },
+  {
+   "text": "a pdf.",
+   "words": [
+    "pdf"
+   ]
+  },
+  {
+   "text": "my-report_final.v2.pdf",
+   "words": [
+    "my-report",
+    "final.v2.pdf"
+   ]
+  },
+  {
+   "text": "the deck for Q3 review",
+   "words": [
+    "deck",
+    "q3",
+    "review"
+   ]
+  },
+  {
+   "text": "latest",
+   "words": [
+    "latest"
+   ]
+  },
+  {
+   "text": "last one",
+   "words": []
+  },
+  {
+   "text": "few days ago notes",
+   "words": [
+    "few",
+    "days",
+    "ago",
+    "notes"
+   ]
+  },
+  {
+   "text": "this morning",
+   "words": [
+    "morning"
+   ]
+  },
+  {
+   "text": "downloaded",
+   "words": []
+  },
+  {
+   "text": "desktop",
+   "words": [
+    "desktop"
+   ]
+  },
+  {
+   "text": "find  the   file  named  cls1",
+   "words": [
+    "named",
+    "cls1"
+   ]
+  },
+  {
+   "text": "merry please locate insurance papers",
+   "words": [
+    "insurance",
+    "papers"
+   ]
+  },
+  {
+   "text": "passport scan image",
+   "words": [
+    "passport",
+    "scan",
+    "image"
+   ]
+  },
+  {
+   "text": "driving licence",
+   "words": [
+    "driving",
+    "licence"
+   ]
+  },
+  {
+   "text": "one two three four five six seven eight nine",
+   "words": [
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven"
+   ]
+  },
+  {
+   "text": "what's in my documents folder",
+   "words": [
+    "what",
+    "documents"
+   ]
+  },
+  {
+   "text": "find “quoted” words & symbols #1",
+   "words": [
+    "quoted",
+    "words",
+    "symbols"
+   ]
+  },
+  {
+   "text": "ΟΔΟΣ ΣΟΦΟΣ notes",
+   "words": [
+    "οδος",
+    "σοφος",
+    "notes"
+   ]
+  },
+  {
+   "text": "İstanbul trip plan",
+   "words": [
+    "i̇stanbul",
+    "trip",
+    "plan"
+   ]
+  },
+  {
+   "text": "straße photos",
+   "words": [
+    "straße",
+    "photos"
+   ]
+  },
+  {
+   "text": "ﬁnance report ①",
+   "words": [
+    "finance",
+    "report"
+   ]
+  },
+  {
+   "text": "naïve café menu",
+   "words": [
+    "naïve",
+    "café",
+    "menu"
+   ]
+  },
+  {
+   "text": "report-2024 -draft- .hidden..",
+   "words": [
+    "report-2024",
+    "draft",
+    "hidden"
+   ]
+  },
+  {
+   "text": "x y z",
+   "words": []
+  },
+  {
+   "text": "हिंदी दस्तावेज़ file",
+   "words": [
+    "हिंदी",
+    "दस्तावेज़"
+   ]
+  },
+  {
+   "text": "日本語 のファイル pdf",
+   "words": [
+    "日本語",
+    "のファイル",
+    "pdf"
+   ]
+  },
+  {
+   "text": "file with odd﻿spaces\u000bhere",
+   "words": [
+    "odd",
+    "spaces",
+    "here"
+   ]
+  },
+  {
+   "text": "recently changed excel sheet",
+   "words": [
+    "recently",
+    "changed",
+    "excel",
+    "sheet"
+   ]
+  },
+  {
+   "text": "csv export",
+   "words": [
+    "csv",
+    "export"
+   ]
+  },
+  {
+   "text": "powerpoint presentation yesterday",
+   "words": [
+    "powerpoint",
+    "presentation",
+    "yesterday"
+   ]
+  },
+  {
+   "text": "music track",
+   "words": [
+    "music",
+    "track"
+   ]
+  },
+  {
+   "text": "find my e-aadhaar pdf downloaded today",
+   "words": [
+    "e-aadhaar",
+    "pdf",
+    "today"
+   ]
+  },
+  {
+   "text": "pic",
+   "words": [
+    "pic"
+   ]
+  },
+  {
+   "text": "the docs",
+   "words": [
+    "docs"
+   ]
+  },
+  {
+   "text": "just the tax file",
+   "words": [
+    "just",
+    "tax"
+   ]
+  },
+  {
+   "text": "this week desktop screenshot",
+   "words": [
+    "week",
+    "desktop",
+    "screenshot"
+   ]
+  },
+  {
+   "text": "photo.jpg",
+   "words": [
+    "photo.jpg"
+   ]
+  },
+  {
+   "text": "UPPER CASE Words Here",
+   "words": [
+    "upper",
+    "case",
+    "words",
+    "here"
+   ]
+  },
+  {
+   "text": "tab\tseparated\nlines",
+   "words": [
+    "tab",
+    "separated",
+    "lines"
+   ]
+  },
+  {
+   "text": "pdfé notes",
+   "words": [
+    "pdfé",
+    "notes"
+   ]
+  },
+  {
+   "text": "todayé desktopé",
+   "words": [
+    "todayé",
+    "desktopé"
+   ]
+  },
+  {
+   "text": "Hello, World! foo_bar baz-qux",
+   "words": [
+    "hello",
+    "world",
+    "foo",
+    "bar",
+    "baz-qux"
+   ]
+  },
+  {
+   "text": "...leading and trailing---",
+   "words": [
+    "leading",
+    "trailing"
+   ]
+  },
+  {
+   "text": "a b c dd ee",
+   "words": [
+    "dd",
+    "ee"
+   ]
+  },
+  {
+   "text": "one.two three-four",
+   "words": [
+    "one.two",
+    "three-four"
+   ]
+  },
+  {
+   "text": "--x-- ..y..",
+   "words": []
+  },
+  {
+   "text": "emoji 😀 party 🎉 time",
+   "words": [
+    "emoji",
+    "party",
+    "time"
+   ]
+  },
+  {
+   "text": "ＦＵＬＬ ｗｉｄｔｈ",
+   "words": [
+    "full",
+    "width"
+   ]
+  },
+  {
+   "text": "under_score",
+   "words": [
+    "under",
+    "score"
+   ]
+  },
+  {
+   "text": "école normale",
+   "words": [
+    "école",
+    "normale"
+   ]
+  },
+  {
+   "text": "tel: +91-98765 43210",
+   "words": [
+    "tel",
+    "91-98765",
+    "43210"
+   ]
+  },
+  {
+   "text": "100% sure (maybe)",
+   "words": [
+    "100",
+    "sure",
+    "maybe"
+   ]
+  }
+ ],
+ "sizes": [
+  {
+   "bytes": 0,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 1,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 511,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 512,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 1023,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 1024,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 1535,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 1536,
+   "text": "2 KB"
+  },
+  {
+   "bytes": 2048,
+   "text": "2 KB"
+  },
+  {
+   "bytes": 1048575,
+   "text": "1024 KB"
+  },
+  {
+   "bytes": 1048576,
+   "text": "1 MB"
+  },
+  {
+   "bytes": 1572864,
+   "text": "2 MB"
+  },
+  {
+   "bytes": 1572863,
+   "text": "1 MB"
+  },
+  {
+   "bytes": 2621440,
+   "text": "3 MB"
+  },
+  {
+   "bytes": 5242880,
+   "text": "5 MB"
+  },
+  {
+   "bytes": 1073741823,
+   "text": "1024 MB"
+  },
+  {
+   "bytes": 1073741824,
+   "text": "1.0 GB"
+  },
+  {
+   "bytes": 1342177280,
+   "text": "1.3 GB"
+  },
+  {
+   "bytes": 1610612736,
+   "text": "1.5 GB"
+  },
+  {
+   "bytes": 1127428915,
+   "text": "1.0 GB"
+  },
+  {
+   "bytes": 1181116006,
+   "text": "1.1 GB"
+  },
+  {
+   "bytes": 1234567890,
+   "text": "1.1 GB"
+  },
+  {
+   "bytes": 16106127360,
+   "text": "15.0 GB"
+  },
+  {
+   "bytes": 1099511627776,
+   "text": "1024.0 GB"
+  },
+  {
+   "bytes": 999999999999,
+   "text": "931.3 GB"
+  },
+  {
+   "bytes": 123456.789,
+   "text": "121 KB"
+  },
+  {
+   "bytes": 0.4,
+   "text": "1 KB"
+  },
+  {
+   "bytes": 2560,
+   "text": "3 KB"
+  },
+  {
+   "bytes": 3584,
+   "text": "4 KB"
+  },
+  {
+   "bytes": 1127428915.2,
+   "text": "1.1 GB"
+  },
+  {
+   "bytes": 1234803097.6,
+   "text": "1.1 GB"
+  },
+  {
+   "bytes": 1342177280,
+   "text": "1.3 GB"
+  },
+  {
+   "bytes": 1449551462.4,
+   "text": "1.4 GB"
+  },
+  {
+   "bytes": 2630667468.8,
+   "text": "2.5 GB"
+  }
+ ]
+}

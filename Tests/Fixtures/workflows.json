@@ -1,0 +1,4720 @@
+{
+ "now": 1790916600000,
+ "ids": [
+  {
+   "id": "memory",
+   "description": "Remember something the user says about themselves, forget something, or say what is remembered.",
+   "routes": [
+    "files",
+    "desktop",
+    "browser",
+    "apps",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "add_reminder",
+   "description": "Add a reminder to the Reminders app, possibly at a time.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "add_event",
+   "description": "Add an event or meeting to the Calendar app at a given time.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "free_slot",
+   "description": "Find when the user is free on a day, from their calendar.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "agenda",
+   "description": "Answer what is on the user's calendar, or whether they are free, for a day or time.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "system_setting",
+   "description": "Switch dark or light mode, or change, mute or unmute the volume.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "run_shortcut",
+   "description": "Run one of the user's own shortcuts from the Shortcuts app.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "make_note",
+   "description": "Write a note in the Notes app from what the user said, or from what they have selected or open.",
+   "routes": [
+    "apps",
+    "desktop",
+    "files",
+    "mixed",
+    "unclear"
+   ]
+  },
+  {
+   "id": "organize_folder",
+   "description": "Tidy a folder by moving its files into subfolders, grouped by type, project or date.",
+   "routes": [
+    "files"
+   ]
+  },
+  {
+   "id": "find_files",
+   "description": "Find a file the user is describing from memory and show them where it is.",
+   "routes": [
+    "files"
+   ]
+  },
+  {
+   "id": "rename_batch",
+   "description": "Rename a group of files so they follow one consistent naming pattern.",
+   "routes": [
+    "files"
+   ]
+  },
+  {
+   "id": "run_command",
+   "description": "Create folders, open things in a chosen application, or run one simple safe command.",
+   "routes": [
+    "files",
+    "desktop",
+    "mixed",
+    "unclear"
+   ]
+  }
+ ],
+ "requests": [
+  {
+   "request": "remind me to call the bank tomorrow at 5",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Call the bank",
+   "eventTitle": "Remind me to call the bank",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remind me to call the bank tomorrow at 5",
+    "body": ""
+   },
+   "args": [
+    "remind",
+    "me",
+    "to",
+    "call",
+    "the",
+    "bank",
+    "tomorrow",
+    "at",
+    "5"
+   ],
+   "about": [
+    "remind",
+    "call",
+    "bank"
+   ]
+  },
+  {
+   "request": "Remind me about the dentist on friday",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "The dentist",
+   "eventTitle": "Remind me about the dentist",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remind me about the dentist on friday",
+    "body": ""
+   },
+   "args": [
+    "Remind",
+    "me",
+    "about",
+    "the",
+    "dentist",
+    "on",
+    "friday"
+   ],
+   "about": [
+    "remind",
+    "dentist",
+    "friday"
+   ]
+  },
+  {
+   "request": "set a reminder to water plants in 2 hours",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Water plants",
+   "eventTitle": "Set a reminder to water plants",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 120
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Set a reminder to water plants in 2 hours",
+    "body": ""
+   },
+   "args": [
+    "set",
+    "a",
+    "reminder",
+    "to",
+    "water",
+    "plants",
+    "in",
+    "2",
+    "hours"
+   ],
+   "about": [
+    "reminder",
+    "water",
+    "plant",
+    "hour"
+   ]
+  },
+  {
+   "request": "add milk to my shopping reminders",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Milk",
+   "eventTitle": "Milk to my shopping reminders",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Add milk to my shopping reminders",
+    "body": ""
+   },
+   "args": [
+    "add",
+    "milk",
+    "to",
+    "my",
+    "shopping",
+    "reminders"
+   ],
+   "about": [
+    "milk",
+    "shopping",
+    "reminder"
+   ]
+  },
+  {
+   "request": "add buy stamps to the to-do list please",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Buy stamps",
+   "eventTitle": "Buy stamps to the to-do list",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Add buy stamps to the to-do list please",
+    "body": ""
+   },
+   "args": [
+    "add",
+    "buy",
+    "stamps",
+    "to",
+    "the",
+    "to-do",
+    "list",
+    "please"
+   ],
+   "about": [
+    "buy",
+    "stamp",
+    "to-do",
+    "list"
+   ]
+  },
+  {
+   "request": "remember to email Priya",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Email Priya",
+   "eventTitle": "Remember to email Priya",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remember to email Priya",
+    "body": ""
+   },
+   "args": [
+    "remember",
+    "to",
+    "email",
+    "Priya"
+   ],
+   "about": [
+    "email",
+    "priya"
+   ]
+  },
+  {
+   "request": "hey merry, remind me that rent is due on the 1st",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Rent is due on the 1st",
+   "eventTitle": "Remind me that rent is due on the 1st",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Hey merry, remind me that rent is due on the 1st",
+    "body": ""
+   },
+   "args": [
+    "hey",
+    "merry,",
+    "remind",
+    "me",
+    "that",
+    "rent",
+    "is",
+    "due",
+    "on",
+    "the",
+    "1st"
+   ],
+   "about": [
+    "remind",
+    "rent",
+    "due",
+    "1st"
+   ]
+  },
+  {
+   "request": "please remind me to stretch thanks",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Stretch",
+   "eventTitle": "Remind me to stretch",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Please remind me to stretch thanks",
+    "body": ""
+   },
+   "args": [
+    "please",
+    "remind",
+    "me",
+    "to",
+    "stretch",
+    "thanks"
+   ],
+   "about": [
+    "remind",
+    "stretch",
+    "thank"
+   ]
+  },
+  {
+   "request": "put dentist on my calendar friday 10am",
+   "plausible": [
+    "add_event"
+   ],
+   "plausibleDropped": [
+    "add_event",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Put dentist on my calendar",
+   "eventTitle": "Dentist",
+   "agenda": {
+    "from": 1791484200000,
+    "to": 1791570600000,
+    "label": "Fri, Oct 9",
+    "probe": null
+   },
+   "free": {
+    "day": 1791484200000,
+    "start": 1791516600000,
+    "end": 1791549000000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Put dentist on my calendar friday 10am",
+    "body": ""
+   },
+   "args": [
+    "put",
+    "dentist",
+    "on",
+    "my",
+    "calendar",
+    "friday",
+    "10am"
+   ],
+   "about": [
+    "dentist",
+    "calendar",
+    "friday",
+    "10am"
+   ]
+  },
+  {
+   "request": "schedule a meeting with Sam tomorrow at 3pm for 30 minutes",
+   "plausible": [
+    "add_event"
+   ],
+   "plausibleDropped": [
+    "add_event",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Schedule a meeting with Sam",
+   "eventTitle": "With Sam",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 30
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Schedule a meeting with Sam tomorrow at 3pm for 30 minutes",
+    "body": ""
+   },
+   "args": [
+    "schedule",
+    "a",
+    "meeting",
+    "with",
+    "Sam",
+    "tomorrow",
+    "at",
+    "3pm",
+    "for",
+    "30",
+    "minutes"
+   ],
+   "about": [
+    "schedule",
+    "meeting",
+    "sam",
+    "3pm",
+    "minute"
+   ]
+  },
+  {
+   "request": "add lunch with Ana on monday at 1",
+   "plausible": [
+    "add_event"
+   ],
+   "plausibleDropped": [
+    "add_event",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Add lunch with Ana",
+   "eventTitle": "Lunch with Ana",
+   "agenda": {
+    "from": 1791138600000,
+    "to": 1791225000000,
+    "label": "Mon, Oct 5",
+    "probe": null
+   },
+   "free": {
+    "day": 1791138600000,
+    "start": 1791171000000,
+    "end": 1791203400000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Add lunch with Ana on monday at 1",
+    "body": ""
+   },
+   "args": [
+    "add",
+    "lunch",
+    "with",
+    "Ana",
+    "on",
+    "monday",
+    "at",
+    "1"
+   ],
+   "about": [
+    "lunch",
+    "ana",
+    "monday"
+   ]
+  },
+  {
+   "request": "book a call with the team next tuesday 9am",
+   "plausible": [
+    "add_event"
+   ],
+   "plausibleDropped": [
+    "add_event",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Book a call with the team",
+   "eventTitle": "Call with the team",
+   "agenda": {
+    "from": 1791225000000,
+    "to": 1791311400000,
+    "label": "Tue, Oct 6",
+    "probe": null
+   },
+   "free": {
+    "day": 1791225000000,
+    "start": 1791257400000,
+    "end": 1791289800000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Book a call with the team next tuesday 9am",
+    "body": ""
+   },
+   "args": [
+    "book",
+    "a",
+    "call",
+    "with",
+    "the",
+    "team",
+    "next",
+    "tuesday",
+    "9am"
+   ],
+   "about": [
+    "book",
+    "call",
+    "team",
+    "tuesday",
+    "9am"
+   ]
+  },
+  {
+   "request": "block out time for deep work tomorrow 2pm",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Block out time for deep work",
+   "eventTitle": "Deep work",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Block out time for deep work tomorrow 2pm",
+    "body": ""
+   },
+   "args": [
+    "block",
+    "out",
+    "time",
+    "for",
+    "deep",
+    "work",
+    "tomorrow",
+    "2pm"
+   ],
+   "about": [
+    "block",
+    "time",
+    "deep",
+    "work",
+    "2pm"
+   ]
+  },
+  {
+   "request": "create an event called Launch on 12 october",
+   "plausible": [
+    "add_event"
+   ],
+   "plausibleDropped": [
+    "add_event",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Create an event called Launch",
+   "eventTitle": "Launch",
+   "agenda": {
+    "from": 1791743400000,
+    "to": 1791829800000,
+    "label": "Mon, Oct 12",
+    "probe": null
+   },
+   "free": {
+    "day": 1791743400000,
+    "start": 1791775800000,
+    "end": 1791808200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Create an event called Launch on 12 october",
+    "body": ""
+   },
+   "args": [
+    "create",
+    "an",
+    "event",
+    "called",
+    "Launch",
+    "on",
+    "12",
+    "october"
+   ],
+   "about": [
+    "create",
+    "event",
+    "called",
+    "launch",
+    "october"
+   ]
+  },
+  {
+   "request": "what's on my calendar tomorrow",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "What's on my calendar",
+   "eventTitle": "What's",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What's on my calendar tomorrow",
+    "body": ""
+   },
+   "args": [
+    "what's",
+    "on",
+    "my",
+    "calendar",
+    "tomorrow"
+   ],
+   "about": [
+    "calendar"
+   ]
+  },
+  {
+   "request": "what is on today",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "What is",
+   "eventTitle": "What is",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What is on today",
+    "body": ""
+   },
+   "args": [
+    "what",
+    "is",
+    "on",
+    "today"
+   ],
+   "about": []
+  },
+  {
+   "request": "what's next",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "What's next",
+   "eventTitle": "What's next",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1791052200000,
+    "label": "next",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What's next",
+    "body": ""
+   },
+   "args": [
+    "what's",
+    "next"
+   ],
+   "about": []
+  },
+  {
+   "request": "am i free at 3pm",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Am i free",
+   "eventTitle": "Am i free",
+   "agenda": {
+    "from": 1790933400000,
+    "to": 1790937000000,
+    "label": "today at 3:00 pm",
+    "probe": 1790933400000
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Am i free at 3pm",
+    "body": ""
+   },
+   "args": [
+    "am",
+    "i",
+    "free",
+    "at",
+    "3pm"
+   ],
+   "about": [
+    "free",
+    "3pm"
+   ]
+  },
+  {
+   "request": "am i busy tomorrow at 10",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Am i busy",
+   "eventTitle": "Am i busy",
+   "agenda": {
+    "from": 1791001800000,
+    "to": 1791005400000,
+    "label": "tomorrow at 10:00 am",
+    "probe": 1791001800000
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Am i busy tomorrow at 10",
+    "body": ""
+   },
+   "args": [
+    "am",
+    "i",
+    "busy",
+    "tomorrow",
+    "at",
+    "10"
+   ],
+   "about": [
+    "busy"
+   ]
+  },
+  {
+   "request": "do i have any meetings this week",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Do i have any meetings this week",
+   "eventTitle": "Do i have any meetings this week",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1791484200000,
+    "label": "this week",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Do i have any meetings this week",
+    "body": ""
+   },
+   "args": [
+    "do",
+    "i",
+    "have",
+    "any",
+    "meetings",
+    "this",
+    "week"
+   ],
+   "about": [
+    "meeting",
+    "week"
+   ]
+  },
+  {
+   "request": "how does my week look",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "How does my week look",
+   "eventTitle": "How does my week look",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1791484200000,
+    "label": "this week",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "How does my week look",
+    "body": ""
+   },
+   "args": [
+    "how",
+    "does",
+    "my",
+    "week",
+    "look"
+   ],
+   "about": [
+    "week",
+    "look"
+   ]
+  },
+  {
+   "request": "meetings tomorrow",
+   "plausible": [
+    "agenda"
+   ],
+   "plausibleDropped": [
+    "agenda",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Meetings",
+   "eventTitle": "Meetings",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Meetings tomorrow",
+    "body": ""
+   },
+   "args": [
+    "meetings",
+    "tomorrow"
+   ],
+   "about": [
+    "meeting"
+   ]
+  },
+  {
+   "request": "when am i free tomorrow",
+   "plausible": [
+    "free_slot"
+   ],
+   "plausibleDropped": [
+    "free_slot",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "When am i free",
+   "eventTitle": "When am i free",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "When am i free tomorrow",
+    "body": ""
+   },
+   "args": [
+    "when",
+    "am",
+    "i",
+    "free",
+    "tomorrow"
+   ],
+   "about": [
+    "free"
+   ]
+  },
+  {
+   "request": "find me a free hour friday",
+   "plausible": [
+    "free_slot",
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "free_slot",
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Find me a free hour",
+   "eventTitle": "Find me a free hour",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Find me a free hour friday",
+    "body": ""
+   },
+   "args": [
+    "find",
+    "me",
+    "a",
+    "free",
+    "hour",
+    "friday"
+   ],
+   "about": [
+    "find",
+    "free",
+    "hour",
+    "friday"
+   ]
+  },
+  {
+   "request": "first free half-hour today",
+   "plausible": [
+    "free_slot"
+   ],
+   "plausibleDropped": [
+    "free_slot",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "First free half-hour",
+   "eventTitle": "First free half-hour",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 30
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "First free half-hour today",
+    "body": ""
+   },
+   "args": [
+    "first",
+    "free",
+    "half-hour",
+    "today"
+   ],
+   "about": [
+    "first",
+    "free",
+    "half-hour"
+   ]
+  },
+  {
+   "request": "find a free 45 minutes between 2 and 5",
+   "plausible": [
+    "free_slot",
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "free_slot",
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Find a free 45 minutes between 2 and 5",
+   "eventTitle": "Find a free 45 minutes between 2 and 5",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790940600000,
+    "minutes": 45
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Find a free 45 minutes between 2 and 5",
+    "body": ""
+   },
+   "args": [
+    "find",
+    "a",
+    "free",
+    "45",
+    "minutes",
+    "between",
+    "2",
+    "and",
+    "5"
+   ],
+   "about": [
+    "find",
+    "free",
+    "minute",
+    "between"
+   ]
+  },
+  {
+   "request": "any free slot from 9am to 12pm on monday",
+   "plausible": [
+    "free_slot"
+   ],
+   "plausibleDropped": [
+    "free_slot",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Any free slot from to 12pm",
+   "eventTitle": "Any free slot from to 12pm",
+   "agenda": {
+    "from": 1791138600000,
+    "to": 1791225000000,
+    "label": "Mon, Oct 5",
+    "probe": null
+   },
+   "free": {
+    "day": 1791138600000,
+    "start": 1791171000000,
+    "end": 1791181800000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Any free slot from 9am to 12pm on monday",
+    "body": ""
+   },
+   "args": [
+    "any",
+    "free",
+    "slot",
+    "from",
+    "9am",
+    "to",
+    "12pm",
+    "on",
+    "monday"
+   ],
+   "about": [
+    "free",
+    "slot",
+    "9am",
+    "12pm",
+    "monday"
+   ]
+  },
+  {
+   "request": "dark mode",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Dark mode",
+   "eventTitle": "Dark mode",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": true
+    },
+    "done": "Dark mode is on."
+   },
+   "settingAt20": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": true
+    },
+    "done": "Dark mode is on."
+   },
+   "note": {
+    "title": "Dark mode",
+    "body": ""
+   },
+   "args": [
+    "dark",
+    "mode"
+   ],
+   "about": [
+    "dark",
+    "mode"
+   ]
+  },
+  {
+   "request": "turn off dark mode",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Turn off dark mode",
+   "eventTitle": "Turn off dark mode",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": false
+    },
+    "done": "Light mode is on."
+   },
+   "settingAt20": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": false
+    },
+    "done": "Light mode is on."
+   },
+   "note": {
+    "title": "Turn off dark mode",
+    "body": ""
+   },
+   "args": [
+    "turn",
+    "off",
+    "dark",
+    "mode"
+   ],
+   "about": [
+    "turn",
+    "off",
+    "dark",
+    "mode"
+   ]
+  },
+  {
+   "request": "lights off",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Lights off",
+   "eventTitle": "Lights off",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": true
+    },
+    "done": "Dark mode is on."
+   },
+   "settingAt20": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": true
+    },
+    "done": "Dark mode is on."
+   },
+   "note": {
+    "title": "Lights off",
+    "body": ""
+   },
+   "args": [
+    "lights",
+    "off"
+   ],
+   "about": [
+    "light",
+    "off"
+   ]
+  },
+  {
+   "request": "light mode please",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Light mode",
+   "eventTitle": "Light mode",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": false
+    },
+    "done": "Light mode is on."
+   },
+   "settingAt20": {
+    "tool": "system_appearance",
+    "input": {
+     "dark": false
+    },
+    "done": "Light mode is on."
+   },
+   "note": {
+    "title": "Light mode please",
+    "body": ""
+   },
+   "args": [
+    "light",
+    "mode",
+    "please"
+   ],
+   "about": [
+    "light",
+    "mode"
+   ]
+  },
+  {
+   "request": "mute",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Mute",
+   "eventTitle": "Mute",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "muted": true
+    },
+    "done": "Muted."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "muted": true
+    },
+    "done": "Muted."
+   },
+   "note": {
+    "title": "Mute",
+    "body": ""
+   },
+   "args": [
+    "mute"
+   ],
+   "about": [
+    "mute"
+   ]
+  },
+  {
+   "request": "unmute",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Unmute",
+   "eventTitle": "Unmute",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "muted": false
+    },
+    "done": "Sound is back on."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "muted": false
+    },
+    "done": "Sound is back on."
+   },
+   "note": {
+    "title": "Unmute",
+    "body": ""
+   },
+   "args": [
+    "unmute"
+   ],
+   "about": [
+    "unmute"
+   ]
+  },
+  {
+   "request": "volume to 30",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Volume to 30",
+   "eventTitle": "Volume to 30",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 30,
+     "muted": false
+    },
+    "done": "Volume is at 30."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 30,
+     "muted": false
+    },
+    "done": "Volume is at 30."
+   },
+   "note": {
+    "title": "Volume to 30",
+    "body": ""
+   },
+   "args": [
+    "volume",
+    "to",
+    "30"
+   ],
+   "about": [
+    "volume"
+   ]
+  },
+  {
+   "request": "set the volume to 150",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Set the volume to 150",
+   "eventTitle": "Set the volume to 150",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 100,
+     "muted": false
+    },
+    "done": "Volume is at 100."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 100,
+     "muted": false
+    },
+    "done": "Volume is at 100."
+   },
+   "note": {
+    "title": "Set the volume to 150",
+    "body": ""
+   },
+   "args": [
+    "set",
+    "the",
+    "volume",
+    "to",
+    "150"
+   ],
+   "about": [
+    "volume"
+   ]
+  },
+  {
+   "request": "turn it up",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Turn it up",
+   "eventTitle": "Turn it up",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 65,
+     "muted": false
+    },
+    "done": "Volume up to 65."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 35,
+     "muted": false
+    },
+    "done": "Volume up to 35."
+   },
+   "note": {
+    "title": "Turn it up",
+    "body": ""
+   },
+   "args": [
+    "turn",
+    "it",
+    "up"
+   ],
+   "about": [
+    "turn"
+   ]
+  },
+  {
+   "request": "make it quieter",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Make it quieter",
+   "eventTitle": "Make it quieter",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 35
+    },
+    "done": "Volume down to 35."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 5
+    },
+    "done": "Volume down to 5."
+   },
+   "note": {
+    "title": "Make it quieter",
+    "body": ""
+   },
+   "args": [
+    "make",
+    "it",
+    "quieter"
+   ],
+   "about": [
+    "quieter"
+   ]
+  },
+  {
+   "request": "volume down",
+   "plausible": [
+    "system_setting"
+   ],
+   "plausibleDropped": [
+    "system_setting",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Volume down",
+   "eventTitle": "Volume down",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 35
+    },
+    "done": "Volume down to 35."
+   },
+   "settingAt20": {
+    "tool": "system_volume",
+    "input": {
+     "volume": 5
+    },
+    "done": "Volume down to 5."
+   },
+   "note": {
+    "title": "Volume down",
+    "body": ""
+   },
+   "args": [
+    "volume",
+    "down"
+   ],
+   "about": [
+    "volume",
+    "down"
+   ]
+  },
+  {
+   "request": "run my focus shortcut",
+   "plausible": [
+    "run_shortcut",
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "run_shortcut",
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Run my focus shortcut",
+   "eventTitle": "Run my focus shortcut",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Run my focus shortcut",
+    "body": ""
+   },
+   "args": [
+    "run",
+    "my",
+    "focus",
+    "shortcut"
+   ],
+   "about": [
+    "focu"
+   ]
+  },
+  {
+   "request": "start the Morning shortcut",
+   "plausible": [
+    "run_shortcut"
+   ],
+   "plausibleDropped": [
+    "run_shortcut",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Start the shortcut",
+   "eventTitle": "Start the shortcut",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Start the Morning shortcut",
+    "body": ""
+   },
+   "args": [
+    "start",
+    "the",
+    "Morning",
+    "shortcut"
+   ],
+   "about": [
+    "morning"
+   ]
+  },
+  {
+   "request": "shortcut: run backup",
+   "plausible": [
+    "run_shortcut"
+   ],
+   "plausibleDropped": [
+    "run_shortcut",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Shortcut: run backup",
+   "eventTitle": "Shortcut: run backup",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Shortcut: run backup",
+    "body": ""
+   },
+   "args": [
+    "shortcut:",
+    "run",
+    "backup"
+   ],
+   "about": [
+    "backup"
+   ]
+  },
+  {
+   "request": "note: buy milk and eggs",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Note: buy milk and eggs",
+   "eventTitle": "Note: buy milk and eggs",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Buy milk and eggs",
+    "body": ""
+   },
+   "args": [
+    "note:",
+    "buy",
+    "milk",
+    "and",
+    "eggs"
+   ],
+   "about": [
+    "note",
+    "buy",
+    "milk",
+    "egg"
+   ]
+  },
+  {
+   "request": "make a note that the wifi password changed. Ask IT for the new one",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Make a note that the wifi password changed. Ask IT for the new one",
+   "eventTitle": "Make a note that the wifi password changed. Ask IT for the new one",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "The wifi password changed.",
+    "body": "the wifi password changed. Ask IT for the new one"
+   },
+   "args": [
+    "make",
+    "a",
+    "note",
+    "that",
+    "the",
+    "wifi",
+    "password",
+    "changed.",
+    "Ask",
+    "IT",
+    "for",
+    "the",
+    "new",
+    "one"
+   ],
+   "about": [
+    "note",
+    "wifi",
+    "password",
+    "changed",
+    "ask"
+   ]
+  },
+  {
+   "request": "take a note about the offsite",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Take a note about the offsite",
+   "eventTitle": "Take a note about the offsite",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "The offsite",
+    "body": ""
+   },
+   "args": [
+    "take",
+    "a",
+    "note",
+    "about",
+    "the",
+    "offsite"
+   ],
+   "about": [
+    "take",
+    "note",
+    "offsite"
+   ]
+  },
+  {
+   "request": "jot down call mum",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Jot down call mum",
+   "eventTitle": "Jot down call mum",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Call mum",
+    "body": ""
+   },
+   "args": [
+    "jot",
+    "down",
+    "call",
+    "mum"
+   ],
+   "about": [
+    "jot",
+    "down",
+    "call",
+    "mum"
+   ]
+  },
+  {
+   "request": "save this to notes",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Save this to notes",
+   "eventTitle": "Save this to notes",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": null,
+   "args": [
+    "save",
+    "this",
+    "to",
+    "notes"
+   ],
+   "about": [
+    "save",
+    "note"
+   ]
+  },
+  {
+   "request": "make a note",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Make a note",
+   "eventTitle": "Make a note",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": null,
+   "args": [
+    "make",
+    "a",
+    "note"
+   ],
+   "about": [
+    "note"
+   ]
+  },
+  {
+   "request": "note: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Note: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "eventTitle": "Note: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx…",
+    "body": ""
+   },
+   "args": [
+    "note:",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   ],
+   "about": [
+    "note",
+    "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+   ]
+  },
+  {
+   "request": "organise my downloads",
+   "plausible": [
+    "organize_folder"
+   ],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Organise my downloads",
+   "eventTitle": "Organise my downloads",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Organise my downloads",
+    "body": ""
+   },
+   "args": [
+    "organise",
+    "my",
+    "downloads"
+   ],
+   "about": [
+    "organise",
+    "download"
+   ]
+  },
+  {
+   "request": "tidy this folder",
+   "plausible": [
+    "organize_folder"
+   ],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Tidy this folder",
+   "eventTitle": "Tidy this folder",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Tidy this folder",
+    "body": ""
+   },
+   "args": [
+    "tidy",
+    "this",
+    "folder"
+   ],
+   "about": [
+    "tidy",
+    "folder"
+   ]
+  },
+  {
+   "request": "sort these by type",
+   "plausible": [
+    "organize_folder"
+   ],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Sort these by type",
+   "eventTitle": "Sort these by type",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Sort these by type",
+    "body": ""
+   },
+   "args": [
+    "sort",
+    "these",
+    "by",
+    "type"
+   ],
+   "about": [
+    "sort",
+    "type"
+   ]
+  },
+  {
+   "request": "find the pdf I downloaded yesterday",
+   "plausible": [
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Find the pdf I downloaded yesterday",
+   "eventTitle": "Find the pdf I downloaded yesterday",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Find the pdf I downloaded yesterday",
+    "body": ""
+   },
+   "args": [
+    "find",
+    "the",
+    "pdf",
+    "I",
+    "downloaded",
+    "yesterday"
+   ],
+   "about": [
+    "find",
+    "pdf",
+    "downloaded",
+    "yesterday"
+   ]
+  },
+  {
+   "request": "where is my passport scan",
+   "plausible": [
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Where is my passport scan",
+   "eventTitle": "Where is my passport scan",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Where is my passport scan",
+    "body": ""
+   },
+   "args": [
+    "where",
+    "is",
+    "my",
+    "passport",
+    "scan"
+   ],
+   "about": [
+    "passport",
+    "scan"
+   ]
+  },
+  {
+   "request": "search for flights to goa",
+   "plausible": [
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Search for flights to goa",
+   "eventTitle": "Search for flights to goa",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Search for flights to goa",
+    "body": ""
+   },
+   "args": [
+    "search",
+    "for",
+    "flights",
+    "to",
+    "goa"
+   ],
+   "about": [
+    "search",
+    "flight",
+    "goa"
+   ]
+  },
+  {
+   "request": "show me the latest invoice",
+   "plausible": [
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Show me the latest invoice",
+   "eventTitle": "Show me the latest invoice",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Show me the latest invoice",
+    "body": ""
+   },
+   "args": [
+    "show",
+    "me",
+    "the",
+    "latest",
+    "invoice"
+   ],
+   "about": [
+    "show",
+    "latest",
+    "invoice"
+   ]
+  },
+  {
+   "request": "find big videos",
+   "plausible": [
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Find big videos",
+   "eventTitle": "Find big videos",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Find big videos",
+    "body": ""
+   },
+   "args": [
+    "find",
+    "big",
+    "videos"
+   ],
+   "about": [
+    "find",
+    "big",
+    "video"
+   ]
+  },
+  {
+   "request": "rename these files consistently",
+   "plausible": [
+    "rename_batch"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "rename_batch"
+   ],
+   "brain": false,
+   "reminderTitle": "Rename these files consistently",
+   "eventTitle": "Rename these files consistently",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Rename these files consistently",
+    "body": ""
+   },
+   "args": [
+    "rename",
+    "these",
+    "files",
+    "consistently"
+   ],
+   "about": [
+    "rename",
+    "file",
+    "consistently"
+   ]
+  },
+  {
+   "request": "rename with dates",
+   "plausible": [
+    "rename_batch"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "rename_batch"
+   ],
+   "brain": false,
+   "reminderTitle": "Rename with dates",
+   "eventTitle": "Rename with dates",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Rename with dates",
+    "body": ""
+   },
+   "args": [
+    "rename",
+    "with",
+    "dates"
+   ],
+   "about": [
+    "rename",
+    "date"
+   ]
+  },
+  {
+   "request": "make a folder called automaton in dev and open it in Zed",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Make a folder called automaton in dev and open it in Zed",
+   "eventTitle": "Make a folder called automaton in dev and open it in Zed",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Make a folder called automaton in dev and open it in Zed",
+    "body": ""
+   },
+   "args": [
+    "make",
+    "a",
+    "folder",
+    "called",
+    "automaton",
+    "in",
+    "dev",
+    "and",
+    "open",
+    "it",
+    "in",
+    "Zed"
+   ],
+   "about": [
+    "folder",
+    "called",
+    "automaton",
+    "dev",
+    "open",
+    "zed"
+   ]
+  },
+  {
+   "request": "create a new folder named Invoices 2026 in Documents",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Create a new folder named Invoices 2026 in Documents",
+   "eventTitle": "Folder named Invoices 2026 in Documents",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Create a new folder named Invoices 2026 in Documents",
+    "body": ""
+   },
+   "args": [
+    "create",
+    "a",
+    "new",
+    "folder",
+    "named",
+    "Invoices",
+    "2026",
+    "in",
+    "Documents"
+   ],
+   "about": [
+    "create",
+    "folder",
+    "named",
+    "invoice",
+    "document"
+   ]
+  },
+  {
+   "request": "open it in Visual Studio Code",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Open it in Visual Studio Code",
+   "eventTitle": "Open it in Visual Studio Code",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Open it in Visual Studio Code",
+    "body": ""
+   },
+   "args": [
+    "open",
+    "it",
+    "in",
+    "Visual",
+    "Studio",
+    "Code"
+   ],
+   "about": [
+    "open",
+    "visual",
+    "studio",
+    "code"
+   ]
+  },
+  {
+   "request": "open ~/dev/merry with zed",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Open ~/dev/merry with zed",
+   "eventTitle": "Open ~/dev/merry with zed",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Open ~/dev/merry with zed",
+    "body": ""
+   },
+   "args": [
+    "open",
+    "~/dev/merry",
+    "with",
+    "zed"
+   ],
+   "about": [
+    "open",
+    "dev",
+    "zed"
+   ]
+  },
+  {
+   "request": "run ls -la",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Run ls -la",
+   "eventTitle": "Run ls -la",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Run ls -la",
+    "body": ""
+   },
+   "args": [
+    "run",
+    "ls",
+    "-la"
+   ],
+   "about": [
+    "ls",
+    "la"
+   ]
+  },
+  {
+   "request": "execute \"git status\"",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Execute \"git status\"",
+   "eventTitle": "Execute \"git status\"",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Execute \"git status\"",
+    "body": ""
+   },
+   "args": [
+    "execute",
+    "git status"
+   ],
+   "about": [
+    "execute",
+    "git",
+    "statu"
+   ]
+  },
+  {
+   "request": "run echo 'hello world' two",
+   "plausible": [
+    "run_command"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "run_command"
+   ],
+   "brain": false,
+   "reminderTitle": "Run echo 'hello world' two",
+   "eventTitle": "Run echo 'hello world' two",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Run echo 'hello world' two",
+    "body": ""
+   },
+   "args": [
+    "run",
+    "echo",
+    "hello world",
+    "two"
+   ],
+   "about": [
+    "echo",
+    "hello",
+    "world",
+    "two"
+   ]
+  },
+  {
+   "request": "remember that my manager is Priya",
+   "plausible": [
+    "memory"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "My manager is Priya",
+   "eventTitle": "Remember that my manager is Priya",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remember that my manager is Priya",
+    "body": ""
+   },
+   "args": [
+    "remember",
+    "that",
+    "my",
+    "manager",
+    "is",
+    "Priya"
+   ],
+   "about": [
+    "manager",
+    "priya"
+   ]
+  },
+  {
+   "request": "from now on invoices go in Finance",
+   "plausible": [
+    "memory"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "From now on invoices go in Finance",
+   "eventTitle": "From now on invoices go in Finance",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "From now on invoices go in Finance",
+    "body": ""
+   },
+   "args": [
+    "from",
+    "now",
+    "on",
+    "invoices",
+    "go",
+    "in",
+    "Finance"
+   ],
+   "about": [
+    "invoice",
+    "go",
+    "finance"
+   ]
+  },
+  {
+   "request": "forget that my manager is Priya",
+   "plausible": [
+    "memory"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Forget that my manager is Priya",
+   "eventTitle": "Forget that my manager is Priya",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Forget that my manager is Priya",
+    "body": ""
+   },
+   "args": [
+    "forget",
+    "that",
+    "my",
+    "manager",
+    "is",
+    "Priya"
+   ],
+   "about": [
+    "manager",
+    "priya"
+   ]
+  },
+  {
+   "request": "forget everything",
+   "plausible": [
+    "memory"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Forget everything",
+   "eventTitle": "Forget everything",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Forget everything",
+    "body": ""
+   },
+   "args": [
+    "forget",
+    "everything"
+   ],
+   "about": [
+    "everything"
+   ]
+  },
+  {
+   "request": "forget it",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Forget it",
+   "eventTitle": "Forget it",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Forget it",
+    "body": ""
+   },
+   "args": [
+    "forget",
+    "it"
+   ],
+   "about": []
+  },
+  {
+   "request": "what do you remember about me",
+   "plausible": [
+    "memory"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "What do you remember about me",
+   "eventTitle": "What do you remember about me",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What do you remember about me",
+    "body": ""
+   },
+   "args": [
+    "what",
+    "do",
+    "you",
+    "remember",
+    "about",
+    "me"
+   ],
+   "about": []
+  },
+  {
+   "request": "what do you know about my manager?",
+   "plausible": [
+    "memory"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "What do you know about my manager?",
+   "eventTitle": "What do you know about my manager?",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What do you know about my manager?",
+    "body": ""
+   },
+   "args": [
+    "what",
+    "do",
+    "you",
+    "know",
+    "about",
+    "my",
+    "manager?"
+   ],
+   "about": [
+    "manager"
+   ]
+  },
+  {
+   "request": "show me your memories",
+   "plausible": [
+    "memory",
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "memory",
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Show me your memories",
+   "eventTitle": "Show me your memories",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Show me your memories",
+    "body": ""
+   },
+   "args": [
+    "show",
+    "me",
+    "your",
+    "memories"
+   ],
+   "about": [
+    "show",
+    "memory"
+   ]
+  },
+  {
+   "request": "start a 25 minute timer",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Start a 25 minute timer",
+   "eventTitle": "Start a 25 minute timer",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 25
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Start a 25 minute timer",
+    "body": ""
+   },
+   "args": [
+    "start",
+    "a",
+    "25",
+    "minute",
+    "timer"
+   ],
+   "about": [
+    "minute",
+    "timer"
+   ]
+  },
+  {
+   "request": "set a timer for one minute",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Set a timer for one minute",
+   "eventTitle": "Set a timer for one minute",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Set a timer for one minute",
+    "body": ""
+   },
+   "args": [
+    "set",
+    "a",
+    "timer",
+    "for",
+    "one",
+    "minute"
+   ],
+   "about": [
+    "timer",
+    "minute"
+   ]
+  },
+  {
+   "request": "focus for 45 minutes",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Focus for 45 minutes",
+   "eventTitle": "Focus for 45 minutes",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 45
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Focus for 45 minutes",
+    "body": ""
+   },
+   "args": [
+    "focus",
+    "for",
+    "45",
+    "minutes"
+   ],
+   "about": [
+    "focu",
+    "minute"
+   ]
+  },
+  {
+   "request": "pause the timer",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Pause the timer",
+   "eventTitle": "Pause the timer",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Pause the timer",
+    "body": ""
+   },
+   "args": [
+    "pause",
+    "the",
+    "timer"
+   ],
+   "about": [
+    "pause",
+    "timer"
+   ]
+  },
+  {
+   "request": "cancel my focus timer",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Cancel my focus timer",
+   "eventTitle": "Cancel my focus timer",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Cancel my focus timer",
+    "body": ""
+   },
+   "args": [
+    "cancel",
+    "my",
+    "focus",
+    "timer"
+   ],
+   "about": [
+    "cancel",
+    "focu",
+    "timer"
+   ]
+  },
+  {
+   "request": "time me for 10 minutes called Laundry",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Time me for 10 minutes called Laundry",
+   "eventTitle": "Time me for 10 minutes called Laundry",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 10
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Time me for 10 minutes called Laundry",
+    "body": ""
+   },
+   "args": [
+    "time",
+    "me",
+    "for",
+    "10",
+    "minutes",
+    "called",
+    "Laundry"
+   ],
+   "about": [
+    "time",
+    "minute",
+    "called",
+    "laundry"
+   ]
+  },
+  {
+   "request": "save where I am with Merry port. Next: merge the branches",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Save where I am with Merry port. Next: merge the branches",
+   "eventTitle": "Save where I am with Merry port. Next: merge the branches",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Save where I am with Merry port.",
+    "body": "save where I am with Merry port. Next: merge the branches"
+   },
+   "args": [
+    "save",
+    "where",
+    "I",
+    "am",
+    "with",
+    "Merry",
+    "port.",
+    "Next:",
+    "merge",
+    "the",
+    "branches"
+   ],
+   "about": [
+    "save",
+    "port",
+    "merge",
+    "branche"
+   ]
+  },
+  {
+   "request": "resume my project Merry port",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Resume my project Merry port",
+   "eventTitle": "Resume my project Merry port",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Resume my project Merry port",
+    "body": ""
+   },
+   "args": [
+    "resume",
+    "my",
+    "project",
+    "Merry",
+    "port"
+   ],
+   "about": [
+    "resume",
+    "project",
+    "port"
+   ]
+  },
+  {
+   "request": "add a task: file taxes by friday takes 30 minutes",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Add a task: file taxes by takes 30 minutes",
+   "eventTitle": "Task: file taxes by takes 30 minutes",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 30
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Add a task: file taxes by friday takes 30 minutes",
+    "body": ""
+   },
+   "args": [
+    "add",
+    "a",
+    "task:",
+    "file",
+    "taxes",
+    "by",
+    "friday",
+    "takes",
+    "30",
+    "minutes"
+   ],
+   "about": [
+    "task",
+    "file",
+    "taxe",
+    "friday",
+    "take",
+    "minute"
+   ]
+  },
+  {
+   "request": "create a project called Garden",
+   "plausible": [
+    "add_event"
+   ],
+   "plausibleDropped": [
+    "add_event",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Create a project called Garden",
+   "eventTitle": "Project called Garden",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Create a project called Garden",
+    "body": ""
+   },
+   "args": [
+    "create",
+    "a",
+    "project",
+    "called",
+    "Garden"
+   ],
+   "about": [
+    "create",
+    "project",
+    "called",
+    "garden"
+   ]
+  },
+  {
+   "request": "track water daily",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Track water daily",
+   "eventTitle": "Track water daily",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Track water daily",
+    "body": ""
+   },
+   "args": [
+    "track",
+    "water",
+    "daily"
+   ],
+   "about": [
+    "track",
+    "water",
+    "daily"
+   ]
+  },
+  {
+   "request": "show my tasks",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Show my tasks",
+   "eventTitle": "Show my tasks",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Show my tasks",
+    "body": ""
+   },
+   "args": [
+    "show",
+    "my",
+    "tasks"
+   ],
+   "about": [
+    "show",
+    "task"
+   ]
+  },
+  {
+   "request": "list my reminders",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "List my reminders",
+   "eventTitle": "List my reminders",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "List my reminders",
+    "body": ""
+   },
+   "args": [
+    "list",
+    "my",
+    "reminders"
+   ],
+   "about": [
+    "list",
+    "reminder"
+   ]
+  },
+  {
+   "request": "what's in my workspace",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "What's in my workspace",
+   "eventTitle": "What's in my workspace",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What's in my workspace",
+    "body": ""
+   },
+   "args": [
+    "what's",
+    "in",
+    "my",
+    "workspace"
+   ],
+   "about": [
+    "workspace"
+   ]
+  },
+  {
+   "request": "save this for later",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Save this for later",
+   "eventTitle": "Save this for later",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": null,
+   "args": [
+    "save",
+    "this",
+    "for",
+    "later"
+   ],
+   "about": [
+    "save",
+    "later"
+   ]
+  },
+  {
+   "request": "keep these for Garden",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Keep these for Garden",
+   "eventTitle": "Keep these for Garden",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Keep these for Garden",
+    "body": ""
+   },
+   "args": [
+    "keep",
+    "these",
+    "for",
+    "Garden"
+   ],
+   "about": [
+    "keep",
+    "garden"
+   ]
+  },
+  {
+   "request": "remind me in the Reminders app to call",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "In the Reminders app to call",
+   "eventTitle": "Remind me in the Reminders app to call",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remind me in the Reminders app to call",
+    "body": ""
+   },
+   "args": [
+    "remind",
+    "me",
+    "in",
+    "the",
+    "Reminders",
+    "app",
+    "to",
+    "call"
+   ],
+   "about": [
+    "remind",
+    "reminder",
+    "app",
+    "call"
+   ]
+  },
+  {
+   "request": "add a note in Apple Notes",
+   "plausible": [
+    "make_note"
+   ],
+   "plausibleDropped": [
+    "make_note",
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Add a note in Apple Notes",
+   "eventTitle": "Note in Apple Notes",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "In Apple Notes",
+    "body": ""
+   },
+   "args": [
+    "add",
+    "a",
+    "note",
+    "in",
+    "Apple",
+    "Notes"
+   ],
+   "about": [
+    "note",
+    "apple"
+   ]
+  },
+  {
+   "request": "open youtube and find something good",
+   "plausible": [
+    "find_files"
+   ],
+   "plausibleDropped": [
+    "organize_folder",
+    "find_files"
+   ],
+   "brain": false,
+   "reminderTitle": "Open youtube and find something good",
+   "eventTitle": "Open youtube and find something good",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Open youtube and find something good",
+    "body": ""
+   },
+   "args": [
+    "open",
+    "youtube",
+    "and",
+    "find",
+    "something",
+    "good"
+   ],
+   "about": [
+    "open",
+    "youtube",
+    "find",
+    "something",
+    "good"
+   ]
+  },
+  {
+   "request": "what is 2+2",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "What is 2+2",
+   "eventTitle": "What is 2+2",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "What is 2+2",
+    "body": ""
+   },
+   "args": [
+    "what",
+    "is",
+    "2+2"
+   ],
+   "about": [
+    "2+2"
+   ]
+  },
+  {
+   "request": "hello",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Hello",
+   "eventTitle": "Hello",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Hello",
+    "body": ""
+   },
+   "args": [
+    "hello"
+   ],
+   "about": [
+    "hello"
+   ]
+  },
+  {
+   "request": "summarise this page",
+   "plausible": [],
+   "plausibleDropped": [
+    "organize_folder"
+   ],
+   "brain": false,
+   "reminderTitle": "Summarise this page",
+   "eventTitle": "Summarise this page",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Summarise this page",
+    "body": ""
+   },
+   "args": [
+    "summarise",
+    "this",
+    "page"
+   ],
+   "about": [
+    "summarise",
+    "page"
+   ]
+  },
+  {
+   "request": "remind me every month to pay rent",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Every month to pay rent",
+   "eventTitle": "Remind me every month to pay rent",
+   "agenda": {
+    "from": 1790916600000,
+    "to": 1790965800000,
+    "label": "today",
+    "probe": null
+   },
+   "free": {
+    "day": 1790879400000,
+    "start": 1790917200000,
+    "end": 1790944200000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remind me every month to pay rent",
+    "body": ""
+   },
+   "args": [
+    "remind",
+    "me",
+    "every",
+    "month",
+    "to",
+    "pay",
+    "rent"
+   ],
+   "about": [
+    "remind",
+    "month",
+    "pay",
+    "rent"
+   ]
+  },
+  {
+   "request": "remind me daily to stretch at 9am",
+   "plausible": [
+    "add_reminder"
+   ],
+   "plausibleDropped": [
+    "add_reminder",
+    "organize_folder"
+   ],
+   "brain": true,
+   "reminderTitle": "Daily to stretch",
+   "eventTitle": "Remind me daily to stretch",
+   "agenda": {
+    "from": 1790965800000,
+    "to": 1791052200000,
+    "label": "tomorrow",
+    "probe": null
+   },
+   "free": {
+    "day": 1790965800000,
+    "start": 1790998200000,
+    "end": 1791030600000,
+    "minutes": 60
+   },
+   "setting": null,
+   "settingAt20": null,
+   "note": {
+    "title": "Remind me daily to stretch at 9am",
+    "body": ""
+   },
+   "args": [
+    "remind",
+    "me",
+    "daily",
+    "to",
+    "stretch",
+    "at",
+    "9am"
+   ],
+   "about": [
+    "remind",
+    "daily",
+    "stretch",
+    "9am"
+   ]
+  }
+ ],
+ "gaps": [
+  {
+   "request": "when am i free today",
+   "busy": [],
+   "gaps": [
+    [
+     1790917200000,
+     1790944200000
+    ]
+   ]
+  },
+  {
+   "request": "find a free 45 minutes between 2 and 5",
+   "busy": [],
+   "gaps": [
+    [
+     1790917200000,
+     1790940600000
+    ]
+   ]
+  },
+  {
+   "request": "free half-hour tomorrow",
+   "busy": [],
+   "gaps": [
+    [
+     1790998200000,
+     1791030600000
+    ]
+   ]
+  },
+  {
+   "request": "when am i free today",
+   "busy": [
+    {
+     "start": "2026-10-02T05:00:00.000Z",
+     "end": "2026-10-02T06:00:00.000Z",
+     "allDay": false
+    }
+   ],
+   "gaps": [
+    [
+     1790920800000,
+     1790944200000
+    ]
+   ]
+  },
+  {
+   "request": "find a free 45 minutes between 2 and 5",
+   "busy": [
+    {
+     "start": "2026-10-02T05:00:00.000Z",
+     "end": "2026-10-02T06:00:00.000Z",
+     "allDay": false
+    }
+   ],
+   "gaps": [
+    [
+     1790920800000,
+     1790940600000
+    ]
+   ]
+  },
+  {
+   "request": "free half-hour tomorrow",
+   "busy": [
+    {
+     "start": "2026-10-02T05:00:00.000Z",
+     "end": "2026-10-02T06:00:00.000Z",
+     "allDay": false
+    }
+   ],
+   "gaps": [
+    [
+     1790998200000,
+     1791030600000
+    ]
+   ]
+  },
+  {
+   "request": "when am i free today",
+   "busy": [
+    {
+     "start": "2026-10-02T04:00:00.000Z",
+     "end": "2026-10-02T07:30:00.000Z",
+     "allDay": false
+    },
+    {
+     "start": "2026-10-02T07:45:00.000Z",
+     "end": "2026-10-02T09:00:00.000Z",
+     "allDay": false
+    },
+    {
+     "start": "2026-10-01T18:30:00.000Z",
+     "end": "2026-10-02T18:30:00.000Z",
+     "allDay": true
+    }
+   ],
+   "gaps": [
+    [
+     1790931600000,
+     1790944200000
+    ]
+   ]
+  },
+  {
+   "request": "find a free 45 minutes between 2 and 5",
+   "busy": [
+    {
+     "start": "2026-10-02T04:00:00.000Z",
+     "end": "2026-10-02T07:30:00.000Z",
+     "allDay": false
+    },
+    {
+     "start": "2026-10-02T07:45:00.000Z",
+     "end": "2026-10-02T09:00:00.000Z",
+     "allDay": false
+    },
+    {
+     "start": "2026-10-01T18:30:00.000Z",
+     "end": "2026-10-02T18:30:00.000Z",
+     "allDay": true
+    }
+   ],
+   "gaps": [
+    [
+     1790931600000,
+     1790940600000
+    ]
+   ]
+  },
+  {
+   "request": "free half-hour tomorrow",
+   "busy": [
+    {
+     "start": "2026-10-02T04:00:00.000Z",
+     "end": "2026-10-02T07:30:00.000Z",
+     "allDay": false
+    },
+    {
+     "start": "2026-10-02T07:45:00.000Z",
+     "end": "2026-10-02T09:00:00.000Z",
+     "allDay": false
+    },
+    {
+     "start": "2026-10-01T18:30:00.000Z",
+     "end": "2026-10-02T18:30:00.000Z",
+     "allDay": true
+    }
+   ],
+   "gaps": [
+    [
+     1790998200000,
+     1791030600000
+    ]
+   ]
+  },
+  {
+   "request": "when am i free today",
+   "busy": [
+    {
+     "start": "2026-10-02T03:00:00.000Z",
+     "end": "2026-10-02T13:00:00.000Z",
+     "allDay": false
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "request": "find a free 45 minutes between 2 and 5",
+   "busy": [
+    {
+     "start": "2026-10-02T03:00:00.000Z",
+     "end": "2026-10-02T13:00:00.000Z",
+     "allDay": false
+    }
+   ],
+   "gaps": []
+  },
+  {
+   "request": "free half-hour tomorrow",
+   "busy": [
+    {
+     "start": "2026-10-02T03:00:00.000Z",
+     "end": "2026-10-02T13:00:00.000Z",
+     "allDay": false
+    }
+   ],
+   "gaps": [
+    [
+     1790998200000,
+     1791030600000
+    ]
+   ]
+  }
+ ],
+ "groups": [
+  {
+   "names": [
+    "acme-invoice-01.pdf",
+    "acme_invoice_02.pdf",
+    "Acme report final.docx",
+    "zenith-plan.pdf",
+    "zenith notes.txt",
+    "IMG_2031.png",
+    "IMG_2032.png",
+    "screenshot 2026.png",
+    "final copy.txt"
+   ],
+   "projects": [
+    "Acme",
+    "Invoice",
+    "Zenith"
+   ],
+   "months": [
+    "2026-10",
+    "2026-09",
+    "2026-08",
+    "2026-07"
+   ],
+   "types": [
+    "Documents",
+    "Documents",
+    "Documents",
+    "Documents",
+    "Documents",
+    "Images",
+    "Images",
+    "Images",
+    "Documents"
+   ]
+  },
+  {
+   "names": [
+    "a.txt",
+    "b.txt"
+   ],
+   "projects": [],
+   "months": [
+    "2026-08",
+    "2026-07"
+   ],
+   "types": [
+    "Documents",
+    "Documents"
+   ]
+  },
+  {
+   "names": [
+    "Budget2026.xlsx",
+    "budget-2025.xlsx",
+    "trip photo.jpg",
+    "trip-plan.md",
+    "TRIP_costs.csv",
+    "x"
+   ],
+   "projects": [
+    "Trip"
+   ],
+   "months": [
+    "2026-10",
+    "2026-09",
+    "2026-08",
+    "2026-07"
+   ],
+   "types": [
+    "Spreadsheets",
+    "Spreadsheets",
+    "Images",
+    "Documents",
+    "Spreadsheets",
+    null
+   ]
+  },
+  {
+   "names": [],
+   "projects": [],
+   "months": [],
+   "types": []
+  }
+ ],
+ "schemes": [
+  {
+   "id": "kebab",
+   "description": "Lower case with hyphens, e.g. \"quarterly-report-final.pdf\".",
+   "names": [
+    "quarterly-report-final",
+    "img-2031",
+    "my-file-2",
+    "allcaps",
+    "already-kebab",
+    "snake-case-name",
+    "n-code-n-me",
+    "v2-1-notes",
+    "",
+    "spaced"
+   ]
+  },
+  {
+   "id": "snake",
+   "description": "Lower case with underscores, e.g. \"quarterly_report_final.pdf\".",
+   "names": [
+    "quarterly_report_final",
+    "img_2031",
+    "my_file_2",
+    "allcaps",
+    "already_kebab",
+    "snake_case_name",
+    "n_code_n_me",
+    "v2_1_notes",
+    "",
+    "spaced"
+   ]
+  },
+  {
+   "id": "title",
+   "description": "Title Case With Spaces, e.g. \"Quarterly Report Final.pdf\".",
+   "names": [
+    "Quarterly Report Final",
+    "Img 2031",
+    "My File 2",
+    "Allcaps",
+    "Already Kebab",
+    "Snake Case Name",
+    "N Code N Me",
+    "V2 1 Notes",
+    "",
+    "Spaced"
+   ]
+  },
+  {
+   "id": "date_prefix",
+   "description": "Prefixed with the date the file was last changed, e.g. \"2026-09-20-report.pdf\".",
+   "names": [
+    "2026-07-03-quarterly-report-final",
+    "2026-07-03-img-2031",
+    "2026-07-03-my-file-2",
+    "2026-07-03-allcaps",
+    "2026-07-03-already-kebab",
+    "2026-07-03-snake-case-name",
+    "2026-07-03-n-code-n-me",
+    "2026-07-03-v2-1-notes",
+    "2026-07-03-",
+    "2026-07-03-spaced"
+   ]
+  },
+  {
+   "id": "numbered",
+   "description": "Numbered in order, e.g. \"01-report.pdf\", \"02-notes.pdf\".",
+   "names": [
+    "01-quarterly-report-final",
+    "02-img-2031",
+    "03-my-file-2",
+    "04-allcaps",
+    "05-already-kebab",
+    "06-snake-case-name",
+    "07-n-code-n-me",
+    "08-v2-1-notes",
+    "09-",
+    "10-spaced"
+   ]
+  }
+ ],
+ "stems": [
+  "quarterlyReport Final",
+  "IMG_2031",
+  "my file (2)",
+  "ALLCAPS",
+  "already-kebab",
+  "snake_case_name",
+  "Ünïcode Näme",
+  "v2.1 notes",
+  "",
+  "  spaced  "
+ ]
+}

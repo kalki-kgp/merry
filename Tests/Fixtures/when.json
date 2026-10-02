@@ -1,0 +1,9893 @@
+{
+ "clocks": [
+  {
+   "now": 1790931600000,
+   "rows": [
+    {
+     "text": "remind me to call mom tomorrow at 7",
+     "reading": {
+      "candidates": [
+       1791034200000,
+       1790991000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 7"
+      ]
+     },
+     "stripped": "remind me to call mom",
+     "described": [
+      [
+       "tomorrow at 7:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow at 5",
+     "reading": {
+      "candidates": [
+       1791027000000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "next friday 3pm",
+     "reading": {
+      "candidates": [
+       1791538200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next friday",
+       "3pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 9 at 3:00 pm",
+       "Fri, Oct 9"
+      ]
+     ]
+    },
+    {
+     "text": "in 20 minutes",
+     "reading": {
+      "candidates": [
+       1790932800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 20 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:50 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight",
+     "reading": {
+      "candidates": [
+       1790951400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tonight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5",
+     "reading": {
+      "candidates": [
+       1790940600000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 9",
+     "reading": {
+      "candidates": [
+       1790955000000,
+       1790998200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 9"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12",
+     "reading": {
+      "candidates": [
+       1790965800000,
+       1791009000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 0",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 0"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 13",
+     "reading": {
+      "candidates": [
+       1791012600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 13"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "call mom at 7",
+     "reading": {
+      "candidates": [
+       1790947800000,
+       1790991000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7"
+      ]
+     },
+     "stripped": "call mom",
+     "described": [
+      [
+       "today at 7:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "call 3 people",
+     "reading": null,
+     "stripped": "call 3 people",
+     "described": []
+    },
+    {
+     "text": "meeting at 7:30",
+     "reading": {
+      "candidates": [
+       1790949600000,
+       1790992800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7:30"
+      ]
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "today at 7:30 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 7:30 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "meeting at 7:30 am",
+     "reading": {
+      "candidates": [
+       1790992800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7:30 am"
+      ]
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "tomorrow at 7:30 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "lunch at 12:15pm",
+     "reading": {
+      "candidates": [
+       1791009900000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12:15pm"
+      ]
+     },
+     "stripped": "lunch",
+     "described": [
+      [
+       "tomorrow at 12:15 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12am",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 pm",
+     "reading": {
+      "candidates": [
+       1791009000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12 pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "by 6 p.m.",
+     "reading": {
+      "candidates": [
+       1790944200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 6 p.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "by 6 a.m. sharp",
+     "reading": {
+      "candidates": [
+       1790987400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 6 a.m."
+      ]
+     },
+     "stripped": "sharp",
+     "described": [
+      [
+       "tomorrow at 6:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "@ 4",
+     "reading": null,
+     "stripped": "@ 4",
+     "described": []
+    },
+    {
+     "text": "@4pm",
+     "reading": {
+      "candidates": [
+       1790937000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "4pm"
+      ]
+     },
+     "stripped": "@4pm",
+     "described": [
+      [
+       "today at 4:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "standup @ 10",
+     "reading": null,
+     "stripped": "standup @ 10",
+     "described": []
+    },
+    {
+     "text": "in an hour",
+     "reading": {
+      "candidates": [
+       1790935200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in an hour"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a week",
+     "reading": {
+      "candidates": [
+       1791536400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in a week"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 9 at 2:30 pm",
+       "Fri, Oct 9"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 days",
+     "reading": {
+      "candidates": [
+       1791104400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 days"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 4 at 2:30 pm",
+       "Sun, Oct 4"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 hours",
+     "reading": {
+      "candidates": [
+       1790938800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 4:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 1.5 hours",
+     "reading": {
+      "candidates": [
+       1790937000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 1.5 hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 4:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 90 mins",
+     "reading": {
+      "candidates": [
+       1790937000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 90 mins"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 4:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 3 hrs",
+     "reading": {
+      "candidates": [
+       1790942400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 3 hrs"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 h",
+     "reading": {
+      "candidates": [
+       1790938800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 h"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 4:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 0 minutes",
+     "reading": {
+      "candidates": [
+       1790931600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 0 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 5 weeks",
+     "reading": {
+      "candidates": [
+       1793955600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 5 weeks"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Nov 6 at 2:30 pm",
+       "Fri, Nov 6"
+      ]
+     ]
+    },
+    {
+     "text": "in 2hours",
+     "reading": {
+      "candidates": [
+       1790938800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 4:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a minute",
+     "reading": {
+      "candidates": [
+       1790931660000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in a minute"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:31 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a few minutes",
+     "reading": null,
+     "stripped": "in a few minutes",
+     "described": []
+    },
+    {
+     "text": "in 99999999999999999999999 days",
+     "reading": {
+      "candidates": [
+       null
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 99999999999999999999999 days"
+      ]
+     },
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "in 0.00001 minutes",
+     "reading": {
+      "candidates": [
+       1790931600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 0.00001 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 30 minutes tomorrow at 9",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 30 minutes",
+       "tomorrow"
+      ],
+      "durationMin": 30
+     },
+     "stripped": "at 9",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "meeting for an hour at 3",
+     "reading": {
+      "candidates": [
+       1790933400000,
+       1790976600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for an hour",
+       "at 3"
+      ],
+      "durationMin": 60
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 3:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "focus for 45 mins",
+     "reading": null,
+     "stripped": "focus for 45 mins",
+     "described": []
+    },
+    {
+     "text": "for 2 hours on friday",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 2 hours",
+       "on friday"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 1.5 hrs today at 4pm",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 1.5 hrs",
+       "today"
+      ],
+      "durationMin": 90
+     },
+     "stripped": "at 4pm",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for a minute in 10 minutes",
+     "reading": {
+      "candidates": [
+       1790932200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for a minute",
+       "in 10 minutes"
+      ],
+      "durationMin": 1
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:40 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 2 h tonight",
+     "reading": {
+      "candidates": [
+       1790951400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for 2 h",
+       "tonight"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "day after tomorrow",
+     "reading": {
+      "candidates": [
+       1791052200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "day after tomorrow"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 4 at 12:00 am",
+       "Sun, Oct 4"
+      ]
+     ]
+    },
+    {
+     "text": "the day after tomorrow at noon",
+     "reading": {
+      "candidates": [
+       1791095400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "day after tomorrow",
+       "noon"
+      ]
+     },
+     "stripped": "the",
+     "described": [
+      [
+       "Sun, Oct 4 at 12:00 pm",
+       "Sun, Oct 4"
+      ]
+     ]
+    },
+    {
+     "text": "tmrw 8am",
+     "reading": {
+      "candidates": [
+       1790994600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tmrw",
+       "8am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 8:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tmr evening",
+     "reading": {
+      "candidates": [
+       1791030600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tmr",
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 6:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "today",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "today"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today at 3",
+     "reading": {
+      "candidates": [
+       1790933400000,
+       1790890200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "at 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "today at 3:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today at 2",
+     "reading": {
+      "candidates": [
+       1790929800000,
+       1790886600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "at 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:00 pm",
+       "today"
+      ],
+      [
+       "today at 2:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "this morning",
+     "reading": {
+      "candidates": [
+       1790998200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "this morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow morning",
+     "reading": {
+      "candidates": [
+       1790998200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "tomorrow morning"
+      ]
+     },
+     "stripped": "morning",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow night",
+     "reading": {
+      "candidates": [
+       1791037800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "tomorrow night"
+      ]
+     },
+     "stripped": "night",
+     "described": [
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "this evening at 6",
+     "reading": {
+      "candidates": [
+       1790944200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 6"
+      ]
+     },
+     "stripped": "this evening",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "on friday",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "on friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "friday",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "friday at 2",
+     "reading": {
+      "candidates": [
+       1791534600000,
+       1791491400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "at 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 9 at 2:00 pm",
+       "Fri, Oct 9"
+      ],
+      [
+       "Fri, Oct 9 at 2:00 am",
+       "Fri, Oct 9"
+      ]
+     ]
+    },
+    {
+     "text": "friday at 3pm",
+     "reading": {
+      "candidates": [
+       1790933400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "at 3pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "this friday",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "this friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "next friday",
+     "reading": {
+      "candidates": [
+       1791484200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "next friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 9 at 12:00 am",
+       "Fri, Oct 9"
+      ]
+     ]
+    },
+    {
+     "text": "coming monday",
+     "reading": {
+      "candidates": [
+       1791138600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "coming monday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Oct 5 at 12:00 am",
+       "Mon, Oct 5"
+      ]
+     ]
+    },
+    {
+     "text": "on monday morning",
+     "reading": {
+      "candidates": [
+       1791171000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "on monday",
+       "morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Oct 5 at 9:00 am",
+       "Mon, Oct 5"
+      ]
+     ]
+    },
+    {
+     "text": "sunday",
+     "reading": {
+      "candidates": [
+       1791052200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "sunday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 4 at 12:00 am",
+       "Sun, Oct 4"
+      ]
+     ]
+    },
+    {
+     "text": "saturday night",
+     "reading": {
+      "candidates": [
+       1791037800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "saturday",
+       "night"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "next thursday at 10",
+     "reading": {
+      "candidates": [
+       1791433800000,
+       1791477000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next thursday",
+       "at 10"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Oct 8 at 10:00 am",
+       "Thu, Oct 8"
+      ],
+      [
+       "Thu, Oct 8 at 10:00 pm",
+       "Thu, Oct 8"
+      ]
+     ]
+    },
+    {
+     "text": "thursday 23:55",
+     "reading": {
+      "candidates": [
+       1791483900000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "thursday",
+       "23:55"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Oct 8 at 11:55 pm",
+       "Thu, Oct 8"
+      ]
+     ]
+    },
+    {
+     "text": "thursday 23:40",
+     "reading": {
+      "candidates": [
+       1791483000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "thursday",
+       "23:40"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Oct 8 at 11:40 pm",
+       "Thu, Oct 8"
+      ]
+     ]
+    },
+    {
+     "text": "tuesday",
+     "reading": {
+      "candidates": [
+       1791225000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tuesday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Oct 6 at 12:00 am",
+       "Tue, Oct 6"
+      ]
+     ]
+    },
+    {
+     "text": "next tuesday 6am",
+     "reading": {
+      "candidates": [
+       1791246600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next tuesday",
+       "6am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Oct 6 at 6:00 am",
+       "Tue, Oct 6"
+      ]
+     ]
+    },
+    {
+     "text": "tuesday at 6",
+     "reading": {
+      "candidates": [
+       1791289800000,
+       1791246600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tuesday",
+       "at 6"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Oct 6 at 6:00 pm",
+       "Tue, Oct 6"
+      ],
+      [
+       "Tue, Oct 6 at 6:00 am",
+       "Tue, Oct 6"
+      ]
+     ]
+    },
+    {
+     "text": "wednesday afternoon",
+     "reading": {
+      "candidates": [
+       1791365400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "wednesday",
+       "afternoon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Wed, Oct 7 at 3:00 pm",
+       "Wed, Oct 7"
+      ]
+     ]
+    },
+    {
+     "text": "Monday, 9 AM",
+     "reading": {
+      "candidates": [
+       1791171000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "monday",
+       "9 am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Oct 5 at 9:00 am",
+       "Mon, Oct 5"
+      ]
+     ]
+    },
+    {
+     "text": "FRIDAY AT NOON",
+     "reading": {
+      "candidates": [
+       1791527400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "noon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 9 at 12:00 pm",
+       "Fri, Oct 9"
+      ]
+     ]
+    },
+    {
+     "text": "sep 30",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "sep 30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "30 sep",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "30 sep"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "september 30th",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "september 30th"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "on the 3rd oct at 4",
+     "reading": {
+      "candidates": [
+       1791023400000,
+       1790980200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "3rd oct",
+       "at 4"
+      ]
+     },
+     "stripped": "on the",
+     "described": [
+      [
+       "tomorrow at 4:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 4:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "oct 2",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "oct 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "oct 1",
+     "reading": {
+      "candidates": [
+       1822329000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "oct 1"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 1 at 12:00 am",
+       "Fri, Oct 1"
+      ]
+     ]
+    },
+    {
+     "text": "1 oct",
+     "reading": {
+      "candidates": [
+       1822329000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "1 oct"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 1 at 12:00 am",
+       "Fri, Oct 1"
+      ]
+     ]
+    },
+    {
+     "text": "october 2nd at 9pm",
+     "reading": {
+      "candidates": [
+       1790955000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "october 2nd",
+       "at 9pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "jan 1",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "jan 1"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Jan 1 at 12:00 am",
+       "Fri, Jan 1"
+      ]
+     ]
+    },
+    {
+     "text": "1st january 10am",
+     "reading": {
+      "candidates": [
+       1798777800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "1st january",
+       "10am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Jan 1 at 10:00 am",
+       "Fri, Jan 1"
+      ]
+     ]
+    },
+    {
+     "text": "feb 29",
+     "reading": {
+      "candidates": [
+       1803839400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "feb 29"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Mar 1 at 12:00 am",
+       "Mon, Mar 1"
+      ]
+     ]
+    },
+    {
+     "text": "feb 30",
+     "reading": {
+      "candidates": [
+       1803925800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "feb 30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Mar 2 at 12:00 am",
+       "Tue, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "31 dec",
+     "reading": {
+      "candidates": [
+       1798655400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "31 dec"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Dec 31 at 12:00 am",
+       "Thu, Dec 31"
+      ]
+     ]
+    },
+    {
+     "text": "dec 31 at 11:59pm",
+     "reading": {
+      "candidates": [
+       1798655400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "dec 31"
+      ]
+     },
+     "stripped": "at 11:59pm",
+     "described": [
+      [
+       "Thu, Dec 31 at 12:00 am",
+       "Thu, Dec 31"
+      ]
+     ]
+    },
+    {
+     "text": "mar 0",
+     "reading": {
+      "candidates": [
+       1803753000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "mar 0"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Feb 28 at 12:00 am",
+       "Sun, Feb 28"
+      ]
+     ]
+    },
+    {
+     "text": "99 dec",
+     "reading": {
+      "candidates": [
+       1804530600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "99 dec"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Mar 9 at 12:00 am",
+       "Tue, Mar 9"
+      ]
+     ]
+    },
+    {
+     "text": "maybe 5 people",
+     "reading": {
+      "candidates": [
+       1809455400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "maybe 5"
+      ]
+     },
+     "stripped": "people",
+     "described": [
+      [
+       "Wed, May 5 at 12:00 am",
+       "Wed, May 5"
+      ]
+     ]
+    },
+    {
+     "text": "march 3",
+     "reading": {
+      "candidates": [
+       1804012200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "march 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Wed, Mar 3 at 12:00 am",
+       "Wed, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "market 3",
+     "reading": {
+      "candidates": [
+       1804012200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "market 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Wed, Mar 3 at 12:00 am",
+       "Wed, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "august 15 for 2 hours",
+     "reading": {
+      "candidates": [
+       1818268200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 2 hours",
+       "august 15"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Aug 15 at 12:00 am",
+       "Sun, Aug 15"
+      ]
+     ]
+    },
+    {
+     "text": "nov 5th morning",
+     "reading": {
+      "candidates": [
+       1793849400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "nov 5th",
+       "morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Nov 5 at 9:00 am",
+       "Thu, Nov 5"
+      ]
+     ]
+    },
+    {
+     "text": "5 nov evening",
+     "reading": {
+      "candidates": [
+       1793881800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "5 nov",
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Nov 5 at 6:00 pm",
+       "Thu, Nov 5"
+      ]
+     ]
+    },
+    {
+     "text": "decemberish 12",
+     "reading": {
+      "candidates": [
+       1797013800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "decemberish 12"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Dec 12 at 12:00 am",
+       "Sat, Dec 12"
+      ]
+     ]
+    },
+    {
+     "text": "meeting on 30 sep at 5",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "30 sep"
+      ]
+     },
+     "stripped": "meeting on at 5",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "dentist 14:30",
+     "reading": {
+      "candidates": [
+       1791018000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "14:30"
+      ]
+     },
+     "stripped": "dentist",
+     "described": [
+      [
+       "tomorrow at 2:30 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "dentist 24:00",
+     "reading": null,
+     "stripped": "dentist 24:00",
+     "described": []
+    },
+    {
+     "text": "at 25",
+     "reading": null,
+     "stripped": "at 25",
+     "described": []
+    },
+    {
+     "text": "at 7:75",
+     "reading": null,
+     "stripped": "at 7:75",
+     "described": []
+    },
+    {
+     "text": "at 23",
+     "reading": {
+      "candidates": [
+       1790962200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 23"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5pm tomorrow",
+     "reading": {
+      "candidates": [
+       1791027000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow 5",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tomorrow"
+      ]
+     },
+     "stripped": "5",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "noon",
+     "reading": {
+      "candidates": [
+       1791009000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "noon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "midday tomorrow",
+     "reading": {
+      "candidates": [
+       1791009000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "midday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "midnight",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "midnight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at midnight",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "midnight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "afternoon",
+     "reading": {
+      "candidates": [
+       1790933400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "afternoon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "night",
+     "reading": {
+      "candidates": [
+       1790951400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "night"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "evening",
+     "reading": {
+      "candidates": [
+       1790944200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5 in the morning",
+     "reading": {
+      "candidates": [
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "in the morning",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5 in the evening",
+     "reading": {
+      "candidates": [
+       1790940600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "in the evening",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 at night",
+     "reading": {
+      "candidates": [
+       1791009000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "at night",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 in the morning",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "in the morning",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7 am",
+     "reading": {
+      "candidates": [
+       1790991000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7 am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7am",
+     "reading": {
+      "candidates": [
+       1790991000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7 a.m.",
+     "reading": {
+      "candidates": [
+       1790991000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7 a.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "11:59 p.m.",
+     "reading": {
+      "candidates": [
+       1790965740000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "11:59 p.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:59 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "0:30",
+     "reading": {
+      "candidates": [
+       1790967600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "0:30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:30 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "00:00",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "00:00"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "9:05",
+     "reading": {
+      "candidates": [
+       1790955300000,
+       1790998500000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "9:05"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:05 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 9:05 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "12:00",
+     "reading": {
+      "candidates": [
+       1790965800000,
+       1791009000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "12:00"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "17:45 today",
+     "reading": {
+      "candidates": [
+       1790943300000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "17:45"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:45 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "call the bank about the loan",
+     "reading": null,
+     "stripped": "call the bank about the loan",
+     "described": []
+    },
+    {
+     "text": "buy milk",
+     "reading": null,
+     "stripped": "buy milk",
+     "described": []
+    },
+    {
+     "text": "",
+     "reading": null,
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "   ",
+     "reading": null,
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "asdf qwerty",
+     "reading": null,
+     "stripped": "asdf qwerty",
+     "described": []
+    },
+    {
+     "text": "what is 7 times 8",
+     "reading": null,
+     "stripped": "what is 7 times 8",
+     "described": []
+    },
+    {
+     "text": "room 101",
+     "reading": null,
+     "stripped": "room 101",
+     "described": []
+    },
+    {
+     "text": "gate 12 at 6",
+     "reading": null,
+     "stripped": "gate 12 at 6",
+     "described": []
+    },
+    {
+     "text": "version 2.5 at 3:30pm",
+     "reading": null,
+     "stripped": "version 2.5 at 3:30pm",
+     "described": []
+    },
+    {
+     "text": "remind me at 5, then again at 6",
+     "reading": {
+      "candidates": [
+       1790940600000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "remind me , then again at 6",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow, at 5",
+     "reading": {
+      "candidates": [
+       1791027000000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "Tomorrow At 5PM, Please",
+     "reading": {
+      "candidates": [
+       1791027000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5pm"
+      ]
+     },
+     "stripped": "Please",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "dinner with Zoë tomorrow at 8",
+     "reading": {
+      "candidates": [
+       1790994600000,
+       1791037800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 8"
+      ]
+     },
+     "stripped": "dinner with Zoë",
+     "described": [
+      [
+       "tomorrow at 8:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "café at ９",
+     "reading": null,
+     "stripped": "café at ９",
+     "described": []
+    },
+    {
+     "text": "at ७",
+     "reading": null,
+     "stripped": "at ७",
+     "described": []
+    },
+    {
+     "text": "tomorrow at 5",
+     "reading": {
+      "candidates": [
+       1791027000000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5\nplease",
+     "reading": null,
+     "stripped": "at 5\nplease",
+     "described": []
+    },
+    {
+     "text": "x at5",
+     "reading": null,
+     "stripped": "x at5",
+     "described": []
+    },
+    {
+     "text": "eat 5 apples",
+     "reading": null,
+     "stripped": "eat 5 apples",
+     "described": []
+    },
+    {
+     "text": "combat 5",
+     "reading": null,
+     "stripped": "combat 5",
+     "described": []
+    },
+    {
+     "text": "by 5",
+     "reading": {
+      "candidates": [
+       1790940600000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "stand by 5 people",
+     "reading": {
+      "candidates": [
+       1790940600000,
+       1790983800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 5"
+      ]
+     },
+     "stripped": "stand people",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 20 minutes at 5",
+     "reading": {
+      "candidates": [
+       1790932800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 20 minutes"
+      ]
+     },
+     "stripped": "at 5",
+     "described": [
+      [
+       "today at 2:50 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 20 minutes",
+     "reading": null,
+     "stripped": "for 20 minutes",
+     "described": []
+    },
+    {
+     "text": "for 20 minutes in the morning",
+     "reading": {
+      "candidates": [
+       1790998200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for 20 minutes",
+       "morning"
+      ],
+      "durationMin": 20
+     },
+     "stripped": "in the",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "this monday",
+     "reading": {
+      "candidates": [
+       1791138600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "this monday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Oct 5 at 12:00 am",
+       "Mon, Oct 5"
+      ]
+     ]
+    },
+    {
+     "text": "on sunday at 11",
+     "reading": {
+      "candidates": [
+       1791091800000,
+       1791135000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "on sunday",
+       "at 11"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 4 at 11:00 am",
+       "Sun, Oct 4"
+      ],
+      [
+       "Sun, Oct 4 at 11:00 pm",
+       "Sun, Oct 4"
+      ]
+     ]
+    },
+    {
+     "text": "next sunday at 11:30pm",
+     "reading": {
+      "candidates": [
+       1791136800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next sunday",
+       "at 11:30pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 4 at 11:30 pm",
+       "Sun, Oct 4"
+      ]
+     ]
+    },
+    {
+     "text": "today 23:49",
+     "reading": {
+      "candidates": [
+       1790965140000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "23:49"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:49 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today 23:51",
+     "reading": {
+      "candidates": [
+       1790965260000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "23:51"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:51 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight at 11",
+     "reading": {
+      "candidates": [
+       1790962200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 11"
+      ]
+     },
+     "stripped": "tonight",
+     "described": [
+      [
+       "today at 11:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight at 9:30",
+     "reading": {
+      "candidates": [
+       1790956800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 9:30"
+      ]
+     },
+     "stripped": "tonight",
+     "described": [
+      [
+       "today at 9:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow tomorrow",
+     "reading": {
+      "candidates": [
+       1790965800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tomorrow"
+      ]
+     },
+     "stripped": "tomorrow",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "friday or saturday",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "or saturday",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "monday tuesday at 3",
+     "reading": {
+      "candidates": [
+       1791192600000,
+       1791149400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "monday",
+       "at 3"
+      ]
+     },
+     "stripped": "tuesday",
+     "described": [
+      [
+       "Mon, Oct 5 at 3:00 pm",
+       "Mon, Oct 5"
+      ],
+      [
+       "Mon, Oct 5 at 3:00 am",
+       "Mon, Oct 5"
+      ]
+     ]
+    },
+    {
+     "text": "jan 5 feb 6",
+     "reading": {
+      "candidates": [
+       1799087400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "jan 5"
+      ]
+     },
+     "stripped": "feb 6",
+     "described": [
+      [
+       "Tue, Jan 5 at 12:00 am",
+       "Tue, Jan 5"
+      ]
+     ]
+    },
+    {
+     "text": "at 3 at 4",
+     "reading": {
+      "candidates": [
+       1790933400000,
+       1790976600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 3"
+      ]
+     },
+     "stripped": "at 4",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 3:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "3pm 4pm",
+     "reading": {
+      "candidates": [
+       1790933400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "3pm"
+      ]
+     },
+     "stripped": "4pm",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "weekend",
+     "reading": null,
+     "stripped": "weekend",
+     "described": []
+    },
+    {
+     "text": "next week",
+     "reading": null,
+     "stripped": "next week",
+     "described": []
+    },
+    {
+     "text": "this week at 5pm",
+     "reading": {
+      "candidates": [
+       1790940600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5pm"
+      ]
+     },
+     "stripped": "this week",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in the afternoon at 2:15",
+     "reading": {
+      "candidates": [
+       1791017100000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 2:15"
+      ]
+     },
+     "stripped": "in the afternoon",
+     "described": [
+      [
+       "tomorrow at 2:15 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "Pay rent on the 1st",
+     "reading": null,
+     "stripped": "Pay rent on the 1st",
+     "described": []
+    },
+    {
+     "text": "pay rent 1st nov",
+     "reading": {
+      "candidates": [
+       1793471400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "1st nov"
+      ]
+     },
+     "stripped": "pay rent",
+     "described": [
+      [
+       "Sun, Nov 1 at 12:00 am",
+       "Sun, Nov 1"
+      ]
+     ]
+    },
+    {
+     "text": "standup every day at 10",
+     "reading": {
+      "candidates": [
+       1790958600000,
+       1791001800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 10"
+      ]
+     },
+     "stripped": "standup every day",
+     "described": [
+      [
+       "today at 10:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 10:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "gym mon",
+     "reading": null,
+     "stripped": "gym mon",
+     "described": []
+    },
+    {
+     "text": "sat 9am",
+     "reading": {
+      "candidates": [
+       1790998200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "9am"
+      ]
+     },
+     "stripped": "sat",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "thursdays at 4",
+     "reading": {
+      "candidates": [
+       1790937000000,
+       1790980200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 4"
+      ]
+     },
+     "stripped": "thursdays",
+     "described": [
+      [
+       "today at 4:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 4:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "the friday after next",
+     "reading": {
+      "candidates": [
+       1790879400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "the after next",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "now": 1798741200000,
+   "rows": [
+    {
+     "text": "remind me to call mom tomorrow at 7",
+     "reading": {
+      "candidates": [
+       1798810200000,
+       1798767000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 7"
+      ]
+     },
+     "stripped": "remind me to call mom",
+     "described": [
+      [
+       "tomorrow at 7:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow at 5",
+     "reading": {
+      "candidates": [
+       1798803000000,
+       1798759800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "next friday 3pm",
+     "reading": {
+      "candidates": [
+       1798795800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next friday",
+       "3pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 20 minutes",
+     "reading": {
+      "candidates": [
+       1798742400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 20 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:10 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tonight",
+     "reading": {
+      "candidates": [
+       1798727400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tonight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5",
+     "reading": {
+      "candidates": [
+       1798759800000,
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 9",
+     "reading": {
+      "candidates": [
+       1798774200000,
+       1798817400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 9"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 9:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12",
+     "reading": {
+      "candidates": [
+       1798741800000,
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 0",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 0"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 13",
+     "reading": {
+      "candidates": [
+       1798788600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 13"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "call mom at 7",
+     "reading": {
+      "candidates": [
+       1798767000000,
+       1798810200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7"
+      ]
+     },
+     "stripped": "call mom",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 7:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "call 3 people",
+     "reading": null,
+     "stripped": "call 3 people",
+     "described": []
+    },
+    {
+     "text": "meeting at 7:30",
+     "reading": {
+      "candidates": [
+       1798768800000,
+       1798812000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7:30"
+      ]
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "tomorrow at 7:30 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 7:30 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "meeting at 7:30 am",
+     "reading": {
+      "candidates": [
+       1798768800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7:30 am"
+      ]
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "tomorrow at 7:30 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "lunch at 12:15pm",
+     "reading": {
+      "candidates": [
+       1798785900000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12:15pm"
+      ]
+     },
+     "stripped": "lunch",
+     "described": [
+      [
+       "tomorrow at 12:15 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12am",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 pm",
+     "reading": {
+      "candidates": [
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12 pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "by 6 p.m.",
+     "reading": {
+      "candidates": [
+       1798806600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 6 p.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 6:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "by 6 a.m. sharp",
+     "reading": {
+      "candidates": [
+       1798763400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 6 a.m."
+      ]
+     },
+     "stripped": "sharp",
+     "described": [
+      [
+       "tomorrow at 6:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "@ 4",
+     "reading": null,
+     "stripped": "@ 4",
+     "described": []
+    },
+    {
+     "text": "@4pm",
+     "reading": {
+      "candidates": [
+       1798799400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "4pm"
+      ]
+     },
+     "stripped": "@4pm",
+     "described": [
+      [
+       "tomorrow at 4:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "standup @ 10",
+     "reading": null,
+     "stripped": "standup @ 10",
+     "described": []
+    },
+    {
+     "text": "in an hour",
+     "reading": {
+      "candidates": [
+       1798744800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in an hour"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:50 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in a week",
+     "reading": {
+      "candidates": [
+       1799346000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in a week"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Jan 7 at 11:50 pm",
+       "Thu, Jan 7"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 days",
+     "reading": {
+      "candidates": [
+       1798914000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 days"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Jan 2 at 11:50 pm",
+       "Sat, Jan 2"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 hours",
+     "reading": {
+      "candidates": [
+       1798748400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:50 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 1.5 hours",
+     "reading": {
+      "candidates": [
+       1798746600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 1.5 hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:20 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 90 mins",
+     "reading": {
+      "candidates": [
+       1798746600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 90 mins"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:20 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 3 hrs",
+     "reading": {
+      "candidates": [
+       1798752000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 3 hrs"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 2:50 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 h",
+     "reading": {
+      "candidates": [
+       1798748400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 h"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:50 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 0 minutes",
+     "reading": {
+      "candidates": [
+       1798741200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 0 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:50 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 5 weeks",
+     "reading": {
+      "candidates": [
+       1801765200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 5 weeks"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Feb 4 at 11:50 pm",
+       "Thu, Feb 4"
+      ]
+     ]
+    },
+    {
+     "text": "in 2hours",
+     "reading": {
+      "candidates": [
+       1798748400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 1:50 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in a minute",
+     "reading": {
+      "candidates": [
+       1798741260000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in a minute"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:51 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a few minutes",
+     "reading": null,
+     "stripped": "in a few minutes",
+     "described": []
+    },
+    {
+     "text": "in 99999999999999999999999 days",
+     "reading": {
+      "candidates": [
+       null
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 99999999999999999999999 days"
+      ]
+     },
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "in 0.00001 minutes",
+     "reading": {
+      "candidates": [
+       1798741200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 0.00001 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:50 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 30 minutes tomorrow at 9",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 30 minutes",
+       "tomorrow"
+      ],
+      "durationMin": 30
+     },
+     "stripped": "at 9",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "meeting for an hour at 3",
+     "reading": {
+      "candidates": [
+       1798752600000,
+       1798795800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for an hour",
+       "at 3"
+      ],
+      "durationMin": 60
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "tomorrow at 3:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "focus for 45 mins",
+     "reading": null,
+     "stripped": "focus for 45 mins",
+     "described": []
+    },
+    {
+     "text": "for 2 hours on friday",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 2 hours",
+       "on friday"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "for 1.5 hrs today at 4pm",
+     "reading": {
+      "candidates": [
+       1798655400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 1.5 hrs",
+       "today"
+      ],
+      "durationMin": 90
+     },
+     "stripped": "at 4pm",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for a minute in 10 minutes",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for a minute",
+       "in 10 minutes"
+      ],
+      "durationMin": 1
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "for 2 h tonight",
+     "reading": {
+      "candidates": [
+       1798727400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for 2 h",
+       "tonight"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "day after tomorrow",
+     "reading": {
+      "candidates": [
+       1798828200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "day after tomorrow"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Jan 2 at 12:00 am",
+       "Sat, Jan 2"
+      ]
+     ]
+    },
+    {
+     "text": "the day after tomorrow at noon",
+     "reading": {
+      "candidates": [
+       1798871400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "day after tomorrow",
+       "noon"
+      ]
+     },
+     "stripped": "the",
+     "described": [
+      [
+       "Sat, Jan 2 at 12:00 pm",
+       "Sat, Jan 2"
+      ]
+     ]
+    },
+    {
+     "text": "tmrw 8am",
+     "reading": {
+      "candidates": [
+       1798770600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tmrw",
+       "8am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 8:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tmr evening",
+     "reading": {
+      "candidates": [
+       1798806600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tmr",
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 6:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "today",
+     "reading": {
+      "candidates": [
+       1798655400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "today"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today at 3",
+     "reading": {
+      "candidates": [
+       1798709400000,
+       1798666200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "at 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "today at 3:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today at 2",
+     "reading": {
+      "candidates": [
+       1798705800000,
+       1798662600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "at 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:00 pm",
+       "today"
+      ],
+      [
+       "today at 2:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "this morning",
+     "reading": {
+      "candidates": [
+       1798774200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "this morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow morning",
+     "reading": {
+      "candidates": [
+       1798774200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "tomorrow morning"
+      ]
+     },
+     "stripped": "morning",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow night",
+     "reading": {
+      "candidates": [
+       1798813800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "tomorrow night"
+      ]
+     },
+     "stripped": "night",
+     "described": [
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "this evening at 6",
+     "reading": {
+      "candidates": [
+       1798806600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 6"
+      ]
+     },
+     "stripped": "this evening",
+     "described": [
+      [
+       "tomorrow at 6:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "on friday",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "on friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "friday",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "friday at 2",
+     "reading": {
+      "candidates": [
+       1798792200000,
+       1798749000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "at 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 2:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 2:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "friday at 3pm",
+     "reading": {
+      "candidates": [
+       1798795800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "at 3pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "this friday",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "this friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "next friday",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "next friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "coming monday",
+     "reading": {
+      "candidates": [
+       1799001000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "coming monday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Jan 4 at 12:00 am",
+       "Mon, Jan 4"
+      ]
+     ]
+    },
+    {
+     "text": "on monday morning",
+     "reading": {
+      "candidates": [
+       1799033400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "on monday",
+       "morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Jan 4 at 9:00 am",
+       "Mon, Jan 4"
+      ]
+     ]
+    },
+    {
+     "text": "sunday",
+     "reading": {
+      "candidates": [
+       1798914600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "sunday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Jan 3 at 12:00 am",
+       "Sun, Jan 3"
+      ]
+     ]
+    },
+    {
+     "text": "saturday night",
+     "reading": {
+      "candidates": [
+       1798900200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "saturday",
+       "night"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Jan 2 at 8:00 pm",
+       "Sat, Jan 2"
+      ]
+     ]
+    },
+    {
+     "text": "next thursday at 10",
+     "reading": {
+      "candidates": [
+       1799296200000,
+       1799339400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next thursday",
+       "at 10"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Jan 7 at 10:00 am",
+       "Thu, Jan 7"
+      ],
+      [
+       "Thu, Jan 7 at 10:00 pm",
+       "Thu, Jan 7"
+      ]
+     ]
+    },
+    {
+     "text": "thursday 23:55",
+     "reading": {
+      "candidates": [
+       1798741500000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "thursday",
+       "23:55"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:55 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "thursday 23:40",
+     "reading": {
+      "candidates": [
+       1799345400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "thursday",
+       "23:40"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Jan 7 at 11:40 pm",
+       "Thu, Jan 7"
+      ]
+     ]
+    },
+    {
+     "text": "tuesday",
+     "reading": {
+      "candidates": [
+       1799087400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tuesday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Jan 5 at 12:00 am",
+       "Tue, Jan 5"
+      ]
+     ]
+    },
+    {
+     "text": "next tuesday 6am",
+     "reading": {
+      "candidates": [
+       1799109000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next tuesday",
+       "6am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Jan 5 at 6:00 am",
+       "Tue, Jan 5"
+      ]
+     ]
+    },
+    {
+     "text": "tuesday at 6",
+     "reading": {
+      "candidates": [
+       1799152200000,
+       1799109000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tuesday",
+       "at 6"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Jan 5 at 6:00 pm",
+       "Tue, Jan 5"
+      ],
+      [
+       "Tue, Jan 5 at 6:00 am",
+       "Tue, Jan 5"
+      ]
+     ]
+    },
+    {
+     "text": "wednesday afternoon",
+     "reading": {
+      "candidates": [
+       1799227800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "wednesday",
+       "afternoon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Wed, Jan 6 at 3:00 pm",
+       "Wed, Jan 6"
+      ]
+     ]
+    },
+    {
+     "text": "Monday, 9 AM",
+     "reading": {
+      "candidates": [
+       1799033400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "monday",
+       "9 am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Jan 4 at 9:00 am",
+       "Mon, Jan 4"
+      ]
+     ]
+    },
+    {
+     "text": "FRIDAY AT NOON",
+     "reading": {
+      "candidates": [
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "noon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "sep 30",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "sep 30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "30 sep",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "30 sep"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "september 30th",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "september 30th"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "on the 3rd oct at 4",
+     "reading": {
+      "candidates": [
+       1822559400000,
+       1822516200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "3rd oct",
+       "at 4"
+      ]
+     },
+     "stripped": "on the",
+     "described": [
+      [
+       "Sun, Oct 3 at 4:00 pm",
+       "Sun, Oct 3"
+      ],
+      [
+       "Sun, Oct 3 at 4:00 am",
+       "Sun, Oct 3"
+      ]
+     ]
+    },
+    {
+     "text": "oct 2",
+     "reading": {
+      "candidates": [
+       1822415400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "oct 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Oct 2 at 12:00 am",
+       "Sat, Oct 2"
+      ]
+     ]
+    },
+    {
+     "text": "oct 1",
+     "reading": {
+      "candidates": [
+       1822329000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "oct 1"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 1 at 12:00 am",
+       "Fri, Oct 1"
+      ]
+     ]
+    },
+    {
+     "text": "1 oct",
+     "reading": {
+      "candidates": [
+       1822329000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "1 oct"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Oct 1 at 12:00 am",
+       "Fri, Oct 1"
+      ]
+     ]
+    },
+    {
+     "text": "october 2nd at 9pm",
+     "reading": {
+      "candidates": [
+       1822491000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "october 2nd",
+       "at 9pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Oct 2 at 9:00 pm",
+       "Sat, Oct 2"
+      ]
+     ]
+    },
+    {
+     "text": "jan 1",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "jan 1"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "1st january 10am",
+     "reading": {
+      "candidates": [
+       1798777800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "1st january",
+       "10am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 10:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "feb 29",
+     "reading": {
+      "candidates": [
+       1803839400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "feb 29"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Mar 1 at 12:00 am",
+       "Mon, Mar 1"
+      ]
+     ]
+    },
+    {
+     "text": "feb 30",
+     "reading": {
+      "candidates": [
+       1803925800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "feb 30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Mar 2 at 12:00 am",
+       "Tue, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "31 dec",
+     "reading": {
+      "candidates": [
+       1798655400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "31 dec"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "dec 31 at 11:59pm",
+     "reading": {
+      "candidates": [
+       1798655400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "dec 31"
+      ]
+     },
+     "stripped": "at 11:59pm",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "mar 0",
+     "reading": {
+      "candidates": [
+       1803753000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "mar 0"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Feb 28 at 12:00 am",
+       "Sun, Feb 28"
+      ]
+     ]
+    },
+    {
+     "text": "99 dec",
+     "reading": {
+      "candidates": [
+       1804530600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "99 dec"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Mar 9 at 12:00 am",
+       "Tue, Mar 9"
+      ]
+     ]
+    },
+    {
+     "text": "maybe 5 people",
+     "reading": {
+      "candidates": [
+       1809455400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "maybe 5"
+      ]
+     },
+     "stripped": "people",
+     "described": [
+      [
+       "Wed, May 5 at 12:00 am",
+       "Wed, May 5"
+      ]
+     ]
+    },
+    {
+     "text": "march 3",
+     "reading": {
+      "candidates": [
+       1804012200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "march 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Wed, Mar 3 at 12:00 am",
+       "Wed, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "market 3",
+     "reading": {
+      "candidates": [
+       1804012200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "market 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Wed, Mar 3 at 12:00 am",
+       "Wed, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "august 15 for 2 hours",
+     "reading": {
+      "candidates": [
+       1818268200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 2 hours",
+       "august 15"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Aug 15 at 12:00 am",
+       "Sun, Aug 15"
+      ]
+     ]
+    },
+    {
+     "text": "nov 5th morning",
+     "reading": {
+      "candidates": [
+       1825385400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "nov 5th",
+       "morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Nov 5 at 9:00 am",
+       "Fri, Nov 5"
+      ]
+     ]
+    },
+    {
+     "text": "5 nov evening",
+     "reading": {
+      "candidates": [
+       1825417800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "5 nov",
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Nov 5 at 6:00 pm",
+       "Fri, Nov 5"
+      ]
+     ]
+    },
+    {
+     "text": "decemberish 12",
+     "reading": {
+      "candidates": [
+       1828549800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "decemberish 12"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Dec 12 at 12:00 am",
+       "Sun, Dec 12"
+      ]
+     ]
+    },
+    {
+     "text": "meeting on 30 sep at 5",
+     "reading": {
+      "candidates": [
+       1822242600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "30 sep"
+      ]
+     },
+     "stripped": "meeting on at 5",
+     "described": [
+      [
+       "Thu, Sep 30 at 12:00 am",
+       "Thu, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "dentist 14:30",
+     "reading": {
+      "candidates": [
+       1798794000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "14:30"
+      ]
+     },
+     "stripped": "dentist",
+     "described": [
+      [
+       "tomorrow at 2:30 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "dentist 24:00",
+     "reading": null,
+     "stripped": "dentist 24:00",
+     "described": []
+    },
+    {
+     "text": "at 25",
+     "reading": null,
+     "stripped": "at 25",
+     "described": []
+    },
+    {
+     "text": "at 7:75",
+     "reading": null,
+     "stripped": "at 7:75",
+     "described": []
+    },
+    {
+     "text": "at 23",
+     "reading": {
+      "candidates": [
+       1798824600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 23"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 11:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5pm tomorrow",
+     "reading": {
+      "candidates": [
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow 5",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tomorrow"
+      ]
+     },
+     "stripped": "5",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "noon",
+     "reading": {
+      "candidates": [
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "noon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "midday tomorrow",
+     "reading": {
+      "candidates": [
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "midday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "midnight",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "midnight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at midnight",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "midnight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "afternoon",
+     "reading": {
+      "candidates": [
+       1798795800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "afternoon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "night",
+     "reading": {
+      "candidates": [
+       1798813800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "night"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "evening",
+     "reading": {
+      "candidates": [
+       1798806600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 6:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5 in the morning",
+     "reading": {
+      "candidates": [
+       1798759800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "in the morning",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5 in the evening",
+     "reading": {
+      "candidates": [
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "in the evening",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 at night",
+     "reading": {
+      "candidates": [
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "at night",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 in the morning",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "in the morning",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7 am",
+     "reading": {
+      "candidates": [
+       1798767000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7 am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7am",
+     "reading": {
+      "candidates": [
+       1798767000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7 a.m.",
+     "reading": {
+      "candidates": [
+       1798767000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7 a.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "11:59 p.m.",
+     "reading": {
+      "candidates": [
+       1798741740000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "11:59 p.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:59 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "0:30",
+     "reading": {
+      "candidates": [
+       1798743600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "0:30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:30 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "00:00",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "00:00"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "9:05",
+     "reading": {
+      "candidates": [
+       1798774500000,
+       1798817700000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "9:05"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 9:05 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 9:05 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "12:00",
+     "reading": {
+      "candidates": [
+       1798741800000,
+       1798785000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "12:00"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "17:45 today",
+     "reading": {
+      "candidates": [
+       1798719300000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "17:45"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:45 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "call the bank about the loan",
+     "reading": null,
+     "stripped": "call the bank about the loan",
+     "described": []
+    },
+    {
+     "text": "buy milk",
+     "reading": null,
+     "stripped": "buy milk",
+     "described": []
+    },
+    {
+     "text": "",
+     "reading": null,
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "   ",
+     "reading": null,
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "asdf qwerty",
+     "reading": null,
+     "stripped": "asdf qwerty",
+     "described": []
+    },
+    {
+     "text": "what is 7 times 8",
+     "reading": null,
+     "stripped": "what is 7 times 8",
+     "described": []
+    },
+    {
+     "text": "room 101",
+     "reading": null,
+     "stripped": "room 101",
+     "described": []
+    },
+    {
+     "text": "gate 12 at 6",
+     "reading": null,
+     "stripped": "gate 12 at 6",
+     "described": []
+    },
+    {
+     "text": "version 2.5 at 3:30pm",
+     "reading": null,
+     "stripped": "version 2.5 at 3:30pm",
+     "described": []
+    },
+    {
+     "text": "remind me at 5, then again at 6",
+     "reading": {
+      "candidates": [
+       1798759800000,
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "remind me , then again at 6",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow, at 5",
+     "reading": {
+      "candidates": [
+       1798803000000,
+       1798759800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "Tomorrow At 5PM, Please",
+     "reading": {
+      "candidates": [
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5pm"
+      ]
+     },
+     "stripped": "Please",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "dinner with Zoë tomorrow at 8",
+     "reading": {
+      "candidates": [
+       1798770600000,
+       1798813800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 8"
+      ]
+     },
+     "stripped": "dinner with Zoë",
+     "described": [
+      [
+       "tomorrow at 8:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "café at ９",
+     "reading": null,
+     "stripped": "café at ９",
+     "described": []
+    },
+    {
+     "text": "at ७",
+     "reading": null,
+     "stripped": "at ७",
+     "described": []
+    },
+    {
+     "text": "tomorrow at 5",
+     "reading": {
+      "candidates": [
+       1798803000000,
+       1798759800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5\nplease",
+     "reading": null,
+     "stripped": "at 5\nplease",
+     "described": []
+    },
+    {
+     "text": "x at5",
+     "reading": null,
+     "stripped": "x at5",
+     "described": []
+    },
+    {
+     "text": "eat 5 apples",
+     "reading": null,
+     "stripped": "eat 5 apples",
+     "described": []
+    },
+    {
+     "text": "combat 5",
+     "reading": null,
+     "stripped": "combat 5",
+     "described": []
+    },
+    {
+     "text": "by 5",
+     "reading": {
+      "candidates": [
+       1798759800000,
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "stand by 5 people",
+     "reading": {
+      "candidates": [
+       1798759800000,
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 5"
+      ]
+     },
+     "stripped": "stand people",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 20 minutes at 5",
+     "reading": {
+      "candidates": [
+       1798742400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 20 minutes"
+      ]
+     },
+     "stripped": "at 5",
+     "described": [
+      [
+       "tomorrow at 12:10 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "for 20 minutes",
+     "reading": null,
+     "stripped": "for 20 minutes",
+     "described": []
+    },
+    {
+     "text": "for 20 minutes in the morning",
+     "reading": {
+      "candidates": [
+       1798774200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for 20 minutes",
+       "morning"
+      ],
+      "durationMin": 20
+     },
+     "stripped": "in the",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "this monday",
+     "reading": {
+      "candidates": [
+       1799001000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "this monday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Jan 4 at 12:00 am",
+       "Mon, Jan 4"
+      ]
+     ]
+    },
+    {
+     "text": "on sunday at 11",
+     "reading": {
+      "candidates": [
+       1798954200000,
+       1798997400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "on sunday",
+       "at 11"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Jan 3 at 11:00 am",
+       "Sun, Jan 3"
+      ],
+      [
+       "Sun, Jan 3 at 11:00 pm",
+       "Sun, Jan 3"
+      ]
+     ]
+    },
+    {
+     "text": "next sunday at 11:30pm",
+     "reading": {
+      "candidates": [
+       1798999200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next sunday",
+       "at 11:30pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Jan 3 at 11:30 pm",
+       "Sun, Jan 3"
+      ]
+     ]
+    },
+    {
+     "text": "today 23:49",
+     "reading": {
+      "candidates": [
+       1798741140000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "23:49"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:49 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today 23:51",
+     "reading": {
+      "candidates": [
+       1798741260000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "23:51"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:51 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight at 11",
+     "reading": {
+      "candidates": [
+       1798824600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 11"
+      ]
+     },
+     "stripped": "tonight",
+     "described": [
+      [
+       "tomorrow at 11:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tonight at 9:30",
+     "reading": {
+      "candidates": [
+       1798819200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 9:30"
+      ]
+     },
+     "stripped": "tonight",
+     "described": [
+      [
+       "tomorrow at 9:30 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow tomorrow",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tomorrow"
+      ]
+     },
+     "stripped": "tomorrow",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "friday or saturday",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "or saturday",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "monday tuesday at 3",
+     "reading": {
+      "candidates": [
+       1799055000000,
+       1799011800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "monday",
+       "at 3"
+      ]
+     },
+     "stripped": "tuesday",
+     "described": [
+      [
+       "Mon, Jan 4 at 3:00 pm",
+       "Mon, Jan 4"
+      ],
+      [
+       "Mon, Jan 4 at 3:00 am",
+       "Mon, Jan 4"
+      ]
+     ]
+    },
+    {
+     "text": "jan 5 feb 6",
+     "reading": {
+      "candidates": [
+       1799087400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "jan 5"
+      ]
+     },
+     "stripped": "feb 6",
+     "described": [
+      [
+       "Tue, Jan 5 at 12:00 am",
+       "Tue, Jan 5"
+      ]
+     ]
+    },
+    {
+     "text": "at 3 at 4",
+     "reading": {
+      "candidates": [
+       1798752600000,
+       1798795800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 3"
+      ]
+     },
+     "stripped": "at 4",
+     "described": [
+      [
+       "tomorrow at 3:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "3pm 4pm",
+     "reading": {
+      "candidates": [
+       1798795800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "3pm"
+      ]
+     },
+     "stripped": "4pm",
+     "described": [
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "weekend",
+     "reading": null,
+     "stripped": "weekend",
+     "described": []
+    },
+    {
+     "text": "next week",
+     "reading": null,
+     "stripped": "next week",
+     "described": []
+    },
+    {
+     "text": "this week at 5pm",
+     "reading": {
+      "candidates": [
+       1798803000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5pm"
+      ]
+     },
+     "stripped": "this week",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in the afternoon at 2:15",
+     "reading": {
+      "candidates": [
+       1798793100000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 2:15"
+      ]
+     },
+     "stripped": "in the afternoon",
+     "described": [
+      [
+       "tomorrow at 2:15 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "Pay rent on the 1st",
+     "reading": null,
+     "stripped": "Pay rent on the 1st",
+     "described": []
+    },
+    {
+     "text": "pay rent 1st nov",
+     "reading": {
+      "candidates": [
+       1825007400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "1st nov"
+      ]
+     },
+     "stripped": "pay rent",
+     "described": [
+      [
+       "Mon, Nov 1 at 12:00 am",
+       "Mon, Nov 1"
+      ]
+     ]
+    },
+    {
+     "text": "standup every day at 10",
+     "reading": {
+      "candidates": [
+       1798777800000,
+       1798821000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 10"
+      ]
+     },
+     "stripped": "standup every day",
+     "described": [
+      [
+       "tomorrow at 10:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 10:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "gym mon",
+     "reading": null,
+     "stripped": "gym mon",
+     "described": []
+    },
+    {
+     "text": "sat 9am",
+     "reading": {
+      "candidates": [
+       1798774200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "9am"
+      ]
+     },
+     "stripped": "sat",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "thursdays at 4",
+     "reading": {
+      "candidates": [
+       1798756200000,
+       1798799400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 4"
+      ]
+     },
+     "stripped": "thursdays",
+     "described": [
+      [
+       "tomorrow at 4:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 4:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "the friday after next",
+     "reading": {
+      "candidates": [
+       1798741800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "the after next",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "now": 1835397330250,
+   "rows": [
+    {
+     "text": "remind me to call mom tomorrow at 7",
+     "reading": {
+      "candidates": [
+       1835530200000,
+       1835487000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 7"
+      ]
+     },
+     "stripped": "remind me to call mom",
+     "described": [
+      [
+       "tomorrow at 7:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 7:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow at 5",
+     "reading": {
+      "candidates": [
+       1835523000000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "next friday 3pm",
+     "reading": {
+      "candidates": [
+       1835688600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next friday",
+       "3pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 3:00 pm",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "in 20 minutes",
+     "reading": {
+      "candidates": [
+       1835398530250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 20 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:25 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight",
+     "reading": {
+      "candidates": [
+       1835447400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tonight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5",
+     "reading": {
+      "candidates": [
+       1835436600000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 9",
+     "reading": {
+      "candidates": [
+       1835407800000,
+       1835451000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 9"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:00 am",
+       "today"
+      ],
+      [
+       "today at 9:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 12",
+     "reading": {
+      "candidates": [
+       1835418600000,
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 0",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 0"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 13",
+     "reading": {
+      "candidates": [
+       1835422200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 13"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 1:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "call mom at 7",
+     "reading": {
+      "candidates": [
+       1835400600000,
+       1835443800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7"
+      ]
+     },
+     "stripped": "call mom",
+     "described": [
+      [
+       "today at 7:00 am",
+       "today"
+      ],
+      [
+       "today at 7:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "call 3 people",
+     "reading": null,
+     "stripped": "call 3 people",
+     "described": []
+    },
+    {
+     "text": "meeting at 7:30",
+     "reading": {
+      "candidates": [
+       1835402400000,
+       1835445600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7:30"
+      ]
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "today at 7:30 am",
+       "today"
+      ],
+      [
+       "today at 7:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "meeting at 7:30 am",
+     "reading": {
+      "candidates": [
+       1835402400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 7:30 am"
+      ]
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "today at 7:30 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "lunch at 12:15pm",
+     "reading": {
+      "candidates": [
+       1835419500000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12:15pm"
+      ]
+     },
+     "stripped": "lunch",
+     "described": [
+      [
+       "today at 12:15 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 12am",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 pm",
+     "reading": {
+      "candidates": [
+       1835418600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12 pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "by 6 p.m.",
+     "reading": {
+      "candidates": [
+       1835440200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 6 p.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "by 6 a.m. sharp",
+     "reading": {
+      "candidates": [
+       1835483400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 6 a.m."
+      ]
+     },
+     "stripped": "sharp",
+     "described": [
+      [
+       "tomorrow at 6:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "@ 4",
+     "reading": null,
+     "stripped": "@ 4",
+     "described": []
+    },
+    {
+     "text": "@4pm",
+     "reading": {
+      "candidates": [
+       1835433000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "4pm"
+      ]
+     },
+     "stripped": "@4pm",
+     "described": [
+      [
+       "today at 4:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "standup @ 10",
+     "reading": null,
+     "stripped": "standup @ 10",
+     "described": []
+    },
+    {
+     "text": "in an hour",
+     "reading": {
+      "candidates": [
+       1835400930250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in an hour"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 7:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a week",
+     "reading": {
+      "candidates": [
+       1836002130250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in a week"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Mar 7 at 6:05 am",
+       "Tue, Mar 7"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 days",
+     "reading": {
+      "candidates": [
+       1835570130250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 days"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Mar 2 at 6:05 am",
+       "Thu, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 hours",
+     "reading": {
+      "candidates": [
+       1835404530250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 1.5 hours",
+     "reading": {
+      "candidates": [
+       1835402730250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 1.5 hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 7:35 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 90 mins",
+     "reading": {
+      "candidates": [
+       1835402730250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 90 mins"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 7:35 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 3 hrs",
+     "reading": {
+      "candidates": [
+       1835408130250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 3 hrs"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 2 h",
+     "reading": {
+      "candidates": [
+       1835404530250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2 h"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 0 minutes",
+     "reading": {
+      "candidates": [
+       1835397330250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 0 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in 5 weeks",
+     "reading": {
+      "candidates": [
+       1838421330250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 5 weeks"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Apr 4 at 6:05 am",
+       "Tue, Apr 4"
+      ]
+     ]
+    },
+    {
+     "text": "in 2hours",
+     "reading": {
+      "candidates": [
+       1835404530250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 2hours"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a minute",
+     "reading": {
+      "candidates": [
+       1835397390250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in a minute"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:06 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in a few minutes",
+     "reading": null,
+     "stripped": "in a few minutes",
+     "described": []
+    },
+    {
+     "text": "in 99999999999999999999999 days",
+     "reading": {
+      "candidates": [
+       null
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 99999999999999999999999 days"
+      ]
+     },
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "in 0.00001 minutes",
+     "reading": {
+      "candidates": [
+       1835397330250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 0.00001 minutes"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:05 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 30 minutes tomorrow at 9",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 30 minutes",
+       "tomorrow"
+      ],
+      "durationMin": 30
+     },
+     "stripped": "at 9",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "meeting for an hour at 3",
+     "reading": {
+      "candidates": [
+       1835429400000,
+       1835472600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for an hour",
+       "at 3"
+      ],
+      "durationMin": 60
+     },
+     "stripped": "meeting",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 3:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "focus for 45 mins",
+     "reading": null,
+     "stripped": "focus for 45 mins",
+     "described": []
+    },
+    {
+     "text": "for 2 hours on friday",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 2 hours",
+       "on friday"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "for 1.5 hrs today at 4pm",
+     "reading": {
+      "candidates": [
+       1835375400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 1.5 hrs",
+       "today"
+      ],
+      "durationMin": 90
+     },
+     "stripped": "at 4pm",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for a minute in 10 minutes",
+     "reading": {
+      "candidates": [
+       1835397930250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for a minute",
+       "in 10 minutes"
+      ],
+      "durationMin": 1
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:15 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 2 h tonight",
+     "reading": {
+      "candidates": [
+       1835447400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for 2 h",
+       "tonight"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "day after tomorrow",
+     "reading": {
+      "candidates": [
+       1835548200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "day after tomorrow"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Mar 2 at 12:00 am",
+       "Thu, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "the day after tomorrow at noon",
+     "reading": {
+      "candidates": [
+       1835591400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "day after tomorrow",
+       "noon"
+      ]
+     },
+     "stripped": "the",
+     "described": [
+      [
+       "Thu, Mar 2 at 12:00 pm",
+       "Thu, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "tmrw 8am",
+     "reading": {
+      "candidates": [
+       1835490600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tmrw",
+       "8am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 8:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tmr evening",
+     "reading": {
+      "candidates": [
+       1835526600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tmr",
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 6:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "today",
+     "reading": {
+      "candidates": [
+       1835375400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "today"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today at 3",
+     "reading": {
+      "candidates": [
+       1835429400000,
+       1835386200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "at 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "today at 3:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today at 2",
+     "reading": {
+      "candidates": [
+       1835425800000,
+       1835382600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "at 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 2:00 pm",
+       "today"
+      ],
+      [
+       "today at 2:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "this morning",
+     "reading": {
+      "candidates": [
+       1835407800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "this morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow morning",
+     "reading": {
+      "candidates": [
+       1835494200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "tomorrow morning"
+      ]
+     },
+     "stripped": "morning",
+     "described": [
+      [
+       "tomorrow at 9:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow night",
+     "reading": {
+      "candidates": [
+       1835533800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "tomorrow night"
+      ]
+     },
+     "stripped": "night",
+     "described": [
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "this evening at 6",
+     "reading": {
+      "candidates": [
+       1835440200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 6"
+      ]
+     },
+     "stripped": "this evening",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "on friday",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "on friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "friday",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "friday at 2",
+     "reading": {
+      "candidates": [
+       1835685000000,
+       1835641800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "at 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 2:00 pm",
+       "Fri, Mar 3"
+      ],
+      [
+       "Fri, Mar 3 at 2:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "friday at 3pm",
+     "reading": {
+      "candidates": [
+       1835688600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "at 3pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 3:00 pm",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "this friday",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "this friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "next friday",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "next friday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "coming monday",
+     "reading": {
+      "candidates": [
+       1835893800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "coming monday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Mar 6 at 12:00 am",
+       "Mon, Mar 6"
+      ]
+     ]
+    },
+    {
+     "text": "on monday morning",
+     "reading": {
+      "candidates": [
+       1835926200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "on monday",
+       "morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Mar 6 at 9:00 am",
+       "Mon, Mar 6"
+      ]
+     ]
+    },
+    {
+     "text": "sunday",
+     "reading": {
+      "candidates": [
+       1835807400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "sunday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Mar 5 at 12:00 am",
+       "Sun, Mar 5"
+      ]
+     ]
+    },
+    {
+     "text": "saturday night",
+     "reading": {
+      "candidates": [
+       1835793000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "saturday",
+       "night"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Mar 4 at 8:00 pm",
+       "Sat, Mar 4"
+      ]
+     ]
+    },
+    {
+     "text": "next thursday at 10",
+     "reading": {
+      "candidates": [
+       1835584200000,
+       1835627400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next thursday",
+       "at 10"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Mar 2 at 10:00 am",
+       "Thu, Mar 2"
+      ],
+      [
+       "Thu, Mar 2 at 10:00 pm",
+       "Thu, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "thursday 23:55",
+     "reading": {
+      "candidates": [
+       1835634300000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "thursday",
+       "23:55"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Mar 2 at 11:55 pm",
+       "Thu, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "thursday 23:40",
+     "reading": {
+      "candidates": [
+       1835633400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "thursday",
+       "23:40"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Thu, Mar 2 at 11:40 pm",
+       "Thu, Mar 2"
+      ]
+     ]
+    },
+    {
+     "text": "tuesday",
+     "reading": {
+      "candidates": [
+       1835375400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tuesday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "next tuesday 6am",
+     "reading": {
+      "candidates": [
+       1836001800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next tuesday",
+       "6am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Mar 7 at 6:00 am",
+       "Tue, Mar 7"
+      ]
+     ]
+    },
+    {
+     "text": "tuesday at 6",
+     "reading": {
+      "candidates": [
+       1835440200000,
+       1836001800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tuesday",
+       "at 6"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ],
+      [
+       "Tue, Mar 7 at 6:00 am",
+       "Tue, Mar 7"
+      ]
+     ]
+    },
+    {
+     "text": "wednesday afternoon",
+     "reading": {
+      "candidates": [
+       1835515800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "wednesday",
+       "afternoon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 3:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "Monday, 9 AM",
+     "reading": {
+      "candidates": [
+       1835926200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "monday",
+       "9 am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Mar 6 at 9:00 am",
+       "Mon, Mar 6"
+      ]
+     ]
+    },
+    {
+     "text": "FRIDAY AT NOON",
+     "reading": {
+      "candidates": [
+       1835677800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "friday",
+       "noon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 pm",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "sep 30",
+     "reading": {
+      "candidates": [
+       1853865000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "sep 30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Sep 30 at 12:00 am",
+       "Sat, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "30 sep",
+     "reading": {
+      "candidates": [
+       1853865000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "30 sep"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Sep 30 at 12:00 am",
+       "Sat, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "september 30th",
+     "reading": {
+      "candidates": [
+       1853865000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "september 30th"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sat, Sep 30 at 12:00 am",
+       "Sat, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "on the 3rd oct at 4",
+     "reading": {
+      "candidates": [
+       1854181800000,
+       1854138600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "3rd oct",
+       "at 4"
+      ]
+     },
+     "stripped": "on the",
+     "described": [
+      [
+       "Tue, Oct 3 at 4:00 pm",
+       "Tue, Oct 3"
+      ],
+      [
+       "Tue, Oct 3 at 4:00 am",
+       "Tue, Oct 3"
+      ]
+     ]
+    },
+    {
+     "text": "oct 2",
+     "reading": {
+      "candidates": [
+       1854037800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "oct 2"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Oct 2 at 12:00 am",
+       "Mon, Oct 2"
+      ]
+     ]
+    },
+    {
+     "text": "oct 1",
+     "reading": {
+      "candidates": [
+       1853951400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "oct 1"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 1 at 12:00 am",
+       "Sun, Oct 1"
+      ]
+     ]
+    },
+    {
+     "text": "1 oct",
+     "reading": {
+      "candidates": [
+       1853951400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "1 oct"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Oct 1 at 12:00 am",
+       "Sun, Oct 1"
+      ]
+     ]
+    },
+    {
+     "text": "october 2nd at 9pm",
+     "reading": {
+      "candidates": [
+       1854113400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "october 2nd",
+       "at 9pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Oct 2 at 9:00 pm",
+       "Mon, Oct 2"
+      ]
+     ]
+    },
+    {
+     "text": "jan 1",
+     "reading": {
+      "candidates": [
+       1861900200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "jan 1"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Jan 1 at 12:00 am",
+       "Mon, Jan 1"
+      ]
+     ]
+    },
+    {
+     "text": "1st january 10am",
+     "reading": {
+      "candidates": [
+       1861936200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "1st january",
+       "10am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Jan 1 at 10:00 am",
+       "Mon, Jan 1"
+      ]
+     ]
+    },
+    {
+     "text": "feb 29",
+     "reading": {
+      "candidates": [
+       1835375400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "feb 29"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "feb 30",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "feb 30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "31 dec",
+     "reading": {
+      "candidates": [
+       1861813800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "31 dec"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Dec 31 at 12:00 am",
+       "Sun, Dec 31"
+      ]
+     ]
+    },
+    {
+     "text": "dec 31 at 11:59pm",
+     "reading": {
+      "candidates": [
+       1861813800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "dec 31"
+      ]
+     },
+     "stripped": "at 11:59pm",
+     "described": [
+      [
+       "Sun, Dec 31 at 12:00 am",
+       "Sun, Dec 31"
+      ]
+     ]
+    },
+    {
+     "text": "mar 0",
+     "reading": {
+      "candidates": [
+       1835375400000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "mar 0"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "99 dec",
+     "reading": {
+      "candidates": [
+       1867689000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "99 dec"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 9 at 12:00 am",
+       "Fri, Mar 9"
+      ]
+     ]
+    },
+    {
+     "text": "maybe 5 people",
+     "reading": {
+      "candidates": [
+       1841077800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "maybe 5"
+      ]
+     },
+     "stripped": "people",
+     "described": [
+      [
+       "Fri, May 5 at 12:00 am",
+       "Fri, May 5"
+      ]
+     ]
+    },
+    {
+     "text": "march 3",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "march 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "market 3",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "market 3"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "august 15 for 2 hours",
+     "reading": {
+      "candidates": [
+       1849890600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "for 2 hours",
+       "august 15"
+      ],
+      "durationMin": 120
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Aug 15 at 12:00 am",
+       "Tue, Aug 15"
+      ]
+     ]
+    },
+    {
+     "text": "nov 5th morning",
+     "reading": {
+      "candidates": [
+       1857007800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "nov 5th",
+       "morning"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Nov 5 at 9:00 am",
+       "Sun, Nov 5"
+      ]
+     ]
+    },
+    {
+     "text": "5 nov evening",
+     "reading": {
+      "candidates": [
+       1857040200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "5 nov",
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Nov 5 at 6:00 pm",
+       "Sun, Nov 5"
+      ]
+     ]
+    },
+    {
+     "text": "decemberish 12",
+     "reading": {
+      "candidates": [
+       1860172200000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "decemberish 12"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Tue, Dec 12 at 12:00 am",
+       "Tue, Dec 12"
+      ]
+     ]
+    },
+    {
+     "text": "meeting on 30 sep at 5",
+     "reading": {
+      "candidates": [
+       1853865000000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "30 sep"
+      ]
+     },
+     "stripped": "meeting on at 5",
+     "described": [
+      [
+       "Sat, Sep 30 at 12:00 am",
+       "Sat, Sep 30"
+      ]
+     ]
+    },
+    {
+     "text": "dentist 14:30",
+     "reading": {
+      "candidates": [
+       1835427600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "14:30"
+      ]
+     },
+     "stripped": "dentist",
+     "described": [
+      [
+       "today at 2:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "dentist 24:00",
+     "reading": null,
+     "stripped": "dentist 24:00",
+     "described": []
+    },
+    {
+     "text": "at 25",
+     "reading": null,
+     "stripped": "at 25",
+     "described": []
+    },
+    {
+     "text": "at 7:75",
+     "reading": null,
+     "stripped": "at 7:75",
+     "described": []
+    },
+    {
+     "text": "at 23",
+     "reading": {
+      "candidates": [
+       1835458200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 23"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5pm tomorrow",
+     "reading": {
+      "candidates": [
+       1835523000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow 5",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tomorrow"
+      ]
+     },
+     "stripped": "5",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "noon",
+     "reading": {
+      "candidates": [
+       1835418600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "noon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "midday tomorrow",
+     "reading": {
+      "candidates": [
+       1835505000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "midday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "midnight",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "midnight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at midnight",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "midnight"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "afternoon",
+     "reading": {
+      "candidates": [
+       1835429400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "afternoon"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "night",
+     "reading": {
+      "candidates": [
+       1835447400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "night"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 8:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "evening",
+     "reading": {
+      "candidates": [
+       1835440200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "evening"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 6:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 5 in the morning",
+     "reading": {
+      "candidates": [
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "in the morning",
+     "described": [
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5 in the evening",
+     "reading": {
+      "candidates": [
+       1835436600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "in the evening",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 at night",
+     "reading": {
+      "candidates": [
+       1835418600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "at night",
+     "described": [
+      [
+       "today at 12:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "at 12 in the morning",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 12"
+      ]
+     },
+     "stripped": "in the morning",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "7 am",
+     "reading": {
+      "candidates": [
+       1835400600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7 am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 7:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "7am",
+     "reading": {
+      "candidates": [
+       1835400600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7am"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 7:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "7 a.m.",
+     "reading": {
+      "candidates": [
+       1835400600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "7 a.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 7:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "11:59 p.m.",
+     "reading": {
+      "candidates": [
+       1835461740000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "11:59 p.m."
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:59 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "0:30",
+     "reading": {
+      "candidates": [
+       1835463600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "0:30"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:30 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "00:00",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "00:00"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "9:05",
+     "reading": {
+      "candidates": [
+       1835408100000,
+       1835451300000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "9:05"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 9:05 am",
+       "today"
+      ],
+      [
+       "today at 9:05 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "12:00",
+     "reading": {
+      "candidates": [
+       1835418600000,
+       1835461800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "12:00"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 12:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "17:45 today",
+     "reading": {
+      "candidates": [
+       1835439300000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "17:45"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:45 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "call the bank about the loan",
+     "reading": null,
+     "stripped": "call the bank about the loan",
+     "described": []
+    },
+    {
+     "text": "buy milk",
+     "reading": null,
+     "stripped": "buy milk",
+     "described": []
+    },
+    {
+     "text": "",
+     "reading": null,
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "   ",
+     "reading": null,
+     "stripped": "",
+     "described": []
+    },
+    {
+     "text": "asdf qwerty",
+     "reading": null,
+     "stripped": "asdf qwerty",
+     "described": []
+    },
+    {
+     "text": "what is 7 times 8",
+     "reading": null,
+     "stripped": "what is 7 times 8",
+     "described": []
+    },
+    {
+     "text": "room 101",
+     "reading": null,
+     "stripped": "room 101",
+     "described": []
+    },
+    {
+     "text": "gate 12 at 6",
+     "reading": null,
+     "stripped": "gate 12 at 6",
+     "described": []
+    },
+    {
+     "text": "version 2.5 at 3:30pm",
+     "reading": null,
+     "stripped": "version 2.5 at 3:30pm",
+     "described": []
+    },
+    {
+     "text": "remind me at 5, then again at 6",
+     "reading": {
+      "candidates": [
+       1835436600000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5"
+      ]
+     },
+     "stripped": "remind me , then again at 6",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow, at 5",
+     "reading": {
+      "candidates": [
+       1835523000000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "Tomorrow At 5PM, Please",
+     "reading": {
+      "candidates": [
+       1835523000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5pm"
+      ]
+     },
+     "stripped": "Please",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "dinner with Zoë tomorrow at 8",
+     "reading": {
+      "candidates": [
+       1835490600000,
+       1835533800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 8"
+      ]
+     },
+     "stripped": "dinner with Zoë",
+     "described": [
+      [
+       "tomorrow at 8:00 am",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 8:00 pm",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "café at ９",
+     "reading": null,
+     "stripped": "café at ９",
+     "described": []
+    },
+    {
+     "text": "at ७",
+     "reading": null,
+     "stripped": "at ७",
+     "described": []
+    },
+    {
+     "text": "tomorrow at 5",
+     "reading": {
+      "candidates": [
+       1835523000000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "tomorrow",
+       "at 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "tomorrow at 5:00 pm",
+       "tomorrow"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "at 5\nplease",
+     "reading": null,
+     "stripped": "at 5\nplease",
+     "described": []
+    },
+    {
+     "text": "x at5",
+     "reading": null,
+     "stripped": "x at5",
+     "described": []
+    },
+    {
+     "text": "eat 5 apples",
+     "reading": null,
+     "stripped": "eat 5 apples",
+     "described": []
+    },
+    {
+     "text": "combat 5",
+     "reading": null,
+     "stripped": "combat 5",
+     "described": []
+    },
+    {
+     "text": "by 5",
+     "reading": {
+      "candidates": [
+       1835436600000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 5"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "stand by 5 people",
+     "reading": {
+      "candidates": [
+       1835436600000,
+       1835479800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "by 5"
+      ]
+     },
+     "stripped": "stand people",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 5:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "in 20 minutes at 5",
+     "reading": {
+      "candidates": [
+       1835398530250
+      ],
+      "dateOnly": false,
+      "matched": [
+       "in 20 minutes"
+      ]
+     },
+     "stripped": "at 5",
+     "described": [
+      [
+       "today at 6:25 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "for 20 minutes",
+     "reading": null,
+     "stripped": "for 20 minutes",
+     "described": []
+    },
+    {
+     "text": "for 20 minutes in the morning",
+     "reading": {
+      "candidates": [
+       1835407800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "for 20 minutes",
+       "morning"
+      ],
+      "durationMin": 20
+     },
+     "stripped": "in the",
+     "described": [
+      [
+       "today at 9:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "this monday",
+     "reading": {
+      "candidates": [
+       1835893800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "this monday"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Mon, Mar 6 at 12:00 am",
+       "Mon, Mar 6"
+      ]
+     ]
+    },
+    {
+     "text": "on sunday at 11",
+     "reading": {
+      "candidates": [
+       1835847000000,
+       1835890200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "on sunday",
+       "at 11"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Mar 5 at 11:00 am",
+       "Sun, Mar 5"
+      ],
+      [
+       "Sun, Mar 5 at 11:00 pm",
+       "Sun, Mar 5"
+      ]
+     ]
+    },
+    {
+     "text": "next sunday at 11:30pm",
+     "reading": {
+      "candidates": [
+       1835892000000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "next sunday",
+       "at 11:30pm"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "Sun, Mar 5 at 11:30 pm",
+       "Sun, Mar 5"
+      ]
+     ]
+    },
+    {
+     "text": "today 23:49",
+     "reading": {
+      "candidates": [
+       1835461140000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "23:49"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:49 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "today 23:51",
+     "reading": {
+      "candidates": [
+       1835461260000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "today",
+       "23:51"
+      ]
+     },
+     "stripped": "",
+     "described": [
+      [
+       "today at 11:51 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight at 11",
+     "reading": {
+      "candidates": [
+       1835458200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 11"
+      ]
+     },
+     "stripped": "tonight",
+     "described": [
+      [
+       "today at 11:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tonight at 9:30",
+     "reading": {
+      "candidates": [
+       1835452800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 9:30"
+      ]
+     },
+     "stripped": "tonight",
+     "described": [
+      [
+       "today at 9:30 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "tomorrow tomorrow",
+     "reading": {
+      "candidates": [
+       1835461800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "tomorrow"
+      ]
+     },
+     "stripped": "tomorrow",
+     "described": [
+      [
+       "tomorrow at 12:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "friday or saturday",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "or saturday",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    },
+    {
+     "text": "monday tuesday at 3",
+     "reading": {
+      "candidates": [
+       1835947800000,
+       1835904600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "monday",
+       "at 3"
+      ]
+     },
+     "stripped": "tuesday",
+     "described": [
+      [
+       "Mon, Mar 6 at 3:00 pm",
+       "Mon, Mar 6"
+      ],
+      [
+       "Mon, Mar 6 at 3:00 am",
+       "Mon, Mar 6"
+      ]
+     ]
+    },
+    {
+     "text": "jan 5 feb 6",
+     "reading": {
+      "candidates": [
+       1862245800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "jan 5"
+      ]
+     },
+     "stripped": "feb 6",
+     "described": [
+      [
+       "Fri, Jan 5 at 12:00 am",
+       "Fri, Jan 5"
+      ]
+     ]
+    },
+    {
+     "text": "at 3 at 4",
+     "reading": {
+      "candidates": [
+       1835429400000,
+       1835472600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 3"
+      ]
+     },
+     "stripped": "at 4",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 3:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "3pm 4pm",
+     "reading": {
+      "candidates": [
+       1835429400000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "3pm"
+      ]
+     },
+     "stripped": "4pm",
+     "described": [
+      [
+       "today at 3:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "weekend",
+     "reading": null,
+     "stripped": "weekend",
+     "described": []
+    },
+    {
+     "text": "next week",
+     "reading": null,
+     "stripped": "next week",
+     "described": []
+    },
+    {
+     "text": "this week at 5pm",
+     "reading": {
+      "candidates": [
+       1835436600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 5pm"
+      ]
+     },
+     "stripped": "this week",
+     "described": [
+      [
+       "today at 5:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "in the afternoon at 2:15",
+     "reading": {
+      "candidates": [
+       1835426700000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 2:15"
+      ]
+     },
+     "stripped": "in the afternoon",
+     "described": [
+      [
+       "today at 2:15 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "Pay rent on the 1st",
+     "reading": null,
+     "stripped": "Pay rent on the 1st",
+     "described": []
+    },
+    {
+     "text": "pay rent 1st nov",
+     "reading": {
+      "candidates": [
+       1856629800000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "1st nov"
+      ]
+     },
+     "stripped": "pay rent",
+     "described": [
+      [
+       "Wed, Nov 1 at 12:00 am",
+       "Wed, Nov 1"
+      ]
+     ]
+    },
+    {
+     "text": "standup every day at 10",
+     "reading": {
+      "candidates": [
+       1835411400000,
+       1835454600000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 10"
+      ]
+     },
+     "stripped": "standup every day",
+     "described": [
+      [
+       "today at 10:00 am",
+       "today"
+      ],
+      [
+       "today at 10:00 pm",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "gym mon",
+     "reading": null,
+     "stripped": "gym mon",
+     "described": []
+    },
+    {
+     "text": "sat 9am",
+     "reading": {
+      "candidates": [
+       1835407800000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "9am"
+      ]
+     },
+     "stripped": "sat",
+     "described": [
+      [
+       "today at 9:00 am",
+       "today"
+      ]
+     ]
+    },
+    {
+     "text": "thursdays at 4",
+     "reading": {
+      "candidates": [
+       1835433000000,
+       1835476200000
+      ],
+      "dateOnly": false,
+      "matched": [
+       "at 4"
+      ]
+     },
+     "stripped": "thursdays",
+     "described": [
+      [
+       "today at 4:00 pm",
+       "today"
+      ],
+      [
+       "tomorrow at 4:00 am",
+       "tomorrow"
+      ]
+     ]
+    },
+    {
+     "text": "the friday after next",
+     "reading": {
+      "candidates": [
+       1835634600000
+      ],
+      "dateOnly": true,
+      "matched": [
+       "friday"
+      ]
+     },
+     "stripped": "the after next",
+     "described": [
+      [
+       "Fri, Mar 3 at 12:00 am",
+       "Fri, Mar 3"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "spelled": [
+  {
+   "text": "one minute",
+   "out": "1 minute"
+  },
+  {
+   "text": "an hour",
+   "out": "1 hour"
+  },
+  {
+   "text": "half an hour",
+   "out": "30 minutes"
+  },
+  {
+   "text": "half a hour",
+   "out": "30 minutes"
+  },
+  {
+   "text": "Half An Hour",
+   "out": "30 minutes"
+  },
+  {
+   "text": "a timer",
+   "out": "a timer"
+  },
+  {
+   "text": "someone",
+   "out": "someone"
+  },
+  {
+   "text": "two hours",
+   "out": "2 hours"
+  },
+  {
+   "text": "twenty-five minutes",
+   "out": "25 minutes"
+  },
+  {
+   "text": "twenty five minutes",
+   "out": "twenty 5 minutes"
+  },
+  {
+   "text": "forty-five mins",
+   "out": "45 mins"
+  },
+  {
+   "text": "ninety seconds",
+   "out": "90 seconds"
+  },
+  {
+   "text": "set a timer for ten minutes",
+   "out": "set a timer for 10 minutes"
+  },
+  {
+   "text": "A minute",
+   "out": "1 minute"
+  },
+  {
+   "text": "an-hour",
+   "out": "1-hour"
+  },
+  {
+   "text": "one-minute",
+   "out": "1-minute"
+  },
+  {
+   "text": "fifteen secs and thirty hrs",
+   "out": "15 secs and 30 hrs"
+  },
+  {
+   "text": "eleven hours twelve minutes",
+   "out": "11 hours 12 minutes"
+  },
+  {
+   "text": "thirteen minutes",
+   "out": "thirteen minutes"
+  },
+  {
+   "text": "a  minute",
+   "out": "a  minute"
+  },
+  {
+   "text": "three hourly",
+   "out": "three hourly"
+  },
+  {
+   "text": "six minute",
+   "out": "6 minute"
+  },
+  {
+   "text": "sixty sec",
+   "out": "60 sec"
+  },
+  {
+   "text": "TWENTY minutes",
+   "out": "20 minutes"
+  },
+  {
+   "text": "half an hour and a minute",
+   "out": "30 minutes and 1 minute"
+  },
+  {
+   "text": "one minutes one hour one",
+   "out": "1 minutes 1 hour one"
+  },
+  {
+   "text": "none hour",
+   "out": "none hour"
+  },
+  {
+   "text": "stone minute",
+   "out": "stone minute"
+  },
+  {
+   "text": "a hours",
+   "out": "1 hours"
+  },
+  {
+   "text": "ten\nminutes",
+   "out": "ten\nminutes"
+  },
+  {
+   "text": "fifty hrs",
+   "out": "50 hrs"
+  },
+  {
+   "text": "forty hr",
+   "out": "40 hr"
+  },
+  {
+   "text": "",
+   "out": ""
+  }
+ ],
+ "titles": [
+  {
+   "text": "Call mom tomorrow at 7",
+   "phrase": "tomorrow at 7",
+   "stripped": "Call mom"
+  },
+  {
+   "text": "Call mom tomorrow at 7",
+   "phrase": null,
+   "stripped": "Call mom tomorrow at 7"
+  },
+  {
+   "text": "Call mom Tomorrow, at 7.",
+   "phrase": "tomorrow at 7",
+   "stripped": "Call mom"
+  },
+  {
+   "text": "Call mom Tomorrow, at 7.",
+   "phrase": null,
+   "stripped": "Call mom Tomorrow, at 7"
+  },
+  {
+   "text": "standup on friday at 10am!",
+   "phrase": "on friday at 10am",
+   "stripped": "standup"
+  },
+  {
+   "text": "standup on friday at 10am!",
+   "phrase": null,
+   "stripped": "standup on friday at 10am"
+  },
+  {
+   "text": "lunch at noon with (Sam)",
+   "phrase": "at noon",
+   "stripped": "lunch at with (Sam)"
+  },
+  {
+   "text": "lunch at noon with (Sam)",
+   "phrase": null,
+   "stripped": "lunch at noon with (Sam)"
+  },
+  {
+   "text": "at 5 call a.m. show",
+   "phrase": "at 5",
+   "stripped": "call a.m. show"
+  },
+  {
+   "text": "at 5 call a.m. show",
+   "phrase": null,
+   "stripped": "at 5 call a.m. show"
+  },
+  {
+   "text": "pay $5.00 by 6 p.m. today",
+   "phrase": "by 6 p.m. today",
+   "stripped": "pay $5.00"
+  },
+  {
+   "text": "pay $5.00 by 6 p.m. today",
+   "phrase": null,
+   "stripped": "pay $5.00 by 6 p.m. today"
+  },
+  {
+   "text": "  --  ,; trim me ;;!  ",
+   "phrase": "",
+   "stripped": "trim me"
+  },
+  {
+   "text": "  --  ,; trim me ;;!  ",
+   "phrase": null,
+   "stripped": "trim me"
+  },
+  {
+   "text": "meet in",
+   "phrase": "",
+   "stripped": "meet"
+  },
+  {
+   "text": "meet in",
+   "phrase": null,
+   "stripped": "meet"
+  },
+  {
+   "text": "review for",
+   "phrase": "",
+   "stripped": "review"
+  },
+  {
+   "text": "review for",
+   "phrase": null,
+   "stripped": "review"
+  },
+  {
+   "text": "x on  ",
+   "phrase": "",
+   "stripped": "x"
+  },
+  {
+   "text": "x on  ",
+   "phrase": null,
+   "stripped": "x"
+  },
+  {
+   "text": "dinner AT",
+   "phrase": "",
+   "stripped": "dinner"
+  },
+  {
+   "text": "dinner AT",
+   "phrase": null,
+   "stripped": "dinner"
+  },
+  {
+   "text": "tomorrow tomorrow",
+   "phrase": "tomorrow tomorrow",
+   "stripped": "tomorrow"
+  },
+  {
+   "text": "tomorrow tomorrow",
+   "phrase": null,
+   "stripped": "tomorrow tomorrow"
+  },
+  {
+   "text": "a+b at 3 (c)",
+   "phrase": "a+b at 3 (c)",
+   "stripped": "a+b (c)"
+  },
+  {
+   "text": "a+b at 3 (c)",
+   "phrase": null,
+   "stripped": "a+b at 3 (c)"
+  },
+  {
+   "text": "ping [ops] @ 4",
+   "phrase": "@ 4",
+   "stripped": "ping [ops] @ 4"
+  },
+  {
+   "text": "ping [ops] @ 4",
+   "phrase": null,
+   "stripped": "ping [ops] @ 4"
+  },
+  {
+   "text": "what at 5?",
+   "phrase": "at 5?",
+   "stripped": "what at 5?"
+  },
+  {
+   "text": "what at 5?",
+   "phrase": null,
+   "stripped": "what at 5?"
+  }
+ ],
+ "describe": [
+  {
+   "at": 1790879400000,
+   "text": "today at 12:00 am",
+   "day": "today"
+  },
+  {
+   "at": 1790879700000,
+   "text": "today at 12:05 am",
+   "day": "today"
+  },
+  {
+   "at": 1790922600000,
+   "text": "today at 12:00 pm",
+   "day": "today"
+  },
+  {
+   "at": 1790926620000,
+   "text": "today at 1:07 pm",
+   "day": "today"
+  },
+  {
+   "at": 1790965740000,
+   "text": "today at 11:59 pm",
+   "day": "today"
+  },
+  {
+   "at": 1790965800000,
+   "text": "tomorrow at 12:00 am",
+   "day": "tomorrow"
+  },
+  {
+   "at": 1790966100000,
+   "text": "tomorrow at 12:05 am",
+   "day": "tomorrow"
+  },
+  {
+   "at": 1791009000000,
+   "text": "tomorrow at 12:00 pm",
+   "day": "tomorrow"
+  },
+  {
+   "at": 1791013020000,
+   "text": "tomorrow at 1:07 pm",
+   "day": "tomorrow"
+  },
+  {
+   "at": 1791052140000,
+   "text": "tomorrow at 11:59 pm",
+   "day": "tomorrow"
+  },
+  {
+   "at": 1791052200000,
+   "text": "Sun, Oct 4 at 12:00 am",
+   "day": "Sun, Oct 4"
+  },
+  {
+   "at": 1791052500000,
+   "text": "Sun, Oct 4 at 12:05 am",
+   "day": "Sun, Oct 4"
+  },
+  {
+   "at": 1791095400000,
+   "text": "Sun, Oct 4 at 12:00 pm",
+   "day": "Sun, Oct 4"
+  },
+  {
+   "at": 1791099420000,
+   "text": "Sun, Oct 4 at 1:07 pm",
+   "day": "Sun, Oct 4"
+  },
+  {
+   "at": 1791138540000,
+   "text": "Sun, Oct 4 at 11:59 pm",
+   "day": "Sun, Oct 4"
+  },
+  {
+   "at": 1791311400000,
+   "text": "Wed, Oct 7 at 12:00 am",
+   "day": "Wed, Oct 7"
+  },
+  {
+   "at": 1791311700000,
+   "text": "Wed, Oct 7 at 12:05 am",
+   "day": "Wed, Oct 7"
+  },
+  {
+   "at": 1791354600000,
+   "text": "Wed, Oct 7 at 12:00 pm",
+   "day": "Wed, Oct 7"
+  },
+  {
+   "at": 1791358620000,
+   "text": "Wed, Oct 7 at 1:07 pm",
+   "day": "Wed, Oct 7"
+  },
+  {
+   "at": 1791397740000,
+   "text": "Wed, Oct 7 at 11:59 pm",
+   "day": "Wed, Oct 7"
+  },
+  {
+   "at": 1791397800000,
+   "text": "Thu, Oct 8 at 12:00 am",
+   "day": "Thu, Oct 8"
+  },
+  {
+   "at": 1791398100000,
+   "text": "Thu, Oct 8 at 12:05 am",
+   "day": "Thu, Oct 8"
+  },
+  {
+   "at": 1791441000000,
+   "text": "Thu, Oct 8 at 12:00 pm",
+   "day": "Thu, Oct 8"
+  },
+  {
+   "at": 1791445020000,
+   "text": "Thu, Oct 8 at 1:07 pm",
+   "day": "Thu, Oct 8"
+  },
+  {
+   "at": 1791484140000,
+   "text": "Thu, Oct 8 at 11:59 pm",
+   "day": "Thu, Oct 8"
+  },
+  {
+   "at": 1791484200000,
+   "text": "Fri, Oct 9 at 12:00 am",
+   "day": "Fri, Oct 9"
+  },
+  {
+   "at": 1791484500000,
+   "text": "Fri, Oct 9 at 12:05 am",
+   "day": "Fri, Oct 9"
+  },
+  {
+   "at": 1791527400000,
+   "text": "Fri, Oct 9 at 12:00 pm",
+   "day": "Fri, Oct 9"
+  },
+  {
+   "at": 1791531420000,
+   "text": "Fri, Oct 9 at 1:07 pm",
+   "day": "Fri, Oct 9"
+  },
+  {
+   "at": 1791570540000,
+   "text": "Fri, Oct 9 at 11:59 pm",
+   "day": "Fri, Oct 9"
+  },
+  {
+   "at": 1793471400000,
+   "text": "Sun, Nov 1 at 12:00 am",
+   "day": "Sun, Nov 1"
+  },
+  {
+   "at": 1793471700000,
+   "text": "Sun, Nov 1 at 12:05 am",
+   "day": "Sun, Nov 1"
+  },
+  {
+   "at": 1793514600000,
+   "text": "Sun, Nov 1 at 12:00 pm",
+   "day": "Sun, Nov 1"
+  },
+  {
+   "at": 1793518620000,
+   "text": "Sun, Nov 1 at 1:07 pm",
+   "day": "Sun, Nov 1"
+  },
+  {
+   "at": 1793557740000,
+   "text": "Sun, Nov 1 at 11:59 pm",
+   "day": "Sun, Nov 1"
+  },
+  {
+   "at": 1825439400000,
+   "text": "Sat, Nov 6 at 12:00 am",
+   "day": "Sat, Nov 6"
+  },
+  {
+   "at": 1825439700000,
+   "text": "Sat, Nov 6 at 12:05 am",
+   "day": "Sat, Nov 6"
+  },
+  {
+   "at": 1825482600000,
+   "text": "Sat, Nov 6 at 12:00 pm",
+   "day": "Sat, Nov 6"
+  },
+  {
+   "at": 1825486620000,
+   "text": "Sat, Nov 6 at 1:07 pm",
+   "day": "Sat, Nov 6"
+  },
+  {
+   "at": 1825525740000,
+   "text": "Sat, Nov 6 at 11:59 pm",
+   "day": "Sat, Nov 6"
+  },
+  {
+   "at": 1790825400000,
+   "text": "Thu, Oct 1 at 9:00 am",
+   "day": "Thu, Oct 1"
+  }
+ ]
+}
