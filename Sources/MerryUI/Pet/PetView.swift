@@ -7,6 +7,7 @@ import MerryCore
 /// reference's own look rather than glass.
 public struct PetView: View {
     @StateObject private var model: PetModel
+    @Environment(\.petEdge) private var petEdge
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var slide: CGFloat = 0
     @State private var fade = 1.0
@@ -30,9 +31,10 @@ public struct PetView: View {
             if let bubble {
                 // The bubble sits just above Merry's head rather than at the top of
                 // the window, so it reads as his and grows upwards when the text is long.
-                PetBubbleView(bubble: bubble, pressed: model.pressedButton, still: reduceMotion) { model.press($0) }
+                let view = PetBubbleView(bubble: bubble, pressed: model.pressedButton, still: reduceMotion) { model.press($0) }
                     .id(bubble.key)
                     .padding(.bottom, 100)
+                if let petEdge { PetEdgeShift(edge: petEdge) { view } } else { view }
             }
             PetBursts(bursts: model.bursts)
                 .allowsHitTesting(false)

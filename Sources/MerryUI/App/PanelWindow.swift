@@ -23,7 +23,7 @@ public final class PanelWindowController: NSObject, NSWindowDelegate {
     /// Spotlight-shaped: the panel can be as short as its command bar plus a
     /// few rows, and grows with what it has to show.
     public static let minHeight: CGFloat = 120
-    public static let maxHeight: CGFloat = 660
+    public static let maxHeight: CGFloat = 660 + PanelView.titleStrip
     /// Minimized, the panel becomes an island: a small pill at the top centre
     /// of the screen, where the eye already goes for status.
     public static let islandWidth: CGFloat = 300
@@ -50,7 +50,8 @@ public final class PanelWindowController: NSObject, NSWindowDelegate {
         super.init()
         window.isOpaque = false
         window.backgroundColor = .clear
-        window.hasShadow = true
+        // The glass draws its own edge; the window's shadow is a rectangle and shows at the corners.
+        window.hasShadow = false
         window.isMovableByWindowBackground = true
         window.hidesOnDeactivate = false
         window.isReleasedWhenClosed = false
@@ -92,10 +93,14 @@ public final class PanelWindowController: NSObject, NSWindowDelegate {
         applyLevel()
     }
 
+    /// Keeps the panel above other applications regardless of the pin, for
+    /// setup: granting a permission means a trip to System Settings and back.
+    public var floatsForSetup = false { didSet { applyLevel() } }
+
     private func applyLevel() {
         // While docked the island is a few pixels of screen; it has to stay
         // visible or there is nothing left to click.
-        window.level = isPinned || isDocked ? .floating : .normal
+        window.level = isPinned || isDocked || floatsForSetup ? .floating : .normal
     }
 
     // MARK: Showing

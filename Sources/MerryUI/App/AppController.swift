@@ -66,6 +66,8 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
         }
         secrets = Secrets(service: Self.keychainService)
         settings = store.loadSettings()
+        // A desktop pet lives on the desktop until the person says otherwise.
+        if settings.petModeChosen != true { settings.petMode = .desktop }
         // Persist migrations so an older preference cannot reappear after an update.
         try? store.saveSettings(settings)
 
@@ -99,6 +101,7 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
         let saved = settings.panelX >= 0 && settings.panelY >= 0 ? CGPoint(x: settings.panelX, y: settings.panelY) : nil
         panel = PanelWindowController(content: PanelView(bridge: self), savedPosition: saved, pinned: settings.panelPinned)
         panel.window.onCancel = { [weak self] in self?.hidePanel() }
+        panel.floatsForSetup = !settings.onboarded
         panel.onFocusChange = { [weak self] focused in self?.panelFocusChanged(focused) }
         panel.onMoved = { [weak self] origin in self?.save { $0.panelX = origin.x; $0.panelY = origin.y } }
 
@@ -192,6 +195,7 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
             pet.presence.update()
             statusItem.button?.title = ""
         }
+        panel.floatsForSetup = !settings.onboarded
         events.settingsChanged.send(settings)
         return settings
     }
@@ -651,22 +655,9 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
 
     private var taskIsRunning: Bool { currentTask.map { !$0.status.isTerminal } ?? false }
 
-    /// Clicking somewhere else puts the panel away, the way Spotlight does.
-    ///
-    /// "Keep in front" means stay, so a pinned panel is left alone; and a
-    /// running task shrinks to the island instead, so its progress stays in
-    /// view without the panel in the way.
-    private func putAwayAfterBlur() {
-        blurTimer = nil
-        guard panel.isVisible, !panel.isFocused, !panel.isPinned, !panel.isDocked, !panel.isAnimating, !panelDialogOpen, !quitting else { return }
-        if taskIsRunning {
-            panel.toggleDock()
-            broadcastPanelState()
-            return
-        }
-        hidePanel()
-        setPetState(.idle)
-    }
+    /// Clicking somewhere else leaves the panel where it is. It goes away
+    /// when it is closed: the red button, Esc, or the shortcut.
+    private func putAwayAfterBlur() { blurTimer = nil }
 
     private func togglePanel(focusInput: Bool = true, pressedAt: Date? = nil) {
         let inUse = pressedAt.map { panelFocused(at: $0.timeIntervalSince1970 * 1000 - 20) } ?? panel.isFocused
@@ -729,7 +720,7 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
 
     private func broadcastPanelState() { events.panelState.send(getPanelState()) }
 
-    public func resizePanel(height: CGFloat) { panel?.resize(height: height) }
+    public func resizePanel(height: CGFloat) { panel?.resize(height: height + PanelView.titleStrip) }
 
     public func closePanel() {
         hidePanel()
@@ -788,7 +779,7 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
     }
 
     public func showPetMenu(napping: Bool) {
-        pet.showMenu(napping: napping, onOpen: { [weak self] in self?.showPanelWithoutToggling() }, onHide: { [weak self] in self?.pet.presence.hide() })
+        pet.showMenu(napping: napping, onOpen: { [weak self] in self?.showPanelWithoutToggling() }, onHide: { [weak self] in self?.setPetMode(.menubar) })
     }
 
     public func petClicked(pressedAt: Date?) {
@@ -906,8 +897,7 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
             func add(_ title: String, _ action: Selector) { menu.addItem(withTitle: title, action: action, keyEquivalent: "").target = self }
             add("Open Merry", #selector(menuOpen))
             add("Workspace & timers", #selector(menuWorkspace))
-            add("Show the pet", #selector(menuShowPet))
-            add("Hide Merry", #selector(menuHidePet))
+            if settings.petMode == .desktop { add("Hide the pet", #selector(menuHidePet)) } else { add("Show the pet", #selector(menuShowPet)) }
             add("Center the panel", #selector(menuCenter))
             menu.addItem(.separator())
             add("Stop current task", #selector(menuStop))
@@ -924,8 +914,18 @@ public final class AppController: NSObject, MerryBridge, NSApplicationDelegate {
 
     @objc private func menuOpen() { togglePanel() }
     @objc private func menuWorkspace() { openBrain() }
-    @objc private func menuShowPet() { pet.recentre(); pet.presence.showFor(5000) }
-    @objc private func menuHidePet() { pet.presence.hide() }
+    @objc private func menuShowPet() { setPetMode(.desktop) }
+    @objc private func menuHidePet() { setPetMode(.menubar) }
+
+    /// Puts the pet on the desktop, or takes it off, and remembers the choice.
+    private func setPetMode(_ mode: PetMode) {
+        save { $0.petMode = mode; $0.petModeChosen = true }
+        if mode == .desktop { pet.recentre(); pet.presence.reveal() }
+        broadcastBrain()
+        pet.presence.update()
+        statusItem.button?.title = ""
+        events.settingsChanged.send(settings)
+    }
     @objc private func menuCenter() { centerPanel() }
     @objc private func menuStop() { runner?.cancel() }
     @objc private func menuQuit() { NSApp.terminate(nil) }

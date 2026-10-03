@@ -35,18 +35,18 @@ public struct PanelView: View {
     private var docked: Bool { model.panel.docked }
     private var onboarding: Bool { model.welcome && !docked }
 
+    /// The strip along the top that holds the window buttons.
+    public static let titleStrip: CGFloat = 26
+
     public var body: some View {
-        Group {
-            if onboarding {
-                WelcomeView(bridge: bridge) { model.finishWelcome($0) }
-                    .frame(width: PanelView.width)
-            } else {
-                panel
-                    .frame(width: PanelView.width)
-                    .opacity(docked ? 0 : 1)
-                    .allowsHitTesting(!docked)
-                    .accessibilityHidden(docked)
+        VStack(spacing: 0) {
+            if !docked {
+                TrafficLights(pinned: model.panel.pinned, close: { bridge.closePanel() }, minimize: { bridge.minimizePanel() },
+                              pin: { bridge.pinPanel(!model.panel.pinned) })
+                    .padding(.leading, 14)
+                    .frame(maxWidth: .infinity, minHeight: PanelView.titleStrip, maxHeight: PanelView.titleStrip, alignment: .bottomLeading)
             }
+            content
         }
         .frame(minWidth: 0, idealWidth: docked ? PanelView.islandSize.width : PanelView.width, maxWidth: .infinity,
                minHeight: 0, idealHeight: docked ? PanelView.islandSize.height : nil, maxHeight: .infinity, alignment: .top)
@@ -72,6 +72,21 @@ public struct PanelView: View {
             scroll.scrollTo(edge: model.view == .home && !model.thread.isEmpty ? .bottom : .top)
         }
         .environment(\.colorScheme, .dark)
+    }
+
+    private var content: some View {
+        Group {
+            if onboarding {
+                WelcomeView(bridge: bridge) { model.finishWelcome($0) }
+                    .frame(width: PanelView.width)
+            } else {
+                panel
+                    .frame(width: PanelView.width)
+                    .opacity(docked ? 0 : 1)
+                    .allowsHitTesting(!docked)
+                    .accessibilityHidden(docked)
+            }
+        }
     }
 
     // MARK: - Height
@@ -368,12 +383,6 @@ public struct PanelView: View {
                 PanelIconButton(icon: .settings, help: model.hasKey == false ? "Settings · connect a model for app and browser tasks" : "Settings",
                                 label: "Settings", selected: model.view == .tune, tint: model.hasKey == false ? Chrome.amber : nil) { model.view = .tune }
                 PanelIconButton(icon: .help, help: "Help", selected: model.view == .help) { model.view = .help }
-                Rectangle().fill(Chrome.overlay(0.11)).frame(width: 1, height: 16).padding(.horizontal, 6)
-                PanelIconButton(icon: .pin,
-                                help: model.panel.pinned ? "Keep in front: on. Merry stays open when you click elsewhere" : "Keep in front: off. Merry tucks away when you click elsewhere",
-                                label: "Keep in front", selected: model.panel.pinned, tint: model.panel.pinned ? Chrome.lime : nil) { bridge.pinPanel(!model.panel.pinned) }
-                PanelIconButton(icon: .minimize, help: "Minimize to the island", label: "Minimize to island") { bridge.minimizePanel() }
-                PanelIconButton(icon: .close, help: "Hide (Esc)", label: "Hide Merry", size: 12) { bridge.closePanel() }
             }
         }
         .padding(.leading, 14).padding(.trailing, 8)

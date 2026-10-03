@@ -119,6 +119,7 @@ public final class PetWindowController: PresenceWindow {
     private let mode: () -> PetMode
     private var hitTest = PetHitTest()
     private let activity = WindowActivity()
+    private let edge = PetEdge()
     private var cursorTimer: Timer?
     private var lastOffset: CGPoint?
     private var moveObserver: NSObjectProtocol?
@@ -148,7 +149,7 @@ public final class PetWindowController: PresenceWindow {
         // through and only becomes solid when the pointer is actually on the
         // creature. Without this, a desktop pet is a dead patch of your screen.
         panel.ignoresMouseEvents = true
-        let host = NSHostingView(rootView: ActivityRoot(activity: activity, content: PetView(bridge: bridge)))
+        let host = NSHostingView(rootView: ActivityRoot(activity: activity, content: PetView(bridge: bridge).environment(\.petEdge, edge)))
         host.sizingOptions = []
         host.frame = NSRect(origin: .zero, size: size)
         panel.contentView = host
@@ -182,7 +183,7 @@ public final class PetWindowController: PresenceWindow {
     public var frame: CGRect { PetScreenSpace.rect(panel.frame) }
 
     public func show() { showInactive() }
-    public func showInactive() { activity.visible = true; panel.orderFrontRegardless() }
+    public func showInactive() { activity.visible = true; panel.orderFrontRegardless(); measureEdge() }
     public func hide() { panel.orderOut(nil); activity.visible = false }
 
     /// Stops the cursor sampling and closes the window for good.
@@ -256,7 +257,16 @@ public final class PetWindowController: PresenceWindow {
         reportMoved()
     }
 
+    /// How far the window hangs off its screen, so the bubble can lean back in.
+    private func measureEdge() {
+        guard let screen = panel.screen ?? NSScreen.screens.first else { return }
+        let over = panel.frame.maxX - screen.frame.maxX, under = screen.frame.minX - panel.frame.minX
+        let shift = over > 0 ? -over : under > 0 ? under : 0
+        if edge.shift != shift { edge.shift = shift }
+    }
+
     private func moved() {
+        measureEdge()
         // A drag moves the window many times a second; remember where it came to rest.
         moveReport?.cancel()
         let work = DispatchWorkItem { [weak self] in self?.reportMoved() }
@@ -286,5 +296,33 @@ public final class PetWindowController: PresenceWindow {
         menu.addItem(napping ? PetMenuItem("Wake up", play(.wake)) : PetMenuItem("Little nap", play(.nap)))
         menu.addItem(PetMenuItem("Surprise me", play(.surprise)))
         menu.popUp(positioning: nil, at: NSEvent.mouseLocation, in: nil)
+    }
+}
+
+/// How far the speech bubble has to lean to stay on screen when the pet sits at an edge.
+@MainActor
+final class PetEdge: ObservableObject {
+    @Published var shift: CGFloat = 0
+}
+
+private struct PetEdgeKey: EnvironmentKey {
+    static let defaultValue: PetEdge? = nil
+}
+
+extension EnvironmentValues {
+    var petEdge: PetEdge? {
+        get { self[PetEdgeKey.self] }
+        set { self[PetEdgeKey.self] = newValue }
+    }
+}
+
+/// Moves its content sideways by the edge's shift, following it as the pet is dragged.
+struct PetEdgeShift<Content: View>: View {
+    @ObservedObject var edge: PetEdge
+    @ViewBuilder var content: Content
+    var body: some View {
+        // The window is clipped by the screen on one side, so the bubble gets
+        // the part that is left: narrower, and centred in it.
+        content.frame(maxWidth: PetLayout.width - abs(edge.shift) - 8).offset(x: edge.shift / 2)
     }
 }
